@@ -1,0 +1,223 @@
+@media screen and (max-width: 1450px) {
+    #projetos {
+        background-image: url(/imagens/fundo_Projeto.png);
+        background-repeat: no-repeat;
+        background-size: 50%;
+        background-position: right top;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        }
+    
+        #htextProj {
+            position: relative;
+            right: 10px;
+            bottom: 60px;
+            font-family: 'Jura', sans-serif;
+            color: #fff;
+        }
+    
+        .cards {
+            position: relative;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            width: 80%;
+            height: 80%;
+            right: 10px;
+            bottom: 40px;
+        }
+    
+        #projInfos {
+            position: relative;
+            top: 300px;
+            left: 0;
+            font-family: 'Nunito', sans-serif;
+            max-width: 700px;
+            color: var(--color-palette1);
+            text-align: center;
+            font-size: 1.1em;
+            line-height: 1.6em;
+        }
+    
+        .setaPagProj {
+            position: absolute;
+            left: 47%;
+            top: 700px;
+            color: #fff;
+            animation: animaSetaPag 1.5s linear infinite;
+            z-index: 1;
+        }
+
+        .btns {
+            position: relative;
+            top: 320px;
+            left: 0px;
+            width: 100px;
+            display: none;
+            font-family: 'Nunito', sans-serif;
+            color: #fff;
+            text-decoration: none;
+            text-align: center;
+            padding: 5px 5px;
+            border: 1px solid var(--color-palette5);
+            border-radius: 30px;
+            transition: .5s;
+        }
+}
+
+@media screen and (max-width: 965px) {
+    #foto {
+      width: 300px;
+    }
+
+    .sobreText {
+        padding-top: 0px;
+    }
+
+    .expText {
+        padding-top: 0px;
+    }
+}
+
+  @media (max-width: 900px) {
+    body {
+        overflow-x: hidden; /*menu jogado pra fora oculto*/
+    }
+
+    .nav {
+        position: absolute;
+        top: 8vh; /*começando logo abaixo do header*/
+        right: 0;
+        width: 40vw;
+        height: 92vh; /*tela toda a partir do header*/
+        background: #14213d6b;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transform: translateX(100%); /*joga menu pra fora lado direito*/
+        transition: 1s;
+    }
+
+    .nav li {
+        opacity: 1;
+    }
+
+    .mobile-menu div {
+        display: block;
+    }
+
+    header.active .nav {
+        transform: translateX(0%);
+        transition: 1s;
+    }
+
+    header.active .mobile-menu .line1 {
+        transform: rotate(-45deg) translate(-5px, 7px); 
+    }
+         
+    header.active .mobile-menu .line2 {
+        opacity: 0;
+    }
+         
+    header.active .mobile-menu .line3 {
+        transform: rotate(45deg) translate(-5px, -7px); 
+    }
+
+    .setaPagHome {
+        top: 360px;
+        right: 50px;
+    }
+
+    .setaPagSobre,
+    .setaPagExp {
+        right: 10px;
+        top: 10px;
+    }
+    .setaPagProj {
+        top: 700px;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+    #foto {
+      width: 250px;
+      right: 10px;
+      bottom: 200px;
+    }
+    #home .content h2 {
+        font-size: 2em;
+        right: 50px;
+        bottom: 100px;
+    }
+    #home .content p {
+        right: 50px;
+        bottom: 100px;
+    }
+    #home .content .btn {
+        right: 50px;
+        top: -100px;
+    }
+    #home::before {
+        width: 70vw;
+        height: 200vw;
+    }
+    .logo {
+        right: 50px;
+        font-size: 1em;
+    }
+    .icones {
+        right: 60px;
+        bottom: 110px;
+    }
+    .icones a {
+        font-size: 2em;
+    }
+
+    #pTextProj {
+        position: relative;
+        bottom: 50px;
+        max-width: 300px;
+    }
+
+    .btns {
+        position: relative;
+        top: 260px;
+        left: 0px;
+        width: 100px;
+        display: none;
+        font-family: 'Nunito', sans-serif;
+        color: #fff;
+        text-decoration: none;
+        text-align: center;
+        padding: 5px 5px;
+        border: 1px solid var(--color-palette5);
+        border-radius: 30px;
+        transition: .5s;
+    }
+}
+
+/*::Divs Experiências::*/
+@media screen and (max-width: 1500px) {
+    .container {
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: 30px;
+    }    
+}
+
+@media screen and (max-width: 950px) {
+    .container {
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 30px;
+    }    
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 20px;
+    }    
+}
+

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifólio</title>
+    <link rel="stylesheet" href="/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media-query.css">
+</head>
+<body>
+<!--Menu-->
+   <header>
+        <a href="#" class="logo">&lt;dev-johnny&gt;</dev-Johnny></a>
+         <menu id="itens">
+            <ul class="nav">
+               <li class="active"><a href="#home">Home</a></li>
+               <li><a href="#sobre">Sobre</a></li>
+               <li><a href="#experiencia">Experiência</a></li>
+               <li><a href="#projetos">Projetos</a></li>
+               <li><a href="#contato">Contato</a></li>
+            </ul>
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+         </menu>
+   </header>
+<!--Home-->   
+   <section id="home">
+    <div class="content">
+        <h2>Johnny Paiva</h2>
+        <p>Desenvolvedor web | Front-End</p>
+        <div class="icones">
+           <a class="linke" href="https://www.linkedin.com/in/paiva-pereira-6b6274192/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
+           <a class="git" href="https://github.com/JohnnyPPaiva" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
+           <a class="insta" href="https://www.instagram.com/johnny.p.paiva/" target="_blank">
+              <ion-icon name="logo-instagram"></ion-icon>
+           </a>
+        </div>
+        <a href="#contato" class="btn">Contate-me</a>
+    </div>
+    <a href="#sobre"><img src="./imagens/Johnny_foto.png" alt="minha foto" id="foto"></a>
+    <a href="#sobre">
+      <ion-icon class="setaPagHome" size="large" name="caret-down"></ion-icon>
+    </a>
+   </section>
+<!--Sobre-->   
+   <section id="sobre">
+            <div class="sobreText">
+              <h2 class="sobreTitulo">Sobre mim</h2>
+              <p>Meu nome é Johnny Pereira Paiva, tenho 35 anos. Trabalho a 14 anos na área de suporte técnico e agora em processo de transição de carreira. Possuo formação técnica em Processamento de Dados pela Escola Santa Izildinha e Mecatrônica pelo Senai Armando de Arruda Pereira. Atualmente cursando Análise e Desenvolvimento de Sistemas pela Universidade Cruzeiro do Sul juntamente a cursos paralelos como o Curso em Video do Gustavo Guanabara e leitura de conteúdos voltados a HTML CSS e Javascript com o objetivo de aprofundar os conhecimentos na área de programação com foco em desenvolvimento web (Front-End).</p>
+            </div>
+            <div id="logos">
+              <a href="https://colegiosantaizildinha.com.br/" target="_blank"><img src="./imagens/santa_logo.png" class="santa" alt="logo escola Santa Izildinha"></a>
+              <a href="https://sp.senai.br/unidade/mecatronica/" target="_blank"><img src="./imagens/senai_logo.png" class="senai" alt="logo Senai"></a>
+              <a href="https://www.cruzeiroead.com.br/" target="_blank"><img src="./imagens/cruzeiro_logo.png" class="cruzeiro" alt="logo Faculdade Cruzeiro"></a>
+            </div>
+      <a href="#experiencia">
+       <ion-icon class="setaPagSobre" size="large" name="caret-down"></ion-icon>
+      </a>
+   </section>
+<!--Experiencia-->   
+   <section id="experiencia">
+      <div class="expText">
+         <h2>Experiência Profissional</h2>
+         <p>Empresas onde atuei na área de TI</p>
+      </div>
+      <div class="container">
+         <div class="box">
+            <div onmouseover="mostraSabesp()" onmouseout="limpa()" class="contentDivExp">
+               <img src="./imagens/sabesp.png" alt="">
+               <h2>Sabesp<br></h2><a href="https://www.sabesp.com.br/site/Default.aspx" target="_blank">Link</a>
+            </div>
+         </div>
+         <div class="box">
+            <div onmouseover="mostraVidax()" onmouseout="limpa()" class="contentDivExp">
+               <img src="./imagens/vidax.png" alt="">
+               <h2>Vidax<br></h2><a href="https://www.linkedin.com/company/vidax-teleservi-os-s-a?originalSubdomain=br" target="_blank">Link</a>
+            </div>
+         </div>
+         <div class="box">
+            <div onmouseover="mostraLbc()" onmouseout="limpa()" class="contentDivExp">
+               <img src="./imagens/lbc.png" alt="">
+               <h2>LBC Sistemas<br></h2><a href="https://lbc.com.br/" target="_blank">Link</a>
+            </div>
+         </div>
+         <div class="box">
+            <div onmouseover="mostraInter()" onmouseout="limpa()" class="contentDivExp">
+               <img src="./imagens/interadapt.png" alt="">
+               <h2>Interadapt<br></h2><a href="https://www.linkedin.com/company/interadapt-solutions/about/" target="_blank">Link</a>
+            </div>
+         </div>
+         <div class="box">
+            <div onmouseover="mostraAhead()" onmouseout="limpa()" class="contentDivExp">
+               <img src="./imagens/ahead.png" alt="">
+               <h2>Ahead<br></h2><a href="http://www.aheadinfra.com.br/" target="_blank">Link</a>
+            </div>
+         </div>
+      </div>
+      <div id="expInfos">
+         <h3 id="textInfos"></h3>
+      </div>
+      <a href="#projetos">
+         <ion-icon class="setaPagExp" size="large" name="caret-down"></ion-icon>
+      </a>
+   </section>
+<!--Projetos-->    
+   <section id="projetos">
+      <div class="projText">
+         <h2>Projetos</h2>
+      </div>
+      <h3 id="htextProj"></h3>
+      <div class="projs">
+         <input type="radio" name="slider" id="item-1" checked>
+         <input type="radio" name="slider" id="item-2">
+         <input type="radio" name="slider" id="item-3">
+         <div class="cards">
+               <label class="card" for="item-1" id="song-1">
+                  <a onclick="mostraTmb()"><img src="./imagens/tmb.png"></a>
+               </label>
+               <label class="card" for="item-2" id="song-2">
+                  <a onclick="mostraConv()"><img src=".imagens/conversor.png"></a>
+               </label>
+               <label class="card" for="item-3" id="song-3">
+                  <a onclick="mostraLogin()"><img src="./imagens/login.png"></a>
+               </label>
+         </div>
+         <div id="projInfos"> 
+            <p id="pTextProj"></p>
+         </div>
+         <a href="./projetos/tmb/index.html" class="btnTmb btns" target="_blank">Acesse</a>
+         <a href="./projetos/Projeto Login/index.html" class="btnLogin btns" target="_blank">Acesse</a>
+         <a href="./projetos/conversor/index.html" class="btnBit btns" target="_blank">Acesse</a>
+      </div>
+      <a href="#contato">
+         <ion-icon class="setaPagProj" size="large" name="caret-down"></ion-icon>
+      </a>
+   </section>
+<!--Contato-->    
+   <section id="contato">
+      <div class="contatoGeral">
+         <div class="contato">
+            <h2>Contato</h2>
+            <form action="https://api.staticforms.xyz/submit" method="post">
+               <label>Nome</label>
+               <input type="text" name="name" placeholder="Informe seu nome" required>
+               <label>Email</label>
+               <input type="text" name="email" placeholder="Informe seu E-mail" autocomplete="off" required>
+               <label>Mensagem</label>
+               <textarea name="message" id="" cols="30" rows="10" placeholder="Digite sua mensagem" required></textarea>
+               <input type="submit" value="Enviar" class="btnContato">
+               <input type="hidden" name="accessKey" value="da3d853c-2703-441a-a7dd-d85218aab183">
+               <input type="hidden" name="redirectTo" value="http://127.0.0.1:5503/thanks.html">
+            </form>
+         </div>
+         <div class="iconsContato">
+            <a href="https://www.facebook.com/johnny.p.paiva" class="icoFace" target="_blank">
+               <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+            <a href="https://www.instagram.com/johnny.p.paiva/" class="icoInsta" target="_blank">
+               <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+            <a href="https://wa.me/5511945831245" class="icoZap" target="_blank">
+               <ion-icon name="logo-whatsapp"></ion-icon>
+            </a>
+            <a href="https://github.com/JohnnyPPaiva" class="icoGit" target="_blank">
+               <ion-icon name="logo-github"></ion-icon>
+            </a>
+            <a href="https://www.linkedin.com/in/paiva-pereira-6b6274192/" class="icoLinke" target="_blank">
+               <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+         </div>
+      </div>
+   </section>
+   <script src="portifolio.js"></script>
+   <script  type = "module"  src = "https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"> </script> 
+   <script  nomodule  src = "https://unpkg .com/ionicons@7.1.0/dist/ionicons/ionicons.js"> </script>
+</body>
+</html>

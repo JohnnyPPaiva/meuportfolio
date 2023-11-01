@@ -1,0 +1,845 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Jura&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Jura&family=Nunito:wght@200&display=swap');
+
+:root {
+    --color-palette1: #aaa;
+    --color-palette2: #1a1818;
+    --color-palette3: #2e2b2b;
+    --color-palette4: #14213D;
+    --color-palette5: #FCA311;
+    --color-palette6: #d63b3b;
+}
+
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html {
+    scroll-behavior: smooth; /*rolagem suave*/
+}
+
+/*::header::*/ 
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 8vh;
+    padding: 20px 100px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    z-index: 10000;
+    backdrop-filter: blur(20px);
+}
+
+.logo {
+    font-family: 'Jura', sans-serif;
+    position: relative;
+    color: var(--color-palette1);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+.logo:hover {
+    color: #fff;
+    transition: 1s;
+}
+
+ul {
+    position: relative;
+    display: flex;
+    gap: 40px;
+}
+
+ul li {
+    list-style: none;
+}
+
+ul li a {
+    font-family: 'Jura', sans-serif;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1em;
+}
+
+ul li.active a,
+ul li:hover a {
+    color: var(--color-palette5)
+}
+
+.mobile-menu {
+    cursor: pointer;
+}
+
+.mobile-menu div {
+    width: 30px;
+    height: 2px;
+    background: #fff;
+    margin: 6px;
+    border-radius: 5px;
+    transition: 1s;
+    display: none;
+}
+
+/*::section home::*/
+#home {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background: var(--color-palette4);
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px;
+}
+
+#home::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 78vw;
+    height: 100vw;
+    background: var(--color-palette2);
+}
+
+#home .content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 650px;
+    z-index: 10;
+}
+
+#home .content h2 {
+    font-family: 'Jura', sans-serif;
+    position: relative;
+    font-size: 4.5em;
+    color: var(--color-palette5);
+}
+
+#home .content p {
+    position: relative;
+    color: #fff;
+    font-size: 1.2em;
+    line-height: 1.6em;
+}
+
+.btn {
+    position: relative;
+    top: 10px;
+    display: inline-block;
+    font-size: 1.15em;
+    max-width: 150px;
+    color: var(--color-palette1);
+    text-align: center;
+    padding: 10px 10px;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    text-decoration: none;
+    border: solid 1px var(--color-palette1);
+    border-radius: 50px;
+}
+
+.btn:hover {
+    color: #fff;
+    border: solid 1px var(--color-palette5);
+    transition: 0.5s;
+    animation: piscar .4s linear;
+}
+
+@keyframes piscar {
+    0% {
+        opacity: 0;
+    }
+    70% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/*icones redes sociais*/
+.icones {
+    position: relative;
+    right: 10px;
+}
+
+.icones a {
+    padding-top: 15px;
+    padding-left: 10px;
+    color: white;
+    font-size: 2.6em;
+    display: inline-block;
+    border: #ffffff;
+    transition: 1s;
+}
+
+.linke:hover {
+    color: #0A66C2;
+}
+
+.git:hover {
+    color: #7C43C6;
+}
+
+.insta:hover {
+    animation: animaLogoInsta 2s linear infinite;
+}
+
+@keyframes animaLogoInsta {
+    0%{
+        color: #0040FF;
+    }
+    50%{
+        color: #B500FF;
+    }
+    100%{
+        color: #0040FF;
+    }
+}
+
+/*setas rodapé*/
+.setaPagHome {
+    position: relative;
+    color: #fff;
+    top: 360px;
+    right: 730px;
+    animation: animaSetaPag 1.5s linear infinite;
+}
+
+.setaPagSobre,
+.setaPagExp {
+    position: relative;
+    left: 50%;
+    top: 100px;
+    color: #fff;
+    animation: animaSetaPag 1.5s linear infinite;
+    z-index: 1;
+}
+
+.setaPagProj {
+    position: relative;
+    color: #fff;
+    top: 500px;
+    animation: animaSetaPag 1.5s linear infinite;
+    z-index: 1;
+}
+
+@keyframes animaSetaPag {
+    0%{
+        transform: translateY(40%);
+    }
+    50%{
+        transform: translateY(0%);
+    }
+    100%{
+        transform: translateY(40%);
+    }
+}
+
+/*foto principal*/
+#foto {
+    position: absolute;
+    right: 150px;
+    bottom: 100px;
+    opacity: 0.7;
+    animation: animaFoto 5s linear infinite;
+}
+
+#foto:hover {
+    opacity: 1;
+    transition: 0.5s;
+}
+
+@keyframes animaFoto {
+    0%{
+        transform: scale(1.05, 1.05);
+    }
+    50%{
+        transform: scale(1, 1);
+    }
+    100%{
+        transform: scale(1.05, 1.05);
+    }
+}
+
+/*::sections::*/
+#sobre,
+#experiencia,
+#projetos,
+#contato {
+    position: relative;
+    min-height: 100vh;
+    padding: 120px 100px;
+}
+
+/*::Section sobre::*/
+#sobre {
+    background: var(--color-palette3);
+    background-image: url(./imagens/Johnny_foto_fundo.png);
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: right top;
+}
+
+.sobreText {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 100px;
+}
+
+.sobreText h2 {
+    font-size: 3em;
+    font-family: 'Jura', sans-serif;
+    color: var(--color-palette5);
+    text-align: center;
+    padding: 30px;
+}
+
+.sobreText p {
+    max-width: 700px;
+    text-align:center;
+    color: var(--color-palette1);
+    font-size: 1em;
+    line-height: 1.6em;
+}
+
+/*logotipos escolas*/
+#logos {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 40px;
+    padding: 40px;
+}
+
+.santa{
+    opacity: 0.7;
+}
+
+.santa:hover {
+    transform: scale(1.1, 1.1);
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.senai{
+    opacity: 0.7;
+}
+
+.senai:hover {
+    transform: scale(1.1, 1.1);
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.cruzeiro{
+    opacity: 0.7;
+}
+
+.cruzeiro:hover {
+    transform: scale(1.1, 1.1);
+    opacity: 1;
+    transition: 0.5s;
+}
+
+/*::section experiencia::*/
+#experiencia {
+    background: var(--color-palette2);
+    background-image: url(./imagens/experiencia_fundo.png);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: fixed;
+}
+
+.expText {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 50px;
+}
+
+.expText h2 {
+    font-size: 3em;
+    font-family: 'Jura', sans-serif;
+    color: var(--color-palette5);
+    text-align: center;
+    padding: 30px;
+}
+
+.expText p {
+    max-width: 700px;
+    text-align:center;
+    color: var(--color-palette1);
+    font-size: 1em;
+    line-height: 1.6em;
+}
+
+.container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(5,1fr);
+    grid-gap: 40px;
+    margin: 40px 0;
+}
+
+.box {
+    position: relative;
+    padding: 20px 10px;
+    width: 250px;
+    height: 250px;
+    background-color: var(--color-palette5);
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 10px 10px 6px rgba(0, 0, 0, 0.849);
+    opacity: 0.9;
+}
+
+.box:hover {
+    position: relative;
+    left: 5px;
+    bottom: 5px;
+    opacity: 1;
+    box-shadow: 4px 4px 2px black;
+}
+
+.box::before {
+    content: '';
+    position: absolute;
+    inset: -10px 0px;
+    background: var(--color-palette5);
+    transition: 1s;
+}
+
+.box:hover::before {
+    inset: -10px 40px;
+    background: var(--color-palette4);
+    animation: animaGirar 7s linear infinite;
+    animation-delay: 1500ms;
+}
+
+.box::after {
+    content: '';
+    position: absolute;
+    inset: 4px;
+    background-color: #fff;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.contentDivExp {
+    position: absolute;;
+    inset: 15px;
+    z-index: 2;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    user-select: none;
+}
+
+.contentDivExp img {
+    position: absolute;
+    max-width: 170px;
+    object-fit: cover; /*tirar desfoque da imagem*/
+    transition: 4s;
+    pointer-events: none; /*evita arrastar imagem*/
+}
+
+.box:hover .contentDivExp img {
+    opacity: 0;
+}
+
+.contentDivExp h2 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.1em;
+    text-align: center;
+    color: var(--color-palette3);
+    line-height: 50px;
+    text-transform: uppercase;
+}
+
+.contentDivExp a {
+    font-size: 0.8em;
+    background: var(--color-palette4);
+    border-radius: 20px;
+    padding: 5px 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.678);
+}
+
+.contentDivExp a:hover {
+    position: relative;
+    left: 1px;
+    top: 1px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.856);
+}
+
+@keyframes animaGirar {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+#expInfos {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#expInfos h3 {
+    font-family: 'Nunito', sans-serif;
+    max-width: 700px;
+    color: var(--color-palette1);
+    text-align: center;
+    font-size: 1.1em;
+    line-height: 1.6em;
+}
+
+/*::projetos::*/
+#projetos {
+    background: var(--color-palette3);
+    padding-top: 60px;
+    background-image: url(./imagens/fundo_Projeto.png);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: right bottom;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projText h2 {
+    font-size: 3em;
+    font-family: 'Jura', sans-serif;
+    color: var(--color-palette5);
+    text-align: center;
+    padding: 10px;
+    padding-bottom: 100px;
+}
+
+#htextProj {
+    position: relative;
+    right: 400px;
+    bottom: 50px;
+    font-family: 'Jura', sans-serif;
+    color: #fff;
+}
+
+.projs {
+    width: 100%;
+    height: 100%;
+    min-width: 500px;
+    max-width: 600px;
+    max-height: 600px;
+    display: flex;
+    transform-style: preserve-3d;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type=radio] {
+    display: none;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 150px;
+    border: dashed 2px var(--color-palette5);
+    box-shadow: 8px 8px 9px black;
+}
+
+.card {
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    cursor: pointer;
+    transition: transform .6s ease;
+}
+
+.cards {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    right: 400px;
+}
+
+#projInfos {
+    position: relative;
+    top: 50px;
+    left: 300px;
+    font-family: 'Nunito', sans-serif;
+    max-width: 700px;
+    color: var(--color-palette1);
+    text-align: center;
+    font-size: 1.1em;
+    line-height: 1.6em;
+    
+}
+
+#item-1:checked ~ .cards #song-3, /*item1 clicado, o item3 (song-3) é jogado para a esquerda*/
+#item-2:checked ~ .cards #song-1, 
+#item-3:checked ~ .cards #song-2 { 
+    transform: translateX(-40%) scale(0.9);
+    top: 10px;
+    opacity: 0.6;
+    z-index: 0;
+} 
+
+#item-1:checked ~ .cards #song-2, /*item1 clicado, o item2 (song-2) é jogado para a direita*/
+#item-2:checked ~ .cards #song-3,
+#item-3:checked ~ .cards #song-1 {
+    transform: translateX(40%) scale(0.9);
+    top: 10px;
+    opacity: 0.6;
+    z-index: 0;
+} 
+
+#item-1:checked ~ .cards #song-1, /*item1 clicado, ele mesmo fica no centro*/
+#item-2:checked ~ .cards #song-2,
+#item-3:checked ~ .cards #song-3 {
+    transform: translateX(0) scale(1);
+    opacity: 1;
+    z-index: 1;
+} 
+
+#item-1:checked ~ .cards #song-1 img,
+#item-2:checked ~ .cards #song-2 img,
+#item-3:checked ~ .cards #song-3 img {
+    box-shadow: 0px 0px 10px 0px rgba(24, 20, 20, 0.904);
+} 
+
+.btns {
+    position: relative;
+    top: 80px;
+    left: 300px;
+    width: 100px;
+    display: none;
+    font-family: 'Nunito', sans-serif;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    padding: 5px 5px;
+    border: 1px solid var(--color-palette5);
+    border-radius: 30px;
+    transition: .5s;
+}
+
+.btns:hover {
+    color: var(--color-palette5);
+    border: 1px solid #fff;
+}
+
+/*::contato::*/
+#contato {
+    background: var(--color-palette2);
+    display: flex;
+    justify-content: center;
+    background-image: url(./imagens/email_fundo.png);
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: left top;
+}
+
+.contato {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    width: 400px;
+    height:550px;
+    background: var(--color-palette1);
+}
+
+.contato h2 {
+    font-family: 'Jura', sans-serif;
+    color: var(--color-palette4);
+    font-size: 2.5em;
+    padding: 5px;
+}
+
+.contato form {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+.contato form label {
+    color: var(--color-palette4);
+    font-size: 17px;
+    text-align: left;
+    margin-bottom: 1px;
+}
+
+.contato form input {
+    padding: 15px;
+    outline: none;
+    border: 0;
+    margin-bottom: 5px;
+    font-size: 15px;
+    transition: all 0.5s;
+}
+
+.contato form input:focus {
+    border-radius: 10px;
+}
+
+.contato form textarea {
+    padding: 10px;
+    outline: none;
+    border: 0;
+    font-size: 15px;
+    margin-bottom: 30px;
+    transition: all 0.5s;
+}
+
+.contato form textarea:focus {
+    border-radius: 10px;
+}
+
+.contato .btnContato {
+    padding: 15px;
+    cursor: pointer;
+    font-size: 15px;
+    background: var(--color-palette4);
+    border: 2px solid #fff;
+    color: #fff;
+    transition: all 1s;
+    margin-bottom: 20px;
+}
+
+.contato .btnContato:hover {
+    background: var(--color-palette5);
+    color: black;
+    border-radius: 10px;
+}
+
+.iconsContato {
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.iconsContato a {
+    color: #fff;
+    font-size: 1.8em;
+}
+
+.icoFace:hover {
+    color: #395498;
+    transition: .5s;
+}
+
+.icoInsta:hover {
+    animation: animaLogoInsta 2s linear infinite;
+}
+
+@keyframes animaLogoInsta {
+    0%{
+        color: #0040FF;
+    }
+    50%{
+        color: #B500FF;
+    }
+    100%{
+        color: #0040FF;
+    }
+}
+
+.icoZap:hover {
+    color: #29AF3E;
+    transition: .5s;
+}
+
+.icoGit:hover {
+    color: #7C43C6;
+    transition: .5s;
+}
+
+.icoLinke:hover {
+   color: #0A66C2;
+   transition: .5s;
+}
+
+/*::Página Thanks::*/
+
+.thanks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background: var(--color-palette3);
+}
+
+.textThanks {
+    color: var(--color-palette1);
+}
+
+.pThanks {
+    color: var(--color-palette1);
+}
+
+.btnThanks {
+    position: relative;
+    top: 10px;
+    width: 150px;
+    font-size: 1em;
+    color: var(--color-palette1);
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+    border: solid 1px var(--color-palette1);
+    transition: all 0.5s;
+}
+
+.btnThanks:hover {
+    border-radius: 10px;
+    background: var(--color-palette4);
+    color: var(--color-palette5);
+}
