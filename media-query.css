@@ -126,17 +126,15 @@
     }
 
     .setaPagHome {
-        top: 360px;
-        right: 50px;
+        display: none;
     }
 
     .setaPagSobre,
     .setaPagExp {
-        right: 10px;
-        top: 10px;
+       display: none;
     }
     .setaPagProj {
-        top: 700px;
+        display: none;
     }
 
 }
@@ -145,7 +143,7 @@
     #foto {
       width: 250px;
       right: 10px;
-      bottom: 200px;
+      bottom: 300px;
     }
     #home .content h2 {
         font-size: 2em;
@@ -197,7 +195,16 @@
         border-radius: 30px;
         transition: .5s;
     }
+
+    .sobreText h2 {
+        font-size: 2em;
+    }
+
+    .projText h2 {
+        font-size: 2em;
+    }
 }
+
 
 /*::Divs Experiências::*/
 @media screen and (max-width: 1500px) {
@@ -215,9 +222,42 @@
 }
 
 @media screen and (max-width: 600px) {
+
+    .expText h2 {
+        font-size: 2em;
+    }
+
     .container {
-        grid-template-columns: repeat(1,1fr);
-        grid-gap: 20px;
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: 30px;
     }    
+
+    .box {
+        position: relative;
+        right: 40px;
+        width: 100px;
+        height: 100px;
+    }
+
+    .box:hover {
+        position: relative;
+        left: -35px;
+        bottom: 0px;
+    }
+
+    .contentDivExp img {
+        position: absolute;
+        max-width: 85px;
+    }
+
+    .contentDivExp h2 {
+        font-size: 0.5em;
+    }
+    
+    .contentDivExp a {
+        font-size: 0.1em;
+        padding: 5px 5px;
+    }
+
 }
 

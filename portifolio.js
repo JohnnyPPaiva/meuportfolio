@@ -52,7 +52,7 @@ let btnBit = document.querySelector(".btnBit")
 
 function mostraTmb() {
     divhProj.innerHTML = "Calculadora de TMB"
-    divpProj.innerHTML = "Projeto feito em HTML, CSS e JavaScript, calcula a taxa de metabolismo basal de acordo com dados informados pelo usuário como sexo, altura, idade e peso, e de acordo com a frequência de atividade diária ele mostra o resultado da TMB e do gasto calórico diário da pessoa"
+    divpProj.innerHTML = "Esse projeto faz o calculo de taxa de metabolismo basal de acordo com dados informados pelo usuário como sexo, altura, idade e peso, e de acordo com a frequência de atividade diária ele mostra a TMB e gasto calórico diário da pessoa"
     btnTmb.style.display = "block"
     btnLogin.style.display = "none"
     btnBit.style.display = "none"
