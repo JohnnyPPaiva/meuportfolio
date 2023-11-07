@@ -400,6 +400,7 @@ ul li:hover a {
     line-height: 1.6em;
 }
 
+/*Circulos com animação*/
 .container {
     display: grid;
     justify-content: center;

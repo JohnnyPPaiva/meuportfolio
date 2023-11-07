@@ -90,7 +90,7 @@
         position: absolute;
         top: 8vh; /*começando logo abaixo do header*/
         right: 0;
-        width: 40vw;
+        width: 45vw;
         height: 92vh; /*tela toda a partir do header*/
         background: #14213d6b;
         flex-direction: column;
@@ -243,6 +243,10 @@
         position: relative;
         left: -35px;
         bottom: 0px;
+    }
+
+    .box:hover::before {
+        inset: -10px 13px;
     }
 
     .contentDivExp img {
