@@ -624,33 +624,63 @@ input[type=radio] {
 
 #item-1:checked ~ .cards #song-3, /*item1 clicado, o item3 (song-3) é jogado para a esquerda*/
 #item-2:checked ~ .cards #song-1, 
-#item-3:checked ~ .cards #song-2 { 
+#item-3:checked ~ .cards #song-5,
+#item-4:checked ~ .cards #song-2,
+#item-5:checked ~ .cards #song-4 { 
     transform: translateX(-40%) scale(0.9);
     top: 10px;
-    opacity: 0.6;
-    z-index: 0;
+    opacity: 0.9;
+    z-index: 1;
 } 
 
 #item-1:checked ~ .cards #song-2, /*item1 clicado, o item2 (song-2) é jogado para a direita*/
-#item-2:checked ~ .cards #song-3,
-#item-3:checked ~ .cards #song-1 {
+#item-2:checked ~ .cards #song-4,
+#item-3:checked ~ .cards #song-1,
+#item-4:checked ~ .cards #song-5,
+#item-5:checked ~ .cards #song-3  {
     transform: translateX(40%) scale(0.9);
     top: 10px;
-    opacity: 0.6;
+    opacity: 0.9;
+    z-index: 1;
+} 
+
+#item-1:checked ~ .cards #song-5, /*item1 clicado, o item2 (song-5) é jogado para a esquerda final*/
+#item-2:checked ~ .cards #song-3,
+#item-3:checked ~ .cards #song-4,
+#item-4:checked ~ .cards #song-1,
+#item-5:checked ~ .cards #song-2  {
+    transform: translateX(-65%) scale(0.8);
+    top: 10px;
+    opacity: 0.4;
+    z-index: 0;
+} 
+
+#item-1:checked ~ .cards #song-4, /*item1 clicado, o item2 (song-4) é jogado para a direita final*/
+#item-2:checked ~ .cards #song-5,
+#item-3:checked ~ .cards #song-2,
+#item-4:checked ~ .cards #song-3,
+#item-5:checked ~ .cards #song-1  {
+    transform: translateX(65%) scale(0.8);
+    top: 10px;
+    opacity: 0.4;
     z-index: 0;
 } 
 
 #item-1:checked ~ .cards #song-1, /*item1 clicado, ele mesmo fica no centro*/
 #item-2:checked ~ .cards #song-2,
-#item-3:checked ~ .cards #song-3 {
+#item-3:checked ~ .cards #song-3,
+#item-4:checked ~ .cards #song-4,
+#item-5:checked ~ .cards #song-5  {
     transform: translateX(0) scale(1);
     opacity: 1;
-    z-index: 1;
+    z-index: 2;
 } 
 
 #item-1:checked ~ .cards #song-1 img,
 #item-2:checked ~ .cards #song-2 img,
-#item-3:checked ~ .cards #song-3 img {
+#item-3:checked ~ .cards #song-3 img,
+#item-4:checked ~ .cards #song-4 img,
+#item-5:checked ~ .cards #song-5 img  {
     box-shadow: 0px 0px 10px 0px rgba(24, 20, 20, 0.904);
 } 
 

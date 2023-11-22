@@ -48,6 +48,7 @@ let divpProj = document.getElementById("pTextProj")
 let btnTmb = document.querySelector(".btnTmb")
 let btnLogin = document.querySelector(".btnLogin")
 let btnBit = document.querySelector(".btnBit")
+let btnMoto = document.querySelector(".btnMoto")
 
 
 function mostraTmb() {
@@ -73,4 +74,22 @@ function mostraLogin() {
     btnTmb.style.display = "none"
     btnLogin.style.display = "block"
     btnBit.style.display = "none"
+}
+
+function mostraMoto() {
+    divhProj.innerHTML = "Calculo de lucro para motoboy de app"
+    divpProj.innerHTML = "Programa que faz o cálculo da média de valores ganhos e gastos em viagens diárias de motoboys em aplicativos, de acordo com kilometragem percorrida, valor do combustível e faturamento total ele mostra os valores que ele obteve de lucro e o quanto gastou em reais em combustível"
+    btnTmb.style.display = "none"
+    btnLogin.style.display = "none"
+    btnBit.style.display = "none"
+    btnMoto.style.display = "block"
+}
+
+function mostraVago() {
+    divhProj.innerHTML = "Vago"
+    divpProj.innerHTML = ""
+    btnTmb.style.display = "none"
+    btnLogin.style.display = "none"
+    btnBit.style.display = "none"
+    btnMoto.style.display = "none"
 }
