@@ -78,7 +78,7 @@ function mostraLogin() {
 
 function mostraMoto() {
     divhProj.innerHTML = "Calculo de lucro para motoboy de app"
-    divpProj.innerHTML = "Programa que faz o cálculo da média de valores ganhos e gastos em viagens diárias de motoboys em aplicativos, de acordo com kilometragem percorrida, valor do combustível e faturamento total ele mostra os valores que ele obteve de lucro e o quanto gastou em reais em combustível"
+    divpProj.innerHTML = "Programa que faz o cálculo da média de valores ganhos e gastos em viagens diárias de motoboys em aplicativos, de acordo com quilometragem percorrida, valor do combustível e faturamento total ele mostra o valor gasto em combustível, lucro e o valor ganho por quilômetro rodado"
     btnTmb.style.display = "none"
     btnLogin.style.display = "none"
     btnBit.style.display = "none"

@@ -4,6 +4,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Jura&family=Nunito:wght@200&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300&display=swap');
+
 :root {
     --color-palette1: #aaa;
     --color-palette2: #1a1818;
@@ -26,7 +28,17 @@ html {
     scroll-behavior: smooth; /*rolagem suave*/
 }
 
-/*::header::*/ 
+/*::-----sections-----::*/
+#sobre,
+#experiencia,
+#projetos,
+#contato {
+    position: relative;
+    min-height: 100vh;
+    padding: 120px 100px;
+}
+
+/*::-----header-----::*/ 
 header{
     position: fixed;
     top: 0;
@@ -92,7 +104,8 @@ ul li:hover a {
     display: none;
 }
 
-/*::section home::*/
+
+/*::-----section home-----::*/
 #home {
     position: relative;
     width: 100%;
@@ -125,16 +138,16 @@ ul li:hover a {
 }
 
 #home .content h2 {
-    font-family: 'Jura', sans-serif;
+    font-family: 'DM Sans', sans-serif;
     position: relative;
-    font-size: 4.5em;
-    color: var(--color-palette5);
+    font-size: 5.5em;
+    color: #fff;
 }
 
 #home .content p {
     position: relative;
-    color: #fff;
-    font-size: 1.2em;
+    color: var(--color-palette5);
+    font-size: 1.5em;
     line-height: 1.6em;
 }
 
@@ -144,21 +157,22 @@ ul li:hover a {
     display: inline-block;
     font-size: 1.15em;
     max-width: 150px;
-    color: var(--color-palette1);
+    color: var(--color-palette4);
     text-align: center;
     padding: 10px 10px;
     font-weight: 500;
     letter-spacing: 0.04em;
     text-decoration: none;
-    border: solid 1px var(--color-palette1);
     border-radius: 50px;
+    background: #fff;
 }
 
 .btn:hover {
-    color: #fff;
+    color: black;
     border: solid 1px var(--color-palette5);
     transition: 0.5s;
-    animation: piscar .4s linear;
+    animation: piscar .6s linear;
+    background: var(--color-palette5);
 }
 
 @keyframes piscar {
@@ -172,6 +186,7 @@ ul li:hover a {
         opacity: 1;
     }
 }
+
 
 /*icones redes sociais*/
 .icones {
@@ -213,50 +228,12 @@ ul li:hover a {
     }
 }
 
-/*setas rodapé*/
-.setaPagHome {
-    position: relative;
-    color: #fff;
-    top: 360px;
-    right: 730px;
-    animation: animaSetaPag 1.5s linear infinite;
-}
-
-.setaPagSobre,
-.setaPagExp {
-    position: relative;
-    left: 50%;
-    top: 100px;
-    color: #fff;
-    animation: animaSetaPag 1.5s linear infinite;
-    z-index: 1;
-}
-
-.setaPagProj {
-    position: relative;
-    color: #fff;
-    top: 500px;
-    animation: animaSetaPag 1.5s linear infinite;
-    z-index: 1;
-}
-
-@keyframes animaSetaPag {
-    0%{
-        transform: translateY(40%);
-    }
-    50%{
-        transform: translateY(0%);
-    }
-    100%{
-        transform: translateY(40%);
-    }
-}
 
 /*foto principal*/
 #foto {
     position: absolute;
-    right: 150px;
-    bottom: 100px;
+    right: 250px;
+    bottom: 150px;
     opacity: 0.7;
     animation: animaFoto 5s linear infinite;
 }
@@ -278,17 +255,8 @@ ul li:hover a {
     }
 }
 
-/*::sections::*/
-#sobre,
-#experiencia,
-#projetos,
-#contato {
-    position: relative;
-    min-height: 100vh;
-    padding: 120px 100px;
-}
 
-/*::Section sobre::*/
+/*::-----Section sobre-----::*/
 #sobre {
     background: var(--color-palette3);
     background-image: url(./imagens/Johnny_foto_fundo.png);
@@ -310,7 +278,7 @@ ul li:hover a {
 .sobreText h2 {
     font-size: 3em;
     font-family: 'Jura', sans-serif;
-    color: var(--color-palette5);
+    color: #fff;
     text-align: center;
     padding: 30px;
 }
@@ -322,6 +290,7 @@ ul li:hover a {
     font-size: 1em;
     line-height: 1.6em;
 }
+
 
 /*logotipos escolas*/
 #logos {
@@ -365,7 +334,8 @@ ul li:hover a {
     transition: 0.5s;
 }
 
-/*::section experiencia::*/
+
+/*::-----section experiencia-----::*/
 #experiencia {
     background: var(--color-palette2);
     background-image: url(./imagens/experiencia_fundo.png);
@@ -387,7 +357,7 @@ ul li:hover a {
 .expText h2 {
     font-size: 3em;
     font-family: 'Jura', sans-serif;
-    color: var(--color-palette5);
+    color: #fff;
     text-align: center;
     padding: 30px;
 }
@@ -399,6 +369,7 @@ ul li:hover a {
     font-size: 1em;
     line-height: 1.6em;
 }
+
 
 /*Circulos com animação*/
 .container {
@@ -533,7 +504,8 @@ ul li:hover a {
     line-height: 1.6em;
 }
 
-/*::projetos::*/
+
+/*::-----projetos-----::*/
 #projetos {
     background: var(--color-palette3);
     padding-top: 60px;
@@ -549,7 +521,7 @@ ul li:hover a {
 .projText h2 {
     font-size: 3em;
     font-family: 'Jura', sans-serif;
-    color: var(--color-palette5);
+    color: #fff;
     text-align: center;
     padding: 10px;
     padding-bottom: 100px;
@@ -582,8 +554,8 @@ input[type=radio] {
 
 .card img {
     width: 100%;
-    border-radius: 150px;
-    border: dashed 2px var(--color-palette5);
+    border-radius: 90px;
+    border: none;
     box-shadow: 8px 8px 9px black;
 }
 
@@ -705,7 +677,8 @@ input[type=radio] {
     border: 1px solid #fff;
 }
 
-/*::contato::*/
+
+/*::-----contato-----::*/
 #contato {
     background: var(--color-palette2);
     display: flex;
@@ -789,6 +762,8 @@ input[type=radio] {
     border-radius: 10px;
 }
 
+
+/*icones contato*/
 .iconsContato {
     padding: 30px;
     display: flex;
@@ -837,7 +812,7 @@ input[type=radio] {
    transition: .5s;
 }
 
-/*::Página Thanks::*/
+/*::-----Página Thanks-----::*/
 
 .thanks {
     display: flex;
@@ -873,4 +848,43 @@ input[type=radio] {
     border-radius: 10px;
     background: var(--color-palette4);
     color: var(--color-palette5);
+}
+
+/*setas rodapé*/
+.setaPagHome {
+    position: relative;
+    color: #fff;
+    top: 360px;
+    right: 730px;
+    animation: animaSetaPag 1.5s linear infinite;
+}
+
+.setaPagSobre,
+.setaPagExp {
+    position: relative;
+    left: 50%;
+    top: 100px;
+    color: #fff;
+    animation: animaSetaPag 1.5s linear infinite;
+    z-index: 1;
+}
+
+.setaPagProj {
+    position: relative;
+    color: #fff;
+    top: 500px;
+    animation: animaSetaPag 1.5s linear infinite;
+    z-index: 1;
+}
+
+@keyframes animaSetaPag {
+    0%{
+        transform: translateY(40%);
+    }
+    50%{
+        transform: translateY(0%);
+    }
+    100%{
+        transform: translateY(40%);
+    }
 }
