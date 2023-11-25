@@ -57,6 +57,7 @@ function mostraTmb() {
     btnTmb.style.display = "block"
     btnLogin.style.display = "none"
     btnBit.style.display = "none"
+    btnMoto.style.display = "none"
    
 }
 
@@ -66,6 +67,7 @@ function mostraConv() {
     btnTmb.style.display = "none"
     btnLogin.style.display = "none"
     btnBit.style.display = "block"
+    btnMoto.style.display = "none"
 }
 
 function mostraLogin() {
@@ -74,6 +76,7 @@ function mostraLogin() {
     btnTmb.style.display = "none"
     btnLogin.style.display = "block"
     btnBit.style.display = "none"
+    btnMoto.style.display = "none"
 }
 
 function mostraMoto() {

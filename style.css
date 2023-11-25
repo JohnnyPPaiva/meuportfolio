@@ -6,6 +6,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@600&family=Outfit:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@600&family=Outfit:wght@700&family=Sacramento&display=swap');
+
 :root {
     --color-palette1: #aaa;
     --color-palette2: #1a1818;
@@ -54,12 +58,12 @@ header{
 }
 
 .logo {
-    font-family: 'Jura', sans-serif;
+    font-family: 'Sacramento', cursive;
+    /*font-family: 'Jura', sans-serif;*/
     position: relative;
     color: var(--color-palette1);
     text-decoration: none;
-    font-weight: 700;
-    font-size: 1.5em;
+    font-size: 2.2em;
 }
 
 .logo:hover {
@@ -138,15 +142,20 @@ ul li:hover a {
 }
 
 #home .content h2 {
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'Jost', sans-serif;
+    /*font-family: 'DM Sans', sans-serif;*/
     position: relative;
-    font-size: 5.5em;
+    font-size: 5em;
     color: #fff;
+}
+
+.colorName {
+    color: var(--color-palette5);
 }
 
 #home .content p {
     position: relative;
-    color: var(--color-palette5);
+    color: #fff;
     font-size: 1.5em;
     line-height: 1.6em;
 }
@@ -232,7 +241,7 @@ ul li:hover a {
 /*foto principal*/
 #foto {
     position: absolute;
-    right: 250px;
+    right: 350px;
     bottom: 150px;
     opacity: 0.7;
     animation: animaFoto 5s linear infinite;
@@ -277,7 +286,7 @@ ul li:hover a {
 
 .sobreText h2 {
     font-size: 3em;
-    font-family: 'Jura', sans-serif;
+    font-family: 'Jost', sans-serif;
     color: #fff;
     text-align: center;
     padding: 30px;
@@ -356,18 +365,20 @@ ul li:hover a {
 
 .expText h2 {
     font-size: 3em;
-    font-family: 'Jura', sans-serif;
+    font-family: 'Jost', sans-serif;
     color: #fff;
     text-align: center;
     padding: 30px;
 }
 
 .expText p {
+    font-family: 'Nunito', sans-serif;
     max-width: 700px;
     text-align:center;
     color: var(--color-palette1);
-    font-size: 1em;
+    font-size: 1.2em;
     line-height: 1.6em;
+    font-weight: 700;
 }
 
 
@@ -520,7 +531,7 @@ ul li:hover a {
 
 .projText h2 {
     font-size: 3em;
-    font-family: 'Jura', sans-serif;
+    font-family: 'Jost', sans-serif;
     color: #fff;
     text-align: center;
     padding: 10px;
@@ -531,7 +542,7 @@ ul li:hover a {
     position: relative;
     right: 400px;
     bottom: 50px;
-    font-family: 'Jura', sans-serif;
+    font-family: 'Jost', sans-serif;
     color: #fff;
 }
 
@@ -568,6 +579,10 @@ input[type=radio] {
     margin: auto;
     cursor: pointer;
     transition: transform .6s ease;
+}
+
+.card img:hover {
+    box-shadow: 8px 8px 9px rgba(0, 0, 0, 0.719);
 }
 
 .cards {
@@ -663,18 +678,18 @@ input[type=radio] {
     width: 100px;
     display: none;
     font-family: 'Nunito', sans-serif;
-    color: #fff;
+    font-weight: 700;
+    color: #000;
     text-decoration: none;
     text-align: center;
     padding: 5px 5px;
-    border: 1px solid var(--color-palette5);
     border-radius: 30px;
     transition: .5s;
+    background: #fff;
 }
 
 .btns:hover {
-    color: var(--color-palette5);
-    border: 1px solid #fff;
+    background: var(--color-palette5);
 }
 
 
@@ -689,6 +704,11 @@ input[type=radio] {
     background-position: left top;
 }
 
+.contatoGeral {
+    position: relative;
+    top: 100px;
+}
+
 .contato {
     display: flex;
     align-items: center;
@@ -700,8 +720,8 @@ input[type=radio] {
 }
 
 .contato h2 {
-    font-family: 'Jura', sans-serif;
-    color: var(--color-palette4);
+    font-family: 'Jost', sans-serif;
+    color: #fff;
     font-size: 2.5em;
     padding: 5px;
 }
@@ -714,6 +734,7 @@ input[type=radio] {
 
 .contato form label {
     color: var(--color-palette4);
+    font-weight: 550;
     font-size: 17px;
     text-align: left;
     margin-bottom: 1px;
@@ -750,7 +771,7 @@ input[type=radio] {
     cursor: pointer;
     font-size: 15px;
     background: var(--color-palette4);
-    border: 2px solid #fff;
+    
     color: #fff;
     transition: all 1s;
     margin-bottom: 20px;
