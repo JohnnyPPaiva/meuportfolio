@@ -91,7 +91,8 @@ ul li a {
 
 ul li.active a,
 ul li:hover a {
-    color: var(--color-palette5)
+    color: var(--color-palette5);
+    transition: 1s;
 }
 
 .mobile-menu {
