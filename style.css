@@ -11,12 +11,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@600&family=Outfit:wght@700&family=Sacramento&display=swap');
 
 :root {
+    --color-palette0: #d3d1d1;
     --color-palette1: #aaa;
     --color-palette2: #1a1818;
     --color-palette3: #2e2b2b;
     --color-palette4: #14213D;
     --color-palette5: #FCA311;
     --color-palette6: #d63b3b;
+    --color-palette7: #e06817;
 }
 
 *,
@@ -93,6 +95,20 @@ ul li.active a,
 ul li:hover a {
     color: var(--color-palette5);
     transition: 1s;
+    animation: animaBtn .5s linear;
+}
+
+@keyframes animaBtn {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+    
 }
 
 .mobile-menu {
@@ -148,10 +164,12 @@ ul li:hover a {
     position: relative;
     font-size: 5em;
     color: #fff;
+    font-weight: 800;
 }
 
 .colorName {
-    color: var(--color-palette5);
+    color: #e06817; 
+    
 }
 
 #home .content p {
@@ -179,10 +197,10 @@ ul li:hover a {
 
 .btn:hover {
     color: black;
-    border: solid 1px var(--color-palette5);
+    border: solid 1px var(--color-palette7);
     transition: 0.5s;
     animation: piscar .6s linear;
-    background: var(--color-palette5);
+    background: var(--color-palette7);
 }
 
 @keyframes piscar {
@@ -288,7 +306,7 @@ ul li:hover a {
 .sobreText h2 {
     font-size: 3em;
     font-family: 'Jost', sans-serif;
-    color: #fff;
+    color: var(--color-palette0);
     text-align: center;
     padding: 30px;
 }
@@ -367,7 +385,7 @@ ul li:hover a {
 .expText h2 {
     font-size: 3em;
     font-family: 'Jost', sans-serif;
-    color: #fff;
+    color: var(--color-palette0);
     text-align: center;
     padding: 30px;
 }
@@ -398,7 +416,7 @@ ul li:hover a {
     padding: 20px 10px;
     width: 250px;
     height: 250px;
-    background-color: var(--color-palette5);
+    background-color: var(--color-palette7);
     border-radius: 50%;
     overflow: hidden;
     box-shadow: 10px 10px 6px rgba(0, 0, 0, 0.849);
@@ -417,7 +435,7 @@ ul li:hover a {
     content: '';
     position: absolute;
     inset: -10px 0px;
-    background: var(--color-palette5);
+    background: var(--color-palette7);
     transition: 1s;
 }
 
@@ -533,7 +551,7 @@ ul li:hover a {
 .projText h2 {
     font-size: 3em;
     font-family: 'Jost', sans-serif;
-    color: #fff;
+    color: var(--color-palette0);
     text-align: center;
     padding: 10px;
     padding-bottom: 100px;
@@ -544,7 +562,7 @@ ul li:hover a {
     right: 400px;
     bottom: 50px;
     font-family: 'Jost', sans-serif;
-    color: #fff;
+    color: var(--color-palette0);
 }
 
 .projs {
@@ -566,8 +584,7 @@ input[type=radio] {
 
 .card img {
     width: 100%;
-    border-radius: 90px;
-    border: none;
+    border-radius: 20px;
     box-shadow: 8px 8px 9px black;
 }
 
@@ -690,7 +707,7 @@ input[type=radio] {
 }
 
 .btns:hover {
-    background: var(--color-palette5);
+    background: var(--color-palette7);
 }
 
 
@@ -779,7 +796,7 @@ input[type=radio] {
 }
 
 .contato .btnContato:hover {
-    background: var(--color-palette5);
+    background: var(--color-palette7);
     color: black;
     border-radius: 10px;
 }
@@ -868,7 +885,7 @@ input[type=radio] {
 
 .btnThanks:hover {
     border-radius: 10px;
-    background: var(--color-palette4);
+    background: var(--color-palette7);
     color: var(--color-palette5);
 }
 

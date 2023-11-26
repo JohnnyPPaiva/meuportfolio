@@ -15,6 +15,10 @@ menuToggle.onclick = function() {
     header.classList.toggle('active')
 }
 
+function fechaMenu() {
+    header.classList.toggle('active')
+}
+
 /*::functions experiencia::*/
 let divExp = document.getElementById("textInfos");
 
@@ -96,3 +100,4 @@ function mostraVago() {
     btnBit.style.display = "none"
     btnMoto.style.display = "none"
 }
+
