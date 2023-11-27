@@ -891,27 +891,35 @@ input[type=radio] {
 
 /*setas rodapé*/
 .setaPagHome {
-    position: relative;
+    position: absolute;
+    left: 50%;
     color: #fff;
-    top: 360px;
-    right: 730px;
+    top: 788px;
     animation: animaSetaPag 1.5s linear infinite;
 }
 
-.setaPagSobre,
-.setaPagExp {
-    position: relative;
+.setaPagSobre {
+    position: absolute;
     left: 50%;
-    top: 100px;
+    top: 788px;
+    color: #fff;
+    animation: animaSetaPag 1.5s linear infinite;
+    z-index: 1;
+}
+
+.setaPagExp {
+    position: absolute;
+    left: 50%;
+    top: 788px;
     color: #fff;
     animation: animaSetaPag 1.5s linear infinite;
     z-index: 1;
 }
 
 .setaPagProj {
-    position: relative;
+    position: absolute;
     color: #fff;
-    top: 500px;
+    top: 788px;
     animation: animaSetaPag 1.5s linear infinite;
     z-index: 1;
 }
