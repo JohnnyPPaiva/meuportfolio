@@ -894,14 +894,14 @@ input[type=radio] {
     position: absolute;
     left: 50%;
     color: #fff;
-    top: 788px;
+    top: 850px;
     animation: animaSetaPag 1.5s linear infinite;
 }
 
 .setaPagSobre {
     position: absolute;
     left: 50%;
-    top: 788px;
+    top: 850px;
     color: #fff;
     animation: animaSetaPag 1.5s linear infinite;
     z-index: 1;
@@ -910,7 +910,7 @@ input[type=radio] {
 .setaPagExp {
     position: absolute;
     left: 50%;
-    top: 788px;
+    top: 850px;
     color: #fff;
     animation: animaSetaPag 1.5s linear infinite;
     z-index: 1;
@@ -919,7 +919,7 @@ input[type=radio] {
 .setaPagProj {
     position: absolute;
     color: #fff;
-    top: 788px;
+    top: 850px;
     animation: animaSetaPag 1.5s linear infinite;
     z-index: 1;
 }
