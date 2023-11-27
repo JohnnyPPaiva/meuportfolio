@@ -9,23 +9,27 @@ list.forEach((i) =>
 i.addEventListener('click',active))
 
 function marcaMenu() {
-    let sections = document.querySelectorAll('section')
-    let scrollPosition = window.scrollY || document.documentElement.scrollTop
+    var sections = document.querySelectorAll('section');
+    var scrollPosition = window.scrollY || document.documentElement.scrollTop;
 
     sections.forEach(function (section) {
-        let link = document.querySelector('a[href="#' + section.id + '"]')
+        var link = document.querySelector('a[href="#' + section.id + '"]');
         if (section.offsetTop <= scrollPosition && (section.offsetTop + section.offsetHeight) > scrollPosition) {
+            // Remove a classe "active" de todos os itens do menu
             document.querySelectorAll('.nav li').forEach(function (menuItem) {
-                menuItem.classList.remove('active')
-            })
+                menuItem.classList.remove('active');
+            });
 
-            link.parentNode.classList.add('active')
+            // Adiciona a classe "active" ao item do menu correspondente à seção visível
+            link.parentNode.classList.add('active');
         }
-    })
+    });
 }
 
+// Adiciona um ouvinte de evento de rolagem para chamar a função markMenu
 window.addEventListener('scroll', marcaMenu);
 
+// Adiciona um ouvinte de evento de carregamento da página para chamar a função markMenu inicialmente
 window.addEventListener('load', marcaMenu);
 
 /*::menu hamburguer::*/
