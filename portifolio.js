@@ -8,6 +8,26 @@ function active() {
 list.forEach((i) =>
 i.addEventListener('click',active))
 
+function marcaMenu() {
+    let sections = document.querySelectorAll('section')
+    let scrollPosition = window.scrollY || document.documentElement.scrollTop
+
+    sections.forEach(function (section) {
+        let link = document.querySelector('a[href="#' + section.id + '"]')
+        if (section.offsetTop <= scrollPosition && (section.offsetTop + section.offsetHeight) > scrollPosition) {
+            document.querySelectorAll('.nav li').forEach(function (menuItem) {
+                menuItem.classList.remove('active')
+            })
+
+            link.parentNode.classList.add('active')
+        }
+    })
+}
+
+window.addEventListener('scroll', marcaMenu);
+
+window.addEventListener('load', marcaMenu);
+
 /*::menu hamburguer::*/
 let menuToggle = document.querySelector('.mobile-menu')
 let header = document.querySelector('header')
