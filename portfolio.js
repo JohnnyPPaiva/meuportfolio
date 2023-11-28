@@ -119,7 +119,7 @@ function mostraMoto() {
 }
 
 function mostraVago() {
-    divhProj.innerHTML = "Área Disponível"
+    divhProj.innerHTML = "Novo projeto em breve"
     divpProj.innerHTML = ""
     btnTmb.style.display = "none"
     btnLogin.style.display = "none"
