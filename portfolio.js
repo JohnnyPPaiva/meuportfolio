@@ -92,7 +92,7 @@ function mostraTmb() {
 }
 
 function mostraConv() {
-    divhProj.innerHTML = "Conversor Binário e Decimal"
+    divhProj.innerHTML = "Conversor Binário"
     divpProj.innerHTML = "Projeto simples feito em HTML, CSS e JavaScript, ele executa a conversão de um número binário em decimal ou um decimal em binário"
     btnTmb.style.display = "none"
     btnLogin.style.display = "none"
@@ -110,7 +110,7 @@ function mostraLogin() {
 }
 
 function mostraMoto() {
-    divhProj.innerHTML = "Cálculo para motoboy"
+    divhProj.innerHTML = "Cálculo de lucro (app motoboy)"
     divpProj.innerHTML = "Programa que faz o cálculo de ganhos e gastos em viagens de motoboys em aplicativos, de acordo com kilometragem percorrida e gastos com combustível"
     btnTmb.style.display = "none"
     btnLogin.style.display = "none"
@@ -119,7 +119,7 @@ function mostraMoto() {
 }
 
 function mostraVago() {
-    divhProj.innerHTML = "Vago"
+    divhProj.innerHTML = "Área Disponível"
     divpProj.innerHTML = ""
     btnTmb.style.display = "none"
     btnLogin.style.display = "none"
