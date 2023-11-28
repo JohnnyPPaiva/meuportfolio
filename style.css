@@ -294,6 +294,10 @@ ul li:hover a {
 }
 
 .sobreText {
+    font-family: 'Nunito', sans-serif;
+    color: var(--color-palette1);
+    font-size: 1.1em;
+    line-height: 1.6em;
     position: relative;
     width: 100%;
     display: flex;
