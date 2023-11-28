@@ -865,8 +865,9 @@ input[type=radio] {
 
 .btnThanks:hover {
     border-radius: 10px;
+    border: none;
     background: var(--color-palette7);
-    color: var(--color-palette5);
+    color: var(--color-palette2);
 }
 
 /*setas rodapé*/
