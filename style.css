@@ -196,7 +196,7 @@ ul li:hover a {
 }
 
 .btn:hover {
-    color: black;
+    color: #fff;
     border: solid 1px var(--color-palette7);
     transition: 0.5s;
     animation: piscar .6s linear;
