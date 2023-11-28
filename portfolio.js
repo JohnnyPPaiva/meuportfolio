@@ -26,10 +26,10 @@ function marcaMenu() {
     });
 }
 
-// Adiciona um ouvinte de evento de rolagem para chamar a função markMenu
+// Adiciona um ouvinte de evento de rolagem para chamar a função marcaMenu
 window.addEventListener('scroll', marcaMenu);
 
-// Adiciona um ouvinte de evento de carregamento da página para chamar a função markMenu inicialmente
+// Adiciona um ouvinte de evento de carregamento da página para chamar a função marcaMenu inicialmente
 window.addEventListener('load', marcaMenu);
 
 /*::menu hamburguer::*/
@@ -81,7 +81,7 @@ let btnMoto = document.querySelector(".btnMoto")
 
 function mostraTmb() {
     divhProj.innerHTML = "Calculadora de TMB"
-    divpProj.innerHTML = "Esse projeto faz o calculo de taxa de metabolismo basal de acordo com dados informados pelo usuário como sexo, altura, idade e peso, e de acordo com a frequência de atividade diária ele mostra a TMB e gasto calórico diário da pessoa"
+    divpProj.innerHTML = "Esse projeto é um sistema que faz o cálculo da taxa de metabolismo basal de acordo com dados informados pelo usuário como sexo, altura, idade e peso, e de acordo com a frequência de atividade diária ele mostra a TMB e gasto calórico diário da pessoa"
     btnTmb.style.display = "block"
     btnLogin.style.display = "none"
     btnBit.style.display = "none"
@@ -108,7 +108,7 @@ function mostraLogin() {
 }
 
 function mostraMoto() {
-    divhProj.innerHTML = "Calculo de lucro para motoboy de app"
+    divhProj.innerHTML = "Cálculo de lucro para motoboy de app"
     divpProj.innerHTML = "Programa que faz o cálculo da média de valores ganhos e gastos em viagens diárias de motoboys em aplicativos, de acordo com quilometragem percorrida, valor do combustível e faturamento total ele mostra o valor gasto em combustível, lucro e o valor ganho por quilômetro rodado"
     btnTmb.style.display = "none"
     btnLogin.style.display = "none"

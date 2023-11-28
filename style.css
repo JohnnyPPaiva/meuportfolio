@@ -332,31 +332,11 @@ ul li:hover a {
     padding: 40px;
 }
 
-.santa{
+.logoCursos {
     opacity: 0.7;
 }
 
-.santa:hover {
-    transform: scale(1.1, 1.1);
-    opacity: 1;
-    transition: 0.5s;
-}
-
-.senai{
-    opacity: 0.7;
-}
-
-.senai:hover {
-    transform: scale(1.1, 1.1);
-    opacity: 1;
-    transition: 0.5s;
-}
-
-.cruzeiro{
-    opacity: 0.7;
-}
-
-.cruzeiro:hover {
+.logoCursos:hover {
     transform: scale(1.1, 1.1);
     opacity: 1;
     transition: 0.5s;
@@ -739,7 +719,7 @@ input[type=radio] {
 
 .contato h2 {
     font-family: 'Jost', sans-serif;
-    color: #fff;
+    color: var(--color-palette4);
     font-size: 2.5em;
     padding: 5px;
 }
