@@ -869,7 +869,7 @@ input[type=radio] {
     border-radius: 10px;
     border: none;
     background: var(--color-palette7);
-    color: var(--color-palette2);
+    color: #fff;
 }
 
 /*setas rodapé*/
