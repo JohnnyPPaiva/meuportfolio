@@ -154,6 +154,46 @@
 
 @media screen and (max-width: 700px) {
     
+  
+    .nav {
+        position: absolute;
+        top: 8vh; /*começando logo abaixo do header*/
+        right: 0;
+        width: 55vw;
+        height: 92vh; /*tela toda a partir do header*/
+        background: #14213d6b;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transform: translateX(100%); /*joga menu pra fora lado direito*/
+        transition: 1s;
+    }
+
+    .nav li {
+        opacity: 1;
+    }
+
+    .mobile-menu div {
+        display: block;
+    }
+
+    header.active .nav {
+        transform: translateX(0%);
+        transition: 1s;
+    }
+
+    header.active .mobile-menu .line1 {
+        transform: rotate(-45deg) translate(-5px, 7px); 
+    }
+         
+    header.active .mobile-menu .line2 {
+        opacity: 0;
+    }
+         
+    header.active .mobile-menu .line3 {
+        transform: rotate(45deg) translate(-5px, -7px); 
+    }
+
     #foto {
       width: 250px;
       right: 20%;
@@ -194,7 +234,7 @@
     }
 
     .mobile-menu {
-        right: 80px;
+        right: 150px;
     }
 
     .nav {
