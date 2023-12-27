@@ -1,27 +1,29 @@
 /*::links ativos no menu::*/
-let list = document.querySelectorAll('.nav li') /**/
-function active() {
+let list = document.querySelectorAll('.nav li')
+
+function menuActive() {
     list.forEach((i) => 
     i.classList.remove("active"))
     this.classList.add("active")
 }
 list.forEach((i) =>
-i.addEventListener('click',active))
+i.addEventListener('click',menuActive))
 
 function marcaMenu() {
-    var sections = document.querySelectorAll('section');
-    var scrollPosition = window.scrollY || document.documentElement.scrollTop;
-
+    var sections = document.querySelectorAll('section')
+    var scrollPosition = window.scrollY || document.documentElement.scrollTop
+    
     sections.forEach(function (section) {
-        var link = document.querySelector('a[href="#' + section.id + '"]');
+        var link = document.querySelector('a[href="#' + section.id + '"]')
+        //verifica se a parte vertical do topo e inferior estão visiveis na tela 
         if (section.offsetTop <= scrollPosition && (section.offsetTop + section.offsetHeight) > scrollPosition) {
             // Remove a classe "active" de todos os itens do menu
-            document.querySelectorAll('.nav li').forEach(function (menuItem) {
-                menuItem.classList.remove('active');
+            list.forEach(function (menuItem) {
+                menuItem.classList.remove('active')
             });
 
             // Adiciona a classe "active" ao item do menu correspondente à seção visível
-            link.parentNode.classList.add('active');
+            link.parentNode.classList.add('active')
         }
     });
 }
@@ -31,6 +33,7 @@ window.addEventListener('scroll', marcaMenu);
 
 // Adiciona um ouvinte de evento de carregamento da página para chamar a função marcaMenu inicialmente
 window.addEventListener('load', marcaMenu);
+
 
 /*::menu hamburguer::*/
 let menuToggle = document.querySelector('.mobile-menu')
@@ -82,7 +85,7 @@ let btnMuscl = document.querySelector(".btnMuscle")
 
 function mostraTmb() {
     divhProj.innerHTML = "Calculadora de TMB"
-    divpProj.innerHTML = "Esse projeto é um sistema que faz o cálculo da taxa de metabolismo basal de acordo com dados informados pelo usuário como sexo, altura, idade e peso, e de acordo com a frequência de atividade diária ele mostra a TMB e gasto calórico diário da pessoa"
+    divpProj.innerHTML = "Projeto feito em HTML, CSS e JavaScript, calcula a taxa de metabolismo basal de acordo com dados informados pelo usuário como sexo, altura, idade e peso, e de acordo com a frequência de atividade diária ele mostra o resultado da TMB e do gasto calórico diário da pessoa"
     btnTmb.style.display = "block"
     btnLogin.style.display = "none"
     btnBit.style.display = "none"
@@ -91,7 +94,7 @@ function mostraTmb() {
 }
 
 function mostraConv() {
-    divhProj.innerHTML = "Conversor Binário e Decimal"
+    divhProj.innerHTML = "Conversor Binário"
     divpProj.innerHTML = "Projeto simples feito em HTML, CSS e JavaScript, ele executa a conversão de um número binário em decimal ou um decimal em binário"
     btnTmb.style.display = "none"
     btnLogin.style.display = "none"
@@ -129,4 +132,3 @@ function mostraMuscle() {
     btnMoto.style.display = "none"
     btnMuscl.style.display = "block"
 }
-

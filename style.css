@@ -417,6 +417,10 @@ ul li:hover a {
 }
 
 .sobreText {
+    font-family: 'Nunito', sans-serif;
+    color: var(--color-palette1);
+    font-size: 1.1em;
+    line-height: 1.6em;
     position: relative;
     width: 100%;
     display: flex;
@@ -1103,8 +1107,9 @@ input[type=radio] {
 
 .btnThanks:hover {
     border-radius: 10px;
+    border: none;
     background: var(--color-palette7);
-    color: var(--color-palette5);
+    color: #fff;
 }
 
 /*setas rodapé*/
