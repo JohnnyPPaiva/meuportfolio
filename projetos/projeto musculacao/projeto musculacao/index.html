@@ -1,0 +1,1540 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treinos de Musculação</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleAdd.css">
+    <link rel="stylesheet" href="media_query.css">
+</head>
+<body>
+    <header>
+        <span>
+            <img class="iconePrinc" src="./imagens/male-silhouette-variant-showing-muscles_30544.png" alt="">
+        </span>
+        <nav>
+            <ul class="ul">
+                <li><a href="./projetos/tmb/index.html" class="tmbMenu" target="_blank">Calculadora TMB</a></li>
+                <li><a href="#" onclick="training()" class="trainingMenu">Meu Treino</a></li>
+            </ul>
+            <div class="mobileMenu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+    <section id="home">
+        <h1>Principais Exercícios de Musculação</h1>
+        <div class="principal">
+            <a href="#" onclick="peitoral()">
+                <div class="exerc">
+                    <img src="./imagens/peito.png" alt="peitoral">
+                    <h3>Peito</h3>
+                </div>
+            </a>
+            <a href="#" onclick="triceps()">
+                <div class="exerc">
+                    <img src="./imagens/triceps.png" alt="triceps">
+                    <h3>Triceps</h3>
+                </div>
+            </a>
+            <a href="#" onclick="costas()">
+                <div class="exerc">
+                    <img src="./imagens/costas.png" alt="costas">
+                    <h3>Costas</h3>
+                </div>
+            </a>
+            <a href="#" onclick="biceps()">
+                <div class="exerc">
+                    <img src="./imagens/biceps.png" alt="biceps">
+                    <h3>Biceps</h3>
+                </div>
+            </a>
+            <a href="#" onclick="pernas()">
+                <div class="exerc">
+                    <img src="./imagens/pernas.png" alt="pernas">
+                    <h3>Pernas</h3>
+                </div>
+            </a>
+            <a href="#" onclick="ombros()">
+                <div class="exerc">
+                    <img src="./imagens/ombro.png" alt="ombros">
+                    <h3>Ombros</h3>
+                </div>
+            </a>
+        </div>
+    </section>
+    <div class="treino">
+        <ion-icon class="fecharTreino" onclick="training()" name="close-outline"></ion-icon>
+        <h2 class="tituloFichaPeito">Peito</h2>
+        <p class="respostaTreinoPeito"></p>
+        <h2 class="tituloFichaTriceps">Triceps</h2>
+        <p class="respostaTreinoTriceps"></p>
+        <h2 class="tituloFichaCostas">Costas</h2>
+        <p class="respostaTreinoCostas"></p> 
+        <h2 class="tituloFichaBiceps">Biceps</h2>
+        <p class="respostaTreinoBiceps"></p>
+        <h2 class="tituloFichaPernas">Pernas</h2>
+        <p class="respostaTreinoPernas"></p>
+        <h2 class="tituloFichaOmbros">Ombros</h2>
+        <p class="respostaTreinoOmbros"></p>  
+        <ion-icon class="print" onclick="imprimirTexto()" name="print-outline"></ion-icon>
+        <ion-icon class="reload" onclick="reload()" name="reload-outline" ></ion-icon>    
+    </div>
+    <ion-icon name="close-outline" class="exit chests" onclick="peitoral()"></ion-icon>
+    <div class="peitoral divPrinc">
+        <div class="container">
+            <h2 class="tituloDiv">Clique nas imagens para adicionar ao seu treino</h2>
+            <div class="content">
+                <div class="imagens">
+                    <a href="#" onclick="supReto()"><img src="./imagens/peito/peito1.png" alt=""></a>
+                </div>
+                <div class="textos">
+                    
+                    <h2>Supino reto com barra</h2><br>
+                    <p>
+                        Um dos clássicos exercícios para peito. Deite em um banco reto. Os joelhos devem estar flexionados, os pés firmes no suporte ou chão, as costas levemente arqueadas e os glúteos bem estabilizados no banco.
+                    </p><br>
+                    <p>
+                        1-Pegue a barra com as mãos separadas em uma distância maior do que a largura dos ombros. Retire o peso do suporte, segurando-o na linha do peito com os cotovelos estendidos.
+                    </p><br>
+                    <p>
+                        2-Desça a barra até o peito de maneira controlada com os punhos retos, fazendo o movimento de flexão dos cotovelos para baixo. Faça uma pequena pausa e empurre a barra para cima.
+                    </p><br>
+                    <p>
+                        3-A força do movimento deve estar no peito, e não nos braços. Durante essa etapa, os ombros devem ser mantidos para atrás e as escápulas devem permanecer fixas no banco.
+                    </p><br>
+                    <p>
+                        4-Ao finalizar as repetições, devolva cuidadosamente a barra ao suporte. É aconselhável contar com o acompanhamento de alguém durante a execução do supino reto com barra.
+                    </p>
+                </div>
+            </div>
+            <div class="content">
+                <div class="imagens">
+                    <a href="#" onclick="supRetoHalt()"><img src="./imagens/peito/peito2.png" alt=""></a>
+                </div>
+                <div class="textos">
+                    <h2>Supino reto com halteres</h2><br>
+                    <p>
+                        Sente em um banco reto com um halter em cada uma das coxas. Com o auxílio das pernas, suba os pesos ao mesmo tempo em que deita o corpo para trás, firmando bem as costas e os glúteos no banco.
+                    </p><br>
+                    <p>
+                        1-Com os cotovelos estendidos, segure um halter deitado em cada mão. A pegada deve ser com os polegares voltados para o lado de dentro. Um deve estar próximo ao outro, com ambos na altura do peito.
+                    </p><br>
+                    <p>
+                        2-Desça os halteres de modo controlado, fazendo o movimento de flexão dos cotovelos até que as cargas alcancem a altura do peito. Durante a execução desta parte, alongar bem os músculos do peitoral.
+                    </p><br>    
+                    <p>
+                        3-Empurre os pesos para cima, deixando um halter bem próximo ao outro, até os cotovelos se estenderem. A força deve estar concentrada nos músculos do peitoral. Somente os braços devem subir, os ombros devem ser mantidos encaixados para trás.
+                    </p><br>
+                    <p>
+                        4-Ao finalizar o exercício, gire os halteres e apoiá-los nas pernas, voltando a se sentar. Finalmente, posicionar os halteres no chão com segurança.
+                    </p>
+                </div>
+            </div>
+            <div class="content">
+                <div class="imagens">
+                    <a href="#" onclick="flexBraco()"><img src="./imagens/peito/peito3.png" alt=""></a>
+                </div>
+                <div class="textos">
+                    <h2>Flexão de braços básica</h2><br>
+                    <p>
+                        As flexões são um dos exercícios para peito mais conhecidos. A básica inicia na posição de quatro no chão ou em cima de uma esteira ou colchonete.
+                    </p><br>
+                    <p>
+                        As mãos ficam separadas e alinhadas com a parte superior do peito, enquanto as pernas são estendidas para trás e os pés mantidos juntos.
+                    </p><br>
+                    <p>
+                        1-Forme uma prancha com o corpo, deixando as costas eretas e em linha com as pernas. O pescoço e a cabeça devem ficar para cima e os músculos da coluna devem ser contraídos para que o corpo seja estabilizado.
+                    </p><br>
+                    <p>
+                        2-Então é o momento de se abaixar devagar, dobrar os cotovelos e inspirar. Após, com os bíceps e o peito contraídos, retorne a posição inicial, sem se esqueça de expirar na hora da subida.
+                    </p>
+                </div>
+            </div>
+            <div class="content">
+                <div class="imagens">
+                    <a href="#" onclick="flexBracoIncl()"><img src="./imagens/peito/peito4.png" alt=""></a>
+                </div>
+                <div class="textos">
+                    <h2>Flexão de braços inclinada</h2><br>
+                    <p>
+                        1-Deite de bruços em frente a um móvel (banco, mesa ou cadeira) e colocar as mãos em cima dele. As palmas devem estar contra o móvel em uma distância ligeiramente maior que a largura dos ombros e os cotovelos devem estar estendidos. Isso fará com que o corpo fique inclinado.
+                    </p><br>
+                    <p>
+                        2-Os dedos dos pés devem estar apoiados no chão, com os pés separados em uma distância aproximadamente correspondente à largura dos quadris.
+                    </p><br>
+                    <p>
+                        3-Lenta e continuamente, abaixe o corpo, dobrando o cotovelo e deixando o peito um pouco acima do móvel. Estenda os braços e retornar à posição inicial.
+                    </p>
+                </div>
+            </div>
+            <div class="content">
+                <div class="imagens">
+                    <a href="#" onclick="flexBracoSo()"><img src="./imagens/peito/peito5.png" alt=""></a>
+                </div>
+                <div class="textos">
+                    <h2>Flexão de um braço só</h2><br>
+                    <p>
+                        1-Deite de bruços no chão ou em cima de uma esteira de exercícios. Apoie a mão de apoio no chão, diretamente abaixo do ombro, e estender completamente o braço de apoio. Levar a outra mão para trás, com as palmas apontando para fora.
+                    </p><br>
+                    <p>
+                        2-As pernas devem estar estendidas e separadas em uma distância bem maior que do que a de uma flexão habitual. A posição deve permitir que o peso do corpo seja suportado pelos dedos dos pés e pelo braço de apoio.
+                    </p><br>
+                    <p>
+                        3-Desça o corpo, flexionando o cotovelo de apoio até tocar o chão. A descida deve ser lenta. Então, estenda o braço e retornar à posição inicial. Não se esqueça de manter boa postura durante todo o exercício.
+                    </p>
+                </div>
+            </div>
+            <div class="content">
+                <div class="imagens">
+                    <a href="#" onclick="SupIncl()"><img src="./imagens/peito/peito6.png" alt=""></a>
+                </div>
+                <div class="textos">
+                    <h2>Supino inclinado com barra</h2><br>
+                    <p>
+                        1-Sente no banco inclinado e firmar os pés no chão ou no suporte. Com as costas ligeiramente arqueadas, pegar a barra. A distância das mãos deve ser maior do que a largura dos ombros.
+                    </p><br>
+                    <p>
+                        2-Remova o peso do suporte e estabilizá-lo na linha do peito com os cotovelos estendidos. Então, desça a barra, de modo controlado e com os punhos retos, até a parte superior da musculatura do peitoral.
+                    </p><br>
+                    <p>
+                        3-O movimento deve ser realizado com a flexão dos cotovelos para baixo ao mesmo tempo em que o peito é aberto.
+                    </p><br>
+                    <p>
+                        4-Fazer uma ligeira pausa e empurrar a barra de pesos para cima, com a força concentrada na parte superior da musculatura do peito. Essa etapa deve ser feita com os ombros para trás e as escápulas fixas no banco.
+                    </p><br>
+                    <p>
+                        5-Após terminar suas repetições, devolva a barra ao suporte com cuidado. É aconselhável contar com o acompanhamento de alguém durante a execução do supino inclinado com barra.
+                    </p>
+                </div>
+            </div>
+            <div class="content">
+                <div class="imagens">
+                    <a href="#" onclick="SupInclHalt()"><img src="./imagens/peito/peito7.png" alt=""></a>
+                </div>
+                <div class="textos">
+                    <h2>Supino inclinado com halteres</h2><br>
+                    <p>
+                        1-Sente em um banco com inclinação entre 30º a 45º e apoiar um haltere em cada uma das coxas. Subir os pesos com a ajuda das pernas e firmar as costas no encosto do banco.
+                    </p><br>
+                    <p>
+                        2-Segure os halteres com os cotovelos estendidos, que devem estar próximos um do outro na linha do peito. A pegada deve ser com os polegares virados para dentro.
+                    </p><br>
+                    <p>
+                        3-Desça os halteres de modo controlado, fazendo o movimento de flexionar os cotovelos para baixo até levar os pesos à altura da parte superior do peito.
+                    </p><br>
+                    <p>
+                        4-Durante esse movimento, os músculos do peito precisam ser bem alongados. Empurre os pesos para cima, aproximando os halteres, até os cotovelos serem estendidos.
+                    </p><br>
+                    <p>
+                        5-A força do movimento deve ser concentrada no peito. Os ombros devem ficar encaixados para trás e somente os braços devem se mexer. Ao término do exercício, posicionar os halteres no chão com segurança.
+                    </p>
+                </div>
+            </div>
+            <div class="content">
+                <div class="imagens">
+                    <a href="#" onclick="paralela()"><img src="./imagens/peito/peito8.png" alt=""></a>
+                </div>
+                <div class="textos">
+                    <h2>Mergulho em paralelas</h2><br>
+                    <p>
+                        1-Começar segurando as barras com as duas mãos. As palmas devem apontar para dentro e os polegares para a frente.
+                    </p><br>
+                    <p>
+                        2-Em seguida, suspender o corpo com os cotovelos estendidos e o tronco ligeiramente inclinado para a frente, de modo que o peito - e não o tríceps - seja trabalhado. Manter a coluna reta e os ombros encaixados para trás.
+                    </p><br>
+                    <p>
+                        3-A partir dessa posição, descer o corpo devagar, fazendo o movimento de flexão dos cotovelos. O movimento deve ser feito com o peitoral bem alongado.
+                    </p><br>
+                    <p>
+                        4-Em seguida empurre o corpo novamente para cima, com a força da musculatura do peitoral, até os cotovelos ficarem estendidos. Segure um pouco a contração e repetir o movimento.
+                    </p><br>
+                    <p>
+                        5-É fundamental prestar bastante atenção à técnica do exercício e certificar-se de que está trabalhando o peitoral e não o tríceps.
+                    </p><br>
+                    <p>
+                        6-Isso porque enquanto a posição do corpo reto entre as barras paralelas aciona mais o tríceps, uma inclinação ligeiramente para a frente trabalha mais o peitoral. A inclinação, no entanto, não deve ser muito exagerada para não sobrecarregar os ombros.
+                    </p>
+                </div>
+            </div>
+            <div class="content">
+                <div class="imagens">
+                    <a href="#" onclick="voadorIncl()"><img src="./imagens/peito/peito9.png" alt=""></a>
+                </div>
+                <div class="textos">
+                    <h2>Voador no cabo com banco inclinado</h2><br>
+                    <p>
+                        1-Ajuste as polias ao nível do chão (à altura mais baixa possível na máquina, que esteja abaixo do tronco). Colocar um banco inclinado em 45º entre as polias. Escolher a carga de peso, de acordo com as suas condições físicas e com a ajuda do treinador.
+                    </p><br>
+                    <p>
+                        2-Segure uma alça em cada uma das mãos e deitar-se no banco. Levantar os braços, em um ângulo de 90º, de forma que as mãos fiquem em frente ao rosto. Nesse movimento deve-se dobrar levemente os cotovelos para evitar causar estresse nos tendões dos bíceps.
+                    </p><br>
+                    <p>
+                        3-Em seguida abaixe os braços, formando um arco amplo até sentir uma espécie de alongamento no peito. Nesta etapa é preciso inalar o ar e deixar os braços estáticos, pois o movimento deve partir das articulações dos ombros.
+                    </p><br>
+                    <p>
+                        4-Volte os braços ao posicionamento original, usando o mesmo arco utilizado para abaixar as cargas, ao mesmo tempo em que exala o ar e comprime o peito. Segurar a posição na contração por um segundo e repetir o exercício o número de vezes indicadas pelo treinador.
+                    </p>
+                </div>
+            </div>
+            <div class="content">
+                <div class="imagens">
+                    <a href="#" onclick="crucVoador()"><img src="./imagens/peito/peito10.png" alt=""></a>
+                </div>
+                <div class="textos">
+                    <h2>Crucifixo no voador (Peck deck)</h2><br>
+                    <p>
+                        1-Sente na máquina com as costas retas no suporte acolchoado do equipamento. Segurar as alças de modo que os antebraços fiquem paralelos ao chão. Para isso é necessário ajustar a máquina adequadamente. Se tiver dificuldades para fazer isso, peça ajuda ao instrutor da academia.
+                    </p><br>
+                    <p>
+                        2-Trazer as alças para o centro de modo devagar, aproximando os braços e levando-os para o centro, ao mesmo tempo em que comprime o peito no meio e exala o ar.
+                    </p><br>
+                    <p>
+                        3-Segurar a contração por um segundo e voltar lentamente ao posicionamento original até que o peito esteja completamente alongado, ao mesmo tempo em que inala o ar.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <ion-icon name="close-outline" class="exit tricep" onclick="triceps()"></ion-icon>
+    <div class="triceps divPrinc">
+        <div class="container">
+            <h2 class="tituloDiv">Clique nas imagens para adicionar ao seu treino</h2>
+            <div class="content">
+                <div class="imagens">
+                    <a href="#" onclick="extTricep()"><img src="./imagens/triceps/triceps1.png" alt=""></a>
+                </div>
+                <div class="textos">
+                    <h2>Extensão de tríceps deitado ou inclinado (tríceps testa)</h2><br>
+                    <p>
+                        Esse exercício trabalha tanto a cabeça lateral quanto a cabeça longa do músculo e é classificado como um dos melhores movimentos para ativar o tríceps de maneira geral.
+                        A extensão de tríceps deitado é um exercício de força com nível de dificuldade iniciante, que também trabalha a região dos antebraços. Ela é executada com o auxílio de uma barra EZ, mas também pode ser feito com a barra reta, e até mesmo no banco inclinado.
+                    </p><br>
+                    <p>
+                        1.	Primeiro, deite-se de costas em um banco reto e segure a barra com uma pegada fechada, as palmas das mãos apontando para fora e os braços estendidos e perpendiculares ao solo;
+                    </p><br>
+                    <p>
+                        2.	A partir dessa posição inicial, abaixar a barra, flexionando os cotovelos e mantendo os antebraços fixos. Não abra os cotovelos para fora durante o movimento.
+                        Inale durante a descida da barra e pausar quando ela se encontrar diretamente acima da testa. Então, levante a barra e retorne ao posicionamento original, ao mesmo tempo em que exala o ar e estende os cotovelos.
+                    </p>
+                </div>
+            </div>
+            <div class="content">
+                <div class="imagens">
+                    <a href="#" onclick="supPegFech()"><img src="./imagens/triceps/triceps2.png" alt=""></a>
+                </div>
+                <div class="textos">
+                    <h2>Supino no banco reto com pegada fechada</h2><br>
+                    <p>
+                        Além do triceps, esse exercicio também aciona o peito e os ombros. Estudos mostraram que há uma ativação maior na cabeça longa do tríceps do que no banco inclinado.
+                        A pegada fechada deve ser de uma distância de 20 a 25 cm entre as mãos para trabalhar bem os tríceps. Uma pegada menor que essa não coloca mais estresse nos braços, porém, traz um aumento de tensão nos pulsos, que não é o objetivo aqui.
+                        Para os iniciantes no exercício, recomenda-se ter o acompanhamento de alguém durante sua execução. Também é importante ser cauteloso quanto à carga escolhida e não forçar além de seus limites, além de prestar atenção para que a barra alcance a região média do peito durante a descida. Ela não deve parar em nenhum outro lugar que não seja esse.
+                    </p><br>
+                    <p>
+                        1.	Deite-se de costas em um banco reto e agarre a barra com uma pegada fechada;
+                    </p><br>
+                    <p>
+                        2.	Levante a barra em linha reta e segure-a, com os braços esticados;
+                    </p><br>
+                    <p>
+                        3.	Enquanto inala o ar, desça a barra lentamente, até que ela encoste na região média do seu peito. Durante o movimento, mantenha os cotovelos próximos ao tronco o tempo todo para aumentar a participação dos tríceps.
+                    </p><br>
+                    <p>
+                        4.	Pause por um segundo e eleve novamente a barra, em sua posição inicial, usando os tríceps para executar o movimento e exalando o ar;
+                    </p><br>
+                    <p>
+                        5.	Então, mantenha os braços esticados, segure o posicionamento por um segundo e descer a barra lentamente. A descida deve demorar o dobro do tempo da subida. 
+                    </p><br>
+                </div>
+            </div>
+            <div class="content">
+                <div class="imagens">
+                    <a href="#" onclick="mergBanco()"><img src="./imagens/triceps/triceps3.png" alt=""></a>
+                </div>
+                <div class="textos">
+                    <h2>Mergulho no banco</h2><br>
+                    <p>
+                        Esta versão de exercícios para tríceps usa o peso do corpo e é executada com o auxílio de dois bancos retos. Também traz bastante ativação ao músculo do tríceps. Ao adicionar carga ao exercício, colocando um peso no colo, ele torna-se ainda mais eficiente.
+                    </p><br>
+                    <p>
+                        1.	Coloque um banco atrás de você e outro na sua frente. Eles devem estar perpendiculares ao seu corpo e você deve segurar na borda do banco de trás com as duas mãos próximas ao corpo. As palmas devem estar separadas em uma distância equivalente à largura dos ombros e os braços devem estar completamente estendidos.
+                    </p><br>
+                    <p>
+                        2.	As pernas devem ficar estendidas para a frente em cima do outro banco, com os pés paralelos. Elas devem estar paralelas ao chão e o tronco perpendicular ao chão. Se optar por usar o peso, peça que um colega coloque a carga no seu colo. 
+                    </p><br>
+                    <p>
+                        3. O peso deve ser posicionado de modo adequado, para que fique em cima de você durante todo o exercício. Você não deve colocar a carga sozinho, pois o movimento será difícil e você correrá riscos de se lesionar. 
+                    </p><br>
+                    <p>
+                        4. Então, lentamente abaixe o corpo, dobrando os cotovelos ao mesmo tempo em que inala o ar. Pare de descer quando formar um ângulo ligeiramente menor que 90º com a parte superior e a inferior dos braços. Neste momento, os cotovelos devem estar o mais perto possível e os antebraços devem apontar para baixo o tempo todo.
+                    </p><br>
+                    <p>
+                        5. Use o tríceps para levar o tronco para cima e elevar novamente o corpo para a posição inicial, ao mesmo tempo em que exala o ar.
+                    </p>
+                </div>
+            </div>
+            <div class="content">
+                <div class="imagens">
+                    <a href="#" onclick="tricepBanco()"><img src="./imagens/triceps/triceps4.png" alt=""></a>
+                </div>
+                <div class="textos">
+                    <h2>Tríceps apoiado no banco</h2><br>
+                    <p>
+                        Este tipo de exercícios para tríceps possui nível de dificuldade iniciante. Ele também aciona outros músculos como os deltoides, glúteos, posteriores da coxa, abdominais e quadris.
+                    </p><br>
+                    <p>
+                        Durante a execução do tríceps no banco, recomenda-se manter o corpo reto e evitar o relaxamento excessivo dos quadris. Também é importante manter os cotovelos retos durante o exercício e evitar que eles abram para os lados.
+                    </p><br>
+                    <p>1.	Sente-se na borda de um banco com as mãos abaixo dos ombros, com as palmas firmes na extremidade do banco e os joelhos flexionados a 90º.</p><br>
+                    <p>2.	É preciso segurar firmemente, manter o tronco firme e encaixado, contrair os glúteos e dar uns passos para a frente, deixando os braços totalmente estendidos e sustentando o peso do corpo.</p><br>
+                    <p>
+                        3.	O próximo passo é flexionar os cotovelos e abaixar o corpo em frente ao banco, formando um ângulo de 90º. Fique nessa posição por um instante, deixando os cotovelos junto ao tronco, e volte ao posicionamento original utilizando a força dos tríceps.
+                        Se você quiser deixar o exercício mais difícil, deve esticar as pernas e mantê-las assim durante a execução.
+                    </p><br>
+                </div>
+            </div>
+            <div class="content">
+                <div class="imagens">
+                    <a href="#" onclick="extHalt()"><img src="./imagens/triceps/triceps5.png" alt=""></a>
+                </div>
+                <div class="textos">
+                    <h2>Extensão de halteres sob a cabeça</h2><br>
+                    <p>
+                        Quando a extensão de halteres sob a cabeça é feita, com os braços erguidos acima da cabeça, a região da cabeça longa do tríceps é acionada. Este exercício de força possui um nível de dificuldade iniciante e além de atingir os tríceps, também trabalha os deltoides e o trapézio.
+                    </p><br>
+                    <p>
+                        1.	Posicione-se em pé com os pés afastados em uma largura equivalente à largura dos ombros.
+                    </p><br>
+                    <p>
+                        2.	Segure um halter em cada uma das mãos e estender os braços para cima, sobre a cabeça, com uma palma da mão voltada para a outra. 
+                    </p><br>
+                    <p>
+                        3.	Então, flexione os cotovelos e abaixe o haltere, colocando-o atrás da cabeça, de modo que ele fique perpendicular ao chão.
+                    </p><br>
+                    <p>
+                        4.	Pause brevemente e estenda os braços, levando o halter sob a cabeça e retornando à posição inicial.
+                    </p>
+                </div>
+            </div>
+            <div class="content">
+                <div class="imagens">
+                    <a href="#" onclick="mergParale()"><img src="./imagens/triceps/triceps6.png" alt=""></a>
+                </div>
+                <div class="textos">
+                    <h2>Mergulho nas paralelas (com ou sem pesos)</h2><br>
+                    <p>
+                        Este item da nossa lista de exercícios para tríceps trabalha também os deltoides e possui um nível de dificuldade intermediário. Para acrescentar a carga ao movimento, é possível adicionar caneleiras com peso nos tornozelos ou amarrar um cinto com uma anilha presa na cintura.
+                    </p><br>
+                    <p>
+                        Tenha atenção em relação à quantidade de carga utilizada para que esteja de acordo com os seus limites. Outra dica relevante é manter o corpo o mais vertical que conseguir durante o exercício, para focar o trabalho nos tríceps. Se você inclinar para a frente, acionará o peito.
+                    </p><br>
+                    <p>
+                        1.	Coloque a caneleira ou o cinto com o peso. Segure-se nos apoios do aparelho e erga o corpo até que os braços estejam alinhados e o corpo possa descer em linha reta.
+                    </p><br>
+                    <p>
+                        2.	Então, flexione levemente os joelhos e dobre os cotovelos, descendo o corpo até que a parte superior dos braços esteja paralela ao chão. Com os braços, erga o corpo novamente e retorne ao posicionamento original. 
+                    </p><br>
+                </div>
+            </div>
+            <div class="content">
+                <div class="imagens">
+                    <a href="#" onclick="tricepMaq()"><img src="./imagens/triceps/triceps7.png" alt=""></a>
+                </div>
+                <div class="textos">
+                    <h2>Tríceps na máquina</h2><br>
+                    <p>
+                        Trata-se de um exercício composto que trabalha os tríceps, além de mobilizar os ombros e o peito. A carga deve ser escolhida de acordo com seus objetivos: se o foco do seu treino for força, a indicação é trabalhar com mais peso do que se a meta for a construção muscular. Sem esquecer de selecionar a carga conforme suas condições e não exceder seus limites para não se machucar.
+                    </p><br>
+                    <p>
+                        1.	Sente-se corretamente no equipamento, escolha o peso e segure com firmeza nas alças da máquina. Dobre os cotovelos em um ângulo de 90º, mantendo-os ao lado do corpo, para focar o trabalho nos tríceps.
+                    </p><br>
+                    <p>
+                        2.	Então, contraia os tríceps e estenda os braços enquanto exala o ar. Na parte baixa do movimento, mantenha os braços ligeiramente dobrados para causar tensão nos tríceps.
+                    </p><br>
+                    <p>
+                        3.	Lentamente, volte ao posicionamento original ao mesmo tempo em que inala o ar. 
+                    </p>
+                </div>
+            </div>
+            <div class="content">
+                <div class="imagens">
+                    <a href="#" onclick="extTriCab()"><img src="./imagens/triceps/triceps8.png" alt=""></a>
+                </div>
+                <div class="textos">
+                    <h2>Extensão de tríceps no cabo</h2><br>
+                    <p>
+                        Exercício que aciona a cabeça longa dos tríceps. Seu foco é a força e ele é executado no aparelho de cabo com uma corda. Durante todo o exercício, é importante que os cotovelos permaneçam alinhados, e que não abram para fora.
+                    </p><br>
+                    <p>
+                        1.	Posicione um banco em frente à máquina de cabo e sente-se nele. Segurar a ponta da corda presa ao cabo do aparelho, com os cotovelos dobrados e as mãos atrás do trapézio. 
+                    </p><br>
+                    <p>
+                        2.	O próximo passo é estender os cotovelos até que as mãos fiquem acima da cabeça. Neste momento, os braços devem ficar o mais vertical que puderem.
+                    </p><br>
+                    <p>
+                        3.	Pause por um instante e, lentamente, retorne ao posicionamento original.
+                    </p><br>
+                </div>
+            </div>
+            <div class="content">
+                <div class="imagens">
+                    <a href="#" onclick="tricepPol()"><img src="./imagens/triceps/triceps9.png" alt=""></a>
+                </div>
+                <div class="textos">
+                    <h2>Tríceps na polia alta com barra</h2><br>
+                    <p>
+                        Exercício que trabalha a cabeça lateral do tríceps melhor do que outros movimentos como a extensão de tríceps deitado, por exemplo. Este exercício trabalha os tríceps de maneira isolada.
+                    </p><br>
+                    <p>
+                        1.	Prenda uma barra reta ou inclinada a uma polia alta e segure-a com as palmas das mãos voltadas para baixo e separadas em uma distância equivalente à largura dos ombros.
+                    </p><br>
+                    <p>
+                        2.	Mantendo o corpo na posição reta, com uma leve inclinação do tronco para frente, aproxime os antebraços do corpo e deixe-os perpendiculares ao chão. Neste momento, os cotovelos estarão dobrados e os antebraços direcionados para a polia.
+                    </p><br>
+                    <p>
+                        3.	Use o tríceps para empurrar a barra até a frente das coxas, deixando os braços totalmente estendidos, ao mesmo tempo em que exala o ar. Pause o movimento por um segundo nesta posição, e volte lentamente a barra ao seu posicionamento original enquanto inala o ar.
+                    </p><br>
+                </div>
+            </div>
+            <div class="content">
+                <div class="imagens">
+                    <a href="#" onclick="tricepPolCord()"><img src="./imagens/triceps/triceps10.png" alt=""></a>
+                </div>
+                <div class="textos">
+                    <h2>Tríceps na polia alta com corda</h2><br>
+                    <p>
+                        O último item da nossa lista de exercícios para tríceps possui um nível iniciante de dificuldade. Ele age de maneira isolada e é classificado como excelente.
+                    </p><br>
+                    <p>
+                        1.	Prenda uma corda a uma polia alta no equipamento de cabo e segure-a com uma pegada neutra, ou seja, as palmas das mãos devem ficar voltadas uma para a outra.
+                    </p><br>
+                    <p>
+                        2.	Fique em pé, com o tronco reto e uma ligeiramente inclinado para frente. Os antebraços devem estar próximos ao corpo e perpendiculares ao chão.
+                    </p><br>
+                    <p>
+                        3.	Então, use o tríceps para abaixar a corda, levando cada lado do acessório até as coxas, ao mesmo tempo em que exala o ar. Na parte final do movimento, os braços deverão estar totalmente estendidos e quase perpendiculares ao chão.
+                    </p><br>
+                    <p>
+                        4.	Segure a posição contraída durante um segundo e lentamente erga a corda, retornando ao posicionamento original, ao mesmo tempo em que exala o ar. 
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <ion-icon name="close-outline" class="exit back" onclick="costas()"></ion-icon>
+    <div class="costas divPrinc">
+        <div class="container">
+            <h2 class="tituloDiv">Clique nas imagens para adicionar ao seu treino</h2>
+            <div class="content">
+                <div class="imagens">
+                    <a href="#" onclick="barraFixa()"><img src="./imagens/costas/costas1.png" alt=""></a>
+                </div>
+                <div class="textos">
+                    <h2>Barra fixa com pegada fechada</h2><br>
+                    <p>
+                        Este exercício ajuda a fortalecer a parte superior do corpo. Além de trabalhar as costas, ele também atua em outras regiões musculares, como braços e ombros.
+                    </p><br>
+                    <p>
+                        1-Primeiro, segure a barra, com as mãos próximas, se pendure nela e cruze os pés, como mostra a figura acima.
+                    </p><br>
+                    <p>
+                        2-Então, aperte as escápulas dos ombros para baixo e para trás, dobre os cotovelos e puxe a parte de cima do peito em direção à barra.
+                    </p><br>
+                    <p>
+                        3-Em seguida, faça uma pausa e retorne lentamente à posição original.
+                    </p><br>
+                    <p>
+                        Exercícios na barra fixa como o chinup atingem os grandes músculos das costas que ficam em volta do tronco, logo abaixo dos braços. Esses músculos são responsáveis por oferecer um formato mais amplo ao tronco e podem dar a impressão de que a pessoa está mais magra, mesmo quando ela não emagreceu.
+                    </p>
+                </div>
+            </div>
+            <div class="content">
+                <div class="imagens">
+                    <a href="#" onclick="barraFixaAberta()"><img src="./imagens/costas/costas2.png" alt=""></a>
+                </div>
+                <div class="textos">
+                    <h2>Barra fixa com pegada aberta</h2><br>
+                    <p>
+                        Esse é um dos mais clássicos exercícios para costas, ele trabalha muito a parte superior do músculo latíssimo do dorso, mas também atinge os bíceps e a parte do meio das costas. A barra fixa com pegada larga possui nível de dificuldade intermediário, e pode ser feita tanto com a pegada pronada (mais comum) como supinada (exige mais dos bíceps).
+                    </p><br>
+                    <p>
+                        1-Primeiro, encaixe as escápulas.
+                    </p><br>
+                    <p>
+                        2-Em seguida, segure a barra fixa com uma pegada larga, as mãos devem estar a uma distância maior que a largura dos ombros.
+                    </p><br>    
+                    <p>
+                        3-Então, erga o corpo, flexione os cotovelos e aproxime da barra a articulação dos ombros. O objetivo é levar o queixo a uma altura maior do que as mãos.
+                    </p><br>
+                    <p>
+                        4-Depois, faça uma pausa na parte alta do movimento e, em seguida, volte à posição inicial.
+                    </p>
+                </div>
+            </div>
+            <div class="content">
+                <div class="imagens">
+                    <a href="#" onclick="remadaCurva()"><img src="./imagens/costas/costas3.png" alt=""></a>
+                </div>
+                <div class="textos">
+                    <h2>Remada curvada com barra e pegada pronada</h2><br>
+                    <p>
+                        A remada curvada trabalha a maior parte da musculatura das costas. No entanto, é fundamental se certificar de que a sua posição durante a execução do exercício está correta e de escolher uma carga apropriada, para não correr o risco de se machucar. Sendo assim, é recomendável ter a ajuda de um instrutor físico durante o treino.
+                    </p><br>
+                    <p>
+                        1-Para começar, pegue a barra com os pesos e mantenha as mãos paralelas aos ombros.
+                    </p><br>
+                    <p>
+                        2-Em seguida, incline o tronco para frente, formando um ângulo de 45º em relação ao chão.
+                    </p><br>
+                    <p>
+                        3-Depois, puxe a barra para cima, no sentido vertical, até que ela toque a parte inferior do peito. Durante esse movimento, mantenha a coluna reta e os joelhos levemente dobrados.
+                    </p><br>
+                    <p>
+                        4-Então, abaixe a barra até a posição em que os braços fiquem estendidos. Um cuidado importante referente a esse exercício é nunca curvar a lombar para levantar mais a barra, pois isso pode causar uma lesão.
+                    </p>
+                </div>
+            </div>
+            <div class="content">
+                <div class="imagens">
+                    <a href="#" onclick="remadaCurvaSup()"><img src="./imagens/costas/costas4.png" alt=""></a>
+                </div>
+                <div class="textos">
+                    <h2>Remada curvada com barra e pegada invertida (supinada)</h2><br>
+                    <p>
+                        1-Para começar, fique em pé, com as pernas afastadas e os joelhos levemente flexionados. Segure uma barra reta com as mãos paralelas aos ombros e com as palmas viradas para a frente.
+                    </p><br>
+                    <p>
+                        2-Em seguida, deixe a coluna reta e encaixe os ombros, incline o tronco para a frente, jogando o quadril para trás. Mantenha os cotovelos estendidos até que a barra fique na altura das coxas, e contraia os bíceps.
+                    </p><br>
+                    <p>
+                        3-Então, puxe a barra até a cintura, ao mesmo tempo em que flexiona os cotovelos.
+                    </p><br>
+                    <p>
+                        4-Depois, segure a contração por um momento e retorne à posição inicial.
+                    </p>
+                </div>
+            </div>
+            <div class="content">
+                <div class="imagens">
+                    <a href="#" onclick="remadaUni()"><img src="./imagens/costas/costas5.png" alt=""></a>
+                </div>
+                <div class="textos">
+                    <h2>Remada unilateral com halter (remada serrote)</h2><br>
+                    <p>
+                        A remada unilateral com halter trabalha a região média das costas, o latíssimo do dorso, os bíceps e os ombros.
+                    </p><br>
+                    <p>
+                        1-Para começar, coloque um halter em cada lado de um banco reto.
+                    </p><br>
+                    <p>
+                        2-Em seguida, coloque as pernas em cima do banco, encostando o joelho e incline tronco para a frente até a parte superior do corpo ficar paralela ao chão.
+                    </p><br>
+                    <p>
+                        3-Depois, coloque uma das mãos no banco (a que for correspondente a perna que está no banco) para obter suporte e pegue um halter com a outra mão. Mantenha a região lombar reta e a palma da mão voltada para o tronco.
+                    </p><br>
+                    <p>
+                        4-Então, leve o peso para cima, até a lateral do peito. Flexione o cotovelo e mantenha o tronco imóvel.
+                    </p><br>
+                    <p>
+                        5-Durante esse movimento, solte o ar e contraia bem os músculos das costas. Você deve se certificar de que está fazendo força com os músculos das costas e não com o braço. Além disso, os antebraços não devem fazer nenhum esforço, a não ser o de segurar o halter.
+                    </p><br>
+                    <p>
+                        6-Depois, desça o halter e volte à posição inicial, ao mesmo tempo em que inala o ar. Após atingir o número determinado de repetições, troque a posição dos braços.
+                    </p>
+                </div>
+            </div>
+            <div class="content">
+                <div class="imagens">
+                    <a href="#" onclick="remadaCavalinho()"><img src="./imagens/costas/costas6.png" alt=""></a>
+                </div>
+                <div class="textos">
+                    <h2>Remada em pé com a barra T (remada cavalinho)</h2><br>
+                    <p>
+                        A remada em pé na barra T é uma das mais fáceis de serem executadas, ainda que seja classificada com grau de dificuldade intermediário.
+                    </p><br>
+                    <p>
+                        1-Para começar, coloque uma carga adequada para você na barra.
+                    </p><br>
+                    <p>
+                        2-Então, se posicione no equipamento, colocando uma perna de cada lado da barra. Abaixe os quadris e segure a alça das barras com as palmas das mãos para fora, mantenha as costas retas durante todo o exercício.
+                    </p><br>
+                    <p>
+                        3-Em seguida, retire o peso do chão e leve a barra até a altura dos braços. O movimento deve ser realizado por meio da flexão dos cotovelos, com as escápulas contraídas e puxando o peso até o peito.
+                    </p><br>
+                    <p>
+                        4-Depois, faça uma pausa rápida na parte alta do exercício e, então, retorne à posição original.
+                    </p>
+                </div>
+            </div>
+            <div class="content">
+                <div class="imagens">
+                    <a href="#" onclick="remadaBanc()"><img src="./imagens/costas/costas7.png" alt=""></a>
+                </div>
+                <div class="textos">
+                    <h2>Remada no banco inclinado com halteres</h2><br>
+                    <p>
+                        A remada no banco inclinado com halteres é mais um dos exercícios para costas que trabalha músculos como o latíssimo do dorso, os músculos redondos que ficam nos ombros e os músculos rombóides, localizados nas costas.
+                    </p><br>
+                    <p>
+                        1-Para começar, ajuste o banco em um ângulo de 45º e deite nele, com um halter em cada uma das mãos. A pegada deve ser pronada, com as palmas viradas para baixo, ou neutra, com as palmas viradas para o lado de dentro.
+                    </p><br>
+                    <p>
+                        2-Em seguida, contraia os bíceps e o latíssimo do dorso e leve os pesos para cima, de forma intensa. O core (região central do corpo) deve permanecer firme e o peito deve ser pressionado contra o banco durante todo o momento.
+                    </p><br>
+                    <p>
+                        3-Então, ao chegar à parte alta do movimento, contraia as escápulas por um segundo;
+                    </p><br>
+                    <p>
+                        4-Depois, desça os pesos e volte à posição inicial.
+                    </p>
+                </div>
+            </div>
+            <div class="content">
+                <div class="imagens">
+                    <a href="#" onclick="puxada()"><img src="./imagens/costas/costas8.png" alt=""></a>
+                </div>
+                <div class="textos">
+                    <h2>Puxada com barra no pulley</h2><br>
+                    <p>
+                        Este exercício trabalha vários músculos das costas, como o latíssimo do dorso, a região média das costas, os bíceps e os ombros, ele é classificado como um movimento de fortalecimento, sendo também indicado para iniciantes.
+                    </p><br>
+                    <p>
+                        1-Primeiro, sente-se em uma máquina pulley, e ajuste o equipamento conforme a sua altura;
+                    </p><br>
+                    <p>
+                       2-Em seguida, segure a barra com uma pegada aberta, em uma distância maior que a largura dos ombros, com as mãos direcionadas para fora. Uma outra forma de executar o exercícios é segurar a barra na mesma largura dos ombros.
+                    </p><br>
+                    <p>
+                       3-Depois, com os braços estendidos na sua frente, leve o tronco para trás formando um ângulo em torno de 30º, ao mesmo tempo em que cria uma leve curvatura na região lombar e estufa o peito.
+                    </p><br>
+                    <p>
+                        4-Então, exale o ar e traga a barra para baixo, até que ela toque a parte superior do peito. Ao atingir a posição de contração total, comprima os músculos das costas.
+                    </p><br>
+                    <p>
+                        5-Lembre-se que o tronco deve ficar imóvel e somente os braços devem se mexer. O único esforço feito pelos antebraços é o de segurar a barra.
+                    </p><br>
+                    <p>
+                        6-Depois, segure a posição contraída por uma segundo, comprimindo as escápulas;
+                    </p><br>
+                    <p>
+                        7-Então, levante a barra lentamente à posição inicial, inalando o ar, até que os braços estejam totalmente estendidos e o latíssimo do dorso completamente alongado.
+                    </p>
+                </div>
+            </div>
+            <div class="content">
+                <div class="imagens">
+                    <a href="#" onclick="remadaBaixa()"><img src="./imagens/costas/costas9.png" alt=""></a>
+                </div>
+                <div class="textos">
+                    <h2>Remada baixa</h2><br>
+                    <p>
+                        Esse é um exercício excelente para as costas. Ele pode ser feito com o triângulo ou com a barra, usando uma pegada aberta. Usando o triângulo, a ênfase maior é no trabalho do Latíssimo do Dorso, também chamado popularmente de “asa”. Com a barra, trabalha-se mais os músculos rombóides, redondos e trapézio.
+                    </p><br>
+                    <p>
+                        1-Primeiro, sente-se na máquina de cabos e prenda o triângulo ou a barra, conforme a sua preferência.
+                    </p><br>
+                    <p>
+                       2-Em seguida, estique os braços para pegar o acessório, puxando-o em direção à parte inferior do peitoral (triângulo) ou superior (barra).
+                    </p><br>
+                    <p>
+                        3-Então, volte com o acessório à posição inicial.
+                    </p>
+                    <p>
+                        Importante: Mantenha a coluna reta durante todo o movimento e se notar que está tendo que inclinar ela para conseguir puxar o peso, diminua a carga. Isso vai garantir a correta execução do exercício e prevenir lesões.
+                    </p>
+                </div>
+            </div>
+            <div class="content">
+                <div class="imagens">
+                    <a href="#" onclick="puxadaFrente()"><img src="./imagens/costas/costas10.png" alt=""></a>
+                </div>
+                <div class="textos">
+                    <h2>Puxada pela frente com o triângulo no pulley</h2><br>
+                    <p>
+                        Outro exercício que trabalha bastante o latíssimo do dorso e que, devido ao tipo de movimento executado, ajuda muito no processo de construção muscular.
+                    </p><br>
+                    <p>
+                        1-Para começar, sente-se na máquina com os quadris encaixados no acolchoado do equipamento;
+                    </p><br>
+                    <p>
+                        2-Em seguida, pegue o triângulo com as mãos, que devem estar a uma distância menor do que a largura dos ombros, e as palmas das mãos devem apontar para seu corpo. Além disso, o corpo deve estar na vertical e os braços retos, acima da cabeça.
+                    </p><br>
+                    <p>
+                        3-Então, estufe o peito, faça um pequena curva na região da lombar e leve a carga até o peito, inclinando-se ligeira e suavemente enquanto a puxa. Na parte baixa do movimento, as escápulas devem estar comprimidas.
+                    </p><br>
+                    <p>
+                        4-Depois, volte ao posicionamento original, levantando a carga lentamente.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <ion-icon name="close-outline" class="exit bicep" onclick="biceps()"></ion-icon>
+    <div class="biceps divPrinc">
+        <div class="container">
+            <h2 class="tituloDiv">Clique nas imagens para adicionar ao seu treino</h2>
+            <div class="content">
+                <div class="imagens">
+                    <a href="#" onclick="rosca()"><img src="./imagens/biceps/biceps1.png" alt=""></a>
+                </div>
+                <div class="textos">
+                    <h2>Rosca bíceps direta com barra</h2><br>
+                    <p>
+                        Rosca direta com barra reta. Ao se utilizar a pegada fechada, o esforço será direcionado à parte externa dos bíceps.
+                    </p><br>
+                    <p>
+                        1-Para começar, segure a barra de forma que as suas mãos fiquem paralelas aos ombros e deixe as palmas das mãos voltadas para cima. Nesse momento, você deve manter os braços estendidos;
+                    </p><br>
+                    <p>
+                        2-Em seguida, levante a barra até a altura dos ombros, ao mesmo tempo que flexiona os cotovelos;
+                    </p><br>
+                    <p>
+                        3-Depois, devolva a barra à sua posição inicial, retornando os braços para a posição estendida.
+                    </p>
+                </div>
+            </div>
+            <div class="content">
+                <div class="imagens">
+                    <a href="#" onclick="roscaAmpla()"><img src="./imagens/biceps/biceps2.png" alt=""></a>
+                </div>
+                <div class="textos">
+                    <h2>Rosca bíceps direta com barra e pegada ampla</h2><br>
+                    <p>
+                        A rosca em pé com barra e pegada ampla é considerada um exercício de força, que possui nível iniciante. Com a pegada aberta seu esforço será concentrado na parte interna do bíceps.
+                    </p><br>
+                    <p>
+                        1-Para começar, fique em pé e mantenha o tronco reto. Segure na parte exterior e larga do cabo de uma barra de pesos, com as palmas das mãos direcionadas para fora e em uma distância maior que a largura dos ombros. Os cotovelos devem estar próximos ao tronco;
+                    </p><br>
+                    <p>
+                        2-Em seguida, erga a barra enquanto contrai os bíceps e exala o ar;
+                    </p><br>
+                    <p>
+                        3-Depois, continue o movimento até que os bíceps estejam totalmente contraídos e a barra se encontre na altura dos ombros;
+                    </p><br>
+                    <p>
+                        4-Então, permaneça nessa posição por um segundo e contraia bem os bíceps;
+                    </p><br>
+                    <p>
+                        5-Logo depois, retorne lentamente à posição original enquanto inspira o ar.
+                        É importante tomar cuidado para não se inclinar para trás durante a execução desse exercício.
+                    </p>
+                </div>
+            </div>
+            <div class="content">
+                <div class="imagens">
+                    <a href="#" onclick="roscaHalt()"><img src="./imagens/biceps/biceps3.png" alt=""></a>
+                </div>
+                <div class="textos">
+                    <h2>Rosca bíceps direta com halteres</h2><br>
+                    <p>
+                        Este exercício também trabalha bastante o bíceps e o antebraço. Seu foco é o fortalecimento. A rosca direita com halteres é recomendada para iniciantes.
+                    </p><br>
+                    <p>
+                        1-Para começar, fique em pé e pegue um halter com cada mão. Os cotovelos devem estar próximos ao tronco e as palmas das mãos direcionadas para a frente;
+                    </p><br>
+                    <p>
+                        2-Então, com os antebraços imóveis, solte o ar e levante os pesos ao mesmo tempo em que contrai os bíceps. Isso deve ser feito até que os bíceps estejam completamente contraídos e os halteres se encontrem na altura dos ombros;
+
+                    </p><br>
+                    <p>
+                        3-Em seguida, permaneça na posição contraída por um instante;
+                    </p><br>
+                    <p>
+                        4-Depois, inspire o ar e retorne lentamente ao posicionamento original.
+                    </p>
+                </div>
+            </div>
+            <div class="content">
+                <div class="imagens">
+                    <a href="#" onclick="roscaMart()"><img src="./imagens/biceps/biceps4.png" alt=""></a>
+                </div>
+                <div class="textos">
+                    <h2>Rosca bíceps martelo em pé com halteres</h2><br>
+                    <p>
+                        A rosca bíceps martelo com halteres visa o desenvolvimento dos músculos dos braços, especialmente da porção longa do bíceps que fica na parte mais externa do braço. 
+
+                        Além do bíceps (ou bíceps braquial), o exercício também trabalha o braquial e o braquiorradial (músculo do antebraço), que são um grupo muscular que compõem os flexores do cotovelo. No movimento de giro com as mãos, há ainda uma leve ativação do tríceps.
+                    </p><br>
+                    <p>
+                        1-Primeiro, pegue um halter em cada mão e permaneça com os braços estendidos ao lado do corpo. As palmas das mãos devem ficar voltadas para dentro;
+                    </p><br>
+                    <p>
+                        2-Então, sem mexer os antebraços, você deve dobrar os cotovelos e levar os halteres para o mais próximo dos ombros que conseguir;
+                    </p><br>
+                    <p>
+                        3-Em seguida, faça uma pausa e lentamente retorne à posição original, estendendo bem os braços.  
+                    </p>
+                </div>
+            </div>
+            <div class="content">
+                <div class="imagens">
+                    <a href="#" onclick="roscaPe()"><img src="./imagens/biceps/biceps5.png" alt=""></a>
+                </div>
+                <div class="textos">
+                    <h2>Rosca bíceps em pé na barra W</h2><br>
+                    <p>
+                        Essa rosca é feita com a barra EZ, de nível iniciante e trabalha o fortalecimento dos bíceps.
+                    </p><br>
+                    <p>
+                        1-Primeiro, fique em pé e segure a barra na parte exterior e larga do cabo, com as palmas das mãos direcionadas para fora, apontando para frente e levemente inclinadas para dentro, por conta do formato da barra. Os cotovelos devem estar próximos ao tronco;
+                    </p><br>
+                    <p>
+                        2-Em seguida, com os antebraços imóveis, solte o ar;
+                    </p><br>
+                    <p>
+                        3-Depois, flexione os cotovelos e leve a barra para cima. Os pesos devem ser erguidos até os bíceps estarem totalmente contraídos e a barra atingir a altura dos ombros;
+                    </p><br>
+                    <p>
+                        4-Então, inale o ar e volte devagar à posição original.
+                    </p>
+                </div>
+            </div>
+            <div class="content">
+                <div class="imagens">
+                    <a href="#" onclick="roscaCorda()"><img src="./imagens/biceps/biceps6.png" alt=""></a>
+                </div>
+                <div class="textos">
+                    <h2>6. Rosca bíceps no cabo e usando a corda</h2><br>
+                    <p>
+                        A rosca com cabo é feita com uma corda curta que fica presa a uma polia baixa. Opcionalmente pode-se usar uma barra curta.
+                    </p><br>
+                    <p>
+                        1-Primeiro, fique em pé, de maneira ereta e com a coluna vertebral reta. Pegue as extremidades da corta com as palmas das mãos apontadas para o centro e deixe os braços estendidos;
+                    </p><br>
+                    <p>
+                        2-Então, faça o movimento de levantamento flexionando os cotovelos;
+                    </p><br>
+                    <p>
+                        3-Depois, retorne o movimento à posição inicial.
+                    </p><br>
+                    <p>
+                        Entretanto, há uma diferença em relação à resistência da rosca com cabo e outros tipos de exercícios de rosca bíceps feitos com halteres ou barra. Nos últimos, a resistência varia durante a elevação, enquanto no movimento realizado com o cabo a resistência é igual o tempo todo.
+                    </p>
+                </div>
+            </div>
+            <div class="content">
+                <div class="imagens">
+                    <a href="#" onclick="roscaBanc()"><img src="./imagens/biceps/biceps7.png" alt=""></a>
+                </div>
+                <div class="textos">
+                    <h2>Rosca bíceps com halteres no banco inclinado</h2><br>
+                    <p>
+                        Este exercício trabalha mais da parte externa do bíceps braquial.
+                    </p><br>
+                    <p>
+                        1-Para começar, deite-se de costas em um banco com uma inclinação de 45º. Deixe os joelhos dobrados, os pés no chão e os braços estendidos com um halter em cada mão. As palmas das mãos devem estar voltadas ligeiramente para a frente;
+                    </p><br>
+                    <p>
+                        2-Então, dobre os cotovelos e eleve os halteres o mais perto que conseguir de seus ombros, sem movimentar o antebraço;
+                    </p><br>
+                    <p>
+                        3-Em seguida, faça uma pausa. Então, abaixe os pesos e retorne lentamente à posição inicial.
+                    </p><br>
+                </div>
+            </div>
+            <div class="content">
+                <div class="imagens">
+                    <a href="#" onclick="roscaMartIncl()"><img src="./imagens/biceps/biceps8.png" alt=""></a>
+                </div>
+                <div class="textos">
+                    <h2>Rosca bíceps martelo no banco inclinado com halteres</h2><br>
+                    <p>
+                        Deitar-se no banco na posição inclinada faz com que o alongamento da cabeça longa do bíceps seja maior, ao mesmo tempo em que a pegada neutra se concentra no músculo braquiorradial e no músculo braquial.
+                    </p><br>
+                    <p>
+                        No entanto, o movimento da rosca martelo faz com que parte da tensão, por estar na posição inclinada, seja retirada da cabeça longa do bíceps.
+                    </p><br>
+                    <p>
+                        1-Para começar, deite-se em um banco inclinado e segure um halter em cada mão. Os braços devem estar estendidos e suspensos ao lado do corpo e os pés devem estar separados e na mesma linha;
+                    </p><br>
+                    <p> 
+                        2-O movimento começa com a flexão dos cotovelos, com os halteres em pé. Nesse momento, os antebraços devem permanecer imóveis;
+                    </p><br>
+                    <p>
+                        3-Então, quando chegar à parte alta do exercício, faça uma pequena pausa e, depois, volte lentamente à posição original.
+                    </p><br>
+                </div>
+            </div>
+            <div class="content">
+                <div class="imagens">
+                    <a href="#" onclick="roscaScott()"><img src="./imagens/biceps/biceps9.png" alt=""></a>
+                </div>
+                <div class="textos">
+                    <h2>Rosca bíceps apoiado no banco Scott e com a barra EZ</h2><br>
+                    <p>
+                        Este é um exercício de nível iniciante que trabalha a força do bíceps de maneira isolada. Para realizá-lo, é preciso ter acesso ao banco Scott e a uma barra EZ.
+                    </p><br>
+                    <p>
+                        1-Primeiro, sente-se no banco Scott e segure a barra na parte estreita e interna de seu cabo. Para pegar corretamente, recomenda-se que alguém dê a barra para você, ou que você a pegue do suporte para barras que os bancos Scott costumam ter.
+                    </p><br>
+                    <p>
+                        2-Ao segurar a barra, as palmas das mãos devem apontar para a frente e levemente inclinadas para dentro, devido ao formato da barra. Os antebraços e o peito devem estar posicionados contra a parte acolchoada, segurando a barra na altura dos ombros;
+                    </p><br>
+                    <p>
+                        3-Então, enquanto inspira, abaixe a barra até que o antebraço esteja estendido e o bíceps completamente alongado;
+                    </p><br>
+                    <p>
+                        4-Depois, ao exalar o ar, utilize o bíceps para subir a barra até que ele esteja totalmente contraído e a barra se encontre na altura dos ombros;
+                    </p><br>
+                    <p>
+                        5-Então, contraia bem os bíceps, permaneça nessa posição por um instante e volte ao posicionamento original.
+                    </p>
+                </div>
+            </div>
+            <div class="content">
+                <div class="imagens">
+                    <a href="#" onclick="roscaUni()"><img src="./imagens/biceps/biceps10.png" alt=""></a>
+                </div>
+                <div class="textos">
+                    <h2>Rosca bíceps concentrada unilateral com halter</h2><br>
+                    <p>
+                        A rosca concentrada trabalha diretamente no bíceps. Além disso, se o movimento for realizado adequadamente, somente esse músculo será requisitado neste exercício.
+                    </p><br>
+                    <p>
+                        Isso faz com que a rosca concentrada seja um dos melhores exercícios para bíceps e ideal para finalizar o treino, quando o objetivo é trabalhar por completo o músculo em questão.
+                    </p><br>
+                    <p>
+                        1-Primeiro, sente-se na ponta de um banco com as pernas afastadas e segure um halter em uma das mãos;
+                    </p><br>
+                    <p>
+                        2- Os joelhos devem estar flexionados e os pés firmes no chão. O cotovelo da mão que segura o peso deve ser apoiado na parte interna da coxa, que fica perto do joelho, e estar estendido. A pegada é com a mão virada em direção à outra coxa;
+                    </p><br>
+                    <p>
+                        3-Enquanto isso, a mão livre deve ser apoiada na outra coxa para ajudar a dar estabilidade ao corpo;
+                    </p><br>
+                    <p>
+                        4-Depois, eleve o halter, fazendo o movimento de flexão do cotovelo, até que a carga se aproxime do ombro. Toda a força deve ficar concentrada no bíceps;
+                    </p><br>
+                    <p>
+                        5-Segure a contração por alguns instantes, então, desça o halter de modo controlado e retorne à posição original;
+                    </p><br>
+                    <p>
+                        6-É importante não mexer o corpo durante o exercício, somente o antebraço é que deve se movimentar.
+                    </p><br>
+                </div>
+            </div>
+        </div>
+    </div>
+    <ion-icon name="close-outline" class="exit legs" onclick="pernas()"></ion-icon>
+    <div class="pernas divPrinc">
+        <div class="container">
+            <h2 class="tituloDiv">Clique nas imagens para adicionar ao seu treino</h2>
+            <div class="content">
+                <div class="imagens">
+                    <a href="#" onclick="agacha()"><img src="./imagens/perna/perna1.png" alt=""></a>
+                </div>
+                <div class="textos">
+                    <h2>Agachamento livre com barra</h2><br>
+                    <p>
+                        O agachamento é um dos melhores exercícios para pernas, especialmente quando a carga apropriada é usada.
+                    </p><br>
+                    <p>
+                        1-Comece na posição em pé, apoie o peso nas costas, na região do trapézio e segure-o firmemente e retire-o do suporte;
+                    </p><br>
+                    <p>
+                        2-Depois, com a coluna reta, estabilize o tronco, com os pés ligeiramente virados para fora e separados paralelos aos ombros. Mantenha os joelhos estendidos na mesma direção dos pés. Deixe as escápulas encaixadas para trás e o abdômen contraído;
+                    </p><br>
+                    <p>
+                        3-Em seguida, desça o tronco e flexione os joelhos e movimente o quadril para trás. Então, desça até que as coxas ficarem paralelas ao chão e, durante esse movimento, o tronco se inclina para frente e a coluna permanece reta. Os joelhos não podem ultrapassar a linha dos pés;
+                    </p><br>
+                    <p>
+                        4-Depois, eleve o tronco por meio da extensão dos joelhos, trazendo o quadril para frente. Não se esqueça de contrair os músculos da coxa durante a subida;
+                    </p><br>
+                    <p>
+                        5-Ao finalizar suas repetições, coloque a barra de volta ao seu suporte com bastante cuidado.
+                    </p>
+                </div>
+            </div>
+            <div class="content">
+                <div class="imagens">
+                    <a href="#" onclick="afundo()"><img src="./imagens/perna/perna2.png" alt=""></a>
+                </div>
+                <div class="textos">
+                    <h2>Agachamento afundo com halteres</h2><br>
+                    <p>
+                        1-Comece em pé, com os pés paralelos aos ombros, segure um halter fixo em cada uma das mãos e deixe os braços estendidos ao lado do corpo, como na imagem acima;
+                    </p><br>
+                    <p>
+                        2-Em seguida, leve um pé mais para a frente e flexione o joelho dessa perna em 90º, até que a coxa correspondente esteja paralela ao chão. Depois, volte à posição original;
+                    </p><br>
+                    <p>
+                       3-O pé de trás deve ficar fixo no chão durante o movimento, enquanto a perna é esticada e o joelho traseiro aponta para o chão. Quando o corpo for projetado para a frente, o tronco deve ficar ereto e o peso do corpo deve ficar na perna que avançou.
+                    </p><br>
+                    <p>
+                        4-Para trabalhar mais os glúteos nesse exercício, é indicado dar um passo maior. Se você quiser intensificar essa atividade, use um banco ou step para apoiar uma das pernas. Mas antes verifique se adicionar esse acessório é indicado para o seu treino.
+                    </p>
+                </div>
+            </div>
+            <div class="content">
+                <div class="imagens">
+                    <a href="#" onclick="elevacao()"><img src="./imagens/perna/perna3.png" alt=""></a>
+                </div>
+                <div class="textos">
+                    <h2>Elevação de panturrilha em pé no step</h2><br>
+                    <p>
+                        A elevação de panturrilhas em pé, também conhecida como elevação de gêmeos em pé, é um exercício de musculação que visa desenvolver os músculos da panturrilha, especialmente o gastrocnêmio.
+
+                    </p><br>
+                    <p>
+                        1-Comece em pé em cima de um caixote ou bloco, posicione somente as pontas dos pés no objeto e afaste um pouco as pernas;
+                    </p><br>
+                    <p>
+                        2-Em seguida, confira se deixou a metade dos pés e os calcanhares fora do caixote, de modo que seja possível sentir a panturrilha ser alongada;
+                    </p><br>
+                    <p>
+                        3-No começo pode ser difícil se equilibrar, então é indicado apoiar-se próximo a uma parede durante o exercício;
+                    </p><br>
+                    <p>
+                        4-Então, pressione as pontas dos pés em cima do caixote ou bloco, erguendo os calcanhares;
+                    </p><br>
+                    <p>
+                        5-Depois, faça uma pausa rápida, e retorne à posição inicial, sem esquecer de alongar a panturrilha.
+                    </p>
+                </div>
+            </div>
+            <div class="content">
+                <div class="imagens">
+                    <a href="#" onclick="rack()"><img src="./imagens/perna/perna4.png" alt=""></a>
+                </div>
+                <div class="textos">
+                    <h2>Agachamento no rack</h2><br>
+                    <p>
+                        1-Comece se posicionando no aparelho, encoste as costas no encosto e encaixe os ombros dentro da almofada. Os pés devem ficar paralelos aos ombros e fixos na plataforma, um pouco à frente do corpo. Mantenha os joelhos e os pés alinhados e levemente direcionados para fora;
+                    </p><br>
+                    <p>
+                        2-Deixe a coluna reta, as escápulas encaixadas para trás e o abdômen contraído. Segure os pegadores do aparelho para auxiliar a estabilização. Estenda os joelhos para subir o peso e destrave o equipamento;
+                    </p><br>
+                    <p>
+                        3-Então, desça o corpo flexionando os joelhos até que as coxas fiquem paralelas em relação à base da máquina. Enquanto isso, mantenha a região lombar e os glúteos em contato com o encosto e não permita que os joelhos ultrapassem a linha dos pés (se os joelhos forem além dessa linha indica que o exercício não está sendo executado corretamente e os joelhos estarão recebendo um estresse desnecessário);
+                    </p><br>
+                    <p>
+                        4-Em seguida, suba o tronco por meio da força das coxas até que os joelhos fiquem estendidos. Deixe os músculos contraídos e faça o número de repetições determinadas. Por fim, trave os pesos e deixe o equipamento com segurança.
+                    </p>
+                </div>
+            </div>
+            <div class="content">
+                <div class="imagens">
+                    <a href="#" onclick="legPress()"><img src="./imagens/perna/perna5.png" alt=""></a>
+                </div>
+                <div class="textos">
+                    <h2>Leg press 45º</h2><br>
+                    <p>
+                        1-Comece sentado no aparelho e com os pés no centro da plataforma e paralelos aos ombros, eles ainda devem apontar ligeiramente para fora, acompanhando o alinhamento dos joelhos;
+                    </p><br>
+                    <p>
+                        2-Em seguida, estenda os joelhos, empurrando a plataforma para frente, e destrave o peso. Segure as alças do aparelho para auxiliar a estabilização. Deixe as costas e a lombar fixadas no banco;
+                    </p><br>
+                    <p>
+                        3-Então, desça o peso cuidadosamente, flexionando os joelhos em aproximadamente 90º. Tome cuidado para não descer demais e travar os joelhos;
+                    </p><br>
+                    <p>
+                        4-Empurre a plataforma para frente com a força das coxas até estender os joelhos. Segure a contração do músculo durante um momento e repita o exercício quantas vezes for determinado;
+                    </p><br>
+                    <p>
+                        5-Ao término do exercício, trave os pesos e saia do equipamento com cuidado.
+                    </p>
+                </div>
+            </div>
+            <div class="content">
+                <div class="imagens">
+                    <a href="#" onclick="agachaSmith()"><img src="./imagens/perna/perna6.png" alt=""></a>
+                </div>
+                <div class="textos">
+                    <h2>Agachamento na máquina Smith</h2><br>
+                    <p>
+                        Agachamento smith é um tipo de agachamento que trabalha principalmente os músculos da perna e glúteos, ajudando a aumentar a massa e a força muscular da parte inferior do corpo, sendo feito em uma aparelho chamado máquina Smith.
+                    </p><br>
+                    <p>
+                        1-Comece ajustando o equipamento com o peso escolhido;
+                    </p><br>
+                    <p>
+                        2-Em seguida, posicione os pés paralelos aos ombros, encaixe-se embaixo da barra e gire a mesma para destravá-la;
+                    </p><br>
+                    <p>
+                        3-Então, fique na posição em pé, com as costas ligeiramente arqueadas, o peito para cima e a cabeça apontando para a frente;
+                    </p><br>
+                    <p>
+                        4-Depois, desça o tronco flexionando os joelhos e os quadris. Continue descendo até formar um ângulo em torno de 90º com as pernas;
+                    </p><br>
+                    <p>
+                        5-Por fim, volte à posição original por meio da extensão dos quadris e dos joelhos.
+                    </p>
+                </div>
+            </div>
+            <div class="content">
+                <div class="imagens">
+                    <a href="#" onclick="stiff()"><img src="./imagens/perna/perna7.png" alt=""></a>
+                </div>
+                <div class="textos">
+                    <h2>Stiff</h2><br>
+                    <p>
+                        Agachamento smith é um tipo de agachamento que trabalha principalmente os músculos da perna e glúteos, ajudando a aumentar a massa e a força muscular da parte inferior do corpo, sendo feito em uma aparelho chamado máquina Smith.
+                    </p><br>
+                    <p>
+                        1-Mantenha os pés paralelos alinhados ao quadril e os joelhos levemente flexionados.
+                    </p><br>
+                    <p>
+                        2-Abra o peito, encaixe os ombros para trás e mantenha o abdômen contraído.
+                    </p><br>
+                    <p>
+                        3-Levante o peso com o dorso da mão voltado para frente e mantenha o halter ou barra bem próximo à coxa (eles quase se encostam!)
+                    </p><br>
+                    <p>
+                        4-Jogue o quadril para trás conforme flexiona o tronco para frente.
+                    </p><br>
+                    <p>
+                        5-Desça até o chamado limite de amplitude, ou enquanto o tronco se mantiver reto, sem arquear.
+                    </p><br>
+                    <p>
+                        6-Atenção: os braços não se movimentam nem flexionam. No stiff eles servem apenas para segurar a carga.
+                    </p>
+                </div>
+            </div>
+            <div class="content">
+                <div class="imagens">
+                    <a href="#" onclick="flexora()"><img src="./imagens/perna/perna8.png" alt=""></a>
+                </div>
+                <div class="textos">
+                    <h2>Mesa Flexora</h2><br>
+                    <p>
+                        A mesa flexora é um dos exercícios uniarticulares que podem contribuir para o ganho de massa muscular e força nos membros inferiores.
+
+                        Porém, para poder ter melhores resultados no treino é necessário saber o contexto correto para incluir este exercício na rotina de treinamento, assim como torná-lo mais eficaz.
+                    </p><br>
+                    <p>
+                        1-Deitar-se na mesa  de “barriga voltada para baixo” no aparelho, ajustando a almofada logo acima do calcanhar.
+                    </p><br>
+                    <p>
+                        2- Iniciar o movimento de flexão de joelho até contrair ao máximo os músculos posteriores da coxa.
+                    </p><br>
+                    <p>
+                        3-Retornar lentamente a posição inicial, estendendo os joelhos de maneira controlada.
+                    </p><br>
+                    <p> 
+                        4-Repetir o movimento pelo número de vezes previamente estipulado.
+                    </p>
+                </div>
+            </div>
+            <div class="content">
+                <div class="imagens">
+                    <a href="#" onclick="adutora()"><img src="./imagens/perna/perna9.png" alt=""></a>
+                </div>
+                <div class="textos">
+                    <h2>Cadeira Abdutora / Adutora</h2><br>
+                    <p>
+                        Máquina Abdutora é a cadeira em que você abre as pernas, empurrando o peso para fora e fortalecendo os músculos na parte lateral externa da coxa e quadril.
+                    </p><br>
+                    <p>
+                       1-Sente-se na máquina, posicione os pés nos apoios, suba a trava e una as pernas vagarosamente. Para o movimento de abdução, você deve fazer força empurrando a máquina para fora, afastando os joelhos. 
+                    </p><br>
+                    <p>
+                        2-Depois você deve voltar à posição inicial lentamente, mantendo a tensão dos músculos em vez de soltar o peso da máquina de uma vez. 
+                    </p><br>
+                    <p>
+                        Máquina Adutora é a cadeira em que você fecha as pernas, empurrado o peso da máquina “para dentro” e fortalecendo os músculos na parte lateral interior da coxa.
+                    </p><br>
+                    <p>
+                        1-Sente-se na máquina, posicione os pés nos apoios, suba a trava e abra as pernas o quanto for confortável. Quanto maior a amplitude, mais desafiador será o movimento. Para o movimento de adução, você deve fazer força empurrando os lados da máquina para dentro, aproximando-os e juntando os joelhos.
+                    </p><br>
+                    <p>
+                        2-Depois você deve voltar à posição inicial lentamente, mantendo a tensão dos músculos em vez de deixar que a máquina empurre suas pernas para a posição aberta de uma vez.
+                    </p>
+                </div>
+            </div>
+            <div class="content">
+                <div class="imagens">
+                    <a href="#" onclick="extensora()"><img src="./imagens/perna/perna10.png" alt=""></a>
+                </div>
+                <div class="textos">
+                    <h2>Cadeira Extensora</h2><br>
+                    <p>
+                        A cadeira extensora apesar de ser realizada no aparelho, onde é possível estar bem estabilizado, também é necessária uma boa execução e postura adequada para efetuar o exercício de forma segura e efetiva.
+                    </p><br>
+                    <p>
+                        1-Em primeiro lugar é necessário regular o banco de acordo com a altura de cada indivíduo, de forma que a parte de trás do joelho esteja exatamente na região da dobra da cadeira.
+
+                        Os pés devem estar apoiados nas almofadas na mesma linha do tornozelo.
+                    </p><br>
+                    <p>
+                        2-Sentado na cadeira, as costas devem estar bem apoiadas e respeitando a curvatura fisiológica da coluna.
+                    </p><br>
+                    <p>
+                        3-Iniciando o exercício, estenda os joelhos até a contração máxima do músculo.
+                    </p><br>
+                    <p>
+                        4-Retorne de maneira controlada á posição inicial.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <ion-icon name="close-outline" class="exit sholder" onclick="ombros()"></ion-icon>
+    <div class="ombros divPrinc">
+        <div class="container">
+            <h2 class="tituloDiv">Clique nas imagens para adicionar ao seu treino</h2>
+            <div class="content">
+                <div class="imagens">
+                    <a href="#" onclick="desenv()"><img src="./imagens/ombros/ombro1.png" alt=""></a>
+                </div>
+                <div class="textos">
+                    <h2>Desenvolvimento de ombros com halteres</h2><br>
+                    <p>
+                        Este exercício trabalha o deltoide anterior e o deltoide lateral, além de atingir outros músculos como o tríceps, o trapézio e o peitoral superior.
+                    </p><br>
+                    <p>
+                        1-Comece sentando-se em um banco com as costas retas, segure um haltere em cada mão na altura dos ombros e com os cotovelos dobrados, como na imagem acima;
+                    </p><br>
+                    <p>
+                        2-Em seguida, leve os halteres para cima no sentido vertical até esticar os braços;
+                    </p><br>
+                    <p>
+                        3-Depois, traga os halteres para baixo, até que eles toquem os ombros.
+                    </p><br>
+                    <p>
+                        O modo de segurar os halteres altera a forma que os músculos são trabalhados. Se as palmas das mãos estiverem direcionadas para dentro, o movimento trabalha mais o deltoide anterior.
+
+                        Já a pegada com as palmas voltadas para fora, faz com que o esforço feito pelo deltoide anterior durante o exercício seja maior.
+                    </p>
+                </div>
+            </div>
+            <div class="content">
+                <div class="imagens">
+                    <a href="#" onclick="desenvBarra()"><img src="./imagens/ombros/ombro2.png" alt=""></a>
+                </div>
+                <div class="textos">
+                    <h2>Desenvolvimento de ombros com barra</h2><br>
+                    <p>
+                        Classificado como um dos melhores exercícios para os ombros, o desenvolvimento de ombros realizado com a barra trabalha principalmente o deltoide anterior, mas também atinge o lateral e o superior. Ele permite o uso de cargas elevadas, ao mesmo tempo em que traz pouco risco de lesão. 
+                    </p><br>
+                    <p>
+                        1-Primeiro, sente-se em um banco reto com uma leve inclinação, deixe a coluna reta e encoste a parte superior das costas no encosto do banco;
+                    </p><br>
+                    <p>
+                        2-Em seguida, pegue a barra com as mãos a uma distância equivalente à largura dos ombros, as palmas das mãos devem estar voltadas para frente;
+
+                    </p><br>
+                    <p>
+                        3-Depois, suba a carga até a altura do pescoço, deixando os cotovelos flexionados ao lado do corpo. Os antebraços devem estar na posição vertical e as escápulas travadas para trás;
+                    </p>
+                    <p>
+                        4-Em seguida, empurre a barra para cima com a força dos músculos dos ombros, estendendo os cotovelos até a barra ficar estabilizada acima da cabeça;
+                    </p><br>
+                    <p>
+                        5-Para finalizar, desça a barra flexionando os cotovelos para voltar à posição inicial;
+                    </p><br>
+                    <p>
+                        6-Lembre-se que uma pegada mais aberta que a largura dos ombros eleva o risco de se lesionar, além de diminuir a participação do tríceps na execução do exercício.
+
+                    </p>
+                </div>
+            </div>
+            <div class="content">
+                <div class="imagens">
+                    <a href="#" onclick="arnold()"><img src="./imagens/ombros/ombro3.png" alt=""></a>
+                </div>
+                <div class="textos">
+                    <h2>Desenvolvimento Arnold para ombros</h2><br>
+                    <p>
+                        Criado pelo astro do cinema e do fisiculturismo Arnold Schwarzenegger, este exercício é uma versão do desenvolvimento de ombros feita com halteres. É indicado para quem possui dificuldade para desenvolver o deltoide anterior.
+                    </p><br>
+                    <p>
+                        1-Primeiro, sente-se em um banco com encosto e segure um haltere em cada uma das mãos, com as palmas viradas para você. Mantenha a coluna ereta e as costas bem apoiadas;
+                    </p><br>
+                    <p>
+                        2-Em seguida, com as escápulas travadas para trás, flexione os cotovelos e leve os pesos em direção ao peito, com os antebraços na posição vertical;
+                    </p><br>
+                    <p>
+                        3-Na sequência, utilize a força dos músculos dos ombros para empurrar os pesos para cima ao mesmo tempo em que gira as palmas das mãos para a frente;
+                    </p><br>
+                    <p>
+                        4-Depois, quando atingir a parte alta do movimento, os cotovelos devem estar estendidos, com os halteres próximos um do outro e posicionados acima da cabeça, com as palmas das mãos direcionadas para fora;
+                    </p><br>
+                    <p>
+                        5-Então, faça uma pequena pausa na parte alta do exercício e desça os pesos controladamente, com o movimento inverso ao da subida.  
+                    </p>
+                </div>
+            </div>
+            <div class="content">
+                <div class="imagens">
+                    <a href="#" onclick="elevLat()"><img src="./imagens/ombros/ombro4.png" alt=""></a>
+                </div>
+                <div class="textos">
+                    <h2>Elevação lateral de ombros com halteres</h2><br>
+                    <p>
+                        A elevação com halteres é considerada um dos melhores exercícios para ombros para trabalhar a sua parte lateral. O músculo principal envolvido é o deltoide lateral, mas o exercício ainda aciona, de modo secundário, o deltoide anterior e o deltoide posterior.
+                    </p><br>
+                    <p>
+                        1-Para começar, fique em pé e posicione os seus pés paralelos aos ombros. Segure um halter em cada mão com as palmas voltadas para você. Não se esqueça de manter a coluna reta e as escápulas encaixadas para trás.;
+                    </p><br>
+                    <p>
+                        2-Em seguida, coloque os pesos próximos, na altura das coxas e deixe os cotovelos levemente flexionados;
+                    </p><br>
+                    <p>
+                        3-Depois, eleve os halteres lateralmente, fazendo o movimento de abdução dos ombros (em que os braços são levantados para fora e para o lado), até os braços ficarem paralelos ao chão. O esforço do movimento deve ser concentrado na parte lateral dos deltoides, na articulação dos ombros, portanto, os cotovelos devem permanecer imóveis;
+                    </p><br>
+                    <p>
+                        4-Então, contraia bem os músculos e desça lentamente os halteres e volte à posição original.
+                    </p>
+                </div>
+            </div>
+            <div class="content">
+                <div class="imagens">
+                    <a href="#" onclick="crucifixo()"><img src="./imagens/ombros/ombro5.png" alt=""></a>
+                </div>
+                <div class="textos">
+                    <h2>Crucifixo invertido com halteres</h2><br>
+                    <p>
+                        Este exercício é classificado como o mais simples e eficiente para atingir a parte de trás do deltoide, que é a mais fraca e menor entre as três regiões do músculo, mas que não deve ser deixada de lado, já que se não for trabalhada haverá desequilíbrio entre os músculos do ombro.
+                    </p><br>
+                    <p>
+                        1-Para começar, incline o corpo para a frente, flexione levemente os joelhos, deixe o tronco paralelo ao chão e segure um halter em cada uma das mãos, com as palmas apontando para dentro;
+                    </p><br>
+                    <p>
+                        2-Depois, aproxime as escápulas e os ombros, leve os halteres para cima, com os cotovelos quase completamente estendidos;
+                    </p><br>
+                    <p>
+                        3-Em seguida, desça os halteres, sem permitir que eles se encostem, já que deixar os pesos encostarem torna o movimento mais fácil;
+                    </p><br>
+                    <p>
+                        4-Durante o exercício, é importante contrair a coluna corretamente, sem curvar a lombar, para não correr o risco de se lesionar;
+                    </p><br>
+                    <p>
+                        5-Outro erro que não deve ser cometido é movimentar o tronco junto com os braços, pois ele precisa ficar estabilizado, e somente os ombros devem se movimentar. Além disso, para não diminuir o trabalho da musculatura, não deixe os cotovelos muito flexionados.
+                    </p>
+                </div>
+            </div>
+            <div class="content">
+                <div class="imagens">
+                    <a href="#" onclick="remadaAlta()"><img src="./imagens/ombros/ombro6.png" alt=""></a>
+                </div>
+                <div class="textos">
+                    <h2>Remada alta em pé com halteres</h2><br>
+                    <p>
+                        Este exercício é uma boa opção para quem quer trabalhar os ombros e os bíceps. Apesar de demandar força, ele pode ser feito por iniciantes.
+                    </p><br>
+                    <p>
+                        1-Comece em pé e segure um halter em cada mão, com as palmas para frente, e mantendo as mãos a uma distância ligeiramente menor que a distância dos ombros. Deixe os braços estendidos ao lado do corpo e os cotovelos levemente dobrados. No início da posição os halteres ficam apoiados nas coxas;
+                    </p><br>
+                    <p>
+                        2-Em seguida, levante os halteres com a lateral dos ombros, flexionando os cotovelos e exale o ar durante o movimento;
+                    </p><br>
+                    <p>
+                        3-Lembre-se que os pesos devem estar próximos ao corpo e os cotovelos devem guiar o movimento. Enquanto levanta os halteres, os cotovelos devem sempre estar a uma altura acima dos antebraços;
+                    </p><br>
+                    <p>
+                        4-O movimento termina quando os halteres quase tocarem o queixo. Logo depois, pare por uma segundo nessa posição e então volte devagar à posição inicial.
+                    </p>
+                </div>
+            </div>
+            <div class="content">
+                <div class="imagens">
+                    <a href="#" onclick="remadaAltaCabo()"><img src="./imagens/ombros/ombro7.png" alt=""></a>
+                </div>
+                <div class="textos">
+                    <h2>Remada alta no cabo</h2><br>
+                    <p>
+                        A remada alta no cabo é um exercício para ombros de nível intermediário, que também trabalha o trapézio. Trata-se de um movimento composto, que tem como foco a força.
+                    </p><br>
+                    <p>
+                        1-Para começar, segure uma barra reta de cabo conectada a uma polia baixa, com as palmas das mãos voltadas para as coxas. A distância entre as mãos deve ser ligeiramente menor que a largura dos ombros. A barra deve ficar apoiada nas coxas e os braços devem estar estendidos, com os cotovelos levemente dobrados e as costas retas;
+                    </p><br>
+                    <p>
+                        2-Em seguida, use os ombros para levantar a barra ao mesmo tempo em que exala o ar e a leva a quase encostar no queixo;
+                    </p><br>
+                    <p>
+                        3-Depois, pause o movimento por um segundo e então abaixe a barra lentamente até o seu local de origem, ao mesmo tempo em que inala o ar;
+                    </p><br>
+                    <p>
+                        4-Durante o movimento, a barra deve ser mantida próximo do corpo e os cotovelos devem estar a uma altura maior que a dos antebraços. Já o tronco deve permanecer imóvel.
+                    </p>
+                </div>
+            </div>
+            <div class="content">
+                <div class="imagens">
+                    <a href="#" onclick="voadorInvert()"><img src="./imagens/ombros/ombro8.png" alt=""></a>
+                </div>
+                <div class="textos">
+                    <h2>Voador invertido na máquina</h2><br>
+                    <p>
+                        Este exercício de força trabalha os ombros de maneira isolada e pode ser feito por iniciantes.
+                    </p><br>
+                    <p>
+                        1-Antes de começar, ajuste as alças da máquina e escolha um peso apropriado (peça ajuda do instrutor e não escolha uma carga muito pesada para você). Então ajuste o banco para que as alças estejam na altura dos ombros;
+                    </p><br>
+                    <p>
+                        2-Em seguida, pegue as alças do aparelho com as palmas das mãos voltadas para dentro e em um movimento semicircular puxe-as em um sentido lateral e para trás, contraindo o deltoide posterior. Os braços devem permanecer levemente dobrados durante o exercício e todo o movimento deve ocorrer na articulação dos ombros;
+                    </p><br>
+                    <p>
+                        3-Depois, pause o movimento na parte traseira por alguns instantes, e então retorne lentamente à posição original.
+                    </p>
+                </div>
+            </div>
+            <div class="content">
+                <div class="imagens">
+                    <a href="#" onclick="elevLatPolia()"><img src="./imagens/ombros/ombro9.png" alt=""></a>
+                </div>
+                <div class="textos">
+                    <h2>Elevação lateral na polia</h2><br>
+                    <p>
+                        A Elevação Lateral no Cabo é uma variação do exercício conhecido como elevação lateral. Como você já deve imaginar, esse exercício é feito com o auxílio da polia, o mesmo exercício que você faz o crossover.
+                    </p><br>
+                    <p>
+                        1-Ajuste a guia do cross na parte inferior do aparelho;
+                    </p><br>
+                    <p>
+                        2-Segure a manopla e afaste-se mantendo o cabo estendido;
+                    </p><br>
+                    <p>
+                        3-Contraia o abdômen e flexione levemente os joelhos;
+                    </p><br>
+                    <p>
+                        4-Eleve os braços até aproximadamente a altura dos ombros.
+                    </p><br>
+                    <p>
+                        5-Retorne à posição inicial e repita o movimento até completar sua série.
+                    </p>
+                </div>
+            </div>
+            <div class="content">
+                <div class="imagens">
+                    <a href="#" onclick="elevFrontal()"><img src="./imagens/ombros/ombro10.png" alt=""></a>
+                </div>
+                <div class="textos">
+                    <h2>Elevação Frontal</h2><br>
+                    <p>
+                        Elevação frontal é um exercício de força que serve para fortalecer e aumentar a massa muscular do músculo deltoide anterior no ombro de forma isolada, além de deixar os ombros mais definidos.
+                    </p><br>
+                    <p>
+                        1-Ficar em pé, com os pés afastados na largura dos ombros, e os braços esticados na frente das coxas;
+                    </p><br>
+                    <p>
+                        2-Segurar um halter em cada mão com as palmas das mãos voltadas para o corpo (posição pronada), com os braços para baixo à frente do corpo;
+                    </p><br>
+                    <p>
+                        3-Manter as costas retas e o abdômen contraído durante todo o movimento;
+                    </p><br>
+                    <p>
+                        4-Elevar os dois braços esticados, com uma leve flexão dos cotovelos para não sobrecarregar as articulações, até que os pesos se encontrem na altura do ombro;
+                    </p><br>
+                    <p>
+                        5-Não movimentar os pulsos durante a elevação, para não causar lesões;
+                    </p><br>
+                    <p>
+                        6-Manter a elevação dos braços por alguns segundos;
+                    </p><br>
+                    <p>
+                        7-Descer os braços lentamente para a posição inicial.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="muscle.js"></script>
+    <script src="muscleAdd.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

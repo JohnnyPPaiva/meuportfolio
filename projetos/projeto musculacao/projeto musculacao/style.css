@@ -1,0 +1,522 @@
+@charset "UTF-8";
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+:root {
+    --cor-paleta1: #DDDDDD;
+    --cor-paleta2: #212934;
+    --cor-paleta3: #2A4760;
+    --cor-paleta4: #FE3E48;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--cor-paleta3);
+}
+
+
+header {
+    position: fixed;
+    width: 100%;
+    height: 8vh;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    backdrop-filter: blur(20px);
+    background: var(--cor-paleta2);
+}
+
+.iconePrinc {
+    width: 60px;
+    color: #fff;
+}
+
+ul {
+    position: relative;
+    display: flex;
+    gap: 40px;
+}
+
+ul li {
+    list-style: none;
+}
+
+.tmbMenu {
+    text-decoration: none;
+    color: var(--cor-paleta1);
+    transition: 1s;
+}
+
+.tmbMenu::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 51%;
+    height: 2px;
+    background-color: var(--cor-paleta1);
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.5s ease-out;
+}
+
+.tmbMenu:hover {
+    color: var(--cor-paleta4);
+}
+
+.tmbMenu:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.trainingMenu {
+    text-decoration: none;
+    color: var(--cor-paleta1);
+    transition: 1s;
+}
+
+.trainingMenu::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50;
+    width: 33.5%;
+    height: 2px;
+    background-color: var(--cor-paleta1);
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.5s ease-out;
+}
+
+.trainingMenu:hover {
+    color: var(--cor-paleta4);
+}
+
+.trainingMenu:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.mobileMenu div {
+    width: 30px;
+    height: 3px;
+    margin: 5px;
+    background: #000;
+    border-radius: 5px;
+    transition: 1s;
+    display: none;
+}
+
+.treino {
+    position: relative;
+    top: 1%;
+    left: 50%;
+    transform: translate(-50%, 30%);
+    border-radius: 10px;
+    padding: 30px;
+    flex-direction: column;
+    background: #fff;
+    align-items: center;
+    text-align: left;
+    visibility: hidden;
+    opacity: 0;
+    transition: 1s;
+    z-index: 100000;
+}
+
+.treino.active {
+    top: 10%;
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+
+.tituloFichaPeito {
+    visibility: hidden;
+}
+
+.tituloFichaPeito.active {
+    visibility: visible;
+}
+
+.tituloFichaTriceps {
+    visibility: hidden;
+}
+
+.tituloFichaTriceps.active {
+    visibility: visible;
+}
+
+.tituloFichaCostas {
+    visibility: hidden;
+}
+
+.tituloFichaCostas.active {
+    visibility: visible;
+}
+
+.tituloFichaBiceps {
+    visibility: hidden;
+}
+
+.tituloFichaBiceps.active {
+    visibility: visible;
+}
+
+.tituloFichaPernas {
+    visibility: hidden;
+}
+
+.tituloFichaPernas.active {
+    visibility: visible;
+}
+
+.tituloFichaOmbros {
+    visibility: hidden;
+}
+
+.tituloFichaOmbros.active {
+    visibility: visible;
+}
+
+.fecharTreino {
+    position: relative;
+    top: 5%;
+    left: 90%;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 30px;
+}
+
+.fecharTreino:hover {
+    background: var(--cor-paleta1);
+    transition: .5s;
+}
+
+.print {
+    cursor: pointer;
+    font-size: 30px;
+    visibility: hidden;
+}
+
+.print:hover {
+    font-size: 32px;
+    transition: .5s;
+}
+
+.reload {
+    position: fixed;
+    left: 80%;
+    cursor: pointer;
+    font-size: 30px;
+    border-radius: 50%;
+    visibility: hidden;
+}
+
+.reload:hover {
+    font-size: 32px;
+    transition: .5s;
+}
+
+.print.active {
+    visibility: visible;
+}
+
+.reload.active {
+    visibility: visible;
+}
+
+
+
+@media print {
+    body * {
+        visibility: hidden;
+    }
+    .treino {
+        position: absolute;
+        left: 500px;
+        top: 500px;
+    }
+    .treino p {
+        visibility: visible;
+        font-size: 1.5em;
+    }
+    .treino h2 {
+        font-size: 2em;
+    }
+    @page {
+        size: landscape;
+    }
+    .fecharTreino {
+        visibility: hidden;
+    }
+    .treino .print {
+        visibility: hidden;
+    }
+    .treino .reload {
+        visibility: hidden;
+    }
+}
+
+#home {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background: var(--cor-paleta3);
+    color: var(--cor-paleta1);
+    display: flex;
+    flex-direction: column;
+    padding: 100px;
+}
+
+#home h1 {
+    text-align: center;
+    font-size: 2em;
+}
+
+#home.active {
+    filter: blur(10px);
+}
+
+.principal {
+    position: relative;
+    top: 100px;
+    display: grid;
+    width: 100%;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(6, 1fr);
+}
+.principal a {
+    text-decoration: none;
+}
+
+.exerc {
+    position: relative;
+    width: 250px;
+    height: 500px;
+    background: #DDDDDD;
+    border-radius: 10px;
+    border: 2px solid var(--cor-paleta1);
+    opacity: .9;
+    transition: .3s;
+}
+
+.exerc:hover {
+    opacity: 1;
+    transition: .3s;
+}
+
+.exerc::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px; 
+    background-color: var(--cor-paleta4); 
+    border-radius: 0px 0px 10px 10px;
+    transition: .3s;
+}
+
+.exerc:hover::before {
+    background-color: var(--cor-paleta3);
+    transition: .3s;
+}
+
+.exerc img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.exerc h3 {
+    text-align: center;
+}
+
+h3 {
+    position: relative;
+    top: 460px;
+    color: #fff;
+}
+
+.divPrinc {
+    position: fixed;
+    top: 1%;
+    left: 50%;
+    width: 90%;
+    height: 800px;
+    transform: translate(-50%, 10%);
+    border-radius: 30px;
+    padding: 10px;
+    background: var(--cor-paleta2);
+    color: var(--cor-paleta1);
+    visibility: hidden;
+    opacity: 0;
+    transition: .3s;
+    overflow: auto;
+}
+
+.divPrinc .tituloDiv {
+    color: var(--cor-paleta1);
+}
+
+.divPrinc h2 {
+    color: var(--cor-paleta4);
+    text-shadow: 1px 1px #000;
+}
+
+.peitoral.active {
+    visibility: visible;
+    opacity: 1;
+    transition: .3s;
+}
+
+.triceps.active {
+    visibility: visible;
+    opacity: 1;
+    transition: .3s;
+}
+
+.costas.active {
+    visibility: visible;
+    opacity: 1;
+    transition: .3s;
+}
+
+.biceps.active {
+    visibility: visible;
+    opacity: 1;
+    transition: .3s;
+}
+
+.pernas.active {
+    visibility: visible;
+    opacity: 1;
+    transition: .3s;
+}
+
+.ombros.active {
+    visibility: visible;
+    opacity: 1;
+    transition: .3s;
+}
+
+
+.exit {
+    position: absolute;
+    top: 450px;
+    left: 64px;
+    color: #fff;
+    font-size: 64px;
+    border-radius: 50%;
+    cursor: pointer;
+    visibility: hidden;
+    transition: .3s;
+    z-index: 10000;
+}
+
+.exit:hover {
+    background: #bbb9b952;
+    transition: .2s;
+}
+
+.chests.active {
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+
+.tricep.active {
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+.back.active {
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+.bicep.active {
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+.legs.active {
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+.sholder.active {
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    flex-direction: column;
+    
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: #F4F4F4;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    padding: 30px;
+}
+
+.imagens {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.imagens img {
+    border-radius: 10px;
+    width: 400px;
+    height: 400px;
+}
+
+.textos {
+    flex: 2;
+}
+
+.add {
+    font-size: 2em;
+    color: #000;
+    cursor: pointer;
+}
+
+.add:hover {
+    font-size: 2.2em;
+    transition: .5s;
+}
+
+.treino{
+    position: absolute;
+    top: 100px;
+}
+
+.respostaTreino {
+    color: #000;
+}

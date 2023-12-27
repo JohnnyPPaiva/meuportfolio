@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TMB</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaQuery.css">
+</head>
+<body>
+    <header class="header headerToggle">
+        <a href="#" class="tituloPrinc" onclick="recarregar()">:: CALCULADORA DE TMB ::</a>
+        <menu>
+            <ul class="nav">
+                <li><a href="#" onclick="oquee()">O que é</a></li>
+                <li><a href="#" onclick="calcular()">Como calcular</a></li>
+                <li><a href="#" onclick="influencia()">Influência</a></li>
+                <li><a href="#" onclick="aumentar()">Como aumentar</a></li>
+            </ul>
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </menu>
+    </header>
+    <section>
+        <form>
+            <div class="geral">
+                <img src="./imagens/Fitness stats (2).gif" alt="" class="imagem">
+                <div class="central">
+                    <ion-icon name="reload-outline" id="recarregar" onclick="recarregar()"></ion-icon>
+                    <h2>Calcule sua taxa de TMB</h2>
+                    <div class="forms">
+                        <label class="label" for="inPeso">
+                            <span class="labelText">Peso</span>
+                            </label>
+                        <div class="join">
+                            <input class="inputs" type="number" id="inPeso" required>
+                            <span class="medida">kg</span>
+                        </div>
+                    </div>
+                    <div class="forms">
+                        <label class="label" for="inAltura">
+                            <span class="labelText">Altura</span>
+                            </label>
+                        <div class="join">
+                            <input class="inputs" type="number" id="inAltura" required>
+                            <span class="medida">cm</span>
+                        </div>
+                    </div>
+                    <div class="forms">
+                        <label class="label" for="inIdade">
+                            <span class="labelText">Idade</span>
+                            </label>
+                        <div class="join">
+                            <input class="inputs" type="number" id="inIdade" required>
+                            <span class="medida">anos</span>
+                        </div>
+                    </div>
+                    <div class="radios">
+                        <div class="tituloRadios">
+                            <span>Sexo</span>
+                        </div>
+                        <div class="radioMasc">
+                            <input type="radio" name="radioSex" id="inRadioMasc" required>
+                            <label for="inRadioMasc">Masculino</label>
+                        </div>
+                        <div class="radioFem">
+                            <input type="radio" name="radioSex" id="inRadioFem" required>
+                            <label for="inRadioFem">Feminino</label></div>
+                    </div>
+                    <div class="radios">
+                        <div class="tituloRadios">
+                            <span>Atividade</span>
+                        </div>
+                        <div class="radioSeden">
+                            <input type="radio" name="radioAtiv" id="inRadioSed" required>
+                            <label for="inRadioSed">Sedentário</label>
+                        </div>
+                        <div class="radioLevAtiv">
+                            <input type="radio" name="radioAtiv" id="inRadioLev" required>
+                            <label for="inRadioLev">Levemente Ativo</label>
+                        </div>
+                        <div class="radioModeAtiv">
+                            <input type="radio" name="radioAtiv" id="inRadioMode" required>
+                            <label for="inRadioMode">Moderadamente Ativo</label>
+                        </div>
+                        <div class="radioMuitoAtiv">
+                            <input type="radio" name="radioAtiv" id="inRadioMuit" required>
+                            <label for="inRadioMuit">Muito Ativo</label>
+                        </div>
+                        <div class="radioExtAtiv">
+                            <input type="radio" name="radioAtiv" id="inRadioExt" required>
+                            <label for="inRadioExt">Extremamente Ativo</label>
+                        </div>
+                    </div>
+                    <div class="botoes">
+                        <input type="submit" value="Calcular">
+                    </div>
+                </div>
+            </div>
+        </form>
+        <div class="result">
+            <div class="resultTmb">
+                <h2>Seu TMB</h2>
+                <span class="tmbFinal"></span>
+            </div>
+            <div class="resultGasto">
+                <h2>Gasto Calórico</h2>
+                <span class="gastoFinal"></span>
+                <div class="botoes">
+                    <input type="button" value="Voltar" id="btRecarregar" onclick="recarregar()">
+                </div>
+            </div>
+        </div>
+        <div class="menu">
+            <div class="menuOque">
+                <ion-icon name="close-outline" class="exit" onclick="oquee()"></ion-icon>
+                <h2>O que é</h2>
+                <p>A taxa metabólica basal (TMB) é a quantidade mínima de energia que o corpo precisa para manter as funções vitais, como respiração, circulação e temperatura corporal, em repouso. A TMB representa cerca de 60% a 70% do gasto energético total diário de uma pessoa e varia de acordo com o sexo, a idade, o peso e a altura.</p><br>
+                <p>Saber a TMB é importante para quem quer controlar o peso, pois assim é possível estimar quantas calorias o corpo gasta por dia e adequar a alimentação às necessidades energéticas do organismo. Além disso, conhecer a TMB também ajuda a prevenir doenças como obesidade, diabetes e hipertensão.</p><br>
+            
+                <p>Existem diversas fórmulas para calcular a TMB, mas uma das mais usadas é a equação de Harris-Benedict, que leva em conta o sexo, a idade, o peso e a altura da pessoa. Essa equação foi criada em 1918 e revisada em 1984 para se adaptar às mudanças no estilo de vida da população.</p><br>
+            </div>
+            <div class="menuCalc">
+                <ion-icon name="close-outline" class="exit" onclick="calcular()"></ion-icon>
+                <h2>Como calcular a TMB manualmente?</h2>
+                <p>Para calcular a TMB manualmente, você deve usar as seguintes fórmulas da equação de Harris-Benedict:</p><br>
+
+                <p>Para homens: TMB = 66 + (13,7 x peso em kg) + (5 x altura em cm) - (6,8 x idade em anos)</p>
+                <p>Para mulheres: TMB = 655 + (9,6 x peso em kg) + (1,8 x altura em cm) - (4,7 x idade em anos)</p><br>
+                <p>Taxa de atividade (Gasto Calórico / tmb x fator):</p>
+                    <p>Sedentários (pouco ou nenhum exercício) fator = 1.2</p>
+                    <p>Levemente ativo (exercício leve 1 a 3 dias por semana) fator = 1.375</p>
+                    <p>Moderadamente ativo (exercício moderado, faz esportes 3 a 5 dias por semana) fator = 1.55</p>
+                    <p>Altamente ativo (exercício pesado de 5 a 6 dias por semana) fator = 1.725</p>
+                    <p>Extremamente ativo (exercício pesado diariamente e até 2 vezes por dia) fator = 1.9</p>
+            </div>
+            <div class="menuInflu">
+                <ion-icon name="close-outline" class="exit" onclick="influencia()"></ion-icon>
+                <h2>O que influencia na TMB?</h2>
+                <p>A TMB é influenciada por diversos fatores, como:</p><br>
+
+                <p>Sexo: os homens tendem a ter uma TMB maior do que as mulheres, pois possuem mais massa muscular e menos gordura corporal.</p><br>
+                <p>Idade: a TMB diminui com o avanço da idade, pois ocorre uma perda de massa muscular e um aumento de gordura corporal.</p><br>
+                <p>Peso: quanto maior o peso corporal, maior a TMB, pois o corpo precisa de mais energia para sustentar os tecidos.</p><br>
+                <p>Altura: quanto maior a altura, maior a TMB, pois o corpo possui uma maior superfície e perde mais calor.</p><br>
+                <p>Genética: algumas pessoas possuem uma TMB mais alta ou mais baixa do que outras por questões hereditárias.</p><br>
+                <p>Hormônios: alguns hormônios, como os da tireoide, podem acelerar ou reduzir a TMB, alterando o metabolismo.</p><br>
+                <p>Temperatura: a TMB aumenta em ambientes muito frios ou muito quentes, pois o corpo precisa de mais energia para manter a temperatura ideal.</p><br>
+                <p>Jejum: a TMB diminui em situações de jejum prolongado, pois o corpo entra em modo de economia de energia e reduz o metabolismo.</p><br>
+            </div>
+            <div class="menuAument">
+                <ion-icon name="close-outline" class="exit" onclick="aumentar()"></ion-icon>
+                <h2>Como aumentar a TMB?</h2>
+                <p>Aumentar a TMB significa aumentar o gasto energético do corpo em repouso, o que pode ajudar a controlar o peso e melhorar a saúde. Algumas dicas para aumentar a TMB são:</p><br>
+                <p>Aumentar a massa muscular: praticar exercícios de força, como musculação, pilates ou crossfit, ajuda a aumentar a massa muscular e, consequentemente, a TMB, pois os músculos consomem mais energia do que a gordura.
+                </p><br>
+                <p>Fazer exercícios aeróbicos: praticar exercícios que aceleram os batimentos cardíacos, como corrida, bicicleta ou natação, ajuda a aumentar a TMB por algumas horas após o treino, pois o corpo continua queimando calorias para se recuperar.
+                </p><br>
+                <p>Comer alimentos termogênicos: consumir alimentos que aceleram o metabolismo, como pimenta, gengibre, canela, café ou chá verde, ajuda a aumentar a TMB, pois o corpo gasta mais energia para digeri-los.
+                </p><br>
+                <p>Fracionar as refeições: comer várias vezes ao dia em pequenas porções ajuda a aumentar a TMB, pois o corpo gasta mais energia para processar os alimentos. No entanto, é importante que as refeições sejam saudáveis e equilibradas.
+                </p><br>
+                <p>Dormir bem: ter uma boa qualidade de sono ajuda a regular os hormônios que influenciam na TMB, como o cortisol e a leptina. Além disso, dormir bem evita o cansaço e favorece a prática de exercícios físicos.
+                </p><br>
+            </div>
+        </div>
+    </section>
+    <script src="tmb.js"></script>
+    <script  type = "module"  src = "https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"> </script> 
+    <script  nomodule  src = "https://unpkg .com/ionicons@7.1.0/dist/ionicons/ionicons.js"> </script>
+</body>
+</html>

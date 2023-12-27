@@ -25,8 +25,8 @@ frm.addEventListener("submit", (e) => {
         resp1.style.color="green"
     }
 
-    resp.innerText = `-O valor gasto de combustível hoje foi de aprox.: R$${conMotoGeral.toFixed(2)}\n-\n -Tirando os gastos, você ganhou aprox.: R$${ganhos.toFixed(2)}\n-\n` 
-    resp1.innerText = `-Você ganhou: R$${valorApp.toFixed(2)} por km rodado hoje\n`
+    resp.innerText = `O valor gasto de combustível hoje foi de aprox.: R$${conMotoGeral.toFixed(2)}\n-\n Tirando os gastos, você ganhou aprox.: R$${ganhos.toFixed(2)}\n-\n` 
+    resp1.innerText = `Você ganhou: R$${valorApp.toFixed(2)} por km rodado hoje\n`
     
 })
 
