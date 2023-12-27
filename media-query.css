@@ -1,3 +1,20 @@
+:root {
+    --color-palette0: #d3d1d1;
+    --color-palette1: #aaa;
+    --color-palette2: #1a1818;
+    --color-palette3: #2e2b2b;
+    --color-palette4: #363333;
+    --color-palette5: #FCA311;
+    --color-palette6: #d63b3b;
+    --color-palette7: #e06817;
+    --color-palette01: #F3F4EF;
+    --color-palette02: #E3E0D9;
+    --color-palette03: #E7DECD;
+    --color-palette04: #AC9284;
+    --color-palette05: #3094AE;
+    --color-palette06: #14add3;
+}
+
 @media screen and (max-width: 1450px) {
     #projetos {
         background-image: url(/imagens/fundo_Projeto.png);
@@ -82,11 +99,11 @@
 
     .nav {
         position: absolute;
-        top: 8vh; /*começando logo abaixo do header*/
+        top: 0; /*começando logo abaixo do header*/
         right: 0;
-        width: 55vw;
-        height: 92vh; /*tela toda a partir do header*/
-        background: #14213d6b;
+        width: 50vw;
+        height: 100vh; /*tela toda a partir do header*/
+        background: #00000085;
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -137,9 +154,6 @@
       }
 }
 
-@media screen and (max-width: 890px) {
-   
-}
 
 @media screen and (max-width: 700px) {
 
@@ -158,38 +172,57 @@
         min-height: 100vh;
         padding: 120px 100px;
         box-shadow: -10px 0 20px -5px rgba(0, 0, 0, 0.5), 10px 0 20px -5px rgba(0, 0, 0, 0.5);
-}
+    }
 
     header{
         position: fixed;
         top: 0;
         left: 0;
-        width: 100%;
+        width: 450px;
         height: 8vh;
-        padding: 20px 100px;
+        padding: 0px;
         display: flex;
-        justify-content:space-around;
+        justify-content:space-between;
         align-items: center;
         z-index: 10000;
         background: #111111;
     }
 
-    .nav {
-        position: absolute;
-        top: 8vh; /*começando logo abaixo do header*/
-        right: 0;
-        width: 55vw;
-        height: 92vh; /*tela toda a partir do header*/
-        background: #14213d6b;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        transform: translateX(100%); /*joga menu pra fora lado direito*/
-        transition: 1s;
-    }
-
     .nav li {
         opacity: 1;
+    }
+
+    ul li.active a,
+    ul li:hover a {
+        color: #fff;
+        transition: 1s;
+        animation: animaBtn .5s linear; 
+    }
+
+    ul li a {
+        font-size: 1.1em;
+        font-weight: 500;
+        color: #fff;
+    }
+
+    .homeMenu::before {
+        display: none;
+    }
+    
+    .sobreMenu::before {
+        display: none;
+    }
+
+    .expMenu::before {
+        display: none;
+    }
+
+    .projMenu::before {
+        display: none;
+    }
+
+    .contMenu::before {
+        display: none;
     }
 
     .mobile-menu div {
@@ -218,64 +251,42 @@
       right: 20%;
       top: 100px;
     }
+
     #home .content h2 {
         font-size: 2.5em;
         top: 120px;
     }
+
     #home .content p {
         font-size: 1em;
         right: 20px;
         top: 120px;
         min-width: 300px;
     }
+
     #home .content .btn {
         right: 0px;
         top: 120px;
     }
+
     #home::before {
         width: 70vw;
         height: 200vw;
     }
-    header{
-        padding: 0px;
-    }
-    .logo {
-        left: 30px;
-        font-size: 1.3em;
-    }
-
+    
     .logo img {
         position: relative;
-        left: 30px;
+        left: 50px;
         width: 60px;
         color: var(--color-palette0);
         transition: .5s;
     }
 
     .mobile-menu {
-        right: 50px;
+        right: 60px;
     }
 
-    .nav {
-        position: absolute;
-        top: 0; /*começando logo abaixo do header*/
-        right: 0;
-        width: 50vw;
-        height: 100vh; /*tela toda a partir do header*/
-        background: #ffffff65;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        transform: translateX(100%); /*joga menu pra fora lado direito*/
-        transition: 1s;
-    }
-
-    ul li a {
-        font-size: 1.2em;
-        font-weight: 700;
-        color: #000;
-    }
-
+    
     header.active .nav {
         transform: translateX(0%);
         transition: 1s;
@@ -285,6 +296,7 @@
         left: 54px;
         top: 115px;
     }
+
     .icones a {
         font-size: 1.8em;
     }
@@ -340,7 +352,6 @@
     .sobreText::before,
     .sobreText::after {
       display: none;
-      
     }
 
     .sobrePrinc {
