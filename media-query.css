@@ -58,13 +58,6 @@
 
 }
 
-@media screen and (max-width: 1370px) {
-    #foto {
-        width: 250px;
-        right: 520px;
-        bottom: 220px;
-      }
-}
 
 @media screen and (max-width: 965px) {
     #foto {
@@ -82,7 +75,7 @@
     }
 }
 
-  @media (max-width: 900px) {
+@media (max-width: 900px) {
     body {
         overflow-x: hidden; /*menu jogado pra fora oculto*/
     }
@@ -145,16 +138,28 @@
 }
 
 @media screen and (max-width: 890px) {
-    #foto {
-        width: 250px;
-        right: 20px;
-        bottom: 250px;
-      }
+   
 }
 
 @media screen and (max-width: 700px) {
-    
-  
+
+    body {
+        overflow-x: hidden; /*menu jogado pra fora oculto*/
+    }
+
+    header{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 8vh;
+        padding: 20px 200px;
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        z-index: 10000;
+        background: #111111;
+    }
     .nav {
         position: absolute;
         top: 8vh; /*começando logo abaixo do header*/
