@@ -156,17 +156,18 @@
     
     #foto {
       width: 250px;
-      right: 25%;
+      right: 20%;
       top: 100px;
     }
     #home .content h2 {
-        font-size: 3em;
-        top: 140px;
+        font-size: 2.5em;
+        top: 120px;
     }
     #home .content p {
         font-size: 1em;
-        right: 5px;
-        top: 130px;
+        right: 20px;
+        top: 120px;
+        min-width: 300px;
     }
     #home .content .btn {
         right: 0px;
@@ -180,12 +181,20 @@
         padding: 0px;
     }
     .logo {
-        left: 50px;
-        font-size: 1.5em;
+        left: 30px;
+        font-size: 1.3em;
+    }
+
+    .logo img {
+        position: relative;
+        left: 30px;
+        width: 60px;
+        color: var(--color-palette0);
+        transition: .5s;
     }
 
     .mobile-menu {
-        right: 60px;
+        right: 80px;
     }
 
     .nav {
@@ -248,6 +257,8 @@
         font-size: 2em;
     }
 
+    /*Sobre*/
+
     #sobre {
         background: var(--color-palette4);
         padding-top: 50px;
@@ -255,8 +266,8 @@
 
     .sobreTitulo {
         position: relative;
-        top: 50px;
-        right: 130px;
+        top: 60px;
+        right: 127px;
         padding-bottom: 50px;
     }
 
@@ -274,7 +285,7 @@
     }
 
     .sobrePrinc {
-        right: 20%;
+        right: 35%;
         max-width: 550px;
     }
 
@@ -294,6 +305,7 @@
         width: 30px;
     }
 
+    /*Experiencia*/
     .expGeral {
         position: relative;
         top: -80px;
@@ -316,7 +328,7 @@
 
     .box {
         position: relative;
-        right: 40px;
+        right: 10px;
         width: 100px;
         height: 100px;
     }
@@ -379,7 +391,7 @@
     #expInfos {
         position: relative;
         bottom: 550px;
-        left: 80px;
+        left: 95px;
     }
 
     #textInfos {
@@ -434,7 +446,6 @@
         width: 100%;
         height: 100%;
         min-width: 400px;
-        max-width: 400px;
         max-height: 600px;
         display: flex;
         transform-style: preserve-3d;
@@ -444,7 +455,9 @@
     }
     
     .card img {
-        width: 190px;
+        position: relative;
+        left: 20px;
+        width: 180px;
         height: 230px;
     }
 
@@ -452,18 +465,22 @@
         content: '';
         position: absolute;
         top: 156px;
-        left: 0;
-        width: 190px;
+        left: 20px;
+        width: 180px;
         height: 70px; 
         background-color: var(--color-palette0); 
         transition: .3s;
+        z-index: 60;
     }
     
     .iconeCard {
-        position: relative;
-        bottom: 70px;
-        left: 12px;
-        font-size: 1.3em;
+        left: 25px;
+        z-index: 61;
+    }
+
+    .card h3 {
+        left: 25px;
+        z-index: 62;
     }
 
     #htextProj {
@@ -478,7 +495,7 @@
     #projInfos {
         position: relative;
         top: 250px;
-        left: 10px;
+        left: 0px;
     }
     
     #projInfos p {
@@ -496,8 +513,8 @@
 
     .btns {
         position: absolute;
-        top: -70px;
-        left: 350px;
+        top: 350px;
+        left: 10px;
         width: 65px;
     }
 
