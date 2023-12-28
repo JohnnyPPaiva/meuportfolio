@@ -39,6 +39,7 @@ header {
 }
 
 .iconePrinc {
+    position: relative;
     width: 60px;
     color: #fff;
 }
@@ -469,6 +470,7 @@ h3 {
 }
 
 .container {
+    position: relative;
     display: flex;
     align-items: center;
     padding: 30px;
