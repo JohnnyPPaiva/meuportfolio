@@ -340,7 +340,7 @@
     #experiencia,
     #projetos,
     #contato {
-        max-width: 650px;
+        max-width: 100vh;
         margin: auto;
         position: relative;
         min-height: 100vh;
