@@ -155,8 +155,8 @@
     }
 
     .exerc {
-        width: 140px;
-        height: 320px;
+        width: 120px;
+        height: 300px;
     }
 
     .content {
@@ -172,18 +172,18 @@
 
     .imagens img {
         border-radius: 10px;
-        width: 300px;
-        height: 300px;
+        width: 250px;
+        height: 250px;
     }
 
     h3 {
-        top: 280px;
+        top: 260px;
         color: #fff;
     }
 
     ul li a {
         position: relative;
-        font-size: .8em;
+        font-size: .7em;
         left: 50px;
     }
 
@@ -194,7 +194,40 @@
     .divPrinc .tituloDiv {
         font-size: 1em;
         padding-bottom: 20px;
+        min-width: 400px;
+        text-align: center;
     }
+
+    .exit {
+        left: 390px;
+        top: 75px;
+        width: 40px;
+    }
+
+    .exit:hover {
+        width: 45px;
+        background: none;
+    }
+
+    .trainingMenu::before {
+        width: 100%;
+    }
+
+    .tmbMenu::before {
+        width: 100%;
+    }
+
     
+    .textos h2 {
+        position: relative;
+        text-align: center; 
+   }
+
+    h4 {
+        font-size: .8em;
+        font-weight: 100;
+        text-align: center;
+        padding-bottom: 0px;
+    }
 }
 
