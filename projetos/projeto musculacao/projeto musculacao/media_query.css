@@ -143,6 +143,10 @@
 
 @media screen and (max-width: 800px) {
 
+    #home {
+        padding-top: 80px;
+    }
+
     #home h1 {
         text-align: center;
         font-size: 1em;
@@ -165,7 +169,7 @@
 
     .exerc {
         width: 120px;
-        height: 300px;
+        height: 250px;
     }
 
     .content {
@@ -187,7 +191,7 @@
     }
 
     h3 {
-        top: 260px;
+        top: 220px;
         color: #fff;
     }
 
@@ -198,7 +202,7 @@
     }
 
     .divPrinc {
-        max-height: 85vh;
+        max-height: 80vh;
     }
 
     .divPrinc h2 {
@@ -213,8 +217,8 @@
     }
 
     .exit {
-        left: 390px;
-        top: 75px;
+        left: 370px;
+        top: 70px;
         width: 40px;
     }
 
