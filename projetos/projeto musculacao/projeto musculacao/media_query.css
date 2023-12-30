@@ -53,6 +53,7 @@
     }
 
     .textos p {
+     
         font-size: .9em;
     }
 
@@ -149,7 +150,7 @@
 
     #home h1 {
         text-align: center;
-        font-size: 1em;
+        font-size: 1.3em;
     }
 
     section {
@@ -191,7 +192,7 @@
     }
 
     h3 {
-        top: 220px;
+        top: 210px;
         color: #fff;
     }
 
@@ -211,7 +212,7 @@
 
     .divPrinc .tituloDiv {
         font-size: 1em;
-        padding-bottom: 20px;
+        padding-bottom: 40px;
         min-width: 400px;
         text-align: center;
     }

@@ -1,5 +1,8 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Jura&family=Nunito:wght@200&display=swap');
+
+
 *,
 ::before,
 ::after {
@@ -52,6 +55,10 @@ ul {
 
 ul li {
     list-style: none;
+}
+
+ul li a {
+    font-family: 'Nunito', sans-serif;
 }
 
 .tmbMenu {
@@ -284,6 +291,7 @@ ul li {
 }
 
 #home h1 {
+    font-family: 'Nunito', sans-serif;
     text-align: center;
     font-size: 2em;
 }
@@ -303,6 +311,7 @@ ul li {
     grid-template-columns: repeat(6, 1fr);
 }
 .principal a {
+    font-family: 'Nunito', sans-serif;
     text-decoration: none;
 }
 
@@ -351,8 +360,11 @@ ul li {
 }
 
 h3 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.5em;
+    font-weight: 700;
     position: relative;
-    top: 460px;
+    top: 455px;
     color: #fff;
 }
 
@@ -371,13 +383,16 @@ h3 {
     opacity: 0;
     transition: .3s;
     overflow: auto;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.61);
 }
 
 .divPrinc .tituloDiv {
+    font-family: 'Nunito', sans-serif;
     color: var(--cor-paleta1);
 }
 
 .divPrinc h2 {
+    font-family: 'Nunito', sans-serif;
     color: var(--cor-paleta4);
     text-shadow: 1px 1px #000;
 }
@@ -501,7 +516,16 @@ h3 {
 }
 
 .textos {
+    font-family: 'Nunito', sans-serif;
     flex: 2;
+}
+
+.textos h4 {
+    font-family: 'Nunito', sans-serif;
+}
+
+.textos p {
+    font-family: 'Nunito', sans-serif;
 }
 
 .add {
@@ -518,6 +542,14 @@ h3 {
 .treino{
     position: absolute;
     top: 100px;
+}
+
+.treino h2 {
+    font-family: 'Nunito', sans-serif;
+}
+
+.treino p {
+    font-family: 'Nunito', sans-serif;
 }
 
 .respostaTreino {
