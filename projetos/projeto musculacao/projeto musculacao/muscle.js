@@ -311,6 +311,132 @@ function crucVoador() {
     }
 }
 
+let supVertExecutada = false;
+function supVert() {
+    if (supVertExecutada) {
+        alert("Você já adicionou esse exercício");
+        return;
+    }
+    const rep = prompt("Quantas Séries desse exercício?: ")
+    if (rep === null) {
+        return;
+    }
+    const descr = " Séries de Supino Vertical na máquina"
+    respTreinosPeito += rep + descr + "\n"
+    respTreinoPeito.innerText = `${respTreinosPeito}`
+    hFichaPeito.classList.remove('active')
+    iconPrint.classList.remove('active')
+    iconReload.classList.remove('active')
+    supVertExecutada = true;
+    marcador = 1
+    if (marcador == 1) {
+        hFichaPeito.classList.toggle('active')
+        iconPrint.classList.toggle('active')
+        iconReload.classList.toggle('active')
+    }
+}
+
+let inclinePressExecutada = false;
+function inclinePress() {
+    if (inclinePressExecutada) {
+        alert("Você já adicionou esse exercício");
+        return;
+    }
+    const rep = prompt("Quantas Séries desse exercício?: ")
+    if (rep === null) {
+        return;
+    }
+    const descr = " Séries de Incline Press máquina"
+    respTreinosPeito += rep + descr + "\n"
+    respTreinoPeito.innerText = `${respTreinosPeito}`
+    hFichaPeito.classList.remove('active')
+    iconPrint.classList.remove('active')
+    iconReload.classList.remove('active')
+    inclinePressExecutada = true;
+    marcador = 1
+    if (marcador == 1) {
+        hFichaPeito.classList.toggle('active')
+        iconPrint.classList.toggle('active')
+        iconReload.classList.toggle('active')
+    }
+}
+
+let cableFlyExecutada = false;
+function cableFly() {
+    if (cableFlyExecutada) {
+        alert("Você já adicionou esse exercício");
+        return;
+    }
+    const rep = prompt("Quantas Séries desse exercício?: ")
+    if (rep === null) {
+        return;
+    }
+    const descr = " Séries de Cable Fly (superior de peito)"
+    respTreinosPeito += rep + descr + "\n"
+    respTreinoPeito.innerText = `${respTreinosPeito}`
+    hFichaPeito.classList.remove('active')
+    iconPrint.classList.remove('active')
+    iconReload.classList.remove('active')
+    cableFlyExecutada = true;
+    marcador = 1
+    if (marcador == 1) {
+        hFichaPeito.classList.toggle('active')
+        iconPrint.classList.toggle('active')
+        iconReload.classList.toggle('active')
+    }
+}
+
+let supDeclExecutada = false;
+function supDecl() {
+    if (supDeclExecutada) {
+        alert("Você já adicionou esse exercício");
+        return;
+    }
+    const rep = prompt("Quantas Séries desse exercício?: ")
+    if (rep === null) {
+        return;
+    }
+    const descr = " Séries de Supino Declinado"
+    respTreinosPeito += rep + descr + "\n"
+    respTreinoPeito.innerText = `${respTreinosPeito}`
+    hFichaPeito.classList.remove('active')
+    iconPrint.classList.remove('active')
+    iconReload.classList.remove('active')
+    supDeclExecutada = true;
+    marcador = 1
+    if (marcador == 1) {
+        hFichaPeito.classList.toggle('active')
+        iconPrint.classList.toggle('active')
+        iconReload.classList.toggle('active')
+    }
+}
+
+let crucifixoHaltExecutada = false;
+function crucifixoHalt() {
+    if (crucifixoHaltExecutada) {
+        alert("Você já adicionou esse exercício");
+        return;
+    }
+    const rep = prompt("Quantas Séries desse exercício?: ")
+    if (rep === null) {
+        return;
+    }
+    const descr = " Séries de Crucifixo"
+    respTreinosPeito += rep + descr + "\n"
+    respTreinoPeito.innerText = `${respTreinosPeito}`
+    hFichaPeito.classList.remove('active')
+    iconPrint.classList.remove('active')
+    iconReload.classList.remove('active')
+    crucifixoHaltExecutada = true;
+    marcador = 1
+    if (marcador == 1) {
+        hFichaPeito.classList.toggle('active')
+        iconPrint.classList.toggle('active')
+        iconReload.classList.toggle('active')
+    }
+}
+
+
 let extTricepExecutada = false;
 function extTricep() {
     if (extTricepExecutada) {

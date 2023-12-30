@@ -324,6 +324,7 @@ ul li a {
     border: 2px solid var(--cor-paleta1);
     opacity: .9;
     transition: .3s;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.552);
 }
 
 .exerc:hover {
