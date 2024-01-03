@@ -341,7 +341,6 @@
     #projetos,
     #contato {
         max-width: 100vh;
-        
     }
 
     header{
@@ -527,7 +526,7 @@
     .sobrePrinc {
         position: absolute;
         right: 50%;
-        transform: translateX(50%);
+        transform: translateX(55%);
         max-width: 400px;
     }
 
@@ -676,7 +675,13 @@
 
     #projetos {
         padding-top: 100px;
+        background-image: url(./imagens/fundo_Projeto.png);
+        background-repeat: no-repeat;
+        background-size: 60%;
+        background-position: right top;
     }
+
+
 
     .projText h2 {
         font-size: 1.5em;
@@ -711,8 +716,8 @@
         position: absolute;
         top: 160px;
         left: 20px;
-        width: 180px;
-        height: 70px; 
+        width: 181px;
+        height: 72px; 
         background-color: #111111; 
         transition: .3s;
         z-index: 60;
@@ -720,11 +725,13 @@
     
     .iconeCard {
         left: 25px;
+        font-size: 1.1em;
         z-index: 61;
     }
 
     .card h3 {
         left: 25px;
+        font-size: .8em;
         z-index: 62;
     }
 
