@@ -329,7 +329,7 @@
 }
 
 
-@media (max-width: 700px) {
+@media (max-width: 768px) {
 
     body {
         overflow-x: hidden; /*menu jogado pra fora oculto*/
@@ -341,21 +341,13 @@
     #projetos,
     #contato {
         max-width: 100vh;
-        margin: auto;
-        position: relative;
-        min-height: 100vh;
-        padding: 120px 100px;
-        box-shadow: -10px 0 20px -5px rgba(0, 0, 0, 0.5), 10px 0 20px -5px rgba(0, 0, 0, 0.5);
+        
     }
 
     header{
         position: fixed;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height: 8vh;
+        width: 100%;
         padding: 0px;
-        display: flex;
         justify-content:space-between;
         align-items: center;
         z-index: 10000;
@@ -421,9 +413,9 @@
     }
 
     #foto {
-      width: 250px;
-      right: 20%;
-      top: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
     #home .content h2 {
@@ -433,14 +425,14 @@
 
     #home .content p {
         font-size: 1em;
-        right: 20px;
-        top: 120px;
+        right: 5px;
+        top: 110px;
         min-width: 300px;
     }
 
     #home .content .btn {
-        right: 0px;
-        top: 120px;
+        left: -3px;
+        top: 90px;
     }
 
     #home::before {
@@ -456,6 +448,11 @@
         transition: .5s;
     }
 
+    .logo img:hover {
+        width: 65px;
+        transition: .5s;
+    }
+
     .mobile-menu {
         right: 60px;
     }
@@ -467,8 +464,8 @@
     }
 
     .icones {
-        left: 54px;
-        top: 115px;
+        right: 15px;
+        top: 90px;
     }
 
     .icones a {
@@ -528,10 +525,10 @@
     }
 
     .sobrePrinc {
-        position: relative;
-        right: 25%;
+        position: absolute;
+        right: 50%;
+        transform: translateX(50%);
         max-width: 400px;
-        
     }
 
     .sobreText p {
@@ -581,7 +578,7 @@
         height: 100px;
     }
 
-     .box img {
+    .box img {
         position: absolute;
         top: 50%;
         left: 50%;
@@ -712,11 +709,11 @@
     .card::before {
         content: '';
         position: absolute;
-        top: 156px;
+        top: 160px;
         left: 20px;
         width: 180px;
         height: 70px; 
-        background-color: var(--color-palette0); 
+        background-color: #111111; 
         transition: .3s;
         z-index: 60;
     }
@@ -822,6 +819,41 @@
     .iconsContato a {
         font-size: 1.7em;
     }
+
+    .setaPagHome {
+        position: absolute;
+        left: 90%;
+        color: #fff;
+        top: 550px;
+        animation: animaSetaPag 1.5s linear infinite;
+    }
+    
+    .setaPagSobre {
+        position: absolute;
+        left: 90%;
+        top: 550px;
+        color: #fff;
+        animation: animaSetaPag 1.5s linear infinite;
+        z-index: 1;
+    }
+    
+    .setaPagExp {
+        position: absolute;
+        left: 120%;
+        top: 420px;
+        color: #fff;
+        animation: animaSetaPag 1.5s linear infinite;
+        z-index: 1;
+    }
+    
+    .setaPagProj {
+        position: absolute;
+        color: #fff;
+        left: 90%;
+        top: 550px;
+        animation: animaSetaPag 1.5s linear infinite;
+        z-index: 1;
+    }
     
     
     /*Setas*/
@@ -829,7 +861,9 @@
     .setaPagSobre, 
     .setaPagExp, 
     .setaPagProj {
-        display: none;
+        position: absolute;
+        bottom: 100px;
+        display: block;
     }
 }
 
