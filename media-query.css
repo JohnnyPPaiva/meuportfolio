@@ -412,9 +412,15 @@
     }
 
     #foto {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      position: absolute;
+      bottom: 350px;
+      right: 150px;
+    }
+
+    .content {
+        position: absolute;
+        right: 10%;
+       
     }
 
     #home .content h2 {
@@ -827,51 +833,37 @@
         font-size: 1.7em;
     }
 
+     /*Setas*/
+     .setaPagHome, 
+     .setaPagSobre, 
+     .setaPagExp, 
+     .setaPagProj {
+         position: absolute;
+         display: block;
+     }
+
     .setaPagHome {
-        position: absolute;
         left: 90%;
-        color: #fff;
-        top: 550px;
-        animation: animaSetaPag 1.5s linear infinite;
+        top: 650px;
     }
     
     .setaPagSobre {
-        position: absolute;
         left: 90%;
-        top: 550px;
-        color: #fff;
-        animation: animaSetaPag 1.5s linear infinite;
-        z-index: 1;
+        top: 650px;
     }
     
     .setaPagExp {
-        position: absolute;
         left: 120%;
-        top: 420px;
-        color: #fff;
-        animation: animaSetaPag 1.5s linear infinite;
-        z-index: 1;
+        top: 520px;
     }
     
     .setaPagProj {
-        position: absolute;
-        color: #fff;
         left: 90%;
-        top: 550px;
-        animation: animaSetaPag 1.5s linear infinite;
-        z-index: 1;
+        top: 650px;
     }
     
     
-    /*Setas*/
-    .setaPagHome, 
-    .setaPagSobre, 
-    .setaPagExp, 
-    .setaPagProj {
-        position: absolute;
-        bottom: 100px;
-        display: block;
-    }
+   
 }
 
 /*::Divs Experiências::*/
