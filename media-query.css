@@ -15,85 +15,8 @@
     --color-palette06: #14add3;
 }
 
-@media screen and (max-width: 1450px) {
-    #projetos {
-        background-image: url(/imagens/fundo_Projeto.png);
-        background-repeat: no-repeat;
-        background-size: 50%;
-        background-position: right top;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        }
-    
-        #htextProj {
-            position: relative;
-            right: 10px;
-            bottom: 60px;
-            font-family: 'Jura', sans-serif;
-            color: #fff;
-        }
-    
-        .cards {
-            position: relative;
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-            justify-content: center;
-            width: 80%;
-            height: 80%;
-            right: 10px;
-            bottom: 40px;
-        }
-    
-        #projInfos {
-            position: relative;
-            top: 300px;
-            left: 0;
-            font-family: 'Nunito', sans-serif;
-            max-width: 700px;
-            color: var(--color-palette1);
-            text-align: center;
-            font-size: 1.1em;
-            line-height: 1.6em;
-        }
-    
-        .setaPagProj {
-            position: absolute;
-            left: 47%;
-            top: 700px;
-            color: #fff;
-            animation: animaSetaPag 1.5s linear infinite;
-            z-index: 1;
-        }
 
-        .btns {
-            position: relative;
-            top: 320px;
-            left: 0px;
-        }
-
-}
-
-
-@media (max-width: 965px) {
-    #foto {
-        width: 10px;
-        right: 520px;
-        bottom: 220px;
-    }
-
-    .sobreText {
-        padding-top: 0px;
-    }
-
-    .expText {
-        padding-top: 0px;
-    }
-
-}
-
-@media (max-width: 900px) {
+@media (max-width: 992px) {
 
     body {
         overflow-x: hidden; /*menu jogado pra fora oculto*/
@@ -316,7 +239,7 @@
     }
 
     .container {
-        grid-template-columns: repeat(3,1fr);
+        grid-template-columns: repeat(5,1fr);
         grid-gap: 30px;
     }    
 
@@ -687,8 +610,6 @@
         background-position: right top;
     }
 
-
-
     .projText h2 {
         font-size: 1.5em;
     }
@@ -698,17 +619,24 @@
       display: none;
     }
 
-    .projs {
-        width: 100%;
-        height: 100%;
-        min-width: 400px;
-        max-height: 600px;
-        display: flex;
-        transform-style: preserve-3d;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
+    .cards {
+        position: relative;
+        bottom: 50px;
+        left: 50%;
+        transform: translateX(-55%);
     }
+
+    .card {
+        position: absolute;
+        width: 40%;
+        height: 100%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        cursor: pointer;
+        transition: transform .6s ease;
+    }
+
     
     .card img {
         position: relative;
@@ -745,7 +673,7 @@
         font-size: 1.1em;
         position: relative;
         bottom: 340px;
-        right: 10px;
+        text-align: center;
         font-family: 'Jost', sans-serif;
         color: var(--color-palette05);
     }
@@ -862,16 +790,8 @@
         top: 650px;
     }
     
-    
-   
 }
 
-/*::Divs Experiências::*/
-@media screen and (max-width: 1500px) {
-    .container {
-        grid-template-columns: repeat(3,1fr);
-        grid-gap: 20px;
-    }    
-}
+
 
 
