@@ -268,9 +268,10 @@
 
     header{
         position: fixed;
+        display: flex;
         width: 100%;
         padding: 0px;
-        justify-content:space-between;
+        justify-content:space-around;
         align-items: center;
         z-index: 10000;
         background: #111111;
@@ -334,147 +335,111 @@
         transform: rotate(45deg) translate(-5px, -7px); 
     }
 
-    #foto {
-      position: absolute;
-      bottom: 350px;
-      right: 150px;
+    /*Home*/
+
+    #home .home-geral {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        margin: auto;
     }
 
-    .content {
-        position: absolute;
-        right: 10%;
-       
+    #home .home-geral .content h2 {
+        text-align: center;
+        font-size: 3em;
     }
 
-    #home .content h2 {
-        font-size: 2.5em;
-        top: 120px;
-    }
-
-    #home .content p {
+    #home .home-geral .content p {
         font-size: 1em;
-        right: 5px;
-        top: 110px;
-        min-width: 300px;
-    }
-
-    #home .content .btn {
-        left: -3px;
-        top: 90px;
-    }
-
-    #home::before {
-        width: 70vw;
-        height: 200vw;
-    }
-    
-    .logo img {
-        position: relative;
-        left: 50px;
-        width: 60px;
-        color: var(--color-palette0);
-        transition: .5s;
-    }
-
-    .logo img:hover {
-        width: 65px;
-        transition: .5s;
-    }
-
-    .mobile-menu {
-        right: 60px;
-    }
-
-    
-    header.active .nav {
-        transform: translateX(0%);
-        transition: 1s;
+        text-align: center;
     }
 
     .icones {
-        right: 15px;
-        top: 90px;
+        text-align: center;
     }
 
     .icones a {
-        font-size: 1.8em;
+        font-size: 1.7em;
     }
 
-    #pTextProj {
+    .botao {
+        text-align: center;
         position: relative;
-        bottom: 50px;
-        max-width: 300px;
+        right: 8px;
     }
 
-    .btn {
-        padding: 5px 5px;
+    .botao .btn {
         font-size: .8em;
-        width: 100px;
-        left: 70px;
+        max-width: 100px;
+        color: var(--color-palette06);
+        padding: 5px 10px;
+        background: #111111;
+        transition: 1s;
     }
 
-    .btns {
+    .btn:hover {
+        color: #111111;
+        transition: 1s;
+        background: var(--color-palette06);
+    }
+
+    .foto-princ {
         position: relative;
-        top: 260px;
-        left: 0px;
-    }
-
-    .sobreText h2 {
-        font-size: 1.5em;
-    }
-
-    .projText h2 {
-        font-size: 2em;
+        top: 20px;
     }
 
     /*Sobre*/
 
     #sobre {
+        background: #151515;
         padding-top: 100px;
     }
 
-    .sobreTitulo {
-        position: relative;
-        top: 60px;
-        left: 0px;
-        padding-bottom: 50px;
-    }
-
-    .sobreFlex img {
-        position: absolute;
-        top: -20px;
-        right: 30px;
-        width: 120px;
-    }
-
-    .sobreText::before,
-    .sobreText::after {
-      display: none;
-    }
-
     .sobrePrinc {
-        position: absolute;
-        right: 50%;
-        transform: translateX(55%);
-        max-width: 400px;
-    }
-
-    .sobreText p {
-        font-size: .9em;
-        font-weight: 500;
-        text-align: center;
-        max-width: 400px;
-    }
-
-    #logos {
         display: flex;
-        width: 85%;
-        gap: 20px;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+        margin: auto;
+    }
+
+    .sobre-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 80vh;
+        width: 350px;
+        border: 2px solid #3c3838;
+        background: #1a1a1a;
+        border-radius: 5px;
+        padding-top: 150px;
+    }
+
+    .sobreTitulo {
+        text-align: center;
+    }
+
+    .sobreTitulo h2 {
+        position: relative;
+        top: 0px;
+        font-size: 2.3em;
+        font-family: 'Darker Grotesque', sans-serif;
+        font-weight: 200;
+        color: #3094AE;
         padding: 20px;
     }
 
-    .logoCursos {
+    #logos img {
         width: 30px;
+    }
+
+    .foto-sobre img {
+        position: relative;
+        bottom: 370px;
+        opacity: .1;
     }
 
     /*Experiencia*/
