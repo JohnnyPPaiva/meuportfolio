@@ -347,13 +347,13 @@
 
     #sobre .sobre-content {
         position: relative;
-        right: 60px;
+        right: 20%;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         height: 70vh;
-        width: 400px;
+        width: 80vw;
         border: 2px solid #3c3838;
         background: #1a1a1a;
         border-radius: 5px;
