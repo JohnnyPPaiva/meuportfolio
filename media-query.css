@@ -63,74 +63,13 @@
         transform: rotate(45deg) translate(-5px, -7px); 
     }
 
-    .setaPagHome {
-        display: none;
-    }
-
-    .setaPagSobre,
-    .setaPagExp {
-       display: none;
-    }
-
-    .setaPagProj {
-        display: none;
-    }
-
     #foto {
         width: 250px;
         right: 20px;
         bottom: 300px;
     }
     
-    /*Sobre*/
 
-    #sobre {
-        padding-top: 150px;
-    }
-
-    .sobreTitulo {
-        position: relative;
-        top: 60px;
-        left: 0px;
-        padding-bottom: 50px;
-    }
-
-    .sobreFlex img {
-        position: absolute;
-        top: -30px;
-        right: 60px;
-        width: 150px;
-    }
-
-    .sobreText::before,
-    .sobreText::after {
-      display: none;
-    }
-
-    .sobrePrinc {
-        position: relative;
-        max-width: 700px;
-        
-        
-    }
-
-    .sobreText p {
-        font-size: .9em;
-        font-weight: 500;
-        text-align: center;
-        max-width: 700px;
-    }
-
-    #logos {
-        display: flex;
-        width: 90%;
-        gap: 20px;
-        padding: 20px;
-    }
-
-    .logoCursos {
-        width: 40px;
-    }
 
     /*Experiencia*/
 
@@ -393,35 +332,39 @@
     /*Sobre*/
 
     #sobre {
-        background: #151515;
         padding-top: 100px;
     }
 
     .sobrePrinc {
-        display: flex;
-        flex-direction: column;
         align-items: center;
         padding: 0px;
-        margin: auto;
     }
 
     .sobre-content {
         position: relative;
-        right: 40px;
+        right: 60px;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         height: 80vh;
-        width: 370px;
+        width: 400px;
         border: 2px solid #3c3838;
         background: #1a1a1a;
         border-radius: 5px;
         padding-top: 150px;
+        margin: auto;
     }
 
     .sobreTitulo {
         text-align: center;
+    }
+
+    .sobreText p {
+        font-size: .9em;
+        font-weight: 500;
+        text-align: center;
+        max-width: 700px;
     }
 
     .sobreTitulo h2 {
@@ -443,6 +386,14 @@
         bottom: 370px;
         opacity: .1;
     }
+
+    #logos {
+        display: flex;
+        width: 90%;
+        gap: 20px;
+        padding: 20px;
+    }
+
 
     /*Experiencia*/
     .expGeral {
