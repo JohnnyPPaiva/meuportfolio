@@ -406,12 +406,14 @@
     }
 
     .sobre-content {
+        position: relative;
+        right: 40px;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         height: 80vh;
-        width: 350px;
+        width: 370px;
         border: 2px solid #3c3838;
         background: #1a1a1a;
         border-radius: 5px;
@@ -736,22 +738,22 @@
      }
 
     .setaPagHome {
-        left: 90%;
+        left:80%;
         top: 650px;
     }
     
     .setaPagSobre {
-        left: 90%;
+        left: 80%;
         top: 650px;
     }
     
     .setaPagExp {
-        left: 120%;
+        left: 30%;
         top: 520px;
     }
     
     .setaPagProj {
-        left: 90%;
+        left: 80%;
         top: 650px;
     }
     
