@@ -329,6 +329,10 @@
         top: 20px;
     }
 
+    #foto {
+        width: 170px;
+    }
+
     /*Sobre*/
 
     #sobre {
@@ -336,18 +340,19 @@
     }
 
     .sobrePrinc {
+        text-align: center;
         align-items: center;
         padding: 0px;
     }
 
-    .sobre-content {
+    #sobre .sobre-content {
         position: relative;
         right: 60px;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        height: 80vh;
+        height: 70vh;
         width: 400px;
         border: 2px solid #3c3838;
         background: #1a1a1a;
@@ -358,6 +363,7 @@
 
     .sobreTitulo {
         text-align: center;
+        padding-top: 100px;
     }
 
     .sobreText p {
@@ -690,22 +696,22 @@
 
     .setaPagHome {
         left:80%;
-        top: 650px;
+        top: 620px;
     }
     
     .setaPagSobre {
         left: 80%;
-        top: 650px;
+        top: 620px;
     }
     
     .setaPagExp {
         left: 30%;
-        top: 520px;
+        top: 500px;
     }
     
     .setaPagProj {
         left: 80%;
-        top: 650px;
+        top: 620px;
     }
     
 }
