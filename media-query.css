@@ -15,6 +15,15 @@
     --color-palette06: #14add3;
 }
 
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
 
 @media (max-width: 992px) {
 
@@ -281,7 +290,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 300px;
+        width: 400px;
         margin: auto;
     }
 
@@ -337,12 +346,15 @@
 
     #sobre {
         padding-top: 100px;
+        margin: auto;
     }
 
     .sobrePrinc {
         text-align: center;
         align-items: center;
+        justify-content: center;
         padding: 0px;
+        margin: auto;
     }
 
     #sobre .sobre-content {
@@ -358,7 +370,7 @@
         background: #1a1a1a;
         border-radius: 5px;
         padding-top: 150px;
-        margin: auto;
+        margin: 1em;
     }
 
     .sobreTitulo {
