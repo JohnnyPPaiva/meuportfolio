@@ -290,7 +290,7 @@ ul li:hover a {
 #home .content {
     display: flex;
     flex-direction: column;
-    z-index: 10;
+    z-index: 10
 }
 
 .content span {

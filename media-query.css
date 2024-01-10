@@ -178,9 +178,11 @@
         margin: auto;
     }
 
+
     #home .home-geral .content h2 {
         text-align: center;
         font-size: 3em;
+        min-width: 300px;
     }
 
     #home .home-geral .content p {
@@ -239,6 +241,7 @@
         align-items: center;
         justify-content: center;
         padding: 0px;
+        padding-top: 130px;
         margin: auto;
     }
 
@@ -258,7 +261,7 @@
 
     .sobreTitulo {
         text-align: center;
-        padding-top: 0px;
+        padding-top: 150px;
     }
 
     .sobreText p {
@@ -344,7 +347,7 @@
     
     .box {
         padding: 0;
-        width: 80px;
+        width: 75px;
         height: 160px;
     }
     
@@ -418,8 +421,8 @@
         padding-top: 100px;
         background-image: url(./imagens/fundo_Projeto.png);
         background-repeat: no-repeat;
-        background-size: 60%;
-        background-position: right top;
+        background-size: 0%;
+        background-position: left top;
     }
 
     .projText h2 {
