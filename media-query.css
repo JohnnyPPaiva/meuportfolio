@@ -169,17 +169,28 @@
 
     /*Home*/
 
+    #home {
+        position: relative;
+        margin: auto;
+        background: #111111;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+    }
+
     #home .home-geral {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 100vw;
+        max-width: 400px;
         margin: auto;
     }
 
     #home .home-geral .content h2 {
-        text-align: center;
         font-size: 3em;
         white-space: nowrap;
     }
