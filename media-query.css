@@ -414,7 +414,125 @@
     }
     
     /*::-----projetos-----::*/
+    #projetos {
+        padding: 50px 0;
+    }
 
+    .projGeral-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+        max-width: 480px;
+    }
+    
+    .projs {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: 130px;
+        left: 350px;
+        width: 500px;
+    }   
+
+    .projText h2 {
+        font-size: 2em;
+        font-family: 'Darker Grotesque', sans-serif;
+        font-weight: 200;
+        text-align: center;
+        padding: 50px;
+        padding-bottom: 50px;
+    }
+    
+    #htextProj {
+        font-size: 1em;
+        font-family: 'Nunito', sans-serif;
+        color: var(--color-palette05);
+        text-align: center;
+    }
+    
+    
+    #projInfos p {
+        font-family: 'Nunito', sans-serif;
+        color: var(--color-palette1);
+        text-align: center;
+        font-size: .8em;
+        line-height: 1.3em;
+        font-weight: 700;
+        max-width: 400px;
+        padding-bottom: 50px;
+    }
+    
+    .card img {
+        width: 200px;
+        height: 300px;
+        border-radius: 15px;
+        border: 2px solid #3c3838;
+    }
+    
+    .card::before {
+        top: 228px;
+        left: 2px;
+        width: 196px;
+        height: 70px; 
+    }
+    
+    .card {
+        position: absolute;
+        width: 40%;
+        height: 50%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        cursor: pointer;
+        transition: .7s ease;
+    }
+    
+    .card h3 {
+        font-family: 'Nunito', sans-serif;
+        position: relative;
+        bottom: 70px;
+        left: 12px;
+        font-size: 1em;
+        font-weight: 100;
+        color: #fff;
+    }
+    
+    .iconeCard {
+        position: relative;
+        bottom: 60px;
+        left: 10px;
+        color: #f1f1f1;
+        font-size: 1.4em;
+    }
+    
+    .cards {
+        position: relative;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .btns {
+        position: relative;
+        width: 85px;
+        height: 26px;
+        display: none;
+        font-family: 'Nunito', sans-serif;
+        font-size: .8em;
+        font-weight: 700;
+        color: #000;
+        text-decoration: none;
+        text-align: center;
+        padding: 5px 5px;
+        border-radius: 2px;
+        transition: .5s;
+        background: #fff;
+    }
  
 
     /*Contato*/
