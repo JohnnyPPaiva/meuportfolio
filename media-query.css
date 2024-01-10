@@ -78,126 +78,10 @@
         bottom: 300px;
     }
     
-
-
     /*Experiencia*/
 
-    .expGeral {
-        position: relative;
-        top: 5px;
-    }
+ 
 
-    .expText::before,
-    .expText::after {
-      display: none;
-    }
-
-    .expText h2 {
-        font-size: 1.8em;
-        padding: 25px;
-        min-width: 400px;
-    }
-
-    .expText h3 {
-        font-size: 1em;
-        line-height: 1em;
-    }
-
-    .box {
-        position: relative;
-        right: 10px;
-        width: 120px;
-        height: 120px;
-    }
-
-     .box img {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-
-    .box:hover .imgPrinc {
-        width: 300px;
-    }
-
-    .box:hover {
-        opacity: 1;
-        transition: .5s;
-        cursor: pointer;
-        border-radius: 20px;
-        box-shadow: 1px 1px 5px #000;
-    }
-
-    .box::before {
-        display: none;
-    }
-
-    .box:hover .expP {
-        display: none;
-    }
-
-    .box:hover .expDate {
-        display: none;
-    }
-
-    .imgPrinc {
-        width: 200px;
-    }
-
-    .imgOculta {
-        display: none;
-    }
-
-    .contentDivExp img {
-        position: absolute;
-        max-width: 85px;
-    }
-
-    .contentDivExp a {
-        font-size: 0.1em;
-        padding: 5px 5px;
-    }
-
-    #expInfos {
-        position: relative;
-        bottom: 550px;
-        left: 95px;
-    }
-
-    #textInfos {
-        position: relative;
-        right: 90px;
-        bottom: 15px;
-    }
-
-    #expInfos p {
-        min-width: 400px;
-        font-size: .9em;
-        font-weight: 700;
-        line-height: 1.4em;
-    }
-    
-    .contentDivExp:hover .imgOculta {
-        display: none;
-    }
-
-    .contentDivExp:hover .imgPrinc {
-        display: block;
-    }
-
-    .container {
-        grid-template-columns: repeat(5,1fr);
-        grid-gap: 30px;
-    }    
-
-    #expInfos {
-        position: relative;
-        padding: 0px;
-        top: 0px;
-        right: 150px;
-    }
-}
 
 
 @media (max-width: 768px) {
@@ -290,7 +174,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 400px;
+        width: 450px;
         margin: auto;
     }
 
@@ -358,19 +242,6 @@
         margin: auto;
     }
 
-   /* #sobre .sobre-content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: 80vh;
-        width: 80vw;
-        border: 2px solid #3c3838;
-        background: #1a1a1a;
-        border-radius: 5px;
-        padding-top: 150px;
-        margin: auto;
-    }*/
 
     .sobre-content {
         display: flex;
@@ -426,127 +297,120 @@
 
 
     /*Experiencia*/
-    .expGeral {
-        position: relative;
-        top: 5px;
+
+    #experiencia {
+        padding: 150px 0px;
+        margin: auto;
     }
 
-    .expText::before,
-    .expText::after {
-      display: none;
+    .expGeral {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: auto;
+        padding: 0px;
+        width: 400px;
+    }
+
+    .expText {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
     .expText h2 {
-        font-size: 1.5em;
-        padding: 25px;
-        min-width: 400px;
+        right: 0;
+        text-align: center;
+        font-family: 'Darker Grotesque', sans-serif;
+        font-size: 1.8em;
+        color: #3094AE;
+        font-weight: 200;
+        
     }
 
     .expText h3 {
-        font-size: .9em;
-        line-height: 1em;
+        right: 0;
+        text-align: center;
+        font-size: .8em;
     }
-
+    
+    /*Divs com empresas*/
+    .container {
+        grid-gap: 10px;
+        width: 10px;
+        padding: 50px 0px;
+    }
+    
     .box {
+        padding: 0;
+        width: 80px;
+        height: 160px;
+    }
+    
+    .expDate {
         position: relative;
-        right: 10px;
-        width: 100px;
-        height: 100px;
+        top: 137px;
+        color: var(--color-palette06);
+        z-index: 51;
+        display: none;
+        font-size: .7em;
+    }
+    
+    .box:hover .expDate {
+        display: block;
+        transition: 1s;
+        animation: moveToRightP .8s ease-in-out;
+    }
+    
+    .expP {
+        position: relative;
+        top: 119px;
+        left: 15px;
+        color: #000;
+        z-index: 51;
+        display: none;
+    }
+    
+    .expP span {
+        font-size: .6em;
     }
 
-    .box img {
+    .box::before {
+        top: 127px;
+        left: 0px;
+        width: 80px;
+        height: 30px; 
+    }
+    
+    .contentDivExp {
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
-
-    .box:hover .imgPrinc {
-        width: 300px;
-    }
-
-    .box:hover {
-        opacity: 1;
-        transition: .5s;
-        cursor: pointer;
-        border-radius: 20px;
-        box-shadow: 1px 1px 5px #000;
-    }
-
-    .box::before {
-        display: none;
-    }
-
-    .box:hover .expP {
-        display: none;
-    }
-
-    .box:hover .expDate {
-        display: none;
-    }
-
+    
     .imgPrinc {
-        width: 200px;
+        width: 100px;
     }
-
+    
     .imgOculta {
         display: none;
-        width: 150px;
-        height: 150px;
-    }
-
-    .contentDivExp img {
-        position: absolute;
-        max-width: 85px;
-    }
-
-    .contentDivExp h2 {
-        font-size: 0.5em;
+        width: 90px;
+        height: 160px;
     }
     
-    .contentDivExp a {
-        font-size: 0.1em;
-        padding: 5px 5px;
+   
+    .expText::before,
+    .expText::after {
+      display: none;
     }
-
-    #expInfos {
-        position: relative;
-        bottom: 550px;
-        left: 95px;
-    }
-
-    #textInfos {
-        position: relative;
-        right: 90px;
-        bottom: 15px;
-    }
-
+       
     #expInfos p {
-        min-width: 400px;
         font-size: .8em;
-        font-weight: 700;
-        line-height: 1.4em;
     }
     
-    .contentDivExp:hover .imgOculta {
-        display: none;
-    }
-
-    .contentDivExp:hover .imgPrinc {
-        display: block;
-    }
-
-    .container {
-        grid-template-columns: repeat(3,1fr);
-        grid-gap: 30px;
-    }    
-
-    #expInfos {
-        position: relative;
-        padding: 0px;
-        top: 0px;
-        right: 150px;
-    }
+  
 
     /*::-----projetos-----::*/
 
@@ -720,26 +584,22 @@
 
     .setaPagHome {
         left:80%;
-        top: 620px;
+        top: 600px;
     }
     
     .setaPagSobre {
         left: 80%;
-        top: 620px;
+        top: 600px;
     }
     
     .setaPagExp {
-        left: 30%;
-        top: 500px;
+        left: 80%;
+        top: 600px;
     }
     
     .setaPagProj {
         left: 80%;
-        top: 620px;
+        top: 600px;
     }
-    
 }
-
-
-
-
+}
