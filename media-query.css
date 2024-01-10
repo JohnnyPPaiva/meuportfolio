@@ -178,11 +178,10 @@
         margin: auto;
     }
 
-
     #home .home-geral .content h2 {
         text-align: center;
         font-size: 3em;
-        min-width: 280px;
+        white-space: nowrap;
     }
 
     #home .home-geral .content p {
