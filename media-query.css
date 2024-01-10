@@ -422,17 +422,11 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin: auto;
-        max-width: 480px;
+        max-width: 400px;
     }
     
     .projs {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        top: 130px;
+        top: 150px;
         left: 350px;
         width: 500px;
     }   
@@ -443,14 +437,15 @@
         font-weight: 200;
         text-align: center;
         padding: 50px;
-        padding-bottom: 50px;
+        padding-bottom: 40px;
     }
     
     #htextProj {
         font-size: 1em;
         font-family: 'Nunito', sans-serif;
         color: var(--color-palette05);
-        text-align: center;
+        text-align: left;
+        padding-bottom: 10px;
     }
     
     
@@ -462,7 +457,7 @@
         line-height: 1.3em;
         font-weight: 700;
         max-width: 400px;
-        padding-bottom: 50px;
+        padding-bottom: 20px;
     }
     
     .card img {
@@ -485,9 +480,7 @@
         height: 50%;
         left: 0;
         right: 0;
-        margin: auto;
         cursor: pointer;
-        transition: .7s ease;
     }
     
     .card h3 {
@@ -508,30 +501,13 @@
         font-size: 1.4em;
     }
     
-    .cards {
-        position: relative;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        justify-content: center;
-        margin: auto;
-    }
 
     .btns {
         position: relative;
+        left: 150px;
         width: 85px;
         height: 26px;
-        display: none;
-        font-family: 'Nunito', sans-serif;
-        font-size: .8em;
-        font-weight: 700;
-        color: #000;
-        text-decoration: none;
-        text-align: center;
-        padding: 5px 5px;
-        border-radius: 2px;
-        transition: .5s;
-        background: #fff;
+      
     }
  
 
