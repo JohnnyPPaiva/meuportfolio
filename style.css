@@ -60,7 +60,6 @@ body {
 #contato {
     width: 100vw;
     margin: auto;
-    position: relative;
     min-height: 100vh;
     padding: 120px 100px;
 }
@@ -997,7 +996,7 @@ input[type=text] {
 }
 
 
-.contato .btnContato {
+.btnContato {
     position: relative;
     font-family: 'Nunito', sans-serif;
     top: 43px;
@@ -1010,14 +1009,6 @@ input[type=text] {
     color: #fff;
     transition: all 1s;
     border: none;
-}
-
-.contato .btnContato:hover {
-    background: var(--color-palette06);
-    border-radius: 10px;
-    color: #1a1a1a;
-    font-weight: 700;
-    transition: 1s;
 }
 
 

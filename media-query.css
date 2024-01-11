@@ -523,9 +523,28 @@
 
     /*Contato*/
 
+    #contato {
+        background: var(--color-palette3);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-image: url(./imagens/email_fundo.png);
+        background-repeat: no-repeat;
+        background-size: 60%;
+        background-position: left top;
+        padding: 0px;
+    }
+    
     .contatoGeral {
         position: relative;
-        top: 50px;
+        top: 20px;
+        padding-top: 100px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        padding-top: 0px;
     }
     
     .contato {
@@ -533,50 +552,86 @@
         align-items: center;
         text-align: center;
         flex-direction: column;
-        width: 250px;
-        height: 360px;
+        width: 350px;
+        height: 450px;
         border-radius: 0px;
         background: var(--color-palette1);
         box-shadow:  10px 10px 15px #0000005e;
+        margin: auto;
     }
-
-    .contato h2 {
+    
+    .contatoGeral h2 {
+        font-family: 'Jost', sans-serif;
         color: var(--color-palette2);
-        font-size: 1.5em;
-        padding: 5px;
+        font-size: 2.5em;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+    
+    .contato form {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
     }
     
     .contato form label {
-        font-size: 13px;
+        color: var(--color-palette4);
+        font-weight: 550;
+        font-size: 17px;
+        text-align: left;
+        margin-bottom: 1px;
     }
     
     .contato form input {
+        padding: 15px;
+        outline: none;
+        border: 0;
         margin-bottom: 5px;
-        font-size: 12px;
-    }
-
-    .contato form textarea {
-        font-size: 12px;
-        margin-bottom: 10px;
-        height: 90px;
-    }
-
-    .contato .btnContato {
-        font-size: .8em;
-    }
-
-    .iconsContato {
-        position: relative;
-        left: 230px;
-        bottom: 330px;
-        padding: 30px;
-        flex-direction: column;
-        gap: 20px;
+        font-size: 15px;
+        transition: all 0.5s;
     }
     
-    .iconsContato a {
-        font-size: 1.7em;
+    .contato form input:focus {
+        border-radius: 10px;
     }
+
+    .cont-infos {
+        padding-bottom: 0px;
+    }
+
+    .cont-mensg {
+        padding: 0px;
+    }
+    
+    .contato form textarea {
+        padding: 10px;
+        outline: none;
+        border: 0;
+        font-size: 15px;
+        margin-bottom: 30px;
+        transition: all 0.5s;
+    }
+    
+    .contato form textarea:focus {
+        border-radius: 10px;
+    }
+    
+    .btnContato {
+        top: 0px;
+        left: 6px;
+        width: 300px;
+        height: 50px;
+        padding: 0px;
+    }
+    
+    /*icones contato*/
+    .iconsContato {
+        padding: 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 30px;
+}
 
      /*Setas*/
      .setaPagHome, 
