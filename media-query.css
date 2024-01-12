@@ -672,10 +672,10 @@
         margin: auto;
     }
     
-    .contatoGeral h2 {
-        font-family: 'Jost', sans-serif;
-        color: var(--color-palette2);
-        font-size: 2.5em;
+    #contato h2 {
+        font-family: 'Darker Grotesque', sans-serif;
+        color: var(--color-palette06);
+        font-size: 2em;
         padding-bottom: 20px;
         text-align: center;
     }
