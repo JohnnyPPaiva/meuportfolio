@@ -530,6 +530,7 @@
        
     #expInfos p {
         font-size: .8em;
+        max-width: 400px;
     }
     
     /*::-----projetos-----::*/
