@@ -124,7 +124,7 @@ function mostraMoto() {
 }
 
 function mostraMuscle() {
-    divhProj.innerHTML = "Treinos de Musculação"
+    divhProj.innerHTML = "Guia Rápido de Musculação"
     divpProj.innerHTML = "Desenvolvi esse projeto com a intenção de demonstrar e explicar detalhadamente cada um dos principais exercícios de musculação separados por grupos musculares. Clicando nas imagens de demonstração dos exercícios é possível adiciona-lo a uma ficha de treino onde o usuário insere a quantidade de séries de cada um deles e ao final da montagem é possível imprimir essa lista com os exercícios"
     btnTmb.style.display = "none"
     btnLogin.style.display = "none"

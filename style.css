@@ -128,7 +128,7 @@ ul li:hover a {
     left: 0;
     width: 9.5%;
     height: 2px;
-    background-color: #fff;
+    background: linear-gradient(to right, #111, #fff);
     transform: scaleX(0);
     transform-origin: bottom right;
     transition: transform 0.5s ease-out;
@@ -151,7 +151,7 @@ ul li:hover a {
     left: 50;
     width: 10%;
     height: 2px;
-    background-color: #fff;
+    background: linear-gradient(to right, #111, #fff);
     transform: scaleX(0);
     transform-origin: bottom right;
     transition: transform 0.5s ease-out;
@@ -174,7 +174,7 @@ ul li:hover a {
     left: 50;
     width: 19%;
     height: 2px;
-    background-color: #fff;
+    background: linear-gradient(to right, #111, #fff);
     transform: scaleX(0);
     transform-origin: bottom right;
     transition: transform 0.5s ease-out;
@@ -197,7 +197,7 @@ ul li:hover a {
     left: 50;
     width: 13%;
     height: 2px;
-    background-color: #fff;
+    background: linear-gradient(to right, #111, #fff);
     transform: scaleX(0);
     transform-origin: bottom right;
     transition: transform 0.5s ease-out;
@@ -220,7 +220,7 @@ ul li:hover a {
     left: 50;
     width: 12.8%;
     height: 2px;
-    background-color: #fff;
+    background: linear-gradient(to right, #111, #fff);
     transform: scaleX(0);
     transform-origin: bottom right;
     transition: transform 0.5s ease-out;
@@ -305,7 +305,6 @@ ul li:hover a {
     font-size: 5em;
     color: #fff;
     font-weight: 800;
-  
 }
 
 #home .content p {
@@ -721,7 +720,7 @@ ul li:hover a {
 .projs {
     position: relative;
     bottom: 10px;
-    left: 200px;
+    left: 250px;
     width: 500px;
     transform-style: preserve-3d;
 }   
@@ -962,7 +961,7 @@ input[type=radio] {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 22px 30px;
+    padding: 20px 30px;
 }
 
 .cont-mensg {
@@ -987,7 +986,7 @@ input[type=text] {
 
 
 .contato form textarea {
-    height: 143px;
+    height: 145px;
     width: 300px;
     outline: none;
     border: 0;
@@ -1006,10 +1005,15 @@ input[type=text] {
     height: 144px;
     cursor: pointer;
     font-size: 15px;
-    background: var(--color-palette4);
+    background: var(--color-palette3);
     color: #fff;
     transition: all 1s;
     border: none;
+}
+
+.btnContato:hover {
+    background: var(--color-palette06);
+    transition: 1s;
 }
 
 
