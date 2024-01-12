@@ -535,7 +535,7 @@
     
     /*::-----projetos-----::*/
     #projetos {
-        padding: 50px 0;
+        padding: 30px 0;
     }
 
     .projGeral-content {
@@ -547,7 +547,7 @@
     
     .projs {
         top: 150px;
-        left: 230px;
+        left: 245px;
         width: 500px;
     }   
 
@@ -562,7 +562,7 @@
 
     .projResps-content {
         position: relative;
-        right: 120px;
+        right: 100px;
     }
     
     #htextProj {
