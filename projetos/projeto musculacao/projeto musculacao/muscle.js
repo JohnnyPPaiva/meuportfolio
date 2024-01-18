@@ -6,6 +6,8 @@ let bicep = document.querySelector('.biceps')
 let costa = document.querySelector('.costas')
 let perna = document.querySelector('.pernas')
 let ombro = document.querySelector('.ombros')
+let macroNutri = document.querySelector('.macro')
+let macroSair = document.querySelector('.macroExit')
 let ext = document.querySelector('.exit')
 let chest = document.querySelector('.chests')
 let trice = document.querySelector('.tricep')
@@ -28,6 +30,25 @@ let hFichaPernas = document.querySelector('.tituloFichaPernas')
 let hFichaOmbros = document.querySelector('.tituloFichaOmbros')
 let iconPrint = document.querySelector('.print')
 let iconReload = document.querySelector('.reload')
+let menuToggle = document.querySelector('.mobileMenu')
+
+menuToggle.onclick = function() {
+    header.classList.toggle('active')
+}
+
+function fechaMenu() {
+    header.classList.toggle('active')
+}
+
+function trainFecha() {
+    fechaMenu();
+    training();
+}
+
+function macroFecha() {
+    macro();
+    fechaMenu();
+}
 
 let respTreinosPeito = ""
 let respTreinosTriceps = ""
@@ -47,6 +68,8 @@ function training() {
         ficha.classList.remove('active')
     }
 }
+
+
 
 function imprimirTexto() {
     window.print()
@@ -1723,5 +1746,10 @@ function ombros() {
     shold.classList.toggle('active')
 }
 
+function macro() {
+    macroNutri.classList.toggle('active')
+    blur.classList.toggle('active')
+    macroSair.classList.toggle('active')
+}
 
 

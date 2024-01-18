@@ -11,7 +11,7 @@
         width: 70%;
     }
 
-    h3 {
+    .exerc h3 {
         top: 360px;
         color: #fff;
     }
@@ -34,6 +34,61 @@
 }
 
 @media screen and (max-width: 1024px) {
+
+    body {
+        overflow-x: hidden; 
+    }
+
+    .ul {
+        position: absolute;
+        visibility: hidden;
+        top: 0; 
+        right: 0;
+        width: 50vw;
+        height: 100vh;
+        background: #00000085;
+        flex-direction: column;
+        align-items: left;
+        justify-content: center;
+        transform: translateX(100%);
+        transition: 1s;
+    }
+
+    .ul li {
+        opacity: 1;
+        font-size: 1.8em;
+    }
+
+    .nutriMenu::before {
+        width: 100%;
+    }
+
+    .supleMenu::before {
+        width: 100%;
+    }
+
+    .mobileMenu div {
+        display: block;
+    }
+
+    header.active .ul {
+        transform: translateX(0%);
+        transition: 1s;
+        visibility: visible;
+    }
+
+    header.active .mobileMenu .line1 {
+        transform: rotate(-45deg) translate(-5px, 7px); 
+    }
+         
+    header.active .mobileMenu .line2 {
+        opacity: 0;
+    }
+         
+    header.active .mobileMenu .line3 {
+        transform: rotate(45deg) translate(-5px, -7px); 
+    }
+
     .exerc {
         width: 130px;
         height: 400px;
@@ -63,7 +118,7 @@
         height: 330px;
     }
 
-    h3 {
+    .exerc h3 {
         top: 280px;
         color: #fff;
     }
@@ -139,7 +194,7 @@
         height: 250px;
     }
 
-    h3 {
+    .exerc h3 {
         top: 210px;
         color: #fff;
     }
@@ -195,6 +250,14 @@
         font-weight: 100;
         text-align: center;
         padding-bottom: 0px;
+    }
+
+    .macros img {
+        width: 300px;
+    }
+
+    .macros p {
+        font-size: .8em;
     }
 }
 
