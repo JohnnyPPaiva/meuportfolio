@@ -23,9 +23,7 @@ html {
     scroll-behavior: smooth;
 }
 
-body {
-    background: var(--cor-paleta3);
-}
+
 
 
 header {
@@ -284,6 +282,9 @@ ul li a {
     width: 100%;
     min-height: 100vh;
     background: var(--cor-paleta3);
+    background-image: url(./imagens/fundo.png);
+    background-position: top right;
+    background-repeat: no-repeat;
     color: var(--cor-paleta1);
     display: flex;
     flex-direction: column;
