@@ -526,6 +526,7 @@ ul li a {
 .macros p {
     font-family: 'Nunito', sans-serif;
     max-width: 1450px;
+    text-align: left;
 }
 
 .exit {
