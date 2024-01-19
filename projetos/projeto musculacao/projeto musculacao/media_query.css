@@ -39,6 +39,13 @@
         overflow-x: hidden; 
     }
 
+    #home {
+        padding-top: 230px;
+        background-size: 30%;
+        background-position: center 80px;
+    }
+
+
     .ul {
         position: absolute;
         visibility: hidden;
@@ -88,6 +95,7 @@
     header.active .mobileMenu .line3 {
         transform: rotate(45deg) translate(-5px, -7px); 
     }
+
 
     .exerc {
         width: 130px;
@@ -148,7 +156,9 @@
 
 
     #home {
-        padding-top: 80px;
+        padding-top: 230px;
+        background-size: 90%;
+        background-position: center 80px;
     }
 
     #home h1 {
