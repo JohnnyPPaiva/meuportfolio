@@ -23,9 +23,6 @@ html {
     scroll-behavior: smooth;
 }
 
-
-
-
 header {
     position: fixed;
     width: 100%;
@@ -340,7 +337,7 @@ ul li a {
 #home {
     position: relative;
     width: 100%;
-    min-height: 100vh;
+    height: 92vh;
     background: var(--cor-paleta3);
     background-image: url(./imagens/fundo.png);
     background-position: center 80px;
@@ -444,6 +441,7 @@ ul li a {
     transition: .3s;
     overflow: auto;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.61);
+    z-index: 10;
 }
 
 .divPrinc .tituloDiv {
@@ -655,4 +653,57 @@ ul li a {
 
 .respostaTreino {
     color: #000;
+}
+
+footer {
+    height: 8vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 0;
+}
+
+#footer_redes {
+    width: 100%;
+    height: 5vh;
+    background-color: #1d1d1d;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    z-index: 0;
+}
+
+#footer_redes .icon {
+    padding-top: 13px;
+    text-decoration: none;
+    color: #DDDDDD;
+    font-size: 1.5em;
+    transition: all .5s;
+}
+
+#instagram:hover {
+    color: #CF2972;
+}
+
+#facebook:hover {
+    color: #1974EC;
+}
+
+#github:hover {
+    color: #6866E9;
+}
+
+#footer_copyright {
+    background-color: #111;
+    width: 100%;
+    height: 3vh;
+    text-align: center;
+}
+
+#footer_copyright p {
+    font-family: 'Nunito', sans-serif;
+    color: #DDDDDD;
+    padding: 5px;
+    font-size: .8em;
 }
