@@ -37,6 +37,7 @@
 
     body {
         overflow-x: hidden; 
+        min-height: 100vh;
     }
 
     #home {
@@ -153,16 +154,20 @@
 @media screen and (max-width: 768px) {
 
     body {
-        height: 100vh;
+        min-height: 100vh;
     }
 
     header {
         height: 6vh;
     }
 
+    #home .fotoPrinc {
+        width: 300px;
+        padding-top: 50px;
+    }
 
     #home {
-        padding-top: 170px;
+        padding-top: 10px;
         background-size: 65%;
         background-position: center 65px;
         height: 92vh;

@@ -182,6 +182,11 @@ ul li a {
     cursor: pointer;
 }
 
+#home .fotoPrinc {
+    width: 600px;
+    padding: 0;
+}
+
 .treino {
     position: relative;
     top: 1%;
@@ -339,13 +344,11 @@ ul li a {
     width: 100%;
     height: 92vh;
     background: var(--cor-paleta3);
-    background-image: url(./imagens/fundo.png);
-    background-position: center 80px;
-    background-size: 30%;
-    background-repeat: no-repeat;
     color: var(--cor-paleta1);
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 100px;
 }
 
@@ -361,7 +364,7 @@ ul li a {
 
 .principal {
     position: relative;
-    top: 200px;
+    top: 10px;
     display: grid;
     width: 100%;
     height: 500px;
