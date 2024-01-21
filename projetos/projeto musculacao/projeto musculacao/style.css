@@ -384,6 +384,7 @@ ul li a {
     background: #DDDDDD;
     border-radius: 10px;
     border: 2px solid var(--cor-paleta1);
+    margin: auto;
     opacity: .9;
     transition: .3s;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.552);

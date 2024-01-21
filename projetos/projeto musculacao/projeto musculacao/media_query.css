@@ -37,7 +37,6 @@
 
     body {
         overflow-x: hidden; 
-        min-height: 100vh;
     }
 
     #home {
@@ -153,9 +152,7 @@
 
 @media screen and (max-width: 768px) {
 
-    body {
-        min-height: 100vh;
-    }
+    
 
     header {
         height: 6vh;
@@ -170,7 +167,7 @@
         padding-top: 10px;
         background-size: 65%;
         background-position: center 65px;
-        height: 92vh;
+        height: 91vh;
     }
 
     #home h1 {
@@ -191,6 +188,7 @@
         top: 20px;
         grid-template-columns: repeat(3, 2fr);
         grid-gap: 10px;
+        margin: auto;
     }
 
     .exerc {
@@ -283,5 +281,28 @@
         font-size: .8em;
     }
 
+    footer {
+        height: 9vh;
+        display: flex;
+        flex-direction: column;
+        align-items: right;
+        z-index: 0;
+    }
+
+    #footer_redes .icon {
+        padding-top: 7px;
+    }
+
+    #footer_redes {
+        height:8vh;
+    }
+    
+    #footer_copyright {
+        height: 6vh;
+    }
+   
+    #footer_copyright p {
+        padding-top: 4px;
+    }
 }
 
