@@ -40,9 +40,14 @@
     }
 
     #home {
-        padding-top: 230px;
+        padding-top: 50px;
         background-size: 30%;
         background-position: center 80px;
+    }
+
+    #home .fotoPrinc {
+        width: 600px;
+        padding-top: 0px;
     }
 
 
@@ -150,9 +155,7 @@
 }
 
 
-@media screen and (max-width: 768px) {
-
-    
+@media screen and (max-width: 600px) {
 
     header {
         height: 6vh;
@@ -170,18 +173,12 @@
         height: 91vh;
     }
 
-    #home h1 {
-        text-align: center;
-        font-size: 1.3em;
-    }
-
     section {
         height: 100vh;
     }
 
     .iconePrinc {
-        position: relative;
-        right: 50px;
+        width: 50px;
     }
 
     .principal {

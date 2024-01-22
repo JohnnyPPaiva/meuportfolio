@@ -1,6 +1,7 @@
 @charset "UTF-8";
 
 @import url('https://fonts.googleapis.com/css2?family=Jura&family=Nunito:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap');
 
 
 *,
@@ -38,7 +39,7 @@ header {
 
 .iconePrinc {
     position: relative;
-    width: 60px;
+    width: 80px;
     color: #fff;
 }
 
@@ -67,7 +68,7 @@ ul li a {
     position: absolute;
     bottom: 0;
     left: 50;
-    width: 16.5%;
+    width: 16%;
     height: 2px;
     background: linear-gradient(to right, #212934, #DDDDDD);
     transform: scaleX(0);
@@ -95,7 +96,7 @@ ul li a {
     position: absolute;
     bottom: 0;
     left: 50;
-    width: 11%;
+    width: 10.5%;
     height: 2px;
     background: linear-gradient(to right, #212934, #DDDDDD);
     transform: scaleX(0);
@@ -123,7 +124,7 @@ ul li a {
     position: absolute;
     bottom: 0;
     left: 50;
-    width: 20%;
+    width: 19%;
     height: 2px;
     background: linear-gradient(to right, #212934, #DDDDDD);
     transform: scaleX(0);
@@ -151,7 +152,7 @@ ul li a {
     position: absolute;
     bottom: 0;
     left: 50;
-    width: 26%;
+    width: 29%;
     height: 2px;
     background: linear-gradient(to right, #212934, #DDDDDD);
     transform: scaleX(0);
@@ -352,12 +353,6 @@ ul li a {
     padding: 100px;
 }
 
-#home h1 {
-    font-family: 'Nunito', sans-serif;
-    text-align: center;
-    font-size: 2em;
-}
-
 #home.active {
     filter: blur(10px);
 }
@@ -372,6 +367,7 @@ ul li a {
     align-items: center;
     grid-template-columns: repeat(6, 1fr);
 }
+
 .principal a {
     font-family: 'Nunito', sans-serif;
     text-decoration: none;
@@ -402,13 +398,13 @@ ul li a {
     left: 0;
     width: 100%;
     height: 50px; 
-    background-color: var(--cor-paleta4); 
+    background-color: var(--cor-paleta3); 
     border-radius: 0px 0px 10px 10px;
     transition: .3s;
 }
 
 .exerc:hover::before {
-    background-color: var(--cor-paleta3);
+    background-color: var(--cor-paleta4);
     transition: .3s;
 }
 
@@ -421,17 +417,17 @@ ul li a {
 
 .exerc h3 {
     text-align: center;
-    font-family: 'Nunito', sans-serif;
-    font-size: 1.5em;
-    font-weight: 700;
+    font-family: 'Racing Sans One', sans-serif;
+    font-size: 1.6em;
     position: relative;
     top: 455px;
-    color: #fff;
+    color: var(--cor-paleta1);
+    text-shadow: 2px 2px 5px #000;
 }
 
 .divPrinc {
     position: fixed;
-    top: 1%;
+    top: 0;
     left: 50%;
     width: 90%;
     height: 800px;
@@ -448,13 +444,87 @@ ul li a {
     z-index: 10;
 }
 
+.container-cards {
+    padding: 50px;
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-cards h2{
+    font-family: 'Racing Sans One', sans-serif;
+    padding: 20px;
+}
+
+.container-cards p{
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    max-width: 1000px;
+    font-size: .9em;
+    color: var(--cor-paleta1);
+    line-height: 1.2em;
+    padding: 20px;
+}
+
+.suple-cards {
+    display: grid;
+    grid-template-columns: repeat(6, 6fr);
+    gap: 48px;
+    margin: 30px;
+    width: 1202px;
+}
+
+.card {
+    width: 160px;
+    height: 200px;
+    border: solid 1px #2d2d2d;
+    border-radius: 10px;
+    background: #111111;
+    box-shadow: 2px 2px 5px #0000007f;
+    transition: .3s;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.tituloSuple {
+    font-family: 'Nunito', sans-serif;
+    color: var(--cor-paleta1);
+    text-shadow: 2px 2px 1px #000;
+}
+
+.card:hover {
+    border: solid 1px #00fff6;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border-radius: 5px;
+    margin: 10px;
+    height: 180px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.card-content img {
+    box-shadow: 1px 1px 5px #00000080;
+}
+
 .divPrinc .tituloDiv {
+    font-size: .9em;
     font-family: 'Nunito', sans-serif;
     color: var(--cor-paleta1);
 }
 
 .divPrinc h2 {
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Racing Sans One', sans-serif;
+    font-size: 2em;
     color: var(--cor-paleta4);
     text-shadow: 1px 1px #000;
 }
@@ -501,22 +571,32 @@ ul li a {
     transition: .3s;
 }
 
+.suple.active {
+    visibility: visible;
+    opacity: 1;
+    transition: .3s;
+}
+
 .macros {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: left;
-    text-align: center;
+    margin: 50px;
 }
 
 .macros h1 {
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Racing Sans One', sans-serif;
+    color: var(--cor-paleta4);
+    font-size: 2em;
     padding: 30px;
 }
 
 .macros h2 {
+    font-family: 'Nunito', sans-serif;
     padding: 20px;
-    font-size: 1.5em;
+    color: var(--cor-paleta1);
+    font-size: 1em;
     max-width: 1450px;
 }
 
@@ -528,6 +608,7 @@ ul li a {
 
 .macros p {
     font-family: 'Nunito', sans-serif;
+    font-size: .9em;
     max-width: 1450px;
     text-align: left;
 }
@@ -587,6 +668,12 @@ ul li a {
     transition: 1s;
 }
 
+.supleExit.active {
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+
 .container {
     position: relative;
     display: flex;
@@ -629,6 +716,7 @@ ul li a {
 
 .textos p {
     font-family: 'Nunito', sans-serif;
+    line-height: 1em;
 }
 
 .add {

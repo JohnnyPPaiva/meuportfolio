@@ -7,7 +7,9 @@ let costa = document.querySelector('.costas')
 let perna = document.querySelector('.pernas')
 let ombro = document.querySelector('.ombros')
 let macroNutri = document.querySelector('.macro')
+let suplementos = document.querySelector('.suple')
 let macroSair = document.querySelector('.macroExit')
+let supleSair = document.querySelector('.supleExit')
 let ext = document.querySelector('.exit')
 let chest = document.querySelector('.chests')
 let trice = document.querySelector('.tricep')
@@ -41,12 +43,17 @@ function fechaMenu() {
 }
 
 function trainFecha() {
-    fechaMenu();
     training();
+    fechaMenu();
 }
 
 function macroFecha() {
     macro();
+    fechaMenu();
+}
+
+function supleFecha() {
+    suple();
     fechaMenu();
 }
 
@@ -970,7 +977,7 @@ function rosca() {
     if (rep === null) {
         return;
     }
-    const descr = " Séries de Rosca bíceps direta com barra"
+    const descr = " Séries de Rosca direta com barra reta"
     respTreinosBiceps += rep + descr + "\n"
     respTreinoBiceps.innerText = `${respTreinosBiceps}`
     hFichaBiceps.classList.remove('active')
@@ -995,7 +1002,7 @@ function roscaAmpla() {
     if (rep === null) {
         return;
     }
-    const descr = " Séries de Rosca bíceps direta com barra e pegada ampla"
+    const descr = " Séries de Rosca direta com barra e pegada ampla"
     respTreinosBiceps += rep + descr + "\n"
     respTreinoBiceps.innerText = `${respTreinosBiceps}`
     hFichaBiceps.classList.remove('active')
@@ -1020,7 +1027,7 @@ function roscaHalt() {
     if (rep === null) {
         return;
     }
-    const descr = " Séries de Rosca bíceps direta com halteres"
+    const descr = " Séries de Rosca direta com halteres"
     respTreinosBiceps += rep + descr + "\n"
     respTreinoBiceps.innerText = `${respTreinosBiceps}`
     hFichaBiceps.classList.remove('active')
@@ -1045,7 +1052,7 @@ function roscaMart() {
     if (rep === null) {
         return;
     }
-    const descr = " Séries de Rosca bíceps martelo em pé com halteres"
+    const descr = " Séries de Rosca martelo em pé com halteres"
     respTreinosBiceps += rep + descr + "\n"
     respTreinoBiceps.innerText = `${respTreinosBiceps}`
     hFichaBiceps.classList.remove('active')
@@ -1070,7 +1077,7 @@ function roscaPe() {
     if (rep === null) {
         return;
     }
-    const descr = " Séries de Rosca bíceps em pé na barra W"
+    const descr = " Séries de Rosca bíceps em pé com barra W"
     respTreinosBiceps += rep + descr + "\n"
     respTreinoBiceps.innerText = `${respTreinosBiceps}`
     hFichaBiceps.classList.remove('active')
@@ -1095,7 +1102,7 @@ function roscaCorda() {
     if (rep === null) {
         return;
     }
-    const descr = " Séries de Rosca bíceps no cabo e usando a corda"
+    const descr = " Séries de Rosca no pulley com corda"
     respTreinosBiceps += rep + descr + "\n"
     respTreinoBiceps.innerText = `${respTreinosBiceps}`
     hFichaBiceps.classList.remove('active')
@@ -1145,7 +1152,7 @@ function roscaMartIncl() {
     if (rep === null) {
         return;
     }
-    const descr = " Séries de Rosca bíceps martelo no banco inclinado com halteres"
+    const descr = " Séries de Rosca martelo no banco inclinado"
     respTreinosBiceps += rep + descr + "\n"
     respTreinoBiceps.innerText = `${respTreinosBiceps}`
     hFichaBiceps.classList.remove('active')
@@ -1170,7 +1177,7 @@ function roscaScott() {
     if (rep === null) {
         return;
     }
-    const descr = " Séries de Rosca bíceps apoiado no banco Scott e com a barra EZ"
+    const descr = " Séries de Rosca Scott com a barra EZ"
     respTreinosBiceps += rep + descr + "\n"
     respTreinoBiceps.innerText = `${respTreinosBiceps}`
     hFichaBiceps.classList.remove('active')
@@ -1195,7 +1202,7 @@ function roscaUni() {
     if (rep === null) {
         return;
     }
-    const descr = " Séries de Rosca bíceps concentrada unilateral com halter"
+    const descr = " Séries de Rosca concentrada unilateral com halter"
     respTreinosBiceps += rep + descr + "\n"
     respTreinoBiceps.innerText = `${respTreinosBiceps}`
     hFichaBiceps.classList.remove('active')
@@ -1750,6 +1757,12 @@ function macro() {
     macroNutri.classList.toggle('active')
     blur.classList.toggle('active')
     macroSair.classList.toggle('active')
+}
+
+function suple() {
+    suplementos.classList.toggle('active')
+    blur.classList.toggle('active')
+    supleSair.classList.toggle('active')
 }
 
 

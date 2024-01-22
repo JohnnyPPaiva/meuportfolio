@@ -11,14 +11,14 @@
 <body>
     <header>
         <span>
-            <img class="iconePrinc" src="./imagens/male-silhouette-variant-showing-muscles_30544.png" alt="">
+            <img class="iconePrinc" src="./imagens/logo.png" alt="">
         </span>
         <nav>
             <ul class="ul">
                 <li><a href="#" onclick="trainFecha()" class="trainingMenu">Meu Treino</a></li>
                 <li><a href="#" onclick="macroFecha()" class="nutriMenu">Macros</a></li>
-                <li><a href="#" class="supleMenu" target="_blank">Suplementos</a></li>
-                <li><a href="./projetos/tmb/index.html" class="tmbMenu" target="_blank">Calculadora TMB</a></li>
+                <li><a href="#" onclick="supleFecha()" class="supleMenu">Suplementos</a></li>
+                <li><a href="./projetos/tmb/index.html" class="tmbMenu" target="_blank">Calculadora de TMB</a></li>
             </ul>
             <div class="mobileMenu">
                 <div class="line1"></div>
@@ -2111,6 +2111,305 @@
                 
                 <p><bold>A quantidade de macronutrientes necessária para a musculação pode variar de pessoa para pessoa, dependendo de vários fatores, como idade, sexo, nível de atividade física, metabolismo e objetivos específicos (ganho de massa muscular, perda de peso, manutenção, etc.).</bold></p>
                 <p><bold>Lembre-se de que a hidratação adequada também é fundamental, e a ingestão de vitaminas e minerais essenciais provenientes de alimentos variados é importante para a saúde geral. Consultar um nutricionista ou profissional de saúde é a melhor maneira de obter orientações personalizadas com base em suas necessidades específicas.</bold></p>
+        </div>
+    </div>
+    <ion-icon name="close-outline" class="exit supleExit" onclick="suple()"></ion-icon>
+    <div class="suple divPrinc">
+        <div class="container-cards">
+            <h2>Guia de Suplementos</h2>
+            <p>Suplementos são substâncias ou produtos que são adicionados à dieta para complementar a ingestão de nutrientes, vitaminas, minerais, aminoácidos, ácidos graxos ou outras substâncias que podem estar ausentes ou em quantidade insuficiente na alimentação normal. Esses produtos são projetados para fornecer benefícios à saúde, prevenir deficiências nutricionais ou atender a necessidades específicas do corpo.<br>
+                Os suplementos estão disponíveis em várias formas, como cápsulas, comprimidos, pós, líquidos e barras. Eles podem conter uma variedade de ingredientes, dependendo de seus objetivos específicos.</p>
+            <div class="suple-cards">
+                <a href="#">
+                    <div class="card">
+                        <div class="card-content">
+                            <img src="./imagens/suplementos/albumina.png" alt="albumina">
+                            <h3 class="tituloSuple">Albumina</h3>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="card">
+                        <div class="card-content">
+                            <img src="./imagens/suplementos/bcaa.png" alt="bcaa">
+                            <h3 class="tituloSuple">BCAA</h3>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="card">
+                        <div class="card-content">
+                            <img src="./imagens/suplementos/betaalanina.png" alt="betaalanina">
+                            <h3 class="tituloSuple">Beta-alanina</h3>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="card">
+                        <div class="card-content">
+                            <img src="./imagens/suplementos/biotina.png" alt="biotina">
+                            <h3 class="tituloSuple">Biotina</h3>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="card">
+                        <div class="card-content">
+                            <img src="./imagens/suplementos/cafeina.png" alt="cafeina">
+                            <h3 class="tituloSuple">Cafeína</h3>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="card">
+                        <div class="card-content">
+                            <img src="./imagens/suplementos/caseina.png" alt="caseina">
+                            <h3 class="tituloSuple">Caseína</h3>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="card">
+                        <div class="card-content">
+                            <img src="./imagens/suplementos/coensinaQ10.png" alt="q10">
+                            <h3 class="tituloSuple">Coenzima Q10</h3>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="card">
+                        <div class="card-content">
+                            <img src="./imagens/suplementos/colageno.png" alt="colageno">
+                            <h3 class="tituloSuple">Colágeno</h3>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="card">
+                        <div class="card-content">
+                            <img src="./imagens/suplementos/creatina.png" alt="creatina">
+                            <h3 class="tituloSuple">Creatina</h3>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="card">
+                        <div class="card-content">
+                            <img src="./imagens/suplementos/d-ribose.png" alt="dribose">
+                            <h3 class="tituloSuple">D-Ribose</h3>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="card">
+                        <div class="card-content">
+                            <img src="./imagens/suplementos/dextrose.png" alt="dextrose">
+                            <h3 class="tituloSuple">Dextrose</h3>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="card">
+                        <div class="card-content">
+                            <img src="./imagens/suplementos/dha.png" alt="dha">
+                            <h3 class="tituloSuple">DHA</h3>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="card">
+                        <div class="card-content">
+                            <img src="./imagens/suplementos/glutamina.png" alt="glutamina">
+                            <h3 class="tituloSuple">Glutamina</h3>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="card">
+                        <div class="card-content">
+                            <img src="./imagens/suplementos/hipercalorico.png" alt="hipercalórico">
+                            <h3 class="tituloSuple">Hipercalórico</h3>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="card">
+                        <div class="card-content">
+                            <img src="./imagens/suplementos/hmb.png" alt="hmb">
+                            <h3 class="tituloSuple">HMB</h3>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="card">
+                        <div class="card-content">
+                            <img src="./imagens/suplementos/ioimbina.png" alt="ioimbina">
+                            <h3 class="tituloSuple">Ioimbina</h3>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="card">
+                        <div class="card-content">
+                            <img src="./imagens/suplementos/L-arginina.png" alt="l-arginina">
+                            <h3 class="tituloSuple">L-arginina</h3>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="card">
+                        <div class="card-content">
+                            <img src="./imagens/suplementos/L-carnitina.png" alt="l-carnitina">
+                            <h3 class="tituloSuple">L-carnitina</h3>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="card">
+                        <div class="card-content">
+                            <img src="./imagens/suplementos/L-ornitina.png" alt="l-ornitina">
+                            <h3 class="tituloSuple">L-ornitina</h3>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="card">
+                        <div class="card-content">
+                            <img src="./imagens/suplementos/Leucina.png" alt="leucina">
+                            <h3 class="tituloSuple">Leucina</h3>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="card">
+                        <div class="card-content">
+                            <img src="./imagens/suplementos/maltodextrina.png" alt="malto">
+                            <h3 class="tituloSuple">Maltodextrina</h3>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="card">
+                        <div class="card-content">
+                            <img src="./imagens/suplementos/megamassa.png" alt="massa">
+                            <h3 class="tituloSuple">Mega Massa</h3>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="card">
+                        <div class="card-content">
+                            <img src="./imagens/suplementos/melatonina.png" alt="melatonina">
+                            <h3 class="tituloSuple">Melatonina</h3>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="card">
+                        <div class="card-content">
+                            <img src="./imagens/suplementos/multivitaminico.png" alt="multivitaminico">
+                            <h3 class="tituloSuple">Multivitamínico</h3>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="card">
+                        <div class="card-content">
+                            <img src="./imagens/suplementos/N-acetilcisteína.png" alt="nac">
+                            <h3 class="tituloSuple">N Acetilcisteina (NAC)</h3>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="card">
+                        <div class="card-content">
+                            <img src="./imagens/suplementos/oleodecartamo.png" alt="oleo de cartamo">
+                            <h3 class="tituloSuple">Óleo de cártamo</h3>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="card">
+                        <div class="card-content">
+                            <img src="./imagens/suplementos/omega3.png" alt="omega3">
+                            <h3 class="tituloSuple">Omega 3</h3>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="card">
+                        <div class="card-content">
+                            <img src="./imagens/suplementos/palatinose.png" alt="palatinose">
+                            <h3 class="tituloSuple">Palatinose</h3>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="card">
+                        <div class="card-content">
+                            <img src="./imagens/suplementos/pretreino.png" alt="pre-treino">
+                            <h3 class="tituloSuple">Pré-treino</h3>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="card">
+                        <div class="card-content">
+                            <img src="./imagens/suplementos/taurina.png" alt="taurina">
+                            <h3 class="tituloSuple">Taurina</h3>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="card">
+                        <div class="card-content">
+                            <img src="./imagens/suplementos/termogenico.png" alt="termogenico">
+                            <h3 class="tituloSuple">Termogênico</h3>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="card">
+                        <div class="card-content">
+                            <img src="./imagens/suplementos/tribulus.png" alt="tribulus">
+                            <h3 class="tituloSuple">Tribulus terrestris</h3>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="card">
+                        <div class="card-content">
+                            <img src="./imagens/suplementos/triptofano.png" alt="triptofano">
+                            <h3 class="tituloSuple">Triptofano</h3>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="card">
+                        <div class="card-content">
+                            <img src="./imagens/suplementos/waxymaize.png" alt="waximayze">
+                            <h3 class="tituloSuple">Waxi Mayze</h3>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="card">
+                        <div class="card-content">
+                            <img src="./imagens/suplementos/whey.png" alt="whey">
+                            <h3 class="tituloSuple">Whey Protein</h3>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="card">
+                        <div class="card-content">
+                            <img src="./imagens/suplementos/zma.png" alt="zma">
+                            <h3 class="tituloSuple">ZMA</h3>
+                        </div>
+                    </div>
+                </a>
+                
+            </div>
         </div>
     </div>
     <footer>
