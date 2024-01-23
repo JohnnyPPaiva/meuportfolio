@@ -1,4 +1,5 @@
 let blur = document.querySelector('#home')
+let blurSuple = document.querySelector('.container-cards')
 let header = document.querySelector('header')
 let peito = document.querySelector('.peitoral')
 let tricep = document.querySelector('.triceps')
@@ -33,6 +34,8 @@ let hFichaOmbros = document.querySelector('.tituloFichaOmbros')
 let iconPrint = document.querySelector('.print')
 let iconReload = document.querySelector('.reload')
 let menuToggle = document.querySelector('.mobileMenu')
+let albu = document.querySelector('.albumina')
+let albuSair = document.querySelector('.albuExit')
 
 menuToggle.onclick = function() {
     header.classList.toggle('active')
@@ -1765,4 +1768,9 @@ function suple() {
     supleSair.classList.toggle('active')
 }
 
-
+function albumina() {
+    albu.classList.toggle('active')
+    blur.classList.toggle('active')
+    blurSuple.classList.toggle('active')
+    albuSair.classList.toggle('active')
+}

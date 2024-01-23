@@ -468,6 +468,10 @@ ul li a {
     padding: 20px;
 }
 
+.container-cards.active {
+    filter: blur(10px);
+}
+
 .suple-cards {
     display: grid;
     grid-template-columns: repeat(6, 6fr);
@@ -631,6 +635,24 @@ a {
     transition: .2s;
 }
 
+.exit-suples {
+    position: relative;
+    top: 0px;
+    left: 95%;
+    color: #000;
+    font-size: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    visibility: hidden;
+    transition: .3s;
+    z-index: 10000;
+}
+
+.exit-suples:hover {
+    background: #3f3d3d52;
+    transition: .2s;
+}
+
 .chests.active {
     visibility: visible;
     opacity: 1;
@@ -745,6 +767,53 @@ a {
 
 .respostaTreino {
     color: #000;
+}
+
+.div-suples {
+    position: fixed;
+    top: 85%;
+    left: 48%;
+    width: 50%;
+    height: 600px;
+    transform: translate(-50%, 50%);
+    border-radius: 30px;
+    padding: 10px;
+    background: #f1f1f1;
+    visibility: hidden;
+    opacity: 0;
+    transition: .3s;
+    overflow: auto;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.61);
+    z-index: 10;
+}
+
+.div-suples h2 {
+    font-family: 'Racing Sans One', sans-serif;
+    padding-bottom: 30px;
+}
+
+.div-suples p {
+    font-family: 'Nunito', sans-serif;
+}
+
+.albumina {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    padding: 30px;
+}
+
+.albumina.active {
+    top: -15%;
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+
+.albuExit.active {
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
 }
 
 footer {
