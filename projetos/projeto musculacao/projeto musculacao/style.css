@@ -68,7 +68,7 @@ ul li a {
     position: absolute;
     bottom: 0;
     left: 50;
-    width: 16%;
+    width: 8%;
     height: 2px;
     background: linear-gradient(to right, #212934, #DDDDDD);
     transform: scaleX(0);
@@ -96,7 +96,7 @@ ul li a {
     position: absolute;
     bottom: 0;
     left: 50;
-    width: 10.5%;
+    width: 11%;
     height: 2px;
     background: linear-gradient(to right, #212934, #DDDDDD);
     transform: scaleX(0);
@@ -124,7 +124,7 @@ ul li a {
     position: absolute;
     bottom: 0;
     left: 50;
-    width: 19%;
+    width: 20.5%;
     height: 2px;
     background: linear-gradient(to right, #212934, #DDDDDD);
     transform: scaleX(0);
@@ -152,7 +152,7 @@ ul li a {
     position: absolute;
     bottom: 0;
     left: 50;
-    width: 29%;
+    width: 32%;
     height: 2px;
     background: linear-gradient(to right, #212934, #DDDDDD);
     transform: scaleX(0);
@@ -425,6 +425,15 @@ ul li a {
     text-shadow: 2px 2px 5px #000;
 }
 
+.inform {
+    font-family: 'Nunito', sans-serif;
+    position: relative;
+    max-width: 800px;
+    text-align: center;
+    font-size: .8em;
+    top: 20px;
+}
+
 .divPrinc {
     position: fixed;
     top: 0;
@@ -482,7 +491,7 @@ ul li a {
 
 .card {
     width: 160px;
-    height: 200px;
+    height: 220px;
     border: solid 1px #2d2d2d;
     border-radius: 10px;
     background: #111111;
@@ -511,13 +520,18 @@ a {
     gap: 15px;
     border-radius: 5px;
     margin: 10px;
-    height: 180px;
+    height: 220px;
     overflow: hidden;
     text-align: center;
 }
 
 .card-content img {
     box-shadow: 1px 1px 5px #00000080;
+}
+
+.card-content h3 {
+    font-size: .9em;
+    max-width: 180px;
 }
 
 .divPrinc .tituloDiv {
@@ -632,24 +646,6 @@ a {
 
 .exit:hover {
     background: #bbb9b952;
-    transition: .2s;
-}
-
-.exit-suples {
-    position: relative;
-    top: 0px;
-    left: 95%;
-    color: #000;
-    font-size: 40px;
-    border-radius: 50%;
-    cursor: pointer;
-    visibility: hidden;
-    transition: .3s;
-    z-index: 10000;
-}
-
-.exit-suples:hover {
-    background: #3f3d3d52;
     transition: .2s;
 }
 
@@ -769,6 +765,24 @@ a {
     color: #000;
 }
 
+.exit-suples {
+    position: absolute;
+    top: 20px;
+    left: 90%;
+    color: #000;
+    font-size: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    visibility: hidden;
+    transition: .3s;
+    z-index: 1000000;
+}
+
+.exit-suples:hover {
+    background: #3f3d3d52;
+    transition: .2s;
+}
+
 .div-suples {
     position: fixed;
     top: 85%;
@@ -794,6 +808,7 @@ a {
 
 .div-suples p {
     font-family: 'Nunito', sans-serif;
+    font-weight: 600;
 }
 
 .albumina {
@@ -816,12 +831,553 @@ a {
     transition: 1s;
 }
 
+.bcaa {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    padding: 30px;
+}
+
+.bcaa.active {
+    top: -15%;
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+
+.bcaaExit.active {
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+
+.beta {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    padding: 30px;
+}
+
+.beta.active {
+    top: -15%;
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+
+.betaExit.active {
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+
+.biotina {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    padding: 30px;
+}
+
+.biotina.active {
+    top: -15%;
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+
+.biotinaExit.active {
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+
+.cafeina {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    padding: 30px;
+}
+
+.cafeina.active {
+    top: -15%;
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+
+.cafeinaExit.active {
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+
+.caseina {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    padding: 30px;
+}
+
+.caseina.active {
+    top: -15%;
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+
+.caseinaExit.active {
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+
+.q10 {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    padding: 30px;
+}
+
+.q10.active {
+    top: -15%;
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+
+.q10Exit.active {
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+
+.colageno {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    padding: 30px;
+}
+
+.colageno.active {
+    top: -15%;
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+
+.colagenoExit.active {
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+
+.creatina {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    padding: 30px;
+}
+
+.creatina.active {
+    top: -15%;
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+
+.creatinaExit.active {
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+
+.ribose {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    padding: 30px;
+}
+
+.ribose.active {
+    top: -15%;
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+
+.riboseExit.active {
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+
+.dextrose {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    padding: 30px;
+}
+
+.dextrose.active {
+    top: -15%;
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+
+.dextroseExit.active {
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+
+.dha {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    padding: 30px;
+}
+
+.dha.active {
+    top: -15%;
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+
+.dhaExit.active {
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+
+.glutamina {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    padding: 30px;
+}
+
+.glutamina.active {
+    top: -15%;
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+
+.glutaminaExit.active {
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+
+.hiper {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    padding: 30px;
+}
+
+.hiper.active {
+    top: -15%;
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+
+.hiperExit.active {
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+
+
 footer {
     height: 8vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     z-index: 0;
+}
+
+.hmb {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    padding: 30px;
+}
+
+.hmb.active {
+    top: -15%;
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+
+.hmbExit.active {
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+
+.ioimbina {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    padding: 30px;
+}
+
+.ioimbina.active {
+    top: -15%;
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+
+.ioimbinaExit.active {
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+
+.arginina {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    padding: 30px;
+}
+
+.arginina.active {
+    top: -15%;
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+
+.argininaExit.active {
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+
+.carni {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    padding: 30px;
+}
+
+.carni.active {
+    top: -15%;
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+
+.carniExit.active {
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+
+.orni {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    padding: 30px;
+}
+
+.orni.active {
+    top: -15%;
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+
+.orniExit.active {
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+
+.leucina {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    padding: 30px;
+}
+
+.leucina.active {
+    top: -15%;
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+
+.leucinaExit.active {
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+
+.acid {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    padding: 30px;
+}
+
+.acid.active {
+    top: -15%;
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+
+.acidExit.active {
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+
+.acidd {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    padding: 30px;
+}
+
+.acidd.active {
+    top: -15%;
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+
+.aciddExit.active {
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+
+.ashwa {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    padding: 30px;
+}
+
+.ashwa.active {
+    top: -15%;
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+
+.ashwaExit.active {
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+
+.cindura {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    padding: 30px;
+}
+
+.cindura.active {
+    top: -15%;
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+
+.cinduraExit.active {
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+
+.cissus {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    padding: 30px;
+}
+
+.cissus.active {
+    top: -15%;
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+
+.cissusExit.active {
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+
+.citrus {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    padding: 30px;
+}
+
+.citrus.active {
+    top: -15%;
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+
+.citrusExit.active {
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+
+.vaga {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    padding: 30px;
+}
+
+.vaga.active {
+    top: -15%;
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+
+.vagaExit.active {
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+
+.evodia {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    padding: 30px;
+}
+
+.evodia.active {
+    top: -15%;
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+
+.evodiaExit.active {
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
 }
 
 #footer_redes {

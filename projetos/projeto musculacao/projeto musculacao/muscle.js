@@ -36,6 +36,61 @@ let iconReload = document.querySelector('.reload')
 let menuToggle = document.querySelector('.mobileMenu')
 let albu = document.querySelector('.albumina')
 let albuSair = document.querySelector('.albuExit')
+let bca = document.querySelector('.bcaa')
+let bcaaSair = document.querySelector('.bcaaExit')
+let betaa = document.querySelector('.beta')
+let betaSair = document.querySelector('.betaExit')
+let biot = document.querySelector('.biotina')
+let biotinaSair = document.querySelector('.biotinaExit')
+let cafe = document.querySelector('.cafeina')
+let cafeinaSair = document.querySelector('.cafeinaExit')
+let casei = document.querySelector('.caseina')
+let caseinaSair = document.querySelector('.caseinaExit')
+let cq10 = document.querySelector('.q10')
+let q10Sair = document.querySelector('.q10Exit')
+let colagen = document.querySelector('.colageno')
+let colagenoSair = document.querySelector('.colagenoExit')
+let creatine = document.querySelector('.creatina')
+let creatinaSair = document.querySelector('.creatinaExit')
+let dribose = document.querySelector('.ribose')
+let riboseSair = document.querySelector('.riboseExit')
+let dextr = document.querySelector('.dextrose')
+let dextroseSair = document.querySelector('.dextroseExit')
+let dh = document.querySelector('.dha')
+let dhaSair = document.querySelector('.dhaExit')
+let gluta = document.querySelector('.glutamina')
+let glutaminaSair = document.querySelector('.glutaminaExit')
+let hipercalorico = document.querySelector('.hiper')
+let hiperSair = document.querySelector('.hiperExit')
+let hm = document.querySelector('.hmb')
+let hmbSair = document.querySelector('.hmbExit')
+let ioimb = document.querySelector('.ioimbina')
+let ioimbinaSair = document.querySelector('.ioimbinaExit')
+let arg = document.querySelector('.arginina')
+let argininaSair = document.querySelector('.argininaExit')
+let carn = document.querySelector('.carni')
+let carniSair = document.querySelector('.carniExit')
+let orn = document.querySelector('.orni')
+let orniSair = document.querySelector('.orniExit')
+let leucin = document.querySelector('.leucina')
+let leucinaSair = document.querySelector('.leucinaExit')
+let acido = document.querySelector('.acid')
+let acidSair = document.querySelector('.acidExit')
+let acidoD = document.querySelector('.acidd')
+let aciddSair = document.querySelector('.aciddExit')
+let ash = document.querySelector('.ashwa')
+let ashwaSair = document.querySelector('.ashwaExit')
+let cind = document.querySelector('.cindura')
+let cinduraSair = document.querySelector('.cinduraExit')
+let cissu = document.querySelector('.cissus')
+let cissusSair = document.querySelector('.cissusExit')
+let citru = document.querySelector('.citrus')
+let citrusSair = document.querySelector('.citrusExit')
+let vag = document.querySelector('.vaga')
+let vagaSair = document.querySelector('.vagaExit')
+let evod = document.querySelector('.evodia')
+let evodiaSair = document.querySelector('.evodiaExit')
+
 
 menuToggle.onclick = function() {
     header.classList.toggle('active')
@@ -720,6 +775,31 @@ function tricepPolCord() {
     }
 }
 
+let flexFechadaExecutada = false;
+function flexFechada() {
+    if (flexFechadaExecutada) {
+        alert("Você já adicionou esse exercício");
+        return;
+    }
+    const rep = prompt("Quantas Séries desse exercício?: ")
+    if (rep === null) {
+        return;
+    }
+    const descr = " Séries de Flexão militar fechada"
+    respTreinosTriceps += rep + descr + "\n"
+    respTreinoTriceps.innerText = `${respTreinosTriceps}`
+    hFichaTriceps.classList.remove('active')
+    iconPrint.classList.remove('active')
+    iconReload.classList.remove('active')
+    flexFechadaExecutada = true;
+    marcador = 1
+    if (marcador == 1) {
+        hFichaTriceps.classList.toggle('active')
+        iconPrint.classList.toggle('active')
+        iconReload.classList.toggle('active')
+    }
+}
+
 let barraFixaExecutada = false;
 function barraFixa() {
     if (barraFixaExecutada) {
@@ -962,6 +1042,31 @@ function puxadaFrente() {
     iconPrint.classList.remove('active')
     iconReload.classList.remove('active')
     puxadaFrenteExecutada = true;
+    marcador = 1
+    if (marcador == 1) {
+        hFichaCostas.classList.toggle('active')
+        iconPrint.classList.toggle('active')
+        iconReload.classList.toggle('active')
+    }
+}
+
+let terraExecutada = false;
+function terra() {
+    if (terraExecutada) {
+        alert("Você já adicionou esse exercício");
+        return;
+    }
+    const rep = prompt("Quantas Séries desse exercício?: ")
+    if (rep === null) {
+        return;
+    }
+    const descr = " Séries de Levantamento Terra"
+    respTreinosCostas += rep + descr + "\n"
+    respTreinoCostas.innerText = `${respTreinosCostas}`
+    hFichaCostas.classList.remove('active')
+    iconPrint.classList.remove('active')
+    iconReload.classList.remove('active')
+    terraExecutada = true;
     marcador = 1
     if (marcador == 1) {
         hFichaCostas.classList.toggle('active')
@@ -1774,3 +1879,193 @@ function albumina() {
     blurSuple.classList.toggle('active')
     albuSair.classList.toggle('active')
 }
+
+function bcaa() {
+    bca.classList.toggle('active')
+    blur.classList.toggle('active')
+    blurSuple.classList.toggle('active')
+    bcaaSair.classList.toggle('active')
+}
+
+function beta() {
+    betaa.classList.toggle('active')
+    blur.classList.toggle('active')
+    blurSuple.classList.toggle('active')
+    betaSair.classList.toggle('active')
+}
+
+function biotina() {
+    biot.classList.toggle('active')
+    blur.classList.toggle('active')
+    blurSuple.classList.toggle('active')
+    biotinaSair.classList.toggle('active')
+}
+
+function cafeina() {
+    cafe.classList.toggle('active')
+    blur.classList.toggle('active')
+    blurSuple.classList.toggle('active')
+    cafeinaSair.classList.toggle('active')
+}
+
+function caseina() {
+    casei.classList.toggle('active')
+    blur.classList.toggle('active')
+    blurSuple.classList.toggle('active')
+    caseinaSair.classList.toggle('active')
+}
+
+function q10() {
+    cq10.classList.toggle('active')
+    blur.classList.toggle('active')
+    blurSuple.classList.toggle('active')
+    q10Sair.classList.toggle('active')
+}
+
+function colageno() {
+    colagen.classList.toggle('active')
+    blur.classList.toggle('active')
+    blurSuple.classList.toggle('active')
+    colagenoSair.classList.toggle('active')
+}
+
+function creatina() {
+    creatine.classList.toggle('active')
+    blur.classList.toggle('active')
+    blurSuple.classList.toggle('active')
+    creatinaSair.classList.toggle('active')
+}
+
+function ribose() {
+    dribose.classList.toggle('active')
+    blur.classList.toggle('active')
+    blurSuple.classList.toggle('active')
+    riboseSair.classList.toggle('active')
+}
+
+function dextrose() {
+    dextr.classList.toggle('active')
+    blur.classList.toggle('active')
+    blurSuple.classList.toggle('active')
+    dextroseSair.classList.toggle('active')
+}
+
+function dha() {
+    dh.classList.toggle('active')
+    blur.classList.toggle('active')
+    blurSuple.classList.toggle('active')
+    dhaSair.classList.toggle('active')
+}
+
+function glutamina() {
+    gluta.classList.toggle('active')
+    blur.classList.toggle('active')
+    blurSuple.classList.toggle('active')
+    glutaminaSair.classList.toggle('active')
+}
+
+function hiper() {
+    hipercalorico.classList.toggle('active')
+    blur.classList.toggle('active')
+    blurSuple.classList.toggle('active')
+    hiperSair.classList.toggle('active')
+}
+
+function hmb() {
+    hm.classList.toggle('active')
+    blur.classList.toggle('active')
+    blurSuple.classList.toggle('active')
+    hmbSair.classList.toggle('active')
+}
+
+function ioimbina() {
+    ioimb.classList.toggle('active')
+    blur.classList.toggle('active')
+    blurSuple.classList.toggle('active')
+    ioimbinaSair.classList.toggle('active')
+}
+
+function arginina() {
+    arg.classList.toggle('active')
+    blur.classList.toggle('active')
+    blurSuple.classList.toggle('active')
+    argininaSair.classList.toggle('active')
+}
+
+function carni() {
+    carn.classList.toggle('active')
+    blur.classList.toggle('active')
+    blurSuple.classList.toggle('active')
+    carniSair.classList.toggle('active')
+}
+
+function orni() {
+    orn.classList.toggle('active')
+    blur.classList.toggle('active')
+    blurSuple.classList.toggle('active')
+    orniSair.classList.toggle('active')
+}
+
+function leucina() {
+    leucin.classList.toggle('active')
+    blur.classList.toggle('active')
+    blurSuple.classList.toggle('active')
+    leucinaSair.classList.toggle('active')
+}
+
+function acid() {
+    acido.classList.toggle('active')
+    blur.classList.toggle('active')
+    blurSuple.classList.toggle('active')
+    acidSair.classList.toggle('active')
+}
+
+function acidd() {
+    acidoD.classList.toggle('active')
+    blur.classList.toggle('active')
+    blurSuple.classList.toggle('active')
+    aciddSair.classList.toggle('active')
+}
+
+function ashwa() {
+    ash.classList.toggle('active')
+    blur.classList.toggle('active')
+    blurSuple.classList.toggle('active')
+    ashwaSair.classList.toggle('active')
+}
+
+function cindura() {
+    cind.classList.toggle('active')
+    blur.classList.toggle('active')
+    blurSuple.classList.toggle('active')
+    cinduraSair.classList.toggle('active')
+}
+
+function cissus() {
+    cissu.classList.toggle('active')
+    blur.classList.toggle('active')
+    blurSuple.classList.toggle('active')
+    cissusSair.classList.toggle('active')
+}
+
+function citrus() {
+    citru.classList.toggle('active')
+    blur.classList.toggle('active')
+    blurSuple.classList.toggle('active')
+    citrusSair.classList.toggle('active')
+}
+
+function vaga() {
+    vag.classList.toggle('active')
+    blur.classList.toggle('active')
+    blurSuple.classList.toggle('active')
+    vagaSair.classList.toggle('active')
+}
+
+function evodia() {
+    evod.classList.toggle('active')
+    blur.classList.toggle('active')
+    blurSuple.classList.toggle('active')
+    evodiaSair.classList.toggle('active')
+}
+
