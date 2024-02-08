@@ -39,8 +39,6 @@ header {
 
 .iconePrinc {
     position: relative;
-    width: 80px;
-    color: #fff;
 }
 
 ul {
@@ -184,7 +182,7 @@ ul li a {
 }
 
 #home .fotoPrinc {
-    width: 600px;
+    width: 300px;
     padding: 0;
 }
 
@@ -1375,6 +1373,126 @@ footer {
 }
 
 .evodiaExit.active {
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+
+.folli {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    padding: 30px;
+}
+
+.folli.active {
+    top: -15%;
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+
+.folliExit.active {
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+
+.gamma {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    padding: 30px;
+}
+
+.gamma.active {
+    top: -15%;
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+
+.gammaExit.active {
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+
+.goji {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    padding: 30px;
+}
+
+.goji.active {
+    top: -15%;
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+
+.gojiExit.active {
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+
+.ksm {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    padding: 30px;
+}
+
+.ksm.active {
+    top: -15%;
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+
+.ksmExit.active {
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+
+.citrulina {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    padding: 30px;
+}
+
+.citrulina.active {
+    top: -15%;
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+
+.citrulinaExit.active {
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+
+.long {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    padding: 30px;
+}
+
+.long.active {
+    top: -15%;
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+
+.longExit.active {
     visibility: visible;
     opacity: 1;
     transition: 1s;

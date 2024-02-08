@@ -90,7 +90,18 @@ let vag = document.querySelector('.vaga')
 let vagaSair = document.querySelector('.vagaExit')
 let evod = document.querySelector('.evodia')
 let evodiaSair = document.querySelector('.evodiaExit')
-
+let foli = document.querySelector('.folli')
+let folliSair = document.querySelector('.folliExit')
+let gama = document.querySelector('.gamma')
+let gammaSair = document.querySelector('.gammaExit')
+let goj = document.querySelector('.goji')
+let gojiSair = document.querySelector('.gojiExit')
+let ksm66 = document.querySelector('.ksm')
+let ksmSair = document.querySelector('.ksmExit')
+let lcitrulina = document.querySelector('.citrulina')
+let citrulinaSair = document.querySelector('.citrulinaExit')
+let longjack = document.querySelector('.long')
+let longSair = document.querySelector('.longExit')
 
 menuToggle.onclick = function() {
     header.classList.toggle('active')
@@ -910,7 +921,7 @@ function remadaUni() {
     if (rep === null) {
         return;
     }
-    const descr = " Séries de Remada curvada com barra e pegada supinada"
+    const descr = " Séries de Remada unilateral (Serrote)"
     respTreinosCostas += rep + descr + "\n"
     respTreinoCostas.innerText = `${respTreinosCostas}`
     hFichaCostas.classList.remove('active')
@@ -2069,3 +2080,44 @@ function evodia() {
     evodiaSair.classList.toggle('active')
 }
 
+function folli() {
+    foli.classList.toggle('active')
+    blur.classList.toggle('active')
+    blurSuple.classList.toggle('active')
+    folliSair.classList.toggle('active')
+}
+
+function gamma() {
+    gama.classList.toggle('active')
+    blur.classList.toggle('active')
+    blurSuple.classList.toggle('active')
+    gammaSair.classList.toggle('active')
+}
+
+function goji() {
+    goj.classList.toggle('active')
+    blur.classList.toggle('active')
+    blurSuple.classList.toggle('active')
+    gojiSair.classList.toggle('active')
+}
+
+function ksm() {
+    ksm66.classList.toggle('active')
+    blur.classList.toggle('active')
+    blurSuple.classList.toggle('active')
+    ksmSair.classList.toggle('active')
+}
+
+function citrulina() {
+    lcitrulina.classList.toggle('active')
+    blur.classList.toggle('active')
+    blurSuple.classList.toggle('active')
+    citrulinaSair.classList.toggle('active')
+}
+
+function long() {
+    longjack.classList.toggle('active')
+    blur.classList.toggle('active')
+    blurSuple.classList.toggle('active')
+    longSair.classList.toggle('active')
+}
