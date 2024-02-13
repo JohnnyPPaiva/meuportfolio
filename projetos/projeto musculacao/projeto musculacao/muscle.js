@@ -102,6 +102,58 @@ let lcitrulina = document.querySelector('.citrulina')
 let citrulinaSair = document.querySelector('.citrulinaExit')
 let longjack = document.querySelector('.long')
 let longSair = document.querySelector('.longExit')
+let maltodex = document.querySelector('.malto')
+let maltoSair = document.querySelector('.maltoExit')
+let mag = document.querySelector('.magnesio')
+let magnesioSair = document.querySelector('.magnesioExit')
+let melaton = document.querySelector('.melatonina')
+let melatoninaSair = document.querySelector('.melatoninaExit')
+let meratrim = document.querySelector('.mera')
+let meraSair = document.querySelector('.meraExit')
+let mucun = document.querySelector('.mucuna')
+let mucunaSair = document.querySelector('.mucunaExit')
+let mult = document.querySelector('.multi')
+let multiSair = document.querySelector('.multiExit')
+let nacetil = document.querySelector('.nac')
+let nacSair = document.querySelector('.nacExit')
+let nad = document.querySelector('.nadh')
+let nadhSair = document.querySelector('.nadhExit')
+let norva = document.querySelector('.norvalina')
+let norvalinaSair = document.querySelector('.norvalinaExit')
+let cartam = document.querySelector('.cartamo')
+let cartamoSair = document.querySelector('.cartamoExit')
+let omeg = document.querySelector('.omega')
+let omegaSair = document.querySelector('.omegaExit')
+let palatinose = document.querySelector('.pala')
+let palaSair = document.querySelector('.palaExit')
+let picolinato = document.querySelector('.picoli')
+let picoliSair = document.querySelector('.picoliExit')
+let poran = document.querySelector('.porangaba')
+let porangabaSair = document.querySelector('.porangabaExit')
+let pretreino = document.querySelector('.pre')
+let preSair = document.querySelector('.preExit')
+let rhodi = document.querySelector('.rhodiola')
+let rhodiolaSair = document.querySelector('.rhodiolaExit')
+let tauri = document.querySelector('.taurina')
+let taurinaSair = document.querySelector('.taurinaExit')
+let termogenico = document.querySelector('.termo')
+let termoSair = document.querySelector('.termoExit')
+let tribulu = document.querySelector('.tribulus')
+let tribulusSair = document.querySelector('.tribulusExit')
+let triptofano = document.querySelector('.tripto')
+let triptoSair = document.querySelector('.triptoExit')
+let turkesterone = document.querySelector('.turke')
+let turkeSair = document.querySelector('.turkeExit')
+let vanad = document.querySelector('.vanadio')
+let vanadioSair = document.querySelector('.vanadioExit')
+let wax = document.querySelector('.waxi')
+let waxiSair = document.querySelector('.waxiExit')
+let wheyp = document.querySelector('.whey')
+let wheySair = document.querySelector('.wheyExit')
+let zm = document.querySelector('.zma')
+let zmaSair = document.querySelector('.zmaExit')
+let mac = document.querySelector('.maca')
+let macaSair = document.querySelector('.macaExit')
 
 menuToggle.onclick = function() {
     header.classList.toggle('active')
@@ -2120,4 +2172,186 @@ function long() {
     blur.classList.toggle('active')
     blurSuple.classList.toggle('active')
     longSair.classList.toggle('active')
+}
+
+function malto() {
+    maltodex.classList.toggle('active')
+    blur.classList.toggle('active')
+    blurSuple.classList.toggle('active')
+    maltoSair.classList.toggle('active')
+}
+
+function magnesio() {
+    mag.classList.toggle('active')
+    blur.classList.toggle('active')
+    blurSuple.classList.toggle('active')
+    magnesioSair.classList.toggle('active')
+}
+
+function melatonina() {
+    melaton.classList.toggle('active')
+    blur.classList.toggle('active')
+    blurSuple.classList.toggle('active')
+    melatoninaSair.classList.toggle('active')
+}
+
+function mera() {
+    meratrim.classList.toggle('active')
+    blur.classList.toggle('active')
+    blurSuple.classList.toggle('active')
+    meraSair.classList.toggle('active')
+}
+
+function mucuna() {
+    mucun.classList.toggle('active')
+    blur.classList.toggle('active')
+    blurSuple.classList.toggle('active')
+    mucunaSair.classList.toggle('active')
+}
+
+function multi() {
+    mult.classList.toggle('active')
+    blur.classList.toggle('active')
+    blurSuple.classList.toggle('active')
+    multiSair.classList.toggle('active')
+}
+
+function nac() {
+    nacetil.classList.toggle('active')
+    blur.classList.toggle('active')
+    blurSuple.classList.toggle('active')
+    nacSair.classList.toggle('active')
+}
+
+function nadh() {
+    nad.classList.toggle('active')
+    blur.classList.toggle('active')
+    blurSuple.classList.toggle('active')
+    nadhSair.classList.toggle('active')
+}
+
+function norvalina() {
+    norva.classList.toggle('active')
+    blur.classList.toggle('active')
+    blurSuple.classList.toggle('active')
+    norvalinaSair.classList.toggle('active')
+}
+
+function cartamo() {
+    cartam.classList.toggle('active')
+    blur.classList.toggle('active')
+    blurSuple.classList.toggle('active')
+    cartamoSair.classList.toggle('active')
+}
+
+function omega() {
+    omeg.classList.toggle('active')
+    blur.classList.toggle('active')
+    blurSuple.classList.toggle('active')
+    omegaSair.classList.toggle('active')
+}
+
+function pala() {
+    palatinose.classList.toggle('active')
+    blur.classList.toggle('active')
+    blurSuple.classList.toggle('active')
+    palaSair.classList.toggle('active')
+}
+
+function picoli() {
+    picolinato.classList.toggle('active')
+    blur.classList.toggle('active')
+    blurSuple.classList.toggle('active')
+    picoliSair.classList.toggle('active')
+}
+
+function porangaba() {
+    poran.classList.toggle('active')
+    blur.classList.toggle('active')
+    blurSuple.classList.toggle('active')
+    porangabaSair.classList.toggle('active')
+}
+
+function pre() {
+    pretreino.classList.toggle('active')
+    blur.classList.toggle('active')
+    blurSuple.classList.toggle('active')
+    preSair.classList.toggle('active')
+}
+
+function rhodiola() {
+    rhodi.classList.toggle('active')
+    blur.classList.toggle('active')
+    blurSuple.classList.toggle('active')
+    rhodiolaSair.classList.toggle('active')
+}
+
+function taurina() {
+    tauri.classList.toggle('active')
+    blur.classList.toggle('active')
+    blurSuple.classList.toggle('active')
+    taurinaSair.classList.toggle('active')
+}
+
+function termo() {
+    termogenico.classList.toggle('active')
+    blur.classList.toggle('active')
+    blurSuple.classList.toggle('active')
+    termoSair.classList.toggle('active')
+}
+
+function tribulus() {
+    tribulu.classList.toggle('active')
+    blur.classList.toggle('active')
+    blurSuple.classList.toggle('active')
+    tribulusSair.classList.toggle('active')
+}
+
+function tripto() {
+    triptofano.classList.toggle('active')
+    blur.classList.toggle('active')
+    blurSuple.classList.toggle('active')
+    triptoSair.classList.toggle('active')
+}
+
+function turke() {
+    turkesterone.classList.toggle('active')
+    blur.classList.toggle('active')
+    blurSuple.classList.toggle('active')
+    turkeSair.classList.toggle('active')
+}
+
+function vanadio() {
+    vanad.classList.toggle('active')
+    blur.classList.toggle('active')
+    blurSuple.classList.toggle('active')
+    vanadioSair.classList.toggle('active')
+}
+
+function waxi() {
+    wax.classList.toggle('active')
+    blur.classList.toggle('active')
+    blurSuple.classList.toggle('active')
+    waxiSair.classList.toggle('active')
+}
+
+function whey() {
+    wheyp.classList.toggle('active')
+    blur.classList.toggle('active')
+    blurSuple.classList.toggle('active')
+    wheySair.classList.toggle('active')
+}
+
+function zma() {
+    zm.classList.toggle('active')
+    blur.classList.toggle('active')
+    blurSuple.classList.toggle('active')
+    zmaSair.classList.toggle('active')
+}
+
+function maca() {
+    mac.classList.toggle('active')
+    blur.classList.toggle('active')
+    blurSuple.classList.toggle('active')
+    macaSair.classList.toggle('active')
 }
