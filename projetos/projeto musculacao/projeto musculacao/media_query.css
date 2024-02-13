@@ -184,6 +184,10 @@
         margin: 30px;
     }
 
+    .suple {
+        height: 650px;
+    }
+
     .suple-cards {
         grid-template-columns: repeat(3, 6fr);
         gap: 30px;
@@ -201,6 +205,15 @@
 
     .suple h2 {
         font-size: 1.3em;
+    }
+
+    .div-suples {
+        position: fixed;
+        top: 85%;
+        left: 45%;
+        width: 80%;
+        height: 500px;
+        padding: 10px;
     }
 }
 
@@ -365,7 +378,7 @@
     }
 
     .container-cards p{
-        min-width: 480px;
+        min-width: 350px;
         max-width: 700px;
         font-size: .7em;
         line-height: 1.2em;
@@ -382,16 +395,7 @@
         left: 45%;
         width: 80%;
         height: 500px;
-        transform: translate(-50%, 50%);
-        border-radius: 30px;
         padding: 10px;
-        background: #f1f1f1;
-        visibility: hidden;
-        opacity: 0;
-        transition: .3s;
-        overflow: auto;
-        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.61);
-        z-index: 10;
     }
 
     .div-suples h2 {
