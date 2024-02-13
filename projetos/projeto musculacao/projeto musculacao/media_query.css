@@ -33,6 +33,32 @@
     }
 }
 
+@media screen and (max-width: 1350px) {
+
+    .container-cards {
+        padding: 50px;
+    }
+
+    .suple-cards {
+        display: grid;
+        grid-template-columns: repeat(4, 6fr);
+        width: 800px;
+    }
+
+    .div-suples {
+        position: fixed;
+        top: 85%;
+        left: 48%;
+        width: 70%;
+        height: 600px;
+        transform: translate(-50%, 50%);
+        border-radius: 30px;
+        padding: 20px;
+       
+    }
+
+}
+
 @media screen and (max-width: 1024px) {
 
     body {
@@ -151,6 +177,30 @@
         text-align: center;
         font-size: .8em;
         max-width: 500px;
+    }
+
+    .container-cards {
+        padding: 10px;
+        margin: 30px;
+    }
+
+    .suple-cards {
+        grid-template-columns: repeat(3, 6fr);
+        gap: 30px;
+        margin: 20px;
+        width: 550px;
+    }
+
+    .container-cards p{
+        min-width: 480px;
+        max-width: 700px;
+        font-size: .8em;
+        line-height: 1.2em;
+        padding: 20px;
+    }
+
+    .suple h2 {
+        font-size: 1.3em;
     }
 }
 
@@ -300,6 +350,70 @@
    
     #footer_copyright p {
         padding-top: 4px;
+    }
+
+    .container-cards {
+        padding: 10px;
+        margin: 30px;
+    }
+
+    .suple-cards {
+        grid-template-columns: repeat(2, 6fr);
+        gap: 30px;
+        margin: 20px;
+        width: 350px;
+    }
+
+    .container-cards p{
+        min-width: 480px;
+        max-width: 700px;
+        font-size: .7em;
+        line-height: 1.2em;
+        padding: 20px;
+    }
+
+    .suple h2 {
+        font-size: 1.3em;
+    }
+
+    .div-suples {
+        position: fixed;
+        top: 85%;
+        left: 45%;
+        width: 80%;
+        height: 500px;
+        transform: translate(-50%, 50%);
+        border-radius: 30px;
+        padding: 10px;
+        background: #f1f1f1;
+        visibility: hidden;
+        opacity: 0;
+        transition: .3s;
+        overflow: auto;
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.61);
+        z-index: 10;
+    }
+
+    .div-suples h2 {
+        font-family: 'Racing Sans One', sans-serif;
+        padding-bottom: 30px;
+        font-size: 1.2em;
+    }
+
+    .div-suples h3 {
+        font-size: 1em;
+    }
+    
+    .div-suples p {
+        font-family: 'Nunito', sans-serif;
+        font-weight: 600;
+        font-size: .8em;
+    }
+
+    .supleExit {
+        top: 80px;
+        left: 85%;
+        color: #fff;
     }
 }
 
