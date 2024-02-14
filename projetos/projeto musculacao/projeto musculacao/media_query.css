@@ -75,6 +75,11 @@
         background-position: center 80px;
     }
 
+    .iconePrinc {
+        position: relative;
+        width: 90px;
+    }
+
     #home .fotoPrinc {
         width: 250px;
         padding-top: 50px;
@@ -654,6 +659,7 @@
     }
 
     .supleExit {
+        font-size: 30px;
         top: 50px;
         left: 80%;
         color: #fff;
