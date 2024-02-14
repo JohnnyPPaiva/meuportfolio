@@ -397,8 +397,8 @@
     }
 
     .container-cards p{
-        min-width: 500px;
-        max-width: 700px;
+        min-width: 400px;
+        max-width: 550px;
         font-size: .7em;
         line-height: 1.2em;
         padding: 20px;
@@ -657,5 +657,18 @@
         top: 50px;
         left: 80%;
         color: #fff;
+    }
+
+    .exit-suples {
+        position: absolute;
+        top: 15px;
+        left: 80%;
+        color: #000;
+        font-size: 20px;
+        border-radius: 50%;
+        cursor: pointer;
+        visibility: hidden;
+        transition: .3s;
+        z-index: 1000000;
     }
 }
