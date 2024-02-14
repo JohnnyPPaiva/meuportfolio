@@ -598,7 +598,8 @@ a {
     flex-direction: column;
     align-items: center;
     text-align: left;
-    margin: 50px;
+    padding: 0px 200px;
+    margin: 20px;
 }
 
 .macros h1 {
@@ -610,10 +611,9 @@ a {
 
 .macros h2 {
     font-family: 'Nunito', sans-serif;
-    padding: 20px;
+    padding: 40px 0px 40px 0px;
     color: var(--cor-paleta1);
     font-size: 1em;
-    max-width: 1450px;
 }
 
 .macros h3 {
@@ -625,7 +625,6 @@ a {
 .macros p {
     font-family: 'Nunito', sans-serif;
     font-size: .9em;
-    max-width: 1450px;
     text-align: left;
 }
 
