@@ -65,12 +65,25 @@ ul li a {
     content: "";
     position: absolute;
     bottom: 0;
-    left: 50;
-    width: 8%;
+    left: 1px;
+    width: 6%;
     height: 2px;
     background: linear-gradient(to right, #212934, #DDDDDD);
     transform: scaleX(0);
     transform-origin: bottom right;
+    transition: transform 0.5s ease-out;
+}
+
+.trainingMenu::after {
+    content: "";
+    position: absolute;
+    bottom: 1;
+    left: 1px;
+    width: 6%;
+    height: 2px;
+    background: linear-gradient(to right, #DDDDDD, #212934);
+    transform: scaleX(0);
+    transform-origin: top left;
     transition: transform 0.5s ease-out;
 }
 
@@ -83,6 +96,11 @@ ul li a {
     transform-origin: bottom left;
 }
 
+.trainingMenu:hover::after {
+    transform: scaleX(1);
+    transform-origin: top right;
+}
+
 .nutriMenu {
     text-decoration: none;
     color: var(--cor-paleta1);
@@ -93,12 +111,25 @@ ul li a {
     content: "";
     position: absolute;
     bottom: 0;
-    left: 50;
-    width: 11%;
+    left: 75px;
+    width: 9%;
     height: 2px;
     background: linear-gradient(to right, #212934, #DDDDDD);
     transform: scaleX(0);
     transform-origin: bottom right;
+    transition: transform 0.5s ease-out;
+}
+
+.nutriMenu::after {
+    content: "";
+    position: absolute;
+    bottom: 1;
+    left: 75px;
+    width: 9%;
+    height: 2px;
+    background: linear-gradient(to right, #DDDDDD, #212934);
+    transform: scaleX(0);
+    transform-origin: top left;
     transition: transform 0.5s ease-out;
 }
 
@@ -111,6 +142,11 @@ ul li a {
     transform-origin: bottom left;
 }
 
+.nutriMenu:hover::after {
+    transform: scaleX(1);
+    transform-origin: top right;
+}
+
 .supleMenu {
     text-decoration: none;
     color: var(--cor-paleta1);
@@ -121,12 +157,25 @@ ul li a {
     content: "";
     position: absolute;
     bottom: 0;
-    left: 50;
-    width: 20.5%;
+    left: 165px;
+    width: 15.5%;
     height: 2px;
     background: linear-gradient(to right, #212934, #DDDDDD);
     transform: scaleX(0);
     transform-origin: bottom right;
+    transition: transform 0.5s ease-out;
+}
+
+.supleMenu::after {
+    content: "";
+    position: absolute;
+    bottom: 1;
+    left: 165px;
+    width: 15.5%;
+    height: 2px;
+    background: linear-gradient(to right, #DDDDDD, #212934);
+    transform: scaleX(0);
+    transform-origin: top left;
     transition: transform 0.5s ease-out;
 }
 
@@ -139,6 +188,11 @@ ul li a {
     transform-origin: bottom left;
 }
 
+.supleMenu:hover::after {
+    transform: scaleX(1);
+    transform-origin: top right;
+}
+
 .tmbMenu {
     text-decoration: none;
     color: var(--cor-paleta1);
@@ -149,12 +203,25 @@ ul li a {
     content: "";
     position: absolute;
     bottom: 0;
-    left: 50;
-    width: 32%;
+    left: 465px;
+    width: 23%;
     height: 2px;
     background: linear-gradient(to right, #212934, #DDDDDD);
     transform: scaleX(0);
     transform-origin: bottom right;
+    transition: transform 0.5s ease-out;
+}
+
+.tmbMenu::after {
+    content: "";
+    position: absolute;
+    bottom: 1;
+    left: 465px;
+    width: 23%;
+    height: 2px;
+    background: linear-gradient(to right, #DDDDDD, #212934);
+    transform: scaleX(0);
+    transform-origin: top left;
     transition: transform 0.5s ease-out;
 }
 
@@ -165,6 +232,57 @@ ul li a {
 .tmbMenu:hover::before {
     transform: scaleX(1);
     transform-origin: bottom left;
+}
+
+.tmbMenu:hover::after {
+    transform: scaleX(1);
+    transform-origin: top right;
+}
+
+.metodMenu {
+    text-decoration: none;
+    color: var(--cor-paleta1);
+    transition: 1s;
+}
+
+.metodMenu::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 300px;
+    width: 21%;
+    height: 2px;
+    background: linear-gradient(to right, #212934, #DDDDDD);
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.5s ease-out;
+}
+
+.metodMenu::after {
+    content: "";
+    position: absolute;
+    bottom: 1;
+    left: 300px;
+    width: 21%;
+    height: 2px;
+    background: linear-gradient(to right, #DDDDDD, #212934);
+    transform: scaleX(0);
+    transform-origin: top left;
+    transition: transform 0.5s ease-out;
+}
+
+.metodMenu:hover {
+    color: var(--cor-paleta4);
+}
+
+.metodMenu:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.metodMenu:hover::after {
+    transform: scaleX(1);
+    transform-origin: top right;
 }
 
 .mobileMenu div {
@@ -532,6 +650,62 @@ a {
     max-width: 180px;
 }
 
+.treino-cards {
+    display: grid;
+    grid-template-columns: repeat(5, 5fr);
+    gap: 100px;
+    margin: 30px;
+    width: 1202px;
+}
+
+.card-treino {
+    width: 160px;
+    height: 220px;
+    border: solid 1px #2d2d2d;
+    border-radius: 10px;
+    background: #111111;
+    box-shadow: 2px 2px 5px #0000007f;
+    transition: .5s;
+}
+
+.card-treino:hover {
+    border: solid 1px #00fff6;
+}
+
+.containerMetod-cards {
+    padding: 50px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerMetod-cards h2{
+    font-family: 'Racing Sans One', sans-serif;
+    padding: 20px;
+}
+
+.containerMetod-cards p{
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    max-width: 1000px;
+    font-size: .9em;
+    color: var(--cor-paleta1);
+    line-height: 1.2em;
+    padding: 20px;
+}
+
+.containerMetod-cards.active {
+    filter: blur(10px);
+}
+
+.tituloMetod {
+    font-family: 'Nunito', sans-serif;
+    color: var(--cor-paleta1);
+    text-shadow: 2px 2px 1px #000;
+}
+
 .divPrinc .tituloDiv {
     font-size: .9em;
     font-family: 'Nunito', sans-serif;
@@ -588,6 +762,12 @@ a {
 }
 
 .suple.active {
+    visibility: visible;
+    opacity: 1;
+    transition: .3s;
+}
+
+.treinoDiv.active {
     visibility: visible;
     opacity: 1;
     transition: .3s;
@@ -687,6 +867,42 @@ a {
     visibility: visible;
     opacity: 1;
     transition: 1s;
+}
+
+.metodExit.active {
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+
+.div-metods {
+    position: fixed;
+    top: 85%;
+    left: 48%;
+    width: 60%;
+    height: 600px;
+    transform: translate(-50%, 50%);
+    border-radius: 30px;
+    padding: 10px;
+    background-image: url(./imagens/metodsFundo1.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    visibility: hidden;
+    opacity: 0;
+    transition: .3s;
+    overflow: auto;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.61);
+    z-index: 10;
+}
+
+.div-metods h2 {
+    font-family: 'Racing Sans One', sans-serif;
+    padding-bottom: 30px;
+}
+
+.div-metods p {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
 }
 
 .container {
@@ -789,7 +1005,9 @@ a {
     transform: translate(-50%, 50%);
     border-radius: 30px;
     padding: 10px;
-    background: #f1f1f1;
+    background-image: url(./imagens/fundoSuples.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
     visibility: hidden;
     opacity: 0;
     transition: .3s;
@@ -2012,6 +2230,106 @@ footer {
 }
 
 .macaExit.active {
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+
+.tPotencia {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    padding: 30px;
+}
+
+.tPotencia.active {
+    top: -15%;
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+
+.tPotenciaExit.active {
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+
+.tHiper {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    padding: 30px;
+}
+
+.tHiper.active {
+    top: -15%;
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+
+.tHiperExit.active {
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+
+.tResist {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    padding: 30px;
+}
+
+.tResist.active {
+    top: -15%;
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+
+.tResistExit.active {
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+
+.tForca {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    padding: 30px;
+}
+
+.tForca.active {
+    top: -15%;
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+
+.tForcaExit.active {
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+
+.tHiit {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    padding: 30px;
+}
+
+.tHiit.active {
+    top: -15%;
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+
+.tHiitExit.active {
     visibility: visible;
     opacity: 1;
     transition: 1s;

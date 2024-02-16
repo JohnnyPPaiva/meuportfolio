@@ -1,5 +1,6 @@
 let blur = document.querySelector('#home')
 let blurSuple = document.querySelector('.container-cards')
+let blurMetod = document.querySelector('.containerMetod-cards')
 let header = document.querySelector('header')
 let peito = document.querySelector('.peitoral')
 let tricep = document.querySelector('.triceps')
@@ -9,8 +10,10 @@ let perna = document.querySelector('.pernas')
 let ombro = document.querySelector('.ombros')
 let macroNutri = document.querySelector('.macro')
 let suplementos = document.querySelector('.suple')
+let metodos = document.querySelector('.treinoDiv')
 let macroSair = document.querySelector('.macroExit')
 let supleSair = document.querySelector('.supleExit')
+let metodSair = document.querySelector('.metodExit')
 let ext = document.querySelector('.exit')
 let chest = document.querySelector('.chests')
 let trice = document.querySelector('.tricep')
@@ -154,6 +157,16 @@ let zm = document.querySelector('.zma')
 let zmaSair = document.querySelector('.zmaExit')
 let mac = document.querySelector('.maca')
 let macaSair = document.querySelector('.macaExit')
+let potenc = document.querySelector('.tPotencia')
+let tPotenciaSair = document.querySelector('.tPotenciaExit')
+let hipertrofia = document.querySelector('.tHiper')
+let tHiperSair = document.querySelector('.tHiperExit')
+let resistencia = document.querySelector('.tResist')
+let tResistSair = document.querySelector('.tResistExit')
+let forca = document.querySelector('.tForca')
+let tForcaSair = document.querySelector('.tForcaExit')
+let Hiit = document.querySelector('.tHiit')
+let tHiitSair = document.querySelector('.tHiitExit')
 
 menuToggle.onclick = function() {
     header.classList.toggle('active')
@@ -178,6 +191,11 @@ function supleFecha() {
     fechaMenu();
 }
 
+function metodFecha() {
+    metod();
+    fechaMenu();
+}
+
 let respTreinosPeito = ""
 let respTreinosTriceps = ""
 let respTreinosCostas = ""
@@ -196,7 +214,6 @@ function training() {
         ficha.classList.remove('active')
     }
 }
-
 
 
 function imprimirTexto() {
@@ -1936,6 +1953,12 @@ function suple() {
     supleSair.classList.toggle('active')
 }
 
+function metod() {
+    metodos.classList.toggle('active')
+    blur.classList.toggle('active')
+    metodSair.classList.toggle('active')
+}
+
 function albumina() {
     albu.classList.toggle('active')
     blur.classList.toggle('active')
@@ -2354,4 +2377,39 @@ function maca() {
     blur.classList.toggle('active')
     blurSuple.classList.toggle('active')
     macaSair.classList.toggle('active')
+}
+
+function tPotencia() {
+    potenc.classList.toggle('active')
+    blur.classList.toggle('active')
+    blurMetod.classList.toggle('active')
+    tPotenciaSair.classList.toggle('active')
+}
+
+function tHiper() {
+    hipertrofia.classList.toggle('active')
+    blur.classList.toggle('active')
+    blurMetod.classList.toggle('active')
+    tHiperSair.classList.toggle('active')
+}
+
+function tResist() {
+    resistencia.classList.toggle('active')
+    blur.classList.toggle('active')
+    blurMetod.classList.toggle('active')
+    tResistSair.classList.toggle('active')
+}
+
+function tForca() {
+    forca.classList.toggle('active')
+    blur.classList.toggle('active')
+    blurMetod.classList.toggle('active')
+    tForcaSair.classList.toggle('active')
+}
+
+function tHiit() {
+    Hiit.classList.toggle('active')
+    blur.classList.toggle('active')
+    blurMetod.classList.toggle('active')
+    tHiitSair.classList.toggle('active')
 }
