@@ -167,6 +167,28 @@ let forca = document.querySelector('.tForca')
 let tForcaSair = document.querySelector('.tForcaExit')
 let Hiit = document.querySelector('.tHiit')
 let tHiitSair = document.querySelector('.tHiitExit')
+let Agoni = document.querySelector('.tAgoni')
+let tAgoniSair = document.querySelector('.tAgoniExit')
+let Biset = document.querySelector('.tBiset')
+let tBisetSair = document.querySelector('.tBisetExit')
+let Circuit = document.querySelector('.tCircuit')
+let tCircuitSair = document.querySelector('.tCircuitExit')
+let Drop = document.querySelector('.tDrop')
+let tDropSair = document.querySelector('.tDropExit')
+let Fst7 = document.querySelector('.tFst7')
+let tFst7Sair = document.querySelector('.tFst7Exit')
+let Iso = document.querySelector('.tIso')
+let tIsoSair = document.querySelector('.tIsoExit')
+let Oclu = document.querySelector('.tOclu')
+let tOcluSair = document.querySelector('.tOcluExit')
+let Period = document.querySelector('.tPeriod')
+let tPeriodSair = document.querySelector('.tPeriodExit')
+let Pico = document.querySelector('.tPico')
+let tPicoSair = document.querySelector('.tPicoExit')
+let Piramid = document.querySelector('.tPiramid')
+let tPiramidSair = document.querySelector('.tPiramidExit')
+let Pre = document.querySelector('.tPre')
+let tPreSair = document.querySelector('.tPreExit')
 
 menuToggle.onclick = function() {
     header.classList.toggle('active')
@@ -1945,18 +1967,21 @@ function macro() {
     macroNutri.classList.toggle('active')
     blur.classList.toggle('active')
     macroSair.classList.toggle('active')
+    header.classList.remove('active')
 }
 
 function suple() {
     suplementos.classList.toggle('active')
     blur.classList.toggle('active')
     supleSair.classList.toggle('active')
+    header.classList.remove('active')
 }
 
 function metod() {
     metodos.classList.toggle('active')
     blur.classList.toggle('active')
     metodSair.classList.toggle('active')
+    header.classList.remove('active')
 }
 
 function albumina() {
@@ -2412,4 +2437,81 @@ function tHiit() {
     blur.classList.toggle('active')
     blurMetod.classList.toggle('active')
     tHiitSair.classList.toggle('active')
+}
+
+function tAgoni() {
+    Agoni.classList.toggle('active')
+    blur.classList.toggle('active')
+    blurMetod.classList.toggle('active')
+    tAgoniSair.classList.toggle('active')
+}
+
+function tBiset() {
+    Biset.classList.toggle('active')
+    blur.classList.toggle('active')
+    blurMetod.classList.toggle('active')
+    tBisetSair.classList.toggle('active')
+}
+
+function tCircuit() {
+    Circuit.classList.toggle('active')
+    blur.classList.toggle('active')
+    blurMetod.classList.toggle('active')
+    tCircuitSair.classList.toggle('active')
+}
+
+function tDrop() {
+    Drop.classList.toggle('active')
+    blur.classList.toggle('active')
+    blurMetod.classList.toggle('active')
+    tDropSair.classList.toggle('active')
+}
+
+function tFst7() {
+    Fst7.classList.toggle('active')
+    blur.classList.toggle('active')
+    blurMetod.classList.toggle('active')
+    tFst7Sair.classList.toggle('active')
+}
+
+function tIso() {
+    Iso.classList.toggle('active')
+    blur.classList.toggle('active')
+    blurMetod.classList.toggle('active')
+    tIsoSair.classList.toggle('active')
+}
+
+function tOclu() {
+    Oclu.classList.toggle('active')
+    blur.classList.toggle('active')
+    blurMetod.classList.toggle('active')
+    tOcluSair.classList.toggle('active')
+}
+
+function tPeriod() {
+    Period.classList.toggle('active')
+    blur.classList.toggle('active')
+    blurMetod.classList.toggle('active')
+    tPeriodSair.classList.toggle('active')
+}
+
+function tPico() {
+    Pico.classList.toggle('active')
+    blur.classList.toggle('active')
+    blurMetod.classList.toggle('active')
+    tPicoSair.classList.toggle('active')
+}
+
+function tPiramid() {
+    Piramid.classList.toggle('active')
+    blur.classList.toggle('active')
+    blurMetod.classList.toggle('active')
+    tPiramidSair.classList.toggle('active')
+}
+
+function tPre() {
+    Pre.classList.toggle('active')
+    blur.classList.toggle('active')
+    blurMetod.classList.toggle('active')
+    tPreSair.classList.toggle('active')
 }
