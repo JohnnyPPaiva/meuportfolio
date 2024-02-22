@@ -37,10 +37,6 @@ header {
     background: var(--cor-paleta2);
 }
 
-header.active {
-    filter: blur(10px);
-}
-
 .iconePrinc {
     position: relative;
 }
@@ -2554,6 +2550,146 @@ footer {
 }
 
 .tPreExit.active {
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+
+.tRepforc {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    padding: 30px;
+}
+
+.tRepforc.active {
+    top: -15%;
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+
+.tRepforcExit.active {
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+
+.tRepparc {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    padding: 30px;
+}
+
+.tRepparc.active {
+    top: -15%;
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+
+.tRepparcExit.active {
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+
+.tRest {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    padding: 30px;
+}
+
+.tRest.active {
+    top: -15%;
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+
+.tRestExit.active {
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+
+.tRoub {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    padding: 30px;
+}
+
+.tRoub.active {
+    top: -15%;
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+
+.tRoubExit.active {
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+
+.tSuperset {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    padding: 30px;
+}
+
+.tSuperset.active {
+    top: -15%;
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+
+.tSupersetExit.active {
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+
+.tSuperslow {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    padding: 30px;
+}
+
+.tSuperslow.active {
+    top: -15%;
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+
+.tSuperslowExit.active {
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+
+.tTri {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    padding: 30px;
+}
+
+.tTri.active {
+    top: -15%;
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+
+.tTriExit.active {
     visibility: visible;
     opacity: 1;
     transition: 1s;

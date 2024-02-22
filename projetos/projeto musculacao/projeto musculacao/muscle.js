@@ -189,6 +189,20 @@ let Piramid = document.querySelector('.tPiramid')
 let tPiramidSair = document.querySelector('.tPiramidExit')
 let Pre = document.querySelector('.tPre')
 let tPreSair = document.querySelector('.tPreExit')
+let Repforc = document.querySelector('.tRepforc')
+let tRepforcSair = document.querySelector('.tRepforcExit')
+let Repparc = document.querySelector('.tRepparc')
+let tRepparcSair = document.querySelector('.tRepparcExit')
+let Rest = document.querySelector('.tRest')
+let tRestSair = document.querySelector('.tRestExit')
+let Roub = document.querySelector('.tRoub')
+let tRoubSair = document.querySelector('.tRoubExit')
+let Superset = document.querySelector('.tSuperset')
+let tSupersetSair = document.querySelector('.tSupersetExit')
+let Superslow = document.querySelector('.tSuperslow')
+let tSuperslowSair = document.querySelector('.tSuperslowExit')
+let Tri = document.querySelector('.tTri')
+let tTriSair = document.querySelector('.tTriExit')
 
 menuToggle.onclick = function() {
     header.classList.toggle('active')
@@ -351,31 +365,6 @@ function flexBracoIncl() {
     }
 }
 
-let flexBracoSoExecutada = false;
-function flexBracoSo() {
-    if (flexBracoSoExecutada) {
-        alert("Você já adicionou esse exercício");
-        return;
-    }
-    const rep = prompt("Quantas Séries desse exercício?: ")
-    if (rep === null) {
-        return;
-    }
-    const descr = " Séries de Flexão de um braço só"
-    respTreinosPeito += rep + descr + "\n"
-    respTreinoPeito.innerText = `${respTreinosPeito}`
-    hFichaPeito.classList.remove('active')
-    iconPrint.classList.remove('active')
-    iconReload.classList.remove('active')
-    flexBracoSoExecutada = true;
-    marcador = 1
-    if (marcador == 1) {
-        hFichaPeito.classList.toggle('active')
-        iconPrint.classList.toggle('active')
-        iconReload.classList.toggle('active')
-    }
-}
-
 let SupInclExecutada = false;
 function SupIncl() {
     if (SupInclExecutada) {
@@ -526,6 +515,31 @@ function supVert() {
     }
 }
 
+let crossOverExecutada = false;
+function crossOver() {
+    if (crossOverExecutada) {
+        alert("Você já adicionou esse exercício");
+        return;
+    }
+    const rep = prompt("Quantas Séries desse exercício?: ")
+    if (rep === null) {
+        return;
+    }
+    const descr = " Séries de Crossover (Polia alta)"
+    respTreinosPeito += rep + descr + "\n"
+    respTreinoPeito.innerText = `${respTreinosPeito}`
+    hFichaPeito.classList.remove('active')
+    iconPrint.classList.remove('active')
+    iconReload.classList.remove('active')
+    crossOverExecutada = true;
+    marcador = 1
+    if (marcador == 1) {
+        hFichaPeito.classList.toggle('active')
+        iconPrint.classList.toggle('active')
+        iconReload.classList.toggle('active')
+    }
+}
+
 let inclinePressExecutada = false;
 function inclinePress() {
     if (inclinePressExecutada) {
@@ -561,13 +575,38 @@ function cableFly() {
     if (rep === null) {
         return;
     }
-    const descr = " Séries de Cable Fly (superior de peito)"
+    const descr = " Séries de Crossover (Polia baixa)"
     respTreinosPeito += rep + descr + "\n"
     respTreinoPeito.innerText = `${respTreinosPeito}`
     hFichaPeito.classList.remove('active')
     iconPrint.classList.remove('active')
     iconReload.classList.remove('active')
     cableFlyExecutada = true;
+    marcador = 1
+    if (marcador == 1) {
+        hFichaPeito.classList.toggle('active')
+        iconPrint.classList.toggle('active')
+        iconReload.classList.toggle('active')
+    }
+}
+
+let crossMediaExecutada = false;
+function crossMedia() {
+    if (crossMediaExecutada) {
+        alert("Você já adicionou esse exercício");
+        return;
+    }
+    const rep = prompt("Quantas Séries desse exercício?: ")
+    if (rep === null) {
+        return;
+    }
+    const descr = " Séries de Crossover (Polia média)"
+    respTreinosPeito += rep + descr + "\n"
+    respTreinoPeito.innerText = `${respTreinosPeito}`
+    hFichaPeito.classList.remove('active')
+    iconPrint.classList.remove('active')
+    iconReload.classList.remove('active')
+    crossMediaExecutada = true;
     marcador = 1
     if (marcador == 1) {
         hFichaPeito.classList.toggle('active')
@@ -618,6 +657,31 @@ function crucifixoHalt() {
     iconPrint.classList.remove('active')
     iconReload.classList.remove('active')
     crucifixoHaltExecutada = true;
+    marcador = 1
+    if (marcador == 1) {
+        hFichaPeito.classList.toggle('active')
+        iconPrint.classList.toggle('active')
+        iconReload.classList.toggle('active')
+    }
+}
+
+let pullOverExecutada = false;
+function pullOver() {
+    if (pullOverExecutada) {
+        alert("Você já adicionou esse exercício");
+        return;
+    }
+    const rep = prompt("Quantas Séries desse exercício?: ")
+    if (rep === null) {
+        return;
+    }
+    const descr = " Séries de Pull-Over"
+    respTreinosPeito += rep + descr + "\n"
+    respTreinoPeito.innerText = `${respTreinosPeito}`
+    hFichaPeito.classList.remove('active')
+    iconPrint.classList.remove('active')
+    iconReload.classList.remove('active')
+    pullOverExecutada = true;
     marcador = 1
     if (marcador == 1) {
         hFichaPeito.classList.toggle('active')
@@ -2514,4 +2578,53 @@ function tPre() {
     blur.classList.toggle('active')
     blurMetod.classList.toggle('active')
     tPreSair.classList.toggle('active')
+}
+
+function tRepforc() {
+    Repforc.classList.toggle('active')
+    blur.classList.toggle('active')
+    blurMetod.classList.toggle('active')
+    tRepforcSair.classList.toggle('active')
+}
+
+function tRepparc() {
+    Repparc.classList.toggle('active')
+    blur.classList.toggle('active')
+    blurMetod.classList.toggle('active')
+    tRepparcSair.classList.toggle('active')
+}
+
+function tRest() {
+    Rest.classList.toggle('active')
+    blur.classList.toggle('active')
+    blurMetod.classList.toggle('active')
+    tRestSair.classList.toggle('active')
+}
+
+function tRoub() {
+    Roub.classList.toggle('active')
+    blur.classList.toggle('active')
+    blurMetod.classList.toggle('active')
+    tRoubSair.classList.toggle('active')
+}
+
+function tSuperset() {
+    Superset.classList.toggle('active')
+    blur.classList.toggle('active')
+    blurMetod.classList.toggle('active')
+    tSupersetSair.classList.toggle('active')
+}
+
+function tSuperslow() {
+    Superslow.classList.toggle('active')
+    blur.classList.toggle('active')
+    blurMetod.classList.toggle('active')
+    tSuperslowSair.classList.toggle('active')
+}
+
+function tTri() {
+    Tri.classList.toggle('active')
+    blur.classList.toggle('active')
+    blurMetod.classList.toggle('active')
+    tTriSair.classList.toggle('active')
 }
