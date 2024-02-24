@@ -1978,6 +1978,56 @@ function agachaSmith() {
     }
 }
 
+let sumoExecutada = false;
+function sumo() {
+    if (sumoExecutada) {
+        alert("Você já adicionou esse exercício");
+        return;
+    }
+    const rep = prompt("Quantas Séries desse exercício?: ")
+    if (rep === null) {
+        return;
+    }
+    const descr = " Séries de Agachamento Sumô"
+    respTreinosPernas += rep + descr + "\n"
+    respTreinoPernas.innerText = `${respTreinosPernas}`
+    hFichaPernas.classList.remove('active')
+    iconPrint.classList.remove('active')
+    iconReload.classList.remove('active')
+    sumoExecutada = true;
+    marcador = 1
+    if (marcador == 1) {
+        hFichaPernas.classList.toggle('active')
+        iconPrint.classList.toggle('active')
+        iconReload.classList.toggle('active')
+    }
+}
+
+let bulgaroExecutada = false;
+function bulgaro() {
+    if (bulgaroExecutada) {
+        alert("Você já adicionou esse exercício");
+        return;
+    }
+    const rep = prompt("Quantas Séries desse exercício?: ")
+    if (rep === null) {
+        return;
+    }
+    const descr = " Séries de Agachamento Búlgaro"
+    respTreinosPernas += rep + descr + "\n"
+    respTreinoPernas.innerText = `${respTreinosPernas}`
+    hFichaPernas.classList.remove('active')
+    iconPrint.classList.remove('active')
+    iconReload.classList.remove('active')
+    bulgaroExecutada = true;
+    marcador = 1
+    if (marcador == 1) {
+        hFichaPernas.classList.toggle('active')
+        iconPrint.classList.toggle('active')
+        iconReload.classList.toggle('active')
+    }
+}
+
 let stiffExecutada = false;
 function stiff() {
     if (stiffExecutada) {
@@ -2119,6 +2169,82 @@ function abduPoli() {
         iconReload.classList.toggle('active')
     }
 }
+
+let pantuLegExecutada = false;
+function pantuLeg() {
+    if (pantuLegExecutada) {
+        alert("Você já adicionou esse exercício");
+        return;
+    }
+    const rep = prompt("Quantas Séries desse exercício?: ")
+    if (rep === null) {
+        return;
+    }
+    const descr = " Séries de Panturrilha no Legpress"
+    respTreinosPernas += rep + descr + "\n"
+    respTreinoPernas.innerText = `${respTreinosPernas}`
+    hFichaPernas.classList.remove('active')
+    iconPrint.classList.remove('active')
+    iconReload.classList.remove('active')
+    pantuLegExecutada = true;
+    marcador = 1
+    if (marcador == 1) {
+        hFichaPernas.classList.toggle('active')
+        iconPrint.classList.toggle('active')
+        iconReload.classList.toggle('active')
+    }
+}
+
+let pantuCalfExecutada = false;
+function pantuCalf() {
+    if (pantuCalfExecutada) {
+        alert("Você já adicionou esse exercício");
+        return;
+    }
+    const rep = prompt("Quantas Séries desse exercício?: ")
+    if (rep === null) {
+        return;
+    }
+    const descr = " Séries de Panturrilha em pé na máquina"
+    respTreinosPernas += rep + descr + "\n"
+    respTreinoPernas.innerText = `${respTreinosPernas}`
+    hFichaPernas.classList.remove('active')
+    iconPrint.classList.remove('active')
+    iconReload.classList.remove('active')
+    pantuCalfExecutada = true;
+    marcador = 1
+    if (marcador == 1) {
+        hFichaPernas.classList.toggle('active')
+        iconPrint.classList.toggle('active')
+        iconReload.classList.toggle('active')
+    }
+}
+
+let pantuSmithExecutada = false;
+function pantuSmith() {
+    if (pantuSmithExecutada) {
+        alert("Você já adicionou esse exercício");
+        return;
+    }
+    const rep = prompt("Quantas Séries desse exercício?: ")
+    if (rep === null) {
+        return;
+    }
+    const descr = " Séries de Panturrilha no Smith Machine"
+    respTreinosPernas += rep + descr + "\n"
+    respTreinoPernas.innerText = `${respTreinosPernas}`
+    hFichaPernas.classList.remove('active')
+    iconPrint.classList.remove('active')
+    iconReload.classList.remove('active')
+    pantuSmithExecutada = true;
+    marcador = 1
+    if (marcador == 1) {
+        hFichaPernas.classList.toggle('active')
+        iconPrint.classList.toggle('active')
+        iconReload.classList.toggle('active')
+    }
+}
+
 
 let adutoraExecutada = false;
 function adutora() {
