@@ -2028,6 +2028,98 @@ function flexora() {
     }
 }
 
+let extensaoQadrExecutada = false;
+function extensaoQadr() {
+    if (extensaoQadrExecutada) {
+        alert("Você já adicionou esse exercício");
+        return;
+    }
+    const rep = prompt("Quantas Séries desse exercício?: ")
+    if (rep === null) {
+        return;
+    }
+    
+    const variacao = prompt("Máquina ou Polia? (1-máquina / 2-polia)")
+    if (variacao == 1) {
+        const descr = " Séries de Extensão de quadril (Máquina)"
+        respTreinosPernas += rep + descr + "\n"
+        respTreinoPernas.innerText = `${respTreinosPernas}`
+    }else {
+        const descr = " Séries de Extensão de quadril (Pulley)"
+        respTreinosPernas += rep + descr + "\n"
+        respTreinoPernas.innerText = `${respTreinosPernas}`
+    }
+    hFichaPernas.classList.remove('active')
+    iconPrint.classList.remove('active')
+    iconReload.classList.remove('active')
+    extensaoQadrExecutada = true;
+    marcador = 1
+    if (marcador == 1) {
+        hFichaPernas.classList.toggle('active')
+        iconPrint.classList.toggle('active')
+        iconReload.classList.toggle('active')
+    }
+}
+
+let gemeosExecutada = false;
+function gemeos() {
+    if (gemeosExecutada) {
+        alert("Você já adicionou esse exercício");
+        return;
+    }
+    const rep = prompt("Quantas Séries desse exercício?: ")
+    if (rep === null) {
+        return;
+    }
+    
+    const variacao = prompt("Máquina ou Peso livre? (1-máquina / 2-peso livre)")
+    if (variacao == 1) {
+        const descr = " Séries de Flexão plantar sentado (Máquina)"
+        respTreinosPernas += rep + descr + "\n"
+        respTreinoPernas.innerText = `${respTreinosPernas}`
+    }else {
+        const descr = " Séries de Flexão plantar sentado (Peso livre)"
+        respTreinosPernas += rep + descr + "\n"
+        respTreinoPernas.innerText = `${respTreinosPernas}`
+    }
+    hFichaPernas.classList.remove('active')
+    iconPrint.classList.remove('active')
+    iconReload.classList.remove('active')
+    gemeosExecutada = true;
+    marcador = 1
+    if (marcador == 1) {
+        hFichaPernas.classList.toggle('active')
+        iconPrint.classList.toggle('active')
+        iconReload.classList.toggle('active')
+    }
+}
+
+
+let abduPoliExecutada = false;
+function abduPoli() {
+    if (abduPoliExecutada) {
+        alert("Você já adicionou esse exercício");
+        return;
+    }
+    const rep = prompt("Quantas Séries desse exercício?: ")
+    if (rep === null) {
+        return;
+    }
+    const descr = " Séries de Abdução de quadril na polia"
+    respTreinosPernas += rep + descr + "\n"
+    respTreinoPernas.innerText = `${respTreinosPernas}`
+    hFichaPernas.classList.remove('active')
+    iconPrint.classList.remove('active')
+    iconReload.classList.remove('active')
+    abduPoliExecutada = true;
+    marcador = 1
+    if (marcador == 1) {
+        hFichaPernas.classList.toggle('active')
+        iconPrint.classList.toggle('active')
+        iconReload.classList.toggle('active')
+    }
+}
+
 let adutoraExecutada = false;
 function adutora() {
     if (adutoraExecutada) {
