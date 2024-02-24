@@ -465,6 +465,31 @@ function voadorIncl() {
     }
 }
 
+let peckDeckExecutada = false;
+function peckDeck() {
+    if (peckDeckExecutada) {
+        alert("Você já adicionou esse exercício");
+        return;
+    }
+    const rep = prompt("Quantas Séries desse exercício?: ")
+    if (rep === null) {
+        return;
+    }
+    const descr = " Séries de PeckDeck"
+    respTreinosPeito += rep + descr + "\n"
+    respTreinoPeito.innerText = `${respTreinosPeito}`
+    hFichaPeito.classList.remove('active')
+    iconPrint.classList.remove('active')
+    iconReload.classList.remove('active')
+    peckDeckExecutada = true;
+    marcador = 1
+    if (marcador == 1) {
+        hFichaPeito.classList.toggle('active')
+        iconPrint.classList.toggle('active')
+        iconReload.classList.toggle('active')
+    }
+}
+
 let crucVoadorExecutada = false;
 function crucVoador() {
     if (crucVoadorExecutada) {
@@ -475,7 +500,7 @@ function crucVoador() {
     if (rep === null) {
         return;
     }
-    const descr = " Séries de Crucifixo no voador (PeckDeck)"
+    const descr = " Séries de Crucifixo no voador"
     respTreinosPeito += rep + descr + "\n"
     respTreinoPeito.innerText = `${respTreinosPeito}`
     hFichaPeito.classList.remove('active')
@@ -500,7 +525,7 @@ function supVert() {
     if (rep === null) {
         return;
     }
-    const descr = " Séries de Supino Vertical na máquina"
+    const descr = " Séries de Supino na máquina (Chest Press Machine)"
     respTreinosPeito += rep + descr + "\n"
     respTreinoPeito.innerText = `${respTreinosPeito}`
     hFichaPeito.classList.remove('active')
@@ -550,7 +575,7 @@ function inclinePress() {
     if (rep === null) {
         return;
     }
-    const descr = " Séries de Incline Press máquina"
+    const descr = " Séries de Supino inclinado na máquina (Incline Press Machine)"
     respTreinosPeito += rep + descr + "\n"
     respTreinoPeito.innerText = `${respTreinosPeito}`
     hFichaPeito.classList.remove('active')
@@ -701,7 +726,7 @@ function extTricep() {
     if (rep === null) {
         return;
     }
-    const descr = " Séries de Extensão de tríceps deitado ou inclinado"
+    const descr = " Séries de Tríceps Francês (Inclinado)"
     respTreinosTriceps += rep + descr + "\n"
     respTreinoTriceps.innerText = `${respTreinosTriceps}`
     hFichaTriceps.classList.remove('active')
@@ -716,6 +741,33 @@ function extTricep() {
     }
 }
 
+let extTricepDeitExecutada = false;
+function extTricepDeit() {
+    if (extTricepDeitExecutada) {
+        alert("Você já adicionou esse exercício");
+        return;
+    }
+    const rep = prompt("Quantas Séries desse exercício?: ")
+    if (rep === null) {
+        return;
+    }
+    const descr = " Séries de Tríceps Francês (Deitado)"
+    respTreinosTriceps += rep + descr + "\n"
+    respTreinoTriceps.innerText = `${respTreinosTriceps}`
+    hFichaTriceps.classList.remove('active')
+    iconPrint.classList.remove('active')
+    iconReload.classList.remove('active')
+    extTricepDeitExecutada = true;
+    marcador = 1
+    if (marcador == 1) {
+        hFichaTriceps.classList.toggle('active')
+        iconPrint.classList.toggle('active')
+        iconReload.classList.toggle('active')
+    }
+}
+
+
+
 let supPegFechExecutada = false;
 function supPegFech() {
     if (supPegFechExecutada) {
@@ -726,7 +778,7 @@ function supPegFech() {
     if (rep === null) {
         return;
     }
-    const descr = " Séries de Supino no banco reto com pegada fechada"
+    const descr = " Séries de Supino com pegada fechada"
     respTreinosTriceps += rep + descr + "\n"
     respTreinoTriceps.innerText = `${respTreinosTriceps}`
     hFichaTriceps.classList.remove('active')
@@ -801,7 +853,7 @@ function extHalt() {
     if (rep === null) {
         return;
     }
-    const descr = " Séries de Extensão de halteres sob a cabeça"
+    const descr = " Séries de Tríceps Francês"
     respTreinosTriceps += rep + descr + "\n"
     respTreinoTriceps.innerText = `${respTreinosTriceps}`
     hFichaTriceps.classList.remove('active')
@@ -815,6 +867,33 @@ function extHalt() {
         iconReload.classList.toggle('active')
     }
 }
+
+let tricepFrancUniExecutada = false;
+function tricepFrancUni() {
+    if (tricepFrancUniExecutada) {
+        alert("Você já adicionou esse exercício");
+        return;
+    }
+    const rep = prompt("Quantas Séries desse exercício?: ")
+    if (rep === null) {
+        return;
+    }
+    const descr = " Séries de Tríceps Francês unilateral"
+    respTreinosTriceps += rep + descr + "\n"
+    respTreinoTriceps.innerText = `${respTreinosTriceps}`
+    hFichaTriceps.classList.remove('active')
+    iconPrint.classList.remove('active')
+    iconReload.classList.remove('active')
+    tricepFrancUniExecutada = true;
+    marcador = 1
+    if (marcador == 1) {
+        hFichaTriceps.classList.toggle('active')
+        iconPrint.classList.toggle('active')
+        iconReload.classList.toggle('active')
+    }
+}
+
+
 
 let mergParaleExecutada = false;
 function mergParale() {
@@ -876,7 +955,7 @@ function extTriCab() {
     if (rep === null) {
         return;
     }
-    const descr = " Séries de Extensão de tríceps na polia com corda"
+    const descr = " Séries de Tríceps Francês no Pulley"
     respTreinosTriceps += rep + descr + "\n"
     respTreinoTriceps.innerText = `${respTreinosTriceps}`
     hFichaTriceps.classList.remove('active')
@@ -901,7 +980,7 @@ function tricepPol() {
     if (rep === null) {
         return;
     }
-    const descr = " Séries de Tríceps na polia com barra"
+    const descr = " Séries de Tríceps Pulley com barra"
     respTreinosTriceps += rep + descr + "\n"
     respTreinoTriceps.innerText = `${respTreinosTriceps}`
     hFichaTriceps.classList.remove('active')
@@ -926,7 +1005,7 @@ function tricepPolCord() {
     if (rep === null) {
         return;
     }
-    const descr = " Séries de Tríceps na polia com corda"
+    const descr = " Séries de Tríceps Pulley com corda"
     respTreinosTriceps += rep + descr + "\n"
     respTreinoTriceps.innerText = `${respTreinosTriceps}`
     hFichaTriceps.classList.remove('active')
@@ -958,6 +1037,56 @@ function flexFechada() {
     iconPrint.classList.remove('active')
     iconReload.classList.remove('active')
     flexFechadaExecutada = true;
+    marcador = 1
+    if (marcador == 1) {
+        hFichaTriceps.classList.toggle('active')
+        iconPrint.classList.toggle('active')
+        iconReload.classList.toggle('active')
+    }
+}
+
+let triCoiceExecutada = false;
+function triCoice() {
+    if (triCoiceExecutada) {
+        alert("Você já adicionou esse exercício");
+        return;
+    }
+    const rep = prompt("Quantas Séries desse exercício?: ")
+    if (rep === null) {
+        return;
+    }
+    const descr = " Séries de Tríceps Coice"
+    respTreinosTriceps += rep + descr + "\n"
+    respTreinoTriceps.innerText = `${respTreinosTriceps}`
+    hFichaTriceps.classList.remove('active')
+    iconPrint.classList.remove('active')
+    iconReload.classList.remove('active')
+    triCoiceExecutada = true;
+    marcador = 1
+    if (marcador == 1) {
+        hFichaTriceps.classList.toggle('active')
+        iconPrint.classList.toggle('active')
+        iconReload.classList.toggle('active')
+    }
+}
+
+let tricepUniExecutada = false;
+function tricepUni() {
+    if (tricepUniExecutada) {
+        alert("Você já adicionou esse exercício");
+        return;
+    }
+    const rep = prompt("Quantas Séries desse exercício?: ")
+    if (rep === null) {
+        return;
+    }
+    const descr = " Séries de Tríceps Unilateral na polia"
+    respTreinosTriceps += rep + descr + "\n"
+    respTreinoTriceps.innerText = `${respTreinosTriceps}`
+    hFichaTriceps.classList.remove('active')
+    iconPrint.classList.remove('active')
+    iconReload.classList.remove('active')
+    tricepUniExecutada = true;
     marcador = 1
     if (marcador == 1) {
         hFichaTriceps.classList.toggle('active')
@@ -1151,7 +1280,7 @@ function puxada() {
     if (rep === null) {
         return;
     }
-    const descr = " Séries de Puxada com barra no pulley"
+    const descr = " Séries de Puxada Frente no pulley (Pegada Aberta)"
     respTreinosCostas += rep + descr + "\n"
     respTreinoCostas.innerText = `${respTreinosCostas}`
     hFichaCostas.classList.remove('active')
@@ -1208,6 +1337,89 @@ function puxadaFrente() {
     iconPrint.classList.remove('active')
     iconReload.classList.remove('active')
     puxadaFrenteExecutada = true;
+    marcador = 1
+    if (marcador == 1) {
+        hFichaCostas.classList.toggle('active')
+        iconPrint.classList.toggle('active')
+        iconReload.classList.toggle('active')
+    }
+}
+
+let pullDownExecutada = false;
+function pullDown() {
+    if (pullDownExecutada) {
+        alert("Você já adicionou esse exercício");
+        return;
+    }
+    const rep = prompt("Quantas Séries desse exercício?: ")
+    if (rep === null) {
+        return;
+    }
+    const descr = " Séries de Pull-Down"
+    respTreinosCostas += rep + descr + "\n"
+    respTreinoCostas.innerText = `${respTreinosCostas}`
+    hFichaCostas.classList.remove('active')
+    iconPrint.classList.remove('active')
+    iconReload.classList.remove('active')
+    pullDownExecutada = true;
+    marcador = 1
+    if (marcador == 1) {
+        hFichaCostas.classList.toggle('active')
+        iconPrint.classList.toggle('active')
+        iconReload.classList.toggle('active')
+    }
+}
+
+let remaMaqExecutada = false;
+function remaMaq() {
+    if (remaMaqExecutada) {
+        alert("Você já adicionou esse exercício");
+        return;
+    }
+    const rep = prompt("Quantas Séries desse exercício?: ")
+    if (rep === null) {
+        return;
+    }
+    
+    const variacao = prompt("Unilateral? (1-sim / 2-não)")
+    if (variacao == 1) {
+        const descr = " Séries de Remada na máquina (Unilateral)"
+        respTreinosCostas += rep + descr + "\n"
+        respTreinoCostas.innerText = `${respTreinosCostas}`
+    }else {
+        const descr = " Séries de Remada na máquina"
+        respTreinosCostas += rep + descr + "\n"
+        respTreinoCostas.innerText = `${respTreinosCostas}`
+    }
+    hFichaCostas.classList.remove('active')
+    iconPrint.classList.remove('active')
+    iconReload.classList.remove('active')
+    remaMaqExecutada = true;
+    marcador = 1
+    if (marcador == 1) {
+        hFichaCostas.classList.toggle('active')
+        iconPrint.classList.toggle('active')
+        iconReload.classList.toggle('active')
+    }
+}
+
+let facePullExecutada = false;
+function facePull() {
+    if (facePullExecutada) {
+        alert("Você já adicionou esse exercício");
+        return;
+    }
+    const rep = prompt("Quantas Séries desse exercício?: ")
+    if (rep === null) {
+        return;
+    }
+    const descr = " Séries de Face Pull"
+    respTreinosCostas += rep + descr + "\n"
+    respTreinoCostas.innerText = `${respTreinosCostas}`
+    hFichaCostas.classList.remove('active')
+    iconPrint.classList.remove('active')
+    iconReload.classList.remove('active')
+    facePullExecutada = true;
     marcador = 1
     if (marcador == 1) {
         hFichaCostas.classList.toggle('active')
@@ -1291,6 +1503,31 @@ function roscaAmpla() {
     }
 }
 
+let roscaPronaExecutada = false;
+function roscaProna() {
+    if (roscaPronaExecutada) {
+        alert("Você já adicionou esse exercício");
+        return;
+    }
+    const rep = prompt("Quantas Séries desse exercício?: ")
+    if (rep === null) {
+        return;
+    }
+    const descr = " Séries de Rosca direta (pegada pronada)"
+    respTreinosBiceps += rep + descr + "\n"
+    respTreinoBiceps.innerText = `${respTreinosBiceps}`
+    hFichaBiceps.classList.remove('active')
+    iconPrint.classList.remove('active')
+    iconReload.classList.remove('active')
+    roscaPronaExecutada = true;
+    marcador = 1
+    if (marcador == 1) {
+        hFichaBiceps.classList.toggle('active')
+        iconPrint.classList.toggle('active')
+        iconReload.classList.toggle('active')
+    }
+}
+
 let roscaHaltExecutada = false;
 function roscaHalt() {
     if (roscaHaltExecutada) {
@@ -1308,6 +1545,31 @@ function roscaHalt() {
     iconPrint.classList.remove('active')
     iconReload.classList.remove('active')
     roscaHaltExecutada = true;
+    marcador = 1
+    if (marcador == 1) {
+        hFichaBiceps.classList.toggle('active')
+        iconPrint.classList.toggle('active')
+        iconReload.classList.toggle('active')
+    }
+}
+
+let roscaHaltAltExecutada = false;
+function roscaHaltAlt() {
+    if (roscaHaltAltExecutada) {
+        alert("Você já adicionou esse exercício");
+        return;
+    }
+    const rep = prompt("Quantas Séries desse exercício?: ")
+    if (rep === null) {
+        return;
+    }
+    const descr = " Séries de Rosca alternada"
+    respTreinosBiceps += rep + descr + "\n"
+    respTreinoBiceps.innerText = `${respTreinosBiceps}`
+    hFichaBiceps.classList.remove('active')
+    iconPrint.classList.remove('active')
+    iconReload.classList.remove('active')
+    roscaHaltAltExecutada = true;
     marcador = 1
     if (marcador == 1) {
         hFichaBiceps.classList.toggle('active')
@@ -1351,7 +1613,7 @@ function roscaPe() {
     if (rep === null) {
         return;
     }
-    const descr = " Séries de Rosca bíceps em pé com barra W"
+    const descr = " Séries de Rosca direta com barra W"
     respTreinosBiceps += rep + descr + "\n"
     respTreinoBiceps.innerText = `${respTreinosBiceps}`
     hFichaBiceps.classList.remove('active')
@@ -1376,7 +1638,7 @@ function roscaCorda() {
     if (rep === null) {
         return;
     }
-    const descr = " Séries de Rosca no pulley com corda"
+    const descr = " Séries de Rosca martelo na polia"
     respTreinosBiceps += rep + descr + "\n"
     respTreinoBiceps.innerText = `${respTreinosBiceps}`
     hFichaBiceps.classList.remove('active')
@@ -1401,7 +1663,7 @@ function roscaBanc() {
     if (rep === null) {
         return;
     }
-    const descr = " Séries de Rosca bíceps com halteres no banco inclinado"
+    const descr = " Séries de Rosca direta no banco inclinado"
     respTreinosBiceps += rep + descr + "\n"
     respTreinoBiceps.innerText = `${respTreinosBiceps}`
     hFichaBiceps.classList.remove('active')
@@ -1483,6 +1745,81 @@ function roscaUni() {
     iconPrint.classList.remove('active')
     iconReload.classList.remove('active')
     roscaUniExecutada = true;
+    marcador = 1
+    if (marcador == 1) {
+        hFichaBiceps.classList.toggle('active')
+        iconPrint.classList.toggle('active')
+        iconReload.classList.toggle('active')
+    }
+}
+
+let roscaPoliExecutada = false;
+function roscaPoli() {
+    if (roscaPoliExecutada) {
+        alert("Você já adicionou esse exercício");
+        return;
+    }
+    const rep = prompt("Quantas Séries desse exercício?: ")
+    if (rep === null) {
+        return;
+    }
+    const descr = " Séries de Rosca lateral na polia alta"
+    respTreinosBiceps += rep + descr + "\n"
+    respTreinoBiceps.innerText = `${respTreinosBiceps}`
+    hFichaBiceps.classList.remove('active')
+    iconPrint.classList.remove('active')
+    iconReload.classList.remove('active')
+    roscaPoliExecutada = true;
+    marcador = 1
+    if (marcador == 1) {
+        hFichaBiceps.classList.toggle('active')
+        iconPrint.classList.toggle('active')
+        iconReload.classList.toggle('active')
+    }
+}
+
+let roscaPoliTrasExecutada = false;
+function roscaPoliTras() {
+    if (roscaPoliTrasExecutada) {
+        alert("Você já adicionou esse exercício");
+        return;
+    }
+    const rep = prompt("Quantas Séries desse exercício?: ")
+    if (rep === null) {
+        return;
+    }
+    const descr = " Séries de Rosca unilateral na polia (atrás do corpo)"
+    respTreinosBiceps += rep + descr + "\n"
+    respTreinoBiceps.innerText = `${respTreinosBiceps}`
+    hFichaBiceps.classList.remove('active')
+    iconPrint.classList.remove('active')
+    iconReload.classList.remove('active')
+    roscaPoliTrasExecutada = true;
+    marcador = 1
+    if (marcador == 1) {
+        hFichaBiceps.classList.toggle('active')
+        iconPrint.classList.toggle('active')
+        iconReload.classList.toggle('active')
+    }
+}
+
+let roscaPoliDeitExecutada = false;
+function roscaPoliDeit() {
+    if (roscaPoliDeitExecutada) {
+        alert("Você já adicionou esse exercício");
+        return;
+    }
+    const rep = prompt("Quantas Séries desse exercício?: ")
+    if (rep === null) {
+        return;
+    }
+    const descr = " Séries de Rosca direta deitado na polia"
+    respTreinosBiceps += rep + descr + "\n"
+    respTreinoBiceps.innerText = `${respTreinosBiceps}`
+    hFichaBiceps.classList.remove('active')
+    iconPrint.classList.remove('active')
+    iconReload.classList.remove('active')
+    roscaPoliDeitExecutada = true;
     marcador = 1
     if (marcador == 1) {
         hFichaBiceps.classList.toggle('active')
