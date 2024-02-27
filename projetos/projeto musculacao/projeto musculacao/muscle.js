@@ -244,6 +244,10 @@ function metodFecha() {
     fechaMenu();
 }
 
+function logo() {
+    location.reload()
+}
+
 let respTreinosPeito = ""
 let respTreinosTriceps = ""
 let respTreinosCostas = ""
@@ -279,10 +283,13 @@ function supReto() {
         alert("Você já adicionou esse exercício");
         return;
     }
-    const rep = prompt("Quantas Séries desse exercício?: ")
-    if (rep === null) {
-        return;
+    let rep;
+    do {
+    rep = prompt("Quantas Séries desse exercício?: ");
+    if (rep === null) { 
+        return; 
     }
+    } while (rep.trim() === "");
     const descr = " Séries de Supino Reto"
     respTreinosPeito += rep + descr + "\n"
     respTreinoPeito.innerText = `${respTreinosPeito}`
@@ -307,10 +314,13 @@ function supRetoHalt() {
         alert("Você já adicionou esse exercício");
         return;
     }
-    const rep = prompt("Quantas Séries desse exercício?: ")
-    if (rep === null) {
-        return;
+    let rep;
+    do {
+    rep = prompt("Quantas Séries desse exercício?: ");
+    if (rep === null) { 
+        return; 
     }
+    } while (rep.trim() === "");
     const descr = " Séries de Supino Reto com Halteres"
     respTreinosPeito += rep + descr + "\n"
     respTreinoPeito.innerText = `${respTreinosPeito}`
@@ -333,10 +343,13 @@ function flexBraco() {
         alert("Você já adicionou esse exercício");
         return;
     }
-    const rep = prompt("Quantas Séries desse exercício?: ")
-    if (rep === null) {
-        return;
+    let rep;
+    do {
+    rep = prompt("Quantas Séries desse exercício?: ");
+    if (rep === null) { 
+        return; 
     }
+    } while (rep.trim() === "");
     const descr = " Séries de Flexão de Braços"
     respTreinosPeito += rep + descr + "\n"
     respTreinoPeito.innerText = `${respTreinosPeito}`
@@ -358,10 +371,13 @@ function flexBracoIncl() {
         alert("Você já adicionou esse exercício");
         return;
     }
-    const rep = prompt("Quantas Séries desse exercício?: ")
-    if (rep === null) {
-        return;
+    let rep;
+    do {
+    rep = prompt("Quantas Séries desse exercício?: ");
+    if (rep === null) { 
+        return; 
     }
+    } while (rep.trim() === "");
     const descr = " Séries de Flexão de Braços Inclinado"
     respTreinosPeito += rep + descr + "\n"
     respTreinoPeito.innerText = `${respTreinosPeito}`
@@ -383,10 +399,13 @@ function SupIncl() {
         alert("Você já adicionou esse exercício");
         return;
     }
-    const rep = prompt("Quantas Séries desse exercício?: ")
-    if (rep === null) {
-        return;
+    let rep;
+    do {
+    rep = prompt("Quantas Séries desse exercício?: ");
+    if (rep === null) { 
+        return; 
     }
+    } while (rep.trim() === "");
     const descr = " Séries de Supino Inclinado"
     respTreinosPeito += rep + descr + "\n"
     respTreinoPeito.innerText = `${respTreinosPeito}` 
@@ -408,10 +427,13 @@ function SupInclHalt() {
         alert("Você já adicionou esse exercício");
         return;
     }
-    const rep = prompt("Quantas Séries desse exercício?: ")
-    if (rep === null) {
-        return;
+    let rep;
+    do {
+    rep = prompt("Quantas Séries desse exercício?: ");
+    if (rep === null) { 
+        return; 
     }
+    } while (rep.trim() === "");
     const descr = " Séries de Supino Inclinado com halteres"
     respTreinosPeito += rep + descr + "\n"
     respTreinoPeito.innerText = `${respTreinosPeito}`
@@ -433,10 +455,13 @@ function paralela() {
         alert("Você já adicionou esse exercício");
         return;
     }
-    const rep = prompt("Quantas Séries desse exercício?: ")
-    if (rep === null) {
-        return;
+    let rep;
+    do {
+    rep = prompt("Quantas Séries desse exercício?: ");
+    if (rep === null) { 
+        return; 
     }
+    } while (rep.trim() === "");
     const descr = " Séries de Mergulho em paralelas"
     respTreinosPeito += rep + descr + "\n"
     respTreinoPeito.innerText = `${respTreinosPeito}`
@@ -458,10 +483,13 @@ function voadorIncl() {
         alert("Você já adicionou esse exercício");
         return;
     }
-    const rep = prompt("Quantas Séries desse exercício?: ")
-    if (rep === null) {
-        return;
+    let rep;
+    do {
+    rep = prompt("Quantas Séries desse exercício?: ");
+    if (rep === null) { 
+        return; 
     }
+    } while (rep.trim() === "");
     const descr = " Séries de Voador Inclinado na polia"
     respTreinosPeito += rep + descr + "\n"
     respTreinoPeito.innerText = `${respTreinosPeito}`
@@ -483,10 +511,13 @@ function peckDeck() {
         alert("Você já adicionou esse exercício");
         return;
     }
-    const rep = prompt("Quantas Séries desse exercício?: ")
-    if (rep === null) {
-        return;
+    let rep;
+    do {
+    rep = prompt("Quantas Séries desse exercício?: ");
+    if (rep === null) { 
+        return; 
     }
+    } while (rep.trim() === "");
     const descr = " Séries de PeckDeck"
     respTreinosPeito += rep + descr + "\n"
     respTreinoPeito.innerText = `${respTreinosPeito}`
@@ -508,10 +539,13 @@ function crucVoador() {
         alert("Você já adicionou esse exercício");
         return;
     }
-    const rep = prompt("Quantas Séries desse exercício?: ")
-    if (rep === null) {
-        return;
+    let rep;
+    do {
+    rep = prompt("Quantas Séries desse exercício?: ");
+    if (rep === null) { 
+        return; 
     }
+    } while (rep.trim() === "");
     const descr = " Séries de Crucifixo no voador"
     respTreinosPeito += rep + descr + "\n"
     respTreinoPeito.innerText = `${respTreinosPeito}`
@@ -533,10 +567,13 @@ function supVert() {
         alert("Você já adicionou esse exercício");
         return;
     }
-    const rep = prompt("Quantas Séries desse exercício?: ")
-    if (rep === null) {
-        return;
+    let rep;
+    do {
+    rep = prompt("Quantas Séries desse exercício?: ");
+    if (rep === null) { 
+        return; 
     }
+    } while (rep.trim() === "");
     const descr = " Séries de Supino na máquina (Chest Press Machine)"
     respTreinosPeito += rep + descr + "\n"
     respTreinoPeito.innerText = `${respTreinosPeito}`
@@ -558,10 +595,13 @@ function crossOver() {
         alert("Você já adicionou esse exercício");
         return;
     }
-    const rep = prompt("Quantas Séries desse exercício?: ")
-    if (rep === null) {
-        return;
+    let rep;
+    do {
+    rep = prompt("Quantas Séries desse exercício?: ");
+    if (rep === null) { 
+        return; 
     }
+    } while (rep.trim() === "");
     const descr = " Séries de Crossover (Polia alta)"
     respTreinosPeito += rep + descr + "\n"
     respTreinoPeito.innerText = `${respTreinosPeito}`
@@ -583,10 +623,13 @@ function inclinePress() {
         alert("Você já adicionou esse exercício");
         return;
     }
-    const rep = prompt("Quantas Séries desse exercício?: ")
-    if (rep === null) {
-        return;
+    let rep;
+    do {
+    rep = prompt("Quantas Séries desse exercício?: ");
+    if (rep === null) { 
+        return; 
     }
+    } while (rep.trim() === "");
     const descr = " Séries de Supino inclinado na máquina (Incline Press Machine)"
     respTreinosPeito += rep + descr + "\n"
     respTreinoPeito.innerText = `${respTreinosPeito}`
@@ -608,10 +651,13 @@ function cableFly() {
         alert("Você já adicionou esse exercício");
         return;
     }
-    const rep = prompt("Quantas Séries desse exercício?: ")
-    if (rep === null) {
-        return;
+    let rep;
+    do {
+    rep = prompt("Quantas Séries desse exercício?: ");
+    if (rep === null) { 
+        return; 
     }
+    } while (rep.trim() === "");
     const descr = " Séries de Crossover (Polia baixa)"
     respTreinosPeito += rep + descr + "\n"
     respTreinoPeito.innerText = `${respTreinosPeito}`
@@ -633,10 +679,13 @@ function crossMedia() {
         alert("Você já adicionou esse exercício");
         return;
     }
-    const rep = prompt("Quantas Séries desse exercício?: ")
-    if (rep === null) {
-        return;
+    let rep;
+    do {
+    rep = prompt("Quantas Séries desse exercício?: ");
+    if (rep === null) { 
+        return; 
     }
+    } while (rep.trim() === "");
     const descr = " Séries de Crossover (Polia média)"
     respTreinosPeito += rep + descr + "\n"
     respTreinoPeito.innerText = `${respTreinosPeito}`
@@ -658,10 +707,13 @@ function supDecl() {
         alert("Você já adicionou esse exercício");
         return;
     }
-    const rep = prompt("Quantas Séries desse exercício?: ")
-    if (rep === null) {
-        return;
+    let rep;
+    do {
+    rep = prompt("Quantas Séries desse exercício?: ");
+    if (rep === null) { 
+        return; 
     }
+    } while (rep.trim() === "");
     const descr = " Séries de Supino Declinado"
     respTreinosPeito += rep + descr + "\n"
     respTreinoPeito.innerText = `${respTreinosPeito}`
@@ -683,10 +735,13 @@ function crucifixoHalt() {
         alert("Você já adicionou esse exercício");
         return;
     }
-    const rep = prompt("Quantas Séries desse exercício?: ")
-    if (rep === null) {
-        return;
+    let rep;
+    do {
+    rep = prompt("Quantas Séries desse exercício?: ");
+    if (rep === null) { 
+        return; 
     }
+    } while (rep.trim() === "");
     const descr = " Séries de Crucifixo"
     respTreinosPeito += rep + descr + "\n"
     respTreinoPeito.innerText = `${respTreinosPeito}`
@@ -708,10 +763,13 @@ function pullOver() {
         alert("Você já adicionou esse exercício");
         return;
     }
-    const rep = prompt("Quantas Séries desse exercício?: ")
-    if (rep === null) {
-        return;
+    let rep;
+    do {
+    rep = prompt("Quantas Séries desse exercício?: ");
+    if (rep === null) { 
+        return; 
     }
+    } while (rep.trim() === "");
     const descr = " Séries de Pull-Over"
     respTreinosPeito += rep + descr + "\n"
     respTreinoPeito.innerText = `${respTreinosPeito}`
@@ -734,10 +792,13 @@ function extTricep() {
         alert("Você já adicionou esse exercício");
         return;
     }
-    const rep = prompt("Quantas Séries desse exercício?: ")
-    if (rep === null) {
-        return;
+    let rep;
+    do {
+    rep = prompt("Quantas Séries desse exercício?: ");
+    if (rep === null) { 
+        return; 
     }
+    } while (rep.trim() === "");
     const descr = " Séries de Tríceps Francês (Inclinado)"
     respTreinosTriceps += rep + descr + "\n"
     respTreinoTriceps.innerText = `${respTreinosTriceps}`
@@ -759,10 +820,13 @@ function extTricepDeit() {
         alert("Você já adicionou esse exercício");
         return;
     }
-    const rep = prompt("Quantas Séries desse exercício?: ")
-    if (rep === null) {
-        return;
+    let rep;
+    do {
+    rep = prompt("Quantas Séries desse exercício?: ");
+    if (rep === null) { 
+        return; 
     }
+    } while (rep.trim() === "");
     const descr = " Séries de Tríceps Francês (Deitado)"
     respTreinosTriceps += rep + descr + "\n"
     respTreinoTriceps.innerText = `${respTreinosTriceps}`
@@ -786,10 +850,13 @@ function supPegFech() {
         alert("Você já adicionou esse exercício");
         return;
     }
-    const rep = prompt("Quantas Séries desse exercício?: ")
-    if (rep === null) {
-        return;
+    let rep;
+    do {
+    rep = prompt("Quantas Séries desse exercício?: ");
+    if (rep === null) { 
+        return; 
     }
+    } while (rep.trim() === "");
     const descr = " Séries de Supino com pegada fechada"
     respTreinosTriceps += rep + descr + "\n"
     respTreinoTriceps.innerText = `${respTreinosTriceps}`
@@ -811,10 +878,13 @@ function mergBanco() {
         alert("Você já adicionou esse exercício");
         return;
     }
-    const rep = prompt("Quantas Séries desse exercício?: ")
-    if (rep === null) {
-        return;
+    let rep;
+    do {
+    rep = prompt("Quantas Séries desse exercício?: ");
+    if (rep === null) { 
+        return; 
     }
+    } while (rep.trim() === "");
     const descr = " Séries de Mergulho no banco"
     respTreinosTriceps += rep + descr + "\n"
     respTreinoTriceps.innerText = `${respTreinosTriceps}`
@@ -836,10 +906,13 @@ function tricepBanco() {
         alert("Você já adicionou esse exercício");
         return;
     }
-    const rep = prompt("Quantas Séries desse exercício?: ")
-    if (rep === null) {
-        return;
+    let rep;
+    do {
+    rep = prompt("Quantas Séries desse exercício?: ");
+    if (rep === null) { 
+        return; 
     }
+    } while (rep.trim() === "");
     const descr = " Séries de Tríceps no banco"
     respTreinosTriceps += rep + descr + "\n"
     respTreinoTriceps.innerText = `${respTreinosTriceps}`
@@ -861,10 +934,13 @@ function extHalt() {
         alert("Você já adicionou esse exercício");
         return;
     }
-    const rep = prompt("Quantas Séries desse exercício?: ")
-    if (rep === null) {
-        return;
+    let rep;
+    do {
+    rep = prompt("Quantas Séries desse exercício?: ");
+    if (rep === null) { 
+        return; 
     }
+    } while (rep.trim() === "");
     const descr = " Séries de Tríceps Francês"
     respTreinosTriceps += rep + descr + "\n"
     respTreinoTriceps.innerText = `${respTreinosTriceps}`
@@ -886,10 +962,13 @@ function tricepFrancUni() {
         alert("Você já adicionou esse exercício");
         return;
     }
-    const rep = prompt("Quantas Séries desse exercício?: ")
-    if (rep === null) {
-        return;
+    let rep;
+    do {
+    rep = prompt("Quantas Séries desse exercício?: ");
+    if (rep === null) { 
+        return; 
     }
+    } while (rep.trim() === "");
     const descr = " Séries de Tríceps Francês unilateral"
     respTreinosTriceps += rep + descr + "\n"
     respTreinoTriceps.innerText = `${respTreinosTriceps}`
@@ -913,10 +992,13 @@ function mergParale() {
         alert("Você já adicionou esse exercício");
         return;
     }
-    const rep = prompt("Quantas Séries desse exercício?: ")
-    if (rep === null) {
-        return;
+    let rep;
+    do {
+    rep = prompt("Quantas Séries desse exercício?: ");
+    if (rep === null) { 
+        return; 
     }
+    } while (rep.trim() === "");
     const descr = " Séries de Mergulho nas paralelas (com ou sem pesos)"
     respTreinosTriceps += rep + descr + "\n"
     respTreinoTriceps.innerText = `${respTreinosTriceps}`
@@ -938,10 +1020,13 @@ function tricepMaq() {
         alert("Você já adicionou esse exercício");
         return;
     }
-    const rep = prompt("Quantas Séries desse exercício?: ")
-    if (rep === null) {
-        return;
+    let rep;
+    do {
+    rep = prompt("Quantas Séries desse exercício?: ");
+    if (rep === null) { 
+        return; 
     }
+    } while (rep.trim() === "");
     const descr = " Séries de Tríceps na máquina"
     respTreinosTriceps += rep + descr + "\n"
     respTreinoTriceps.innerText = `${respTreinosTriceps}`
@@ -963,10 +1048,13 @@ function extTriCab() {
         alert("Você já adicionou esse exercício");
         return;
     }
-    const rep = prompt("Quantas Séries desse exercício?: ")
-    if (rep === null) {
-        return;
+    let rep;
+    do {
+    rep = prompt("Quantas Séries desse exercício?: ");
+    if (rep === null) { 
+        return; 
     }
+    } while (rep.trim() === "");
     const descr = " Séries de Tríceps Francês no Pulley"
     respTreinosTriceps += rep + descr + "\n"
     respTreinoTriceps.innerText = `${respTreinosTriceps}`
@@ -988,10 +1076,13 @@ function tricepPol() {
         alert("Você já adicionou esse exercício");
         return;
     }
-    const rep = prompt("Quantas Séries desse exercício?: ")
-    if (rep === null) {
-        return;
+    let rep;
+    do {
+    rep = prompt("Quantas Séries desse exercício?: ");
+    if (rep === null) { 
+        return; 
     }
+    } while (rep.trim() === "");
     const descr = " Séries de Tríceps Pulley com barra"
     respTreinosTriceps += rep + descr + "\n"
     respTreinoTriceps.innerText = `${respTreinosTriceps}`
@@ -1013,10 +1104,13 @@ function tricepPolCord() {
         alert("Você já adicionou esse exercício");
         return;
     }
-    const rep = prompt("Quantas Séries desse exercício?: ")
-    if (rep === null) {
-        return;
+    let rep;
+    do {
+        rep = prompt("Quantas Séries desse exercício?: ");
+    if (rep === null) { 
+        return; 
     }
+    } while (rep.trim() === "");
     const descr = " Séries de Tríceps Pulley com corda"
     respTreinosTriceps += rep + descr + "\n"
     respTreinoTriceps.innerText = `${respTreinosTriceps}`
@@ -1038,10 +1132,13 @@ function flexFechada() {
         alert("Você já adicionou esse exercício");
         return;
     }
-    const rep = prompt("Quantas Séries desse exercício?: ")
-    if (rep === null) {
-        return;
+    let rep;
+    do {
+    rep = prompt("Quantas Séries desse exercício?: ");
+    if (rep === null) { 
+        return; 
     }
+    } while (rep.trim() === "");
     const descr = " Séries de Flexão militar fechada"
     respTreinosTriceps += rep + descr + "\n"
     respTreinoTriceps.innerText = `${respTreinosTriceps}`
@@ -1063,10 +1160,13 @@ function triCoice() {
         alert("Você já adicionou esse exercício");
         return;
     }
-    const rep = prompt("Quantas Séries desse exercício?: ")
-    if (rep === null) {
-        return;
+    let rep;
+    do {
+    rep = prompt("Quantas Séries desse exercício?: ");
+    if (rep === null) { 
+        return; 
     }
+    } while (rep.trim() === "");
     const descr = " Séries de Tríceps Coice"
     respTreinosTriceps += rep + descr + "\n"
     respTreinoTriceps.innerText = `${respTreinosTriceps}`
@@ -1088,10 +1188,13 @@ function tricepUni() {
         alert("Você já adicionou esse exercício");
         return;
     }
-    const rep = prompt("Quantas Séries desse exercício?: ")
-    if (rep === null) {
-        return;
+    let rep;
+    do {
+    rep = prompt("Quantas Séries desse exercício?: ");
+    if (rep === null) { 
+        return; 
     }
+    } while (rep.trim() === "");
     const descr = " Séries de Tríceps Unilateral na polia"
     respTreinosTriceps += rep + descr + "\n"
     respTreinoTriceps.innerText = `${respTreinosTriceps}`
@@ -1113,10 +1216,13 @@ function barraFixa() {
         alert("Você já adicionou esse exercício");
         return;
     }
-    const rep = prompt("Quantas Séries desse exercício?: ")
-    if (rep === null) {
-        return;
+    let rep;
+    do {
+    rep = prompt("Quantas Séries desse exercício?: ");
+    if (rep === null) { 
+        return; 
     }
+    } while (rep.trim() === "");
     const descr = " Séries de Barra Fixa"
     respTreinosCostas += rep + descr + "\n"
     respTreinoCostas.innerText = `${respTreinosCostas}`
@@ -1138,10 +1244,13 @@ function barraFixaAberta() {
         alert("Você já adicionou esse exercício");
         return;
     }
-    const rep = prompt("Quantas Séries desse exercício?: ")
-    if (rep === null) {
-        return;
+    let rep;
+    do {
+    rep = prompt("Quantas Séries desse exercício?: ");
+    if (rep === null) { 
+        return; 
     }
+    } while (rep.trim() === "");
     const descr = " Séries de Barra Fixa com pegada Aberta"
     respTreinosCostas += rep + descr + "\n"
     respTreinoCostas.innerText = `${respTreinosCostas}`
@@ -1163,10 +1272,13 @@ function remadaCurva() {
         alert("Você já adicionou esse exercício");
         return;
     }
-    const rep = prompt("Quantas Séries desse exercício?: ")
-    if (rep === null) {
-        return;
+    let rep;
+    do {
+    rep = prompt("Quantas Séries desse exercício?: ");
+    if (rep === null) { 
+        return; 
     }
+    } while (rep.trim() === "");
     const descr = " Séries de Remada curvada com barra e pegada pronada"
     respTreinosCostas += rep + descr + "\n"
     respTreinoCostas.innerText = `${respTreinosCostas}`
@@ -1188,10 +1300,13 @@ function remadaCurvaSup() {
         alert("Você já adicionou esse exercício");
         return;
     }
-    const rep = prompt("Quantas Séries desse exercício?: ")
-    if (rep === null) {
-        return;
+    let rep;
+    do {
+    rep = prompt("Quantas Séries desse exercício?: ");
+    if (rep === null) { 
+        return; 
     }
+    } while (rep.trim() === "");
     const descr = " Séries de Remada curvada com barra e pegada supinada"
     respTreinosCostas += rep + descr + "\n"
     respTreinoCostas.innerText = `${respTreinosCostas}`
@@ -1213,10 +1328,13 @@ function remadaUni() {
         alert("Você já adicionou esse exercício");
         return;
     }
-    const rep = prompt("Quantas Séries desse exercício?: ")
-    if (rep === null) {
-        return;
+    let rep;
+    do {
+    rep = prompt("Quantas Séries desse exercício?: ");
+    if (rep === null) { 
+        return; 
     }
+    } while (rep.trim() === "");
     const descr = " Séries de Remada unilateral (Serrote)"
     respTreinosCostas += rep + descr + "\n"
     respTreinoCostas.innerText = `${respTreinosCostas}`
@@ -1238,10 +1356,13 @@ function remadaCavalinho() {
         alert("Você já adicionou esse exercício");
         return;
     }
-    const rep = prompt("Quantas Séries desse exercício?: ")
-    if (rep === null) {
-        return;
+    let rep;
+    do {
+    rep = prompt("Quantas Séries desse exercício?: ");
+    if (rep === null) { 
+        return; 
     }
+    } while (rep.trim() === "");
     const descr = " Séries de Remada Cavalinho"
     respTreinosCostas += rep + descr + "\n"
     respTreinoCostas.innerText = `${respTreinosCostas}`
@@ -1263,10 +1384,13 @@ function remadaBanc() {
         alert("Você já adicionou esse exercício");
         return;
     }
-    const rep = prompt("Quantas Séries desse exercício?: ")
-    if (rep === null) {
-        return;
+    let rep;
+    do {
+    rep = prompt("Quantas Séries desse exercício?: ");
+    if (rep === null) { 
+        return; 
     }
+    } while (rep.trim() === "");
     const descr = " Séries de Remada no banco inclinado com halteres"
     respTreinosCostas += rep + descr + "\n"
     respTreinoCostas.innerText = `${respTreinosCostas}`
@@ -1288,10 +1412,13 @@ function puxada() {
         alert("Você já adicionou esse exercício");
         return;
     }
-    const rep = prompt("Quantas Séries desse exercício?: ")
-    if (rep === null) {
-        return;
+    let rep;
+    do {
+    rep = prompt("Quantas Séries desse exercício?: ");
+    if (rep === null) { 
+        return; 
     }
+    } while (rep.trim() === "");
     const descr = " Séries de Puxada Frente no pulley (Pegada Aberta)"
     respTreinosCostas += rep + descr + "\n"
     respTreinoCostas.innerText = `${respTreinosCostas}`
@@ -1313,10 +1440,13 @@ function remadaBaixa() {
         alert("Você já adicionou esse exercício");
         return;
     }
-    const rep = prompt("Quantas Séries desse exercício?: ")
-    if (rep === null) {
-        return;
+    let rep;
+    do {
+    rep = prompt("Quantas Séries desse exercício?: ");
+    if (rep === null) { 
+        return; 
     }
+    } while (rep.trim() === "");
     const descr = " Séries de Remada Baixa"
     respTreinosCostas += rep + descr + "\n"
     respTreinoCostas.innerText = `${respTreinosCostas}`
@@ -1338,10 +1468,13 @@ function puxadaFrente() {
         alert("Você já adicionou esse exercício");
         return;
     }
-    const rep = prompt("Quantas Séries desse exercício?: ")
-    if (rep === null) {
-        return;
+    let rep;
+    do {
+    rep = prompt("Quantas Séries desse exercício?: ");
+    if (rep === null) { 
+        return; 
     }
+    } while (rep.trim() === "");
     const descr = " Séries de Puxada pela frente com o triângulo no pulley"
     respTreinosCostas += rep + descr + "\n"
     respTreinoCostas.innerText = `${respTreinosCostas}`
@@ -1363,10 +1496,13 @@ function pullDown() {
         alert("Você já adicionou esse exercício");
         return;
     }
-    const rep = prompt("Quantas Séries desse exercício?: ")
-    if (rep === null) {
-        return;
+    let rep;
+    do {
+    rep = prompt("Quantas Séries desse exercício?: ");
+    if (rep === null) { 
+        return; 
     }
+    } while (rep.trim() === "");
     const descr = " Séries de Pull-Down"
     respTreinosCostas += rep + descr + "\n"
     respTreinoCostas.innerText = `${respTreinosCostas}`
@@ -1388,10 +1524,13 @@ function remaMaq() {
         alert("Você já adicionou esse exercício");
         return;
     }
-    const rep = prompt("Quantas Séries desse exercício?: ")
-    if (rep === null) {
-        return;
+    let rep;
+    do {
+    rep = prompt("Quantas Séries desse exercício?: ");
+    if (rep === null) { 
+        return; 
     }
+    } while (rep.trim() === "");
     
     const variacao = prompt("Unilateral? (1-sim / 2-não)")
     if (variacao == 1) {
@@ -1421,10 +1560,13 @@ function facePull() {
         alert("Você já adicionou esse exercício");
         return;
     }
-    const rep = prompt("Quantas Séries desse exercício?: ")
-    if (rep === null) {
-        return;
+    let rep;
+    do {
+    rep = prompt("Quantas Séries desse exercício?: ");
+    if (rep === null) { 
+        return; 
     }
+    } while (rep.trim() === "");
     const descr = " Séries de Face Pull"
     respTreinosCostas += rep + descr + "\n"
     respTreinoCostas.innerText = `${respTreinosCostas}`
@@ -1446,10 +1588,13 @@ function terra() {
         alert("Você já adicionou esse exercício");
         return;
     }
-    const rep = prompt("Quantas Séries desse exercício?: ")
-    if (rep === null) {
-        return;
+    let rep;
+    do {
+    rep = prompt("Quantas Séries desse exercício?: ");
+    if (rep === null) { 
+        return; 
     }
+    } while (rep.trim() === "");
     const descr = " Séries de Levantamento Terra"
     respTreinosCostas += rep + descr + "\n"
     respTreinoCostas.innerText = `${respTreinosCostas}`
@@ -1471,10 +1616,13 @@ function rosca() {
         alert("Você já adicionou esse exercício");
         return;
     }
-    const rep = prompt("Quantas Séries desse exercício?: ")
-    if (rep === null) {
-        return;
+    let rep;
+    do {
+    rep = prompt("Quantas Séries desse exercício?: ");
+    if (rep === null) { 
+        return; 
     }
+    } while (rep.trim() === "");
     const descr = " Séries de Rosca direta com barra reta"
     respTreinosBiceps += rep + descr + "\n"
     respTreinoBiceps.innerText = `${respTreinosBiceps}`
@@ -1496,10 +1644,13 @@ function roscaAmpla() {
         alert("Você já adicionou esse exercício");
         return;
     }
-    const rep = prompt("Quantas Séries desse exercício?: ")
-    if (rep === null) {
-        return;
+    let rep;
+    do {
+    rep = prompt("Quantas Séries desse exercício?: ");
+    if (rep === null) { 
+        return; 
     }
+    } while (rep.trim() === "");
     const descr = " Séries de Rosca direta com barra e pegada ampla"
     respTreinosBiceps += rep + descr + "\n"
     respTreinoBiceps.innerText = `${respTreinosBiceps}`
@@ -1521,10 +1672,13 @@ function roscaProna() {
         alert("Você já adicionou esse exercício");
         return;
     }
-    const rep = prompt("Quantas Séries desse exercício?: ")
-    if (rep === null) {
-        return;
+    let rep;
+    do {
+    rep = prompt("Quantas Séries desse exercício?: ");
+    if (rep === null) { 
+        return; 
     }
+    } while (rep.trim() === "");
     const descr = " Séries de Rosca direta (pegada pronada)"
     respTreinosBiceps += rep + descr + "\n"
     respTreinoBiceps.innerText = `${respTreinosBiceps}`
@@ -1546,10 +1700,13 @@ function roscaHalt() {
         alert("Você já adicionou esse exercício");
         return;
     }
-    const rep = prompt("Quantas Séries desse exercício?: ")
-    if (rep === null) {
-        return;
+    let rep;
+    do {
+    rep = prompt("Quantas Séries desse exercício?: ");
+    if (rep === null) { 
+        return; 
     }
+    } while (rep.trim() === "");
     const descr = " Séries de Rosca direta com halteres"
     respTreinosBiceps += rep + descr + "\n"
     respTreinoBiceps.innerText = `${respTreinosBiceps}`
@@ -1571,10 +1728,13 @@ function roscaHaltAlt() {
         alert("Você já adicionou esse exercício");
         return;
     }
-    const rep = prompt("Quantas Séries desse exercício?: ")
-    if (rep === null) {
-        return;
+    let rep;
+    do {
+    rep = prompt("Quantas Séries desse exercício?: ");
+    if (rep === null) { 
+        return; 
     }
+    } while (rep.trim() === "");
     const descr = " Séries de Rosca alternada"
     respTreinosBiceps += rep + descr + "\n"
     respTreinoBiceps.innerText = `${respTreinosBiceps}`
@@ -1596,10 +1756,13 @@ function roscaMart() {
         alert("Você já adicionou esse exercício");
         return;
     }
-    const rep = prompt("Quantas Séries desse exercício?: ")
-    if (rep === null) {
-        return;
+    let rep;
+    do {
+    rep = prompt("Quantas Séries desse exercício?: ");
+    if (rep === null) { 
+        return; 
     }
+    } while (rep.trim() === "");
     const descr = " Séries de Rosca martelo em pé com halteres"
     respTreinosBiceps += rep + descr + "\n"
     respTreinoBiceps.innerText = `${respTreinosBiceps}`
@@ -1621,10 +1784,13 @@ function roscaPe() {
         alert("Você já adicionou esse exercício");
         return;
     }
-    const rep = prompt("Quantas Séries desse exercício?: ")
-    if (rep === null) {
-        return;
+    let rep;
+    do {
+    rep = prompt("Quantas Séries desse exercício?: ");
+    if (rep === null) { 
+        return; 
     }
+    } while (rep.trim() === "");
     const descr = " Séries de Rosca direta com barra W"
     respTreinosBiceps += rep + descr + "\n"
     respTreinoBiceps.innerText = `${respTreinosBiceps}`
@@ -1646,10 +1812,13 @@ function roscaCorda() {
         alert("Você já adicionou esse exercício");
         return;
     }
-    const rep = prompt("Quantas Séries desse exercício?: ")
-    if (rep === null) {
-        return;
+    let rep;
+    do {
+    rep = prompt("Quantas Séries desse exercício?: ");
+    if (rep === null) { 
+        return; 
     }
+    } while (rep.trim() === "");
     const descr = " Séries de Rosca martelo na polia"
     respTreinosBiceps += rep + descr + "\n"
     respTreinoBiceps.innerText = `${respTreinosBiceps}`
@@ -1671,10 +1840,13 @@ function roscaBanc() {
         alert("Você já adicionou esse exercício");
         return;
     }
-    const rep = prompt("Quantas Séries desse exercício?: ")
-    if (rep === null) {
-        return;
+    let rep;
+    do {
+    rep = prompt("Quantas Séries desse exercício?: ");
+    if (rep === null) { 
+        return; 
     }
+    } while (rep.trim() === "");
     const descr = " Séries de Rosca direta no banco inclinado"
     respTreinosBiceps += rep + descr + "\n"
     respTreinoBiceps.innerText = `${respTreinosBiceps}`
@@ -1696,10 +1868,13 @@ function roscaMartIncl() {
         alert("Você já adicionou esse exercício");
         return;
     }
-    const rep = prompt("Quantas Séries desse exercício?: ")
-    if (rep === null) {
-        return;
+    let rep;
+    do {
+    rep = prompt("Quantas Séries desse exercício?: ");
+    if (rep === null) { 
+        return; 
     }
+    } while (rep.trim() === "");
     const descr = " Séries de Rosca martelo no banco inclinado"
     respTreinosBiceps += rep + descr + "\n"
     respTreinoBiceps.innerText = `${respTreinosBiceps}`
@@ -1721,10 +1896,13 @@ function roscaScott() {
         alert("Você já adicionou esse exercício");
         return;
     }
-    const rep = prompt("Quantas Séries desse exercício?: ")
-    if (rep === null) {
-        return;
+    let rep;
+    do {
+    rep = prompt("Quantas Séries desse exercício?: ");
+    if (rep === null) { 
+        return; 
     }
+    } while (rep.trim() === "");
     const descr = " Séries de Rosca Scott com a barra EZ"
     respTreinosBiceps += rep + descr + "\n"
     respTreinoBiceps.innerText = `${respTreinosBiceps}`
@@ -1746,10 +1924,13 @@ function roscaUni() {
         alert("Você já adicionou esse exercício");
         return;
     }
-    const rep = prompt("Quantas Séries desse exercício?: ")
-    if (rep === null) {
-        return;
+    let rep;
+    do {
+    rep = prompt("Quantas Séries desse exercício?: ");
+    if (rep === null) { 
+        return; 
     }
+    } while (rep.trim() === "");
     const descr = " Séries de Rosca concentrada unilateral com halter"
     respTreinosBiceps += rep + descr + "\n"
     respTreinoBiceps.innerText = `${respTreinosBiceps}`
@@ -1771,10 +1952,13 @@ function roscaPoli() {
         alert("Você já adicionou esse exercício");
         return;
     }
-    const rep = prompt("Quantas Séries desse exercício?: ")
-    if (rep === null) {
-        return;
+    let rep;
+    do {
+    rep = prompt("Quantas Séries desse exercício?: ");
+    if (rep === null) { 
+        return; 
     }
+    } while (rep.trim() === "");
     const descr = " Séries de Rosca lateral na polia alta"
     respTreinosBiceps += rep + descr + "\n"
     respTreinoBiceps.innerText = `${respTreinosBiceps}`
@@ -1796,10 +1980,13 @@ function roscaPoliTras() {
         alert("Você já adicionou esse exercício");
         return;
     }
-    const rep = prompt("Quantas Séries desse exercício?: ")
-    if (rep === null) {
-        return;
+    let rep;
+    do {
+    rep = prompt("Quantas Séries desse exercício?: ");
+    if (rep === null) { 
+        return; 
     }
+    } while (rep.trim() === "");
     const descr = " Séries de Rosca unilateral na polia (atrás do corpo)"
     respTreinosBiceps += rep + descr + "\n"
     respTreinoBiceps.innerText = `${respTreinosBiceps}`
@@ -1821,10 +2008,13 @@ function roscaPoliDeit() {
         alert("Você já adicionou esse exercício");
         return;
     }
-    const rep = prompt("Quantas Séries desse exercício?: ")
-    if (rep === null) {
-        return;
+    let rep;
+    do {
+    rep = prompt("Quantas Séries desse exercício?: ");
+    if (rep === null) { 
+        return; 
     }
+    } while (rep.trim() === "");
     const descr = " Séries de Rosca direta deitado na polia"
     respTreinosBiceps += rep + descr + "\n"
     respTreinoBiceps.innerText = `${respTreinosBiceps}`
@@ -1846,10 +2036,13 @@ function agacha() {
         alert("Você já adicionou esse exercício");
         return;
     }
-    const rep = prompt("Quantas Séries desse exercício?: ")
-    if (rep === null) {
-        return;
+    let rep;
+    do {
+    rep = prompt("Quantas Séries desse exercício?: ");
+    if (rep === null) { 
+        return; 
     }
+    } while (rep.trim() === "");
     const descr = " Séries de Agachamento livre com barra"
     respTreinosPernas += rep + descr + "\n"
     respTreinoPernas.innerText = `${respTreinosPernas}`
@@ -1871,10 +2064,13 @@ function afundo() {
         alert("Você já adicionou esse exercício");
         return;
     }
-    const rep = prompt("Quantas Séries desse exercício?: ")
-    if (rep === null) {
-        return;
+    let rep;
+    do {
+    rep = prompt("Quantas Séries desse exercício?: ");
+    if (rep === null) { 
+        return; 
     }
+    } while (rep.trim() === "");
     const descr = " Séries de Agachamento afundo com halteres"
     respTreinosPernas += rep + descr + "\n"
     respTreinoPernas.innerText = `${respTreinosPernas}`
@@ -1896,10 +2092,13 @@ function elevacao() {
         alert("Você já adicionou esse exercício");
         return;
     }
-    const rep = prompt("Quantas Séries desse exercício?: ")
-    if (rep === null) {
-        return;
+    let rep;
+    do {
+    rep = prompt("Quantas Séries desse exercício?: ");
+    if (rep === null) { 
+        return; 
     }
+    } while (rep.trim() === "");
     const descr = " Séries de Elevação de panturrilha em pé no step"
     respTreinosPernas += rep + descr + "\n"
     respTreinoPernas.innerText = `${respTreinosPernas}`
@@ -1921,10 +2120,13 @@ function rack() {
         alert("Você já adicionou esse exercício");
         return;
     }
-    const rep = prompt("Quantas Séries desse exercício?: ")
-    if (rep === null) {
-        return;
+    let rep;
+    do {
+    rep = prompt("Quantas Séries desse exercício?: ");
+    if (rep === null) { 
+        return; 
     }
+    } while (rep.trim() === "");
     const descr = " Séries de Agachamento no rack"
     respTreinosPernas += rep + descr + "\n"
     respTreinoPernas.innerText = `${respTreinosPernas}`
@@ -1946,10 +2148,13 @@ function legPress() {
         alert("Você já adicionou esse exercício");
         return;
     }
-    const rep = prompt("Quantas Séries desse exercício?: ")
-    if (rep === null) {
-        return;
+    let rep;
+    do {
+    rep = prompt("Quantas Séries desse exercício?: ");
+    if (rep === null) { 
+        return; 
     }
+    } while (rep.trim() === "");
     const descr = " Séries de Leg press 45º"
     respTreinosPernas += rep + descr + "\n"
     respTreinoPernas.innerText = `${respTreinosPernas}`
@@ -1971,10 +2176,13 @@ function agachaSmith() {
         alert("Você já adicionou esse exercício");
         return;
     }
-    const rep = prompt("Quantas Séries desse exercício?: ")
-    if (rep === null) {
-        return;
+    let rep;
+    do {
+    rep = prompt("Quantas Séries desse exercício?: ");
+    if (rep === null) { 
+        return; 
     }
+    } while (rep.trim() === "");
     const descr = " Séries de Agachamento na máquina Smith"
     respTreinosPernas += rep + descr + "\n"
     respTreinoPernas.innerText = `${respTreinosPernas}`
@@ -1996,10 +2204,13 @@ function sumo() {
         alert("Você já adicionou esse exercício");
         return;
     }
-    const rep = prompt("Quantas Séries desse exercício?: ")
-    if (rep === null) {
-        return;
+    let rep;
+    do {
+    rep = prompt("Quantas Séries desse exercício?: ");
+    if (rep === null) { 
+        return; 
     }
+    } while (rep.trim() === "");
     const descr = " Séries de Agachamento Sumô"
     respTreinosPernas += rep + descr + "\n"
     respTreinoPernas.innerText = `${respTreinosPernas}`
@@ -2021,10 +2232,13 @@ function bulgaro() {
         alert("Você já adicionou esse exercício");
         return;
     }
-    const rep = prompt("Quantas Séries desse exercício?: ")
-    if (rep === null) {
-        return;
+    let rep;
+    do {
+    rep = prompt("Quantas Séries desse exercício?: ");
+    if (rep === null) { 
+        return; 
     }
+    } while (rep.trim() === "");
     const descr = " Séries de Agachamento Búlgaro"
     respTreinosPernas += rep + descr + "\n"
     respTreinoPernas.innerText = `${respTreinosPernas}`
@@ -2046,10 +2260,13 @@ function stiff() {
         alert("Você já adicionou esse exercício");
         return;
     }
-    const rep = prompt("Quantas Séries desse exercício?: ")
-    if (rep === null) {
-        return;
+    let rep;
+    do {
+    rep = prompt("Quantas Séries desse exercício?: ");
+    if (rep === null) { 
+        return; 
     }
+    } while (rep.trim() === "");
     const descr = " Séries de Stiff"
     respTreinosPernas += rep + descr + "\n"
     respTreinoPernas.innerText = `${respTreinosPernas}`
@@ -2071,10 +2288,13 @@ function flexora() {
         alert("Você já adicionou esse exercício");
         return;
     }
-    const rep = prompt("Quantas Séries desse exercício?: ")
-    if (rep === null) {
-        return;
+    let rep;
+    do {
+    rep = prompt("Quantas Séries desse exercício?: ");
+    if (rep === null) { 
+        return; 
     }
+    } while (rep.trim() === "");
     const descr = " Séries de Mesa Flexora"
     respTreinosPernas += rep + descr + "\n"
     respTreinoPernas.innerText = `${respTreinosPernas}`
@@ -2096,10 +2316,13 @@ function extensaoQadr() {
         alert("Você já adicionou esse exercício");
         return;
     }
-    const rep = prompt("Quantas Séries desse exercício?: ")
-    if (rep === null) {
-        return;
+    let rep;
+    do {
+    rep = prompt("Quantas Séries desse exercício?: ");
+    if (rep === null) { 
+        return; 
     }
+    } while (rep.trim() === "");
     
     const variacao = prompt("Máquina ou Polia? (1-máquina / 2-polia)")
     if (variacao == 1) {
@@ -2129,10 +2352,13 @@ function gemeos() {
         alert("Você já adicionou esse exercício");
         return;
     }
-    const rep = prompt("Quantas Séries desse exercício?: ")
-    if (rep === null) {
-        return;
+    let rep;
+    do {
+    rep = prompt("Quantas Séries desse exercício?: ");
+    if (rep === null) { 
+        return; 
     }
+    } while (rep.trim() === "");
     
     const variacao = prompt("Máquina ou Peso livre? (1-máquina / 2-peso livre)")
     if (variacao == 1) {
@@ -2163,10 +2389,13 @@ function abduPoli() {
         alert("Você já adicionou esse exercício");
         return;
     }
-    const rep = prompt("Quantas Séries desse exercício?: ")
-    if (rep === null) {
-        return;
+    let rep;
+    do {
+    rep = prompt("Quantas Séries desse exercício?: ");
+    if (rep === null) { 
+        return; 
     }
+    } while (rep.trim() === "");
     const descr = " Séries de Abdução de quadril na polia"
     respTreinosPernas += rep + descr + "\n"
     respTreinoPernas.innerText = `${respTreinosPernas}`
@@ -2188,10 +2417,13 @@ function pantuLeg() {
         alert("Você já adicionou esse exercício");
         return;
     }
-    const rep = prompt("Quantas Séries desse exercício?: ")
-    if (rep === null) {
-        return;
+    let rep;
+    do {
+    rep = prompt("Quantas Séries desse exercício?: ");
+    if (rep === null) { 
+        return; 
     }
+    } while (rep.trim() === "");
     const descr = " Séries de Panturrilha no Legpress"
     respTreinosPernas += rep + descr + "\n"
     respTreinoPernas.innerText = `${respTreinosPernas}`
@@ -2213,10 +2445,13 @@ function pantuCalf() {
         alert("Você já adicionou esse exercício");
         return;
     }
-    const rep = prompt("Quantas Séries desse exercício?: ")
-    if (rep === null) {
-        return;
+    let rep;
+    do {
+    rep = prompt("Quantas Séries desse exercício?: ");
+    if (rep === null) { 
+        return; 
     }
+    } while (rep.trim() === "");
     const descr = " Séries de Panturrilha em pé na máquina"
     respTreinosPernas += rep + descr + "\n"
     respTreinoPernas.innerText = `${respTreinosPernas}`
@@ -2238,10 +2473,13 @@ function pantuSmith() {
         alert("Você já adicionou esse exercício");
         return;
     }
-    const rep = prompt("Quantas Séries desse exercício?: ")
-    if (rep === null) {
-        return;
+    let rep;
+    do {
+    rep = prompt("Quantas Séries desse exercício?: ");
+    if (rep === null) { 
+        return; 
     }
+    } while (rep.trim() === "");
     const descr = " Séries de Panturrilha no Smith Machine"
     respTreinosPernas += rep + descr + "\n"
     respTreinoPernas.innerText = `${respTreinosPernas}`
@@ -2264,10 +2502,13 @@ function adutora() {
         alert("Você já adicionou esse exercício");
         return;
     }
-    const rep = prompt("Quantas Séries desse exercício?: ")
-    if (rep === null) {
-        return;
+    let rep;
+    do {
+    rep = prompt("Quantas Séries desse exercício?: ");
+    if (rep === null) { 
+        return; 
     }
+    } while (rep.trim() === "");
     const descr = " Séries de Cadeira Abdutora / Adutora (Cada)"
     respTreinosPernas += rep + descr + "\n"
     respTreinoPernas.innerText = `${respTreinosPernas}`
@@ -2289,10 +2530,13 @@ function extensora() {
         alert("Você já adicionou esse exercício");
         return;
     }
-    const rep = prompt("Quantas Séries desse exercício?: ")
-    if (rep === null) {
-        return;
+    let rep;
+    do {
+    rep = prompt("Quantas Séries desse exercício?: ");
+    if (rep === null) { 
+        return; 
     }
+    } while (rep.trim() === "");
     const descr = " Séries de Cadeira Extensora"
     respTreinosPernas += rep + descr + "\n"
     respTreinoPernas.innerText = `${respTreinosPernas}`
@@ -2314,10 +2558,13 @@ function desenv() {
         alert("Você já adicionou esse exercício");
         return;
     }
-    const rep = prompt("Quantas Séries desse exercício?: ")
-    if (rep === null) {
-        return;
+    let rep;
+    do {
+    rep = prompt("Quantas Séries desse exercício?: ");
+    if (rep === null) { 
+        return; 
     }
+    } while (rep.trim() === "");
     const descr = " Séries de Desenvolvimento com halteres"
     respTreinosOmbros += rep + descr + "\n"
     respTreinoOmbros.innerText = `${respTreinosOmbros}`
@@ -2339,10 +2586,13 @@ function desenvBarra() {
         alert("Você já adicionou esse exercício");
         return;
     }
-    const rep = prompt("Quantas Séries desse exercício?: ")
-    if (rep === null) {
-        return;
+    let rep;
+    do {
+    rep = prompt("Quantas Séries desse exercício?: ");
+    if (rep === null) { 
+        return; 
     }
+    } while (rep.trim() === "");
     const descr = " Séries de Desenvolvimento com barra"
     respTreinosOmbros += rep + descr + "\n"
     respTreinoOmbros.innerText = `${respTreinosOmbros}`
@@ -2364,10 +2614,13 @@ function arnold() {
         alert("Você já adicionou esse exercício");
         return;
     }
-    const rep = prompt("Quantas Séries desse exercício?: ")
-    if (rep === null) {
-        return;
+    let rep;
+    do {
+    rep = prompt("Quantas Séries desse exercício?: ");
+    if (rep === null) { 
+        return; 
     }
+    } while (rep.trim() === "");
     const descr = " Séries de Desenvolvimento Arnold"
     respTreinosOmbros += rep + descr + "\n"
     respTreinoOmbros.innerText = `${respTreinosOmbros}`
@@ -2389,10 +2642,13 @@ function elevLat() {
         alert("Você já adicionou esse exercício");
         return;
     }
-    const rep = prompt("Quantas Séries desse exercício?: ")
-    if (rep === null) {
-        return;
+    let rep;
+    do {
+    rep = prompt("Quantas Séries desse exercício?: ");
+    if (rep === null) { 
+        return; 
     }
+    } while (rep.trim() === "");
     const descr = " Séries de Elevação lateral com halteres"
     respTreinosOmbros += rep + descr + "\n"
     respTreinoOmbros.innerText = `${respTreinosOmbros}`
@@ -2414,10 +2670,13 @@ function elevLatIncl() {
         alert("Você já adicionou esse exercício");
         return;
     }
-    const rep = prompt("Quantas Séries desse exercício?: ")
-    if (rep === null) {
-        return;
+    let rep;
+    do {
+    rep = prompt("Quantas Séries desse exercício?: ");
+    if (rep === null) { 
+        return; 
     }
+    } while (rep.trim() === "");
     const descr = " Séries de Elevação lateral no banco inclinado"
     respTreinosOmbros += rep + descr + "\n"
     respTreinoOmbros.innerText = `${respTreinosOmbros}`
@@ -2439,10 +2698,13 @@ function elevLatInclPol() {
         alert("Você já adicionou esse exercício");
         return;
     }
-    const rep = prompt("Quantas Séries desse exercício?: ")
-    if (rep === null) {
-        return;
+    let rep;
+    do {
+    rep = prompt("Quantas Séries desse exercício?: ");
+    if (rep === null) { 
+        return; 
     }
+    } while (rep.trim() === "");
     const descr = " Séries de Elevação lateral no pulley"
     respTreinosOmbros += rep + descr + "\n"
     respTreinoOmbros.innerText = `${respTreinosOmbros}`
@@ -2464,10 +2726,13 @@ function crucifixo() {
         alert("Você já adicionou esse exercício");
         return;
     }
-    const rep = prompt("Quantas Séries desse exercício?: ")
-    if (rep === null) {
-        return;
+    let rep;
+    do {
+    rep = prompt("Quantas Séries desse exercício?: ");
+    if (rep === null) { 
+        return; 
     }
+    } while (rep.trim() === "");
     const descr = " Séries de Crucifixo invertido com halteres"
     respTreinosOmbros += rep + descr + "\n"
     respTreinoOmbros.innerText = `${respTreinosOmbros}`
@@ -2489,10 +2754,13 @@ function remadaAltaBarra() {
         alert("Você já adicionou esse exercício");
         return;
     }
-    const rep = prompt("Quantas Séries desse exercício?: ")
-    if (rep === null) {
-        return;
+    let rep;
+    do {
+    rep = prompt("Quantas Séries desse exercício?: ");
+    if (rep === null) { 
+        return; 
     }
+    } while (rep.trim() === "");
     const descr = " Séries de Remada alta com barra"
     respTreinosOmbros += rep + descr + "\n"
     respTreinoOmbros.innerText = `${respTreinosOmbros}`
@@ -2514,10 +2782,13 @@ function remadaAlta() {
         alert("Você já adicionou esse exercício");
         return;
     }
-    const rep = prompt("Quantas Séries desse exercício?: ")
-    if (rep === null) {
-        return;
+    let rep;
+    do {
+    rep = prompt("Quantas Séries desse exercício?: ");
+    if (rep === null) { 
+        return; 
     }
+    } while (rep.trim() === "");
     const descr = " Séries de Remada alta com halteres"
     respTreinosOmbros += rep + descr + "\n"
     respTreinoOmbros.innerText = `${respTreinosOmbros}`
@@ -2539,10 +2810,13 @@ function remadaAltaCabo() {
         alert("Você já adicionou esse exercício");
         return;
     }
-    const rep = prompt("Quantas Séries desse exercício?: ")
-    if (rep === null) {
-        return;
+    let rep;
+    do {
+    rep = prompt("Quantas Séries desse exercício?: ");
+    if (rep === null) { 
+        return; 
     }
+    } while (rep.trim() === "");
     const descr = " Séries de Remada alta no cabo"
     respTreinosOmbros += rep + descr + "\n"
     respTreinoOmbros.innerText = `${respTreinosOmbros}`
@@ -2564,10 +2838,13 @@ function voadorInvert() {
         alert("Você já adicionou esse exercício");
         return;
     }
-    const rep = prompt("Quantas Séries desse exercício?: ")
-    if (rep === null) {
-        return;
+    let rep;
+    do {
+    rep = prompt("Quantas Séries desse exercício?: ");
+    if (rep === null) { 
+        return; 
     }
+    } while (rep.trim() === "");
     const descr = " Séries de Voador invertido na máquina"
     respTreinosOmbros += rep + descr + "\n"
     respTreinoOmbros.innerText = `${respTreinosOmbros}`
@@ -2589,10 +2866,13 @@ function elevLatPolia() {
         alert("Você já adicionou esse exercício");
         return;
     }
-    const rep = prompt("Quantas Séries desse exercício?: ")
-    if (rep === null) {
-        return;
+    let rep;
+    do {
+    rep = prompt("Quantas Séries desse exercício?: ");
+    if (rep === null) { 
+        return; 
     }
+    } while (rep.trim() === "");
     const descr = " Séries de Elevação lateral na polia"
     respTreinosOmbros += rep + descr + "\n"
     respTreinoOmbros.innerText = `${respTreinosOmbros}`
@@ -2614,10 +2894,13 @@ function elevFrontal() {
         alert("Você já adicionou esse exercício");
         return;
     }
-    const rep = prompt("Quantas Séries desse exercício?: ")
-    if (rep === null) {
-        return;
+    let rep;
+    do {
+    rep = prompt("Quantas Séries desse exercício?: ");
+    if (rep === null) { 
+        return; 
     }
+    } while (rep.trim() === "");
     const descr = " Séries de Elevação Frontal"
     respTreinosOmbros += rep + descr + "\n"
     respTreinoOmbros.innerText = `${respTreinosOmbros}`
@@ -2639,10 +2922,13 @@ function elevFrontalPol() {
         alert("Você já adicionou esse exercício");
         return;
     }
-    const rep = prompt("Quantas Séries desse exercício?: ")
-    if (rep === null) {
-        return;
+    let rep;
+    do {
+    rep = prompt("Quantas Séries desse exercício?: ");
+    if (rep === null) { 
+        return; 
     }
+    } while (rep.trim() === "");
     const descr = " Séries de Elevação Frontal no pulley"
     respTreinosOmbros += rep + descr + "\n"
     respTreinoOmbros.innerText = `${respTreinosOmbros}`
@@ -2664,10 +2950,13 @@ function elevFrontalBarra() {
         alert("Você já adicionou esse exercício");
         return;
     }
-    const rep = prompt("Quantas Séries desse exercício?: ")
-    if (rep === null) {
-        return;
+    let rep;
+    do {
+    rep = prompt("Quantas Séries desse exercício?: ");
+    if (rep === null) { 
+        return; 
     }
+    } while (rep.trim() === "");
     const descr = " Séries de Elevação Frontal com barra"
     respTreinosOmbros += rep + descr + "\n"
     respTreinoOmbros.innerText = `${respTreinosOmbros}`
@@ -2689,10 +2978,13 @@ function elevFrontalAnilha() {
         alert("Você já adicionou esse exercício");
         return;
     }
-    const rep = prompt("Quantas Séries desse exercício?: ")
-    if (rep === null) {
-        return;
+    let rep;
+    do {
+    rep = prompt("Quantas Séries desse exercício?: ");
+    if (rep === null) { 
+        return; 
     }
+    } while (rep.trim() === "");
     const descr = " Séries de Elevação Frontal com anilha"
     respTreinosOmbros += rep + descr + "\n"
     respTreinoOmbros.innerText = `${respTreinosOmbros}`

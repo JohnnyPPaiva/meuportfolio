@@ -245,10 +245,15 @@ label {
     flex-direction: column;
     background: #fff;
     align-items: center;
-    text-align: center;
+    text-align: left;
     visibility: hidden;
     opacity: 0;
     transition: 1s;
+}
+
+.menuOque p {
+    text-align: left;
+    font-size: 1em;
 }
 
 .menuOque.active {
@@ -280,6 +285,10 @@ label {
     visibility: visible;
     opacity: 1;
     transition: 1s;
+}
+
+.menuCalc p {
+    text-align: left;
 }
 
 .menuInflu {

@@ -16,6 +16,11 @@
         color: #fff;
     }
 
+    .exit {
+        left: 90%;
+        top: 50px;
+    }
+
     .textos h2 {
         position: relative;
         text-align: center; 
@@ -79,6 +84,7 @@
         padding-top: 50px;
         background-size: 30%;
         background-position: center 80px;
+        background: var(--cor-paleta3);
     }
 
     .iconePrinc {
@@ -170,7 +176,9 @@
     }
 
     .exit {
-        left: 20px;
+        left: 90%;
+        top: 50px;
+        width: 40px;
     }
 
     .divPrinc h2 {
@@ -404,8 +412,8 @@
     }
 
     .exit {
-        left: 370px;
-        top: 70px;
+        left: 90%;
+        top: 50px;
         width: 40px;
     }
 
@@ -716,8 +724,8 @@
     }
 
     .exit {
-        left: 255px;
-        top: 40px;
+        left: 88%;
+        top: 50px;
         width: 40px;
     }
 
