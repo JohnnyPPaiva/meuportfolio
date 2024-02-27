@@ -2695,6 +2695,126 @@ footer {
     transition: 1s;
 }
 
+.tAbc {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    padding: 30px;
+}
+
+.tAbc.active {
+    top: -15%;
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+
+.tAbcExit.active {
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+
+.tAbcd {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    padding: 30px;
+}
+
+.tAbcd.active {
+    top: -15%;
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+
+.tAbcdExit.active {
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+
+.tAbcde {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    padding: 30px;
+}
+
+.tAbcde.active {
+    top: -15%;
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+
+.tAbcdeExit.active {
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+
+.tAbcdef {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    padding: 30px;
+}
+
+.tAbcdef.active {
+    top: -15%;
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+
+.tAbcdefExit.active {
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+
+.tFullBody {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    padding: 30px;
+}
+
+.tFullBody.active {
+    top: -15%;
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+
+.tFullBodyExit.active {
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+
+.tUpper {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    padding: 30px;
+}
+
+.tUpper.active {
+    top: -15%;
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+
+.tUpperExit.active {
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+
 #footer_redes {
     width: 100%;
     height: 5vh;

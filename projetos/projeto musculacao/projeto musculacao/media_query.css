@@ -91,32 +91,14 @@
         padding-top: 50px;
     }
 
+    ul li a {
+        font-family: 'Nunito', sans-serif;
+        font-size: .8em;
+    }
+
     .inform {
         position: relative;
         top: 80px;
-    }
-
-
-    .ul {
-        position: absolute;
-        visibility: hidden;
-        top: 0; 
-        right: 0;
-        width: 50vw;
-        height: 100vh;
-        background: #212934e4;
-        flex-direction: column;
-        align-items: left;
-        justify-content: center;
-        transform: translateX(100%);
-        transition: 1s;
-    }
-
-    .ul li {
-        position: relative;
-        right: 50px;
-        opacity: 1;
-        font-size: 1.8em;
     }
 
     .trainingMenu::before {
@@ -152,30 +134,6 @@
     }
     .metodMenu::after {
         display: none;
-    }
-
-    .mobileMenu div {
-        display: block;
-    }
-
-  
-
-    header.active .ul {
-        transform: translateX(0%);
-        transition: 1s;
-        visibility: visible;
-    }
-
-    header.active .mobileMenu .line1 {
-        transform: rotate(-45deg) translate(-5px, 7px); 
-    }
-         
-    header.active .mobileMenu .line2 {
-        opacity: 0;
-    }
-         
-    header.active .mobileMenu .line3 {
-        transform: rotate(45deg) translate(-5px, -7px); 
     }
 
     .content {
@@ -325,6 +283,50 @@
 
     .iconePrinc {
         width: 50px;
+    }
+
+    .ul {
+        position: absolute;
+        visibility: hidden;
+        top: 0; 
+        right: 0;
+        width: 50vw;
+        height: 100vh;
+        background: #212934e4;
+        flex-direction: column;
+        align-items: left;
+        justify-content: center;
+        transform: translateX(100%);
+        transition: 1s;
+    }
+
+    .ul li {
+        position: relative;
+        right: 50px;
+        opacity: 1;
+        font-size: 1.8em;
+    }
+
+    header.active .ul {
+        transform: translateX(0%);
+        transition: 1s;
+        visibility: visible;
+    }
+
+    .mobileMenu div {
+        display: block;
+    }
+
+    header.active .mobileMenu .line1 {
+        transform: rotate(-45deg) translate(-5px, 7px); 
+    }
+         
+    header.active .mobileMenu .line2 {
+        opacity: 0;
+    }
+         
+    header.active .mobileMenu .line3 {
+        transform: rotate(45deg) translate(-5px, -7px); 
     }
 
     #home .fotoPrinc {

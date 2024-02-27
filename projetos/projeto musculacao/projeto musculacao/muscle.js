@@ -203,6 +203,18 @@ let Superslow = document.querySelector('.tSuperslow')
 let tSuperslowSair = document.querySelector('.tSuperslowExit')
 let Tri = document.querySelector('.tTri')
 let tTriSair = document.querySelector('.tTriExit')
+let Abc = document.querySelector('.tAbc')
+let tAbcSair = document.querySelector('.tAbcExit')
+let Abcd = document.querySelector('.tAbcd')
+let tAbcdSair = document.querySelector('.tAbcdExit')
+let Abcde = document.querySelector('.tAbcde')
+let tAbcdeSair = document.querySelector('.tAbcdeExit')
+let Abcdef = document.querySelector('.tAbcdef')
+let tAbcdefSair = document.querySelector('.tAbcdefExit')
+let FullBody = document.querySelector('.tFullBody')
+let tFullBodySair = document.querySelector('.tFullBodyExit')
+let Upper = document.querySelector('.tUpper')
+let tUpperSair = document.querySelector('.tUpperExit')
 
 menuToggle.onclick = function() {
     header.classList.toggle('active')
@@ -2306,7 +2318,7 @@ function desenv() {
     if (rep === null) {
         return;
     }
-    const descr = " Séries de Desenvolvimento de ombros com halteres"
+    const descr = " Séries de Desenvolvimento com halteres"
     respTreinosOmbros += rep + descr + "\n"
     respTreinoOmbros.innerText = `${respTreinosOmbros}`
     hFichaOmbros.classList.remove('active')
@@ -2331,7 +2343,7 @@ function desenvBarra() {
     if (rep === null) {
         return;
     }
-    const descr = " Séries de Desenvolvimento de ombros com barra"
+    const descr = " Séries de Desenvolvimento com barra"
     respTreinosOmbros += rep + descr + "\n"
     respTreinoOmbros.innerText = `${respTreinosOmbros}`
     hFichaOmbros.classList.remove('active')
@@ -2356,7 +2368,7 @@ function arnold() {
     if (rep === null) {
         return;
     }
-    const descr = " Séries de Desenvolvimento Arnold para ombros"
+    const descr = " Séries de Desenvolvimento Arnold"
     respTreinosOmbros += rep + descr + "\n"
     respTreinoOmbros.innerText = `${respTreinosOmbros}`
     hFichaOmbros.classList.remove('active')
@@ -2381,13 +2393,63 @@ function elevLat() {
     if (rep === null) {
         return;
     }
-    const descr = " Séries de Elevação lateral de ombros com halteres"
+    const descr = " Séries de Elevação lateral com halteres"
     respTreinosOmbros += rep + descr + "\n"
     respTreinoOmbros.innerText = `${respTreinosOmbros}`
     hFichaOmbros.classList.remove('active')
     iconPrint.classList.remove('active')
     iconReload.classList.remove('active')
     elevLatExecutada = true;
+    marcador = 1
+    if (marcador == 1) {
+        hFichaOmbros.classList.toggle('active')
+        iconPrint.classList.toggle('active')
+        iconReload.classList.toggle('active')
+    }
+}
+
+let elevLatInclExecutada = false;
+function elevLatIncl() {
+    if (elevLatInclExecutada) {
+        alert("Você já adicionou esse exercício");
+        return;
+    }
+    const rep = prompt("Quantas Séries desse exercício?: ")
+    if (rep === null) {
+        return;
+    }
+    const descr = " Séries de Elevação lateral no banco inclinado"
+    respTreinosOmbros += rep + descr + "\n"
+    respTreinoOmbros.innerText = `${respTreinosOmbros}`
+    hFichaOmbros.classList.remove('active')
+    iconPrint.classList.remove('active')
+    iconReload.classList.remove('active')
+    elevLatInclExecutada = true;
+    marcador = 1
+    if (marcador == 1) {
+        hFichaOmbros.classList.toggle('active')
+        iconPrint.classList.toggle('active')
+        iconReload.classList.toggle('active')
+    }
+}
+
+let elevLatInclPolExecutada = false;
+function elevLatInclPol() {
+    if (elevLatInclPolExecutada) {
+        alert("Você já adicionou esse exercício");
+        return;
+    }
+    const rep = prompt("Quantas Séries desse exercício?: ")
+    if (rep === null) {
+        return;
+    }
+    const descr = " Séries de Elevação lateral no pulley"
+    respTreinosOmbros += rep + descr + "\n"
+    respTreinoOmbros.innerText = `${respTreinosOmbros}`
+    hFichaOmbros.classList.remove('active')
+    iconPrint.classList.remove('active')
+    iconReload.classList.remove('active')
+    elevLatInclPolExecutada = true;
     marcador = 1
     if (marcador == 1) {
         hFichaOmbros.classList.toggle('active')
@@ -2421,6 +2483,31 @@ function crucifixo() {
     }
 }
 
+let remadaAltaBarraExecutada = false;
+function remadaAltaBarra() {
+    if (remadaAltaBarraExecutada) {
+        alert("Você já adicionou esse exercício");
+        return;
+    }
+    const rep = prompt("Quantas Séries desse exercício?: ")
+    if (rep === null) {
+        return;
+    }
+    const descr = " Séries de Remada alta com barra"
+    respTreinosOmbros += rep + descr + "\n"
+    respTreinoOmbros.innerText = `${respTreinosOmbros}`
+    hFichaOmbros.classList.remove('active')
+    iconPrint.classList.remove('active')
+    iconReload.classList.remove('active')
+    remadaAltaBarraExecutada = true;
+    marcador = 1
+    if (marcador == 1) {
+        hFichaOmbros.classList.toggle('active')
+        iconPrint.classList.toggle('active')
+        iconReload.classList.toggle('active')
+    }
+}
+
 let remadaAltaExecutada = false;
 function remadaAlta() {
     if (remadaAltaExecutada) {
@@ -2431,7 +2518,7 @@ function remadaAlta() {
     if (rep === null) {
         return;
     }
-    const descr = " Séries de Remada alta em pé com halteres"
+    const descr = " Séries de Remada alta com halteres"
     respTreinosOmbros += rep + descr + "\n"
     respTreinoOmbros.innerText = `${respTreinosOmbros}`
     hFichaOmbros.classList.remove('active')
@@ -2538,6 +2625,81 @@ function elevFrontal() {
     iconPrint.classList.remove('active')
     iconReload.classList.remove('active')
     elevFrontalExecutada = true;
+    marcador = 1
+    if (marcador == 1) {
+        hFichaOmbros.classList.toggle('active')
+        iconPrint.classList.toggle('active')
+        iconReload.classList.toggle('active')
+    }
+}
+
+let elevFrontalPolExecutada = false;
+function elevFrontalPol() {
+    if (elevFrontalPolExecutada) {
+        alert("Você já adicionou esse exercício");
+        return;
+    }
+    const rep = prompt("Quantas Séries desse exercício?: ")
+    if (rep === null) {
+        return;
+    }
+    const descr = " Séries de Elevação Frontal no pulley"
+    respTreinosOmbros += rep + descr + "\n"
+    respTreinoOmbros.innerText = `${respTreinosOmbros}`
+    hFichaOmbros.classList.remove('active')
+    iconPrint.classList.remove('active')
+    iconReload.classList.remove('active')
+    elevFrontalPolExecutada = true;
+    marcador = 1
+    if (marcador == 1) {
+        hFichaOmbros.classList.toggle('active')
+        iconPrint.classList.toggle('active')
+        iconReload.classList.toggle('active')
+    }
+}
+
+let elevFrontalBarraExecutada = false;
+function elevFrontalBarra() {
+    if (elevFrontalBarraExecutada) {
+        alert("Você já adicionou esse exercício");
+        return;
+    }
+    const rep = prompt("Quantas Séries desse exercício?: ")
+    if (rep === null) {
+        return;
+    }
+    const descr = " Séries de Elevação Frontal com barra"
+    respTreinosOmbros += rep + descr + "\n"
+    respTreinoOmbros.innerText = `${respTreinosOmbros}`
+    hFichaOmbros.classList.remove('active')
+    iconPrint.classList.remove('active')
+    iconReload.classList.remove('active')
+    elevFrontalBarraExecutada = true;
+    marcador = 1
+    if (marcador == 1) {
+        hFichaOmbros.classList.toggle('active')
+        iconPrint.classList.toggle('active')
+        iconReload.classList.toggle('active')
+    }
+}
+
+let elevFrontalAnilhaExecutada = false;
+function elevFrontalAnilha() {
+    if (elevFrontalAnilhaExecutada) {
+        alert("Você já adicionou esse exercício");
+        return;
+    }
+    const rep = prompt("Quantas Séries desse exercício?: ")
+    if (rep === null) {
+        return;
+    }
+    const descr = " Séries de Elevação Frontal com anilha"
+    respTreinosOmbros += rep + descr + "\n"
+    respTreinoOmbros.innerText = `${respTreinosOmbros}`
+    hFichaOmbros.classList.remove('active')
+    iconPrint.classList.remove('active')
+    iconReload.classList.remove('active')
+    elevFrontalAnilhaExecutada = true;
     marcador = 1
     if (marcador == 1) {
         hFichaOmbros.classList.toggle('active')
@@ -3182,4 +3344,46 @@ function tTri() {
     blur.classList.toggle('active')
     blurMetod.classList.toggle('active')
     tTriSair.classList.toggle('active')
+}
+
+function tAbc() {
+    Abc.classList.toggle('active')
+    blur.classList.toggle('active')
+    blurMetod.classList.toggle('active')
+    tAbcSair.classList.toggle('active')
+}
+
+function tAbcd() {
+    Abcd.classList.toggle('active')
+    blur.classList.toggle('active')
+    blurMetod.classList.toggle('active')
+    tAbcdSair.classList.toggle('active')
+}
+
+function tAbcde() {
+    Abcde.classList.toggle('active')
+    blur.classList.toggle('active')
+    blurMetod.classList.toggle('active')
+    tAbcdeSair.classList.toggle('active')
+}
+
+function tAbcdef() {
+    Abcdef.classList.toggle('active')
+    blur.classList.toggle('active')
+    blurMetod.classList.toggle('active')
+    tAbcdefSair.classList.toggle('active')
+}
+
+function tFullBody() {
+    FullBody.classList.toggle('active')
+    blur.classList.toggle('active')
+    blurMetod.classList.toggle('active')
+    tFullBodySair.classList.toggle('active')
+}
+
+function tUpper() {
+    Upper.classList.toggle('active')
+    blur.classList.toggle('active')
+    blurMetod.classList.toggle('active')
+    tUpperSair.classList.toggle('active')
 }
