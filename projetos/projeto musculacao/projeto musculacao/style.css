@@ -544,6 +544,15 @@ ul li a {
     text-shadow: 2px 2px 5px #000;
 }
 
+.variacao {
+    font-family: 'Nunito', sans-serif;
+    position: relative;
+    max-width: 800px;
+    text-align: center;
+    font-size: .8em;
+    top: 20px;
+}
+
 .inform {
     font-family: 'Nunito', sans-serif;
     position: relative;
