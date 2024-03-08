@@ -155,7 +155,7 @@ document.addEventListener("DOMContentLoaded", () => {
     elements.forEach(element => {
         observer.observe(element);
 
-        if (element.getBoundingClientRect().top < window.innerHeight) {
+        if (element.getBoundingClientRect().top <= window.innerHeight) {
             element.classList.add('init-hidden-off');
         }
     });
