@@ -82,6 +82,13 @@ let btnBit = document.querySelector(".btnBit")
 let btnMoto = document.querySelector(".btnMoto")
 let btnMuscl = document.querySelector(".btnMuscle")
 
+divhProj.innerHTML = "Guia Rápido de Musculação"
+    divpProj.innerHTML = "Desenvolvi esse projeto com a intenção de demonstrar e explicar detalhadamente cada um dos principais exercícios de musculação separados por grupos musculares. Clicando nas imagens de demonstração dos exercícios é possível adiciona-lo a uma ficha de treino onde o usuário insere a quantidade de séries de cada um deles e ao final da montagem é possível imprimir essa lista com os exercícios"
+    btnTmb.style.display = "none"
+    btnLogin.style.display = "none"
+    btnBit.style.display = "none"
+    btnMoto.style.display = "none"
+    btnMuscl.style.display = "block"
 
 function mostraTmb() {
     divhProj.innerHTML = "Calculadora de TMB"
@@ -132,3 +139,26 @@ function mostraMuscle() {
     btnMoto.style.display = "none"
     btnMuscl.style.display = "block"
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('init-hidden-off');
+            }
+        });
+    }, {
+        threshold: 1
+    });
+
+    const elements = Array.from(document.querySelectorAll('.init-hidden, .init-hidden-right'));
+    elements.forEach(element => {
+        observer.observe(element);
+
+        if (element.getBoundingClientRect().top < window.innerHeight) {
+            element.classList.add('init-hidden-off');
+        }
+    });
+});
+
+
