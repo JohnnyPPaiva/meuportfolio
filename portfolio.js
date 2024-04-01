@@ -83,7 +83,7 @@ let btnMoto = document.querySelector(".btnMoto")
 let btnMuscl = document.querySelector(".btnMuscle")
 
 divhProj.innerHTML = "Guia Rápido de Musculação"
-    divpProj.innerHTML = "Desenvolvi esse projeto com a intenção de demonstrar e explicar detalhadamente cada um dos principais exercícios de musculação separados por grupos musculares. Clicando nas imagens de demonstração dos exercícios é possível adiciona-lo a uma ficha de treino onde o usuário insere a quantidade de séries de cada um deles e ao final da montagem é possível imprimir essa lista com os exercícios. Esse foi o projeto que mais aprimorei, adicionando guia de suplementação e métodos de treino e inclusive o primeiro que publiquei e hospedei na Hostinger com o domínio 'http://guiamvc.com.br'"
+    divpProj.innerHTML = "Desenvolvi esse projeto com a intenção de demonstrar e explicar detalhadamente cada um dos principais exercícios de musculação separados por grupos musculares. Esse foi o projeto que mais aprimorei, adicionando guia de suplementação e métodos de treino, inclusive foi o primeiro que publiquei e hospedei com o domínio 'http://guiamvc.com.br'"
     btnTmb.style.display = "none"
     btnLogin.style.display = "none"
     btnBit.style.display = "none"
@@ -92,7 +92,7 @@ divhProj.innerHTML = "Guia Rápido de Musculação"
 
 function mostraTmb() {
     divhProj.innerHTML = "Calculadora de TMB"
-    divpProj.innerHTML = "Projeto feito em HTML, CSS e JavaScript, calcula a taxa de metabolismo basal de acordo com dados informados pelo usuário como sexo, altura, idade e peso, e de acordo com a frequência de atividade diária ele mostra o resultado da TMB e do gasto calórico diário da pessoa"
+    divpProj.innerHTML = "Projeto feito em HTML, CSS e JavaScript, calcula a taxa de metabolismo basal conforme dados informados pelo usuário como sexo, altura, idade e peso, e de acordo com a frequência de atividade diária ele mostra o resultado da TMB e do gasto calórico diário da pessoa"
     btnTmb.style.display = "block"
     btnLogin.style.display = "none"
     btnBit.style.display = "none"
@@ -132,7 +132,7 @@ function mostraMoto() {
 
 function mostraMuscle() {
     divhProj.innerHTML = "Guia Rápido de Musculação"
-    divpProj.innerHTML = "Desenvolvi esse projeto com a intenção de demonstrar e explicar detalhadamente cada um dos principais exercícios de musculação separados por grupos musculares. Clicando nas imagens de demonstração dos exercícios é possível adiciona-lo a uma ficha de treino onde o usuário insere a quantidade de séries de cada um deles e ao final da montagem é possível imprimir essa lista com os exercícios. Esse foi o projeto que mais aprimorei, adicionando guia de suplementação e métodos de treino e inclusive o primeiro que publiquei e hospedei na Hostinger com o domínio 'http://guiamvc.com.br' "
+    divpProj.innerHTML = "Desenvolvi esse projeto com a intenção de demonstrar e explicar detalhadamente cada um dos principais exercícios de musculação separados por grupos musculares. Esse foi o projeto que mais aprimorei, adicionando guia de suplementação e métodos de treino e inclusive o primeiro que publiquei e hospedei na Hostinger com o domínio 'http://guiamvc.com.br' "
     btnTmb.style.display = "none"
     btnLogin.style.display = "none"
     btnBit.style.display = "none"
